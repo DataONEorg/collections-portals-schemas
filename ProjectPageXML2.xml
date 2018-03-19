@@ -27,7 +27,7 @@
         <name>SASAP Region</name>
         <rendering>menu</rendering>
         <filterOptions>
-          <option>Alaska Peninsula & Aleutian Islands</menuOption>
+          <option>Alaska Peninsula &amp; Aleutian Islands</option>
           <option>Arctic</option>
           <option>Bristol Bay</option>
           <option>Chignik</option>
@@ -91,6 +91,7 @@
           <solrField>attributeDefinition</solrField>
         </solrFields>
       </filter>
+    </category>
     <category>
       <name>Fish Producitivity</name>
       <icon>urn:uuid:2eab388c-51e2-482d-b033-03e32ee65327</icon>
@@ -239,8 +240,8 @@
   </markdowns>
   <personnel>
     <individualName>
-      <givenName>Courtney<givenName>
-      <surName>Carothers<surName>
+      <givenName>Courtney</givenName>
+      <surName>Carothers</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Socio-Eco</positionName>
@@ -250,8 +251,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Rachel<givenName>
-      <surName>Donkersloot<surName>
+      <givenName>Rachel</givenName>
+      <surName>Donkersloot</surName>
     </individualName>
     <organizationName>(Alaska Marine Conservation Council)</organizationName>
     <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
@@ -261,8 +262,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Michael<givenName>
-      <surName>Jones<surName>
+      <givenName>Michael</givenName>
+      <surName>Jones</surName>
     </individualName>
     <organizationName>(Michigan State University)</organizationName>
     <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
@@ -272,8 +273,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Steve<givenName>
-      <surName>Langdon<surName>
+      <givenName>Steve</givenName>
+      <surName>Langdon</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Governance</positionName>
@@ -283,8 +284,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Coowe<givenName>
-      <surName>Walker<surName>
+      <givenName>Coowe</givenName>
+      <surName>Walker</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
@@ -316,12 +317,13 @@
     <phone>(907)280-8923</phone>
     <role>project member</role>
   </personnel>
+  <personnel>
     <individualName>
       <givenName>Jessica</givenName>
       <surName>Black</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
-    <positionName>Co-Lead, Socio-Eco & Well-Being and Alaska Salmon Systems</positionName>
+    <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
     <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -349,7 +351,7 @@
       <givenName>James</givenName>
       <surName>Fall</surName>
     </individualName>
-    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
     <positionName>Co-Lead, Gov</positionName>
     <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
     <role>project member</role>
@@ -379,7 +381,7 @@
       <givenName>Bert</givenName>
       <surName>Lewis</surName>
     </individualName>
-    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
     <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
     <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
     <role>project member</role>
