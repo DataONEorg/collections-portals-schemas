@@ -1,0 +1,449 @@
+<project>
+  <title>State of Alaska's Salmon and People</title>
+  <tagline>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</tagline>
+  <logos>
+    <logo>
+      <logoID>knb.109204.1</logoID>
+      <logoType>projectLogo</logoType>
+    </logo>
+    <logo>
+      <logoID>knb.109203.1</logoID>
+      <logoType>affiliationLogo</logoType>
+    </logo>
+    <logo>
+      <logoID>knb.109202.1</logoID>
+      <logoType>affiliationLogo</logoType>
+    </logo>
+  </logos>
+  <filterCategories>
+    <category>
+      <name>Geography</name>
+      <icon>urn:uuid:a8a14f26-2bc5-4638-8683-3737c2c97015</icon>
+      <filter>
+        <name>River/system</name>
+        <rendering>search</rendering>
+      </filter>
+      <filter>
+        <name>SASAP Region</name>
+        <rendering>menu</rendering>
+        <filterOptions>
+          <option>Alaska Peninsula & Aleutian Islands</menuOption>
+          <option>Arctic</option>
+          <option>Bristol Bay</option>
+          <option>Chignik</option>
+          <option>Cook Inlet</option>
+          <option>Copper River</option>
+          <option>Kodiak</option>
+          <option>Kotzebue Sound</option>
+          <option>Kuskokwim</option>
+          <option>Norton Sound</option>
+          <option>Prince William Sound</option>
+          <option>Southeast</option>
+          <option>Yukon</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+      <filter>
+        <name>ADFG Management Area</name>
+        <rendering>menu</rendering>
+        <filterOptions>
+          <option>Arctic-Yukon-Kuskokwim</option>
+          <option>Central Region</option>
+          <option>Southeast Region</option>
+          <option>Westward Region</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    </category>
+    <category>
+      <name>Species</name>
+      <icon>urn:uuid:44f678ea-c980-4bdb-843a-7662928482ad</icon>
+      <filter>
+        <name>Species</name>
+        <rendering>selectionButtons</rendering>
+        <filterOptions>
+          <option>Sockeye</option>
+          <option>Chinook</option>
+          <option>Coho</option>
+          <option>Chum</option>
+          <option>Pink</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    <category>
+      <name>Fish Producitivity</name>
+      <icon>urn:uuid:2eab388c-51e2-482d-b033-03e32ee65327</icon>
+      <filter>
+        <name>Fish Productivity</name>
+        <rendering>selectionButtons</rendering>
+        <filterOptions>
+          <option>Escapement</option>
+          <option>Age, Sex, Length</option>
+          <option>Brood Tables</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    </category>
+    <category>
+      <name>Habitat</name>
+      <icon>urn:uuid:4a7b36f0-fa8f-4005-8fca-72a4c922ab30</icon>
+      <filter>
+        <name>Habitat</name>
+        <rendering>selectionButtons</rendering>
+        <filterOptions>
+          <option>Land Use</option>
+          <option>Landscape</option>
+          <option>Temperature</option>
+          <option>Precipitation</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    </category>
+    <category>
+      <name>Management</name>
+      <icon>Furn:uuid:778127a4-a486-4ac6-bdc1-22bd37afcf6f</icon>
+      <filter>
+        <name>Management</name>
+        <rendering>selectionButtons</rendering>
+        <filterOptions>
+          <option>Harvest</option>
+          <option>Governance</option>
+          <option>Subsistence</option>
+          <option>Hatcheries</option>
+          <option>Commercial</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    </category>
+    <category>
+      <name>Human Dimensions</name>
+      <icon>urn:uuid:74796f5a-4c7a-4d1b-92d2-5bce7ae64e0b</icon>
+      <filter>
+        <name>Human Dimensions</name>
+        <rendering>selectionButtons</rendering>
+        <filterOptions>
+          <option>Surveys</option>
+          <option>Census/Demographic</option>
+          <option>Economic</option>
+        </filterOptions>
+        <solrFields>
+          <solrField>abstract</solrField>
+          <solrField>title</solrField>
+          <solrField>methods</solrField>
+          <solrField>keywords</solrField>
+          <solrField>attributeName</solrField>
+          <solrField>attributeDefinition</solrField>
+        </solrFields>
+      </filter>
+    </category>
+  </filterCategories>
+  <markdowns>
+    <markdown>
+      <markdownType>projectHomePage</markdownType>
+      <content><![CDATA[
+      Problem Statement
+      ---
+      Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska’s salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management/policy questions that have not been addressed.
+
+      Consequently, these knowledge gaps leave many stakeholders inadequately informed about the status of salmon.  This undermines their ability to equitably and knowledgeably participate in management decisions such as resource allocation, policy creation, and governance. Through a knowledge synthesis, SASAP seeks to provide an up-to-date interdisciplinary perspective on Alaska’s salmon systems and the people who rely on them to inform systematic salmon reporting programs at the state and national levels.
+
+      ![Commercial fishing boats](knb.109201.1)
+
+      Goals
+      ---
+      The SASAP project specifically seeks to:
+
+      * Connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska’s salmon system health and drive sustainable management of the system
+
+      * Create new institutional capacity to generate interdisciplinary salmon knowledge and establish a foundation for integrated knowledge that can be built on over time
+
+      ![Sockeye](knb.109200.1)
+
+      Our Science
+      ---
+      This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed.
+
+      ![Map of size declines](knb.109199.1)
+
+      Who We Are
+      ---
+      The National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII) are leading a synthesis of data surrounding the state of knowledge of Alaska’s Salmon and People (SASAP). In partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, Indigenous leaders, and specialists across resource sectors, SASAP Working Groups will synthesize existing knowledge on salmon and address information gaps.
+
+      Our approach is to build collaborations — “working groups” — of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap.
+
+      ![Team](knb.109198.1)]]></content>
+    </markdown>
+    <markdown>
+      <markdownType>visualiationsPage</markdownType>
+      <content><![CDATA[
+      Escapement
+      ---
+      The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration.
+
+      ![Escapement](knb.109196.1)
+
+      Age, sex, and length
+      ---
+      Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska.
+
+      ![ASL](knb.109197.1)
+
+      Maps and regional data
+      ---
+      This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed.
+
+      ![Map](knb.109199.1)]]></content>
+    </markdown>
+  </markdowns>
+  <personnel>
+    <individualName>
+      <givenName>Courtney<givenName>
+      <surName>Carothers<surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Lead, Socio-Eco</positionName>
+    <electronicMailAddress>clcarothers@alaska.edu</electronicMailAddress>
+    <role>primary project member</role>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Rachel<givenName>
+      <surName>Donkersloot<surName>
+    </individualName>
+    <organizationName>(Alaska Marine Conservation Council)</organizationName>
+    <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
+    <electronicMailAddress>rachel@akmarine.org</electronicMailAddress>
+    <role>primary project member</role>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Michael<givenName>
+      <surName>Jones<surName>
+    </individualName>
+    <organizationName>(Michigan State University)</organizationName>
+    <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
+    <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
+    <role>primary project member</role>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Steve<givenName>
+      <surName>Langdon<surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Lead, Governance</positionName>
+    <electronicMailAddress>sjlandgdon@alaska.edu</electronicMailAddress>
+    <role>primary project member</role>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Coowe<givenName>
+      <surName>Walker<surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+    <electronicMailAddress>cmwalker9@alaska.edu</electronicMailAddress>
+    <role>primary project member</role>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <salutation>Dr.</salutation>
+      <givenName>Frank</givenName>
+      <surName>Davis</surName>
+    </individualName>
+    <organizationName>(NCEAS/UCSB)</organizationName>
+    <positionName>Lead Principal Investigator</positionName>
+    <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
+    <phone>(805)893-2500</phone>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <salutation>Dr.</salutation>
+      <givenName>Ian</givenName>
+      <surName>Dutton</surName>
+    </individualName>
+    <organizationName>(NII)</organizationName>
+    <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
+    <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
+    <phone>(907)280-8923</phone>
+    <role>project member</role>
+  </personnel>
+    <individualName>
+      <givenName>Jessica</givenName>
+      <surName>Black</surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Co-Lead, Socio-Eco & Well-Being and Alaska Salmon Systems</positionName>
+    <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Taylor</givenName>
+      <surName>Brelsford</surName>
+    </individualName>
+    <positionName>Co-Lead, Gov</positionName>
+    <electronicMailAddress>brelsfot@alaska.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Robert W.</givenName>
+      <surName>Campbell</surName>
+    </individualName>
+    <organizationName>(Prince William Sound Science Center)</organizationName>
+    <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+    <electronicMailAddress></electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>James</givenName>
+      <surName>Fall</surName>
+    </individualName>
+    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <positionName>Co-Lead, Gov</positionName>
+    <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Kristin B.</givenName>
+      <surName>Gorman</surName>
+    </individualName>
+    <organizationName>(Prince William Sound Science Center)</organizationName>
+    <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+    <electronicMailAddress>kgorman@pwscc.org</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Ryan</givenName>
+      <surName>King</surName>
+    </individualName>
+    <organizationName>(Baylor University)</organizationName>
+    <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai Lowlands</positionName>
+    <electronicMailAddress>Ryan_S_King@baylor.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Bert</givenName>
+      <surName>Lewis</surName>
+    </individualName>
+    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+    <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Mark</givenName>
+      <surName>Rains</surName>
+    </individualName>
+    <organizationName>(University of South Florida)</organizationName>
+    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+    <electronicMailAddress>mrains@usf.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Peter S.</givenName>
+      <surName>Rand</surName>
+    </individualName>
+    <organizationName>(Prince William Sound Science Center)</organizationName>
+    <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+    <electronicMailAddress>prand@pwssc.org</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Dan</givenName>
+      <surName>Rinella</surName>
+    </individualName>
+    <organizationName>(US Fish and Wildlife Service)</organizationName>
+    <positionName>Co-Lead, Bio-Phys</positionName>
+    <electronicMailAddress>daniel_rinella@fws.gov</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Tobias</givenName>
+      <surName>Schwoerer</surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Co-Lead, Socio-Eco</positionName>
+    <electronicMailAddress>tschwoerer@alaska.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Charles</givenName>
+      <surName>Simenstad</surName>
+    </individualName>
+    <organizationName>(University of Washington)</organizationName>
+    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+    <electronicMailAddress>simenstd@u.washington.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <personnel>
+    <individualName>
+      <givenName>Peter</givenName>
+      <surName>Westley</surName>
+    </individualName>
+    <organizationName>(University of Alaska)</organizationName>
+    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+    <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
+    <role>project member</role>
+  </personnel>
+  <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.</acknowledgements>
+  <funding>State of Alaska'a Salmon and People (Gordon and Betty Moore Foundation Award 5124), Data Task Forces for Better Synthesis Studies (Gordon and Betty Moore Foundation Award 5451)</funding>
+</project>
