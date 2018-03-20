@@ -210,7 +210,7 @@
       The National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII) are leading a synthesis of data surrounding the state of knowledge of Alaska’s Salmon and People (SASAP). In partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, Indigenous leaders, and specialists across resource sectors, SASAP Working Groups will synthesize existing knowledge on salmon and address information gaps.
 
       Our approach is to build collaborations — “working groups” — of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap.
-
+      
       ![Team](knb.109198.1)]]></markdown>
   </projectDescription>
   <resultsOverview>
@@ -440,6 +440,7 @@
     <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
-  <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.</acknowledgements>
-  <funding>State of Alaska'a Salmon and People (Gordon and Betty Moore Foundation Award 5124), Data Task Forces for Better Synthesis Studies (Gordon and Betty Moore Foundation Award 5451)</funding>
+    <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for
+        Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.</acknowledgements>
+    <funding>State of Alaska'a Salmon and People (Gordon and Betty Moore Foundation Award 5124), Data Task Forces for Better Synthesis Studies (Gordon and Betty Moore Foundation Award 5451)</funding>
 </project>
