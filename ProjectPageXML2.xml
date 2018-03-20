@@ -1,6 +1,6 @@
 <project>
   <title>State of Alaska's Salmon and People</title>
-  <tagline>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</tagline>
+  <synopsis>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</synopsis>
   <logos>
     <logo>
       <logoID>knb.109204.1</logoID>
@@ -179,10 +179,8 @@
       </filter>
     </category>
   </filterCategories>
-  <markdowns>
-    <markdown>
-      <markdownType>projectHomePage</markdownType>
-      <content><![CDATA[
+  <projectDescription>
+    <markdown><![CDATA[
       Problem Statement
       ---
       Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska’s salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management/policy questions that have not been addressed.
@@ -213,11 +211,10 @@
 
       Our approach is to build collaborations — “working groups” — of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap.
 
-      ![Team](knb.109198.1)]]></content>
-    </markdown>
-    <markdown>
-      <markdownType>visualiationsPage</markdownType>
-      <content><![CDATA[
+      ![Team](knb.109198.1)]]></markdown>
+  </projectDescription>
+  <resultsOverview>
+    <markdown><![CDATA[
       Escapement
       ---
       The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration.
@@ -234,9 +231,8 @@
       ---
       This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed.
 
-      ![Map](knb.109199.1)]]></content>
-    </markdown>
-  </markdowns>
+      ![Map](knb.109199.1)]]></markdown>
+  </resultsOverview>
   <personnel>
     <individualName>
       <givenName>Courtney<givenName>
