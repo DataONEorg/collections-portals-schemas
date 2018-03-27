@@ -85,7 +85,7 @@
       <surName>Black</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
-    <positionName>Co-Lead, Socio-Eco & Well-Being and Alaska Salmon Systems</positionName>
+    <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
     <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -113,7 +113,7 @@
       <givenName>James</givenName>
       <surName>Fall</surName>
     </individualName>
-    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
     <positionName>Co-Lead, Gov</positionName>
     <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
     <role>project member</role>
@@ -143,7 +143,7 @@
       <givenName>Bert</givenName>
       <surName>Lewis</surName>
     </individualName>
-    <organizationName>(Alaska Department of Fish & Game)</organizationName>
+    <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
     <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
     <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
     <role>project member</role>
@@ -307,7 +307,7 @@
         <name>SASAP Region</name>
         <rendering>menu</rendering>
         <filterOptions>
-          <option>Alaska Peninsula & Aleutian Islands</menuOption>
+          <option>Alaska Peninsula &amp; Aleutian Islands</menuOption>
           <option>Arctic</option>
           <option>Bristol Bay</option>
           <option>Chignik</option>
