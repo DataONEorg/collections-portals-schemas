@@ -1,10 +1,10 @@
 <project>
   <title>State of Alaska's Salmon and People</title>
   <synopsis>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</synopsis>
-    <personnel>
+  <personnel>
     <individualName>
-      <givenName>Courtney<givenName>
-      <surName>Carothers<surName>
+      <givenName>Courtney</givenName>
+      <surName>Carothers</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Socio-Eco</positionName>
@@ -14,8 +14,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Rachel<givenName>
-      <surName>Donkersloot<surName>
+      <givenName>Rachel</givenName>
+      <surName>Donkersloot</surName>
     </individualName>
     <organizationName>(Alaska Marine Conservation Council)</organizationName>
     <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
@@ -25,19 +25,20 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Michael<givenName>
-      <surName>Jones<surName>
+      <givenName>Michael</givenName>
+      <surName>Jones</surName>
     </individualName>
     <organizationName>(Michigan State University)</organizationName>
-    <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
+    <positionName>Lead, Using participatory modeling to empower community engagement in salmon
+      science</positionName>
     <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
     <role>primary project member</role>
     <role>project member</role>
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Steve<givenName>
-      <surName>Langdon<surName>
+      <givenName>Steve</givenName>
+      <surName>Langdon</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Governance</positionName>
@@ -47,8 +48,8 @@
   </personnel>
   <personnel>
     <individualName>
-      <givenName>Coowe<givenName>
-      <surName>Walker<surName>
+      <givenName>Coowe</givenName>
+      <surName>Walker</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
     <positionName>Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
@@ -80,6 +81,7 @@
     <phone>(907)280-8923</phone>
     <role>project member</role>
   </personnel>
+  <personnel>
     <individualName>
       <givenName>Jessica</givenName>
       <surName>Black</surName>
@@ -105,7 +107,7 @@
     </individualName>
     <organizationName>(Prince William Sound Science Center)</organizationName>
     <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
-    <electronicMailAddress></electronicMailAddress>
+    <electronicMailAddress/>
     <role>project member</role>
   </personnel>
   <personnel>
@@ -134,7 +136,8 @@
       <surName>King</surName>
     </individualName>
     <organizationName>(Baylor University)</organizationName>
-    <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai Lowlands</positionName>
+    <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai
+      Lowlands</positionName>
     <electronicMailAddress>Ryan_S_King@baylor.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -144,7 +147,8 @@
       <surName>Lewis</surName>
     </individualName>
     <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
-    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size
+      Declines</positionName>
     <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -154,7 +158,8 @@
       <surName>Rains</surName>
     </individualName>
     <organizationName>(University of South Florida)</organizationName>
-    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai
+      Lowlands</positionName>
     <electronicMailAddress>mrains@usf.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -194,7 +199,8 @@
       <surName>Simenstad</surName>
     </individualName>
     <organizationName>(University of Washington)</organizationName>
-    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+    <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai
+      Lowlands</positionName>
     <electronicMailAddress>simenstd@u.washington.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -204,7 +210,8 @@
       <surName>Westley</surName>
     </individualName>
     <organizationName>(University of Alaska)</organizationName>
-    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+    <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size
+      Declines</positionName>
     <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
     <role>project member</role>
   </personnel>
@@ -263,12 +270,17 @@
       ![Map](knb.109199.1)]]></markdown>
   </resultsOverview>
   <funding>
-    <fundingDescription>State of Alaska Salmon and People is funded by the Gordon and Betty Moore Foundation.</fundingDescription>
-    <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for
-        Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.</acknowledgements>
+    <fundingDescription>State of Alaska Salmon and People is funded by the Gordon and Betty Moore
+      Foundation.</fundingDescription>
+    <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have
+      been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso,
+      Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have
+      led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated
+      outreach and communication. This work was funded by generous support of the Gordon and Betty
+      Moore Foundation.</acknowledgements>
   </funding>
-  <award>State of Alaska Salmon and People (Gordon and Betty Moore Foundation Award 5124)</award>
-    <funderName>Gordon and Betty Moore Foundation</funderName>
+  <award>State of Alaska Salmon and People (Gordon and Betty Moore Foundation Award 5124)
+      <funderName>Gordon and Betty Moore Foundation</funderName>
     <funderIdentifier>doi number?</funderIdentifier>
     <awardNumber>5124</awardNumber>
     <title>State of Alaska Salmon and People</title>
@@ -295,7 +307,7 @@
       <logoType>affiliationLogo</logoType>
     </logo>
   </logos>
-    <filterCategories>
+  <filterCategories>
     <category>
       <name>Geography</name>
       <icon>urn:uuid:a8a14f26-2bc5-4638-8683-3737c2c97015</icon>
@@ -307,7 +319,7 @@
         <name>SASAP Region</name>
         <rendering>menu</rendering>
         <filterOptions>
-          <option>Alaska Peninsula &amp; Aleutian Islands</menuOption>
+          <option>Alaska Peninsula &amp; Aleutian Islands</option>
           <option>Arctic</option>
           <option>Bristol Bay</option>
           <option>Chignik</option>
@@ -321,14 +333,14 @@
           <option>Southeast</option>
           <option>Yukon</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
       <filter>
         <name>ADFG Management Area</name>
@@ -339,14 +351,14 @@
           <option>Southeast Region</option>
           <option>Westward Region</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
     </category>
     <category>
@@ -362,15 +374,16 @@
           <option>Chum</option>
           <option>Pink</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
+    </category>
     <category>
       <name>Fish Producitivity</name>
       <icon>urn:uuid:2eab388c-51e2-482d-b033-03e32ee65327</icon>
@@ -382,14 +395,14 @@
           <option>Age, Sex, Length</option>
           <option>Brood Tables</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
     </category>
     <category>
@@ -404,14 +417,14 @@
           <option>Temperature</option>
           <option>Precipitation</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
     </category>
     <category>
@@ -427,14 +440,14 @@
           <option>Hatcheries</option>
           <option>Commercial</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
     </category>
     <category>
@@ -448,14 +461,14 @@
           <option>Census/Demographic</option>
           <option>Economic</option>
         </filterOptions>
-        <solrFields>
-          <solrField>abstract</solrField>
-          <solrField>title</solrField>
-          <solrField>methods</solrField>
-          <solrField>keywords</solrField>
-          <solrField>attributeName</solrField>
-          <solrField>attributeDefinition</solrField>
-        </solrFields>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeName</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
     </category>
   </filterCategories>
