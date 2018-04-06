@@ -299,18 +299,17 @@
     <awardUrl>NA</awardUrl>
   </award>
   <logos>
-    <logo>
-      <logoID>knb.109204.1</logoID>
-      <logoType>projectLogo</logoType>
-    </logo>
-    <logo>
-      <logoID>knb.109203.1</logoID>
-      <logoType>affiliationLogo</logoType>
-    </logo>
-    <logo>
-      <logoID>knb.109202.1</logoID>
-      <logoType>affiliationLogo</logoType>
-    </logo>
+    <image>
+      <imageBytes>
+        R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
+      </imageBytes>
+    </image>
+    <image>
+      <caption>Logo 1</caption>
+      <imageBytes>
+        R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=
+      </imageBytes>
+    </image>
   </logos>
   <filterCategories>
     <category>
@@ -386,6 +385,7 @@
           <searchField>keywords</searchField>
           <searchField>attributeName</searchField>
           <searchField>attributeDefinition</searchField>
+          <searchField>species</searchField>
         </searchFields>
       </filter>
     </category>
