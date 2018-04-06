@@ -1,9 +1,7 @@
 <project>
-  <projectFilter>
-    <filter>
-      <queryString>rightsHolder:CN=SASAP,DC=dataone,DC=org</queryString>
-    </filter>
-  </projectFilter>
+  <projectCollection>
+    <collectionID>urn:uuid:a8a14f26-2bc5-4638-8683-3737c2c97015</collectionID>
+  </projectCollection>
   <title>State of Alaska's Salmon and People</title>
   <synopsis>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</synopsis>
   <personnel>
@@ -300,42 +298,69 @@
   </award>
   <logos>
     <image>
-      <imageBytes>
-        R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7
-      </imageBytes>
+      <imageBytes> R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 </imageBytes>
     </image>
     <image>
       <caption>Logo 1</caption>
-      <imageBytes>
-        R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=
-      </imageBytes>
+      <imageBytes> R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs= </imageBytes>
     </image>
   </logos>
   <filterCategories>
     <category>
       <name>Geography</name>
-      <icon>urn:uuid:a8a14f26-2bc5-4638-8683-3737c2c97015</icon>
+      <icon>icon-globe</icon>
       <filter>
         <name>River/system</name>
-        <rendering>search</rendering>
+        <searchFields>
+          <searchField>abstract</searchField>
+          <searchField>title</searchField>
+          <searchField>methods</searchField>
+          <searchField>keywords</searchField>
+          <searchField>attributeDefinition</searchField>
+        </searchFields>
       </filter>
       <filter>
         <name>SASAP Region</name>
-        <rendering>menu</rendering>
         <filterOptions>
-          <option>Alaska Peninsula &amp; Aleutian Islands</option>
-          <option>Arctic</option>
-          <option>Bristol Bay</option>
-          <option>Chignik</option>
-          <option>Cook Inlet</option>
-          <option>Copper River</option>
-          <option>Kodiak</option>
-          <option>Kotzebue Sound</option>
-          <option>Kuskokwim</option>
-          <option>Norton Sound</option>
-          <option>Prince William Sound</option>
-          <option>Southeast</option>
-          <option>Yukon</option>
+          <option>
+            <label>Alaska Peninsula &amp; Aleutian Islands</label>
+          </option>
+          <option>
+            <label>Arctic</label>
+          </option>
+          <option>
+            <label>Bristol Bay</label>
+          </option>
+          <option>
+            <label>Chignik</label>
+          </option>
+          <option>
+            <label>Cook Inlet</label>
+          </option>
+          <option>
+            <label>Copper River</label>
+          </option>
+          <option>
+            <label>Kodiak</label>
+          </option>
+          <option>
+            <label>Kotzebue Sound</label>
+          </option>
+          <option>
+            <label>Kuskokwim</label>
+          </option>
+          <option>
+            <label>Norton Sound</label>
+          </option>
+          <option>
+            <label>Prince William Sound</label>
+          </option>
+          <option>
+            <label>Southeast</label>
+          </option>
+          <option>
+            <label>Yukon</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
@@ -348,12 +373,19 @@
       </filter>
       <filter>
         <name>ADFG Management Area</name>
-        <rendering>menu</rendering>
         <filterOptions>
-          <option>Arctic-Yukon-Kuskokwim</option>
-          <option>Central Region</option>
-          <option>Southeast Region</option>
-          <option>Westward Region</option>
+          <option>
+            <label>>Arctic-Yukon-Kuskokwim</label>
+          </option>
+          <option>
+            <label>Arctic-Yukon-Kuskokwim</label>
+          </option>
+          <option>
+            <label>Southeast Region</label>
+          </option>
+          <option>
+            <label>Westward Region</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
@@ -367,16 +399,40 @@
     </category>
     <category>
       <name>Species</name>
-      <icon>urn:uuid:44f678ea-c980-4bdb-843a-7662928482ad</icon>
+      <icon>icon-fish</icon>
       <filter>
         <name>Species</name>
-        <rendering>selectionButtons</rendering>
         <filterOptions>
-          <option>Sockeye</option>
-          <option>Chinook</option>
-          <option>Coho</option>
-          <option>Chum</option>
-          <option>Pink</option>
+          <option>
+            <label>Sockeye</label>
+            <value>Sockeye</value>
+            <value>Oncorhynchus nerka</value>
+            <value>nerka</value>
+          </option>
+          <option>
+            <label>Chinook</label>
+            <value>Chinook</value>
+            <value>Oncorhynchus tshawytscha</value>
+            <value>tshawytscha</value>
+          </option>
+          <option>
+            <label>Coho</label>
+            <value>Coho</value>
+            <value>Oncorhynchus kisutch</value>
+            <value>kisutch</value>
+          </option>
+          <option>
+            <label>Chum</label>
+            <value>Chum</value>
+            <value>Oncorhynchus keta</value>
+            <value>keta</value>
+          </option>
+          <option>
+            <label>Pink</label>
+            <value>Pink</value>
+            <value>Oncorhynchus gorbuscha</value>
+            <value>gorbuscha</value>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
@@ -391,14 +447,21 @@
     </category>
     <category>
       <name>Fish Producitivity</name>
-      <icon>urn:uuid:2eab388c-51e2-482d-b033-03e32ee65327</icon>
+      <icon>icon-graph</icon>
       <filter>
         <name>Fish Productivity</name>
-        <rendering>selectionButtons</rendering>
         <filterOptions>
-          <option>Escapement</option>
-          <option>Age, Sex, Length</option>
-          <option>Brood Tables</option>
+          <option>
+            <label>Escapement</label>
+          </option>
+          <option>
+            <label>Age, Sex, Length</label>
+            <value>Age, Sex, Length</value>
+            <value>ASL</value>
+          </option>
+          <option>
+            <label>Brood Tables</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
@@ -412,38 +475,52 @@
     </category>
     <category>
       <name>Habitat</name>
-      <icon>urn:uuid:4a7b36f0-fa8f-4005-8fca-72a4c922ab30</icon>
+      <icon>icon-wave</icon>
       <filter>
         <name>Habitat</name>
-        <rendering>selectionButtons</rendering>
         <filterOptions>
-          <option>Land Use</option>
-          <option>Landscape</option>
-          <option>Temperature</option>
-          <option>Precipitation</option>
+          <option>
+            <label>Land Use</label>
+          </option>
+          <option>
+            <label>Landscape</label>
+          </option>
+          <option>
+            <label>Temperature</label>
+          </option>
+          <option>
+            <label>Precipitation</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
           <searchField>title</searchField>
           <searchField>methods</searchField>
           <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
         </searchFields>
       </filter>
     </category>
     <category>
       <name>Management</name>
-      <icon>Furn:uuid:778127a4-a486-4ac6-bdc1-22bd37afcf6f</icon>
+      <icon>label-paper</icon>
       <filter>
         <name>Management</name>
-        <rendering>selectionButtons</rendering>
         <filterOptions>
-          <option>Harvest</option>
-          <option>Governance</option>
-          <option>Subsistence</option>
-          <option>Hatcheries</option>
-          <option>Commercial</option>
+          <option>
+            <label>Harvest</label>
+          </option>
+          <option>
+            <label>Governance</label>
+          </option>
+          <option>
+            <label>Subsistence</label>
+          </option>
+          <option>
+            <label>Hatcheries</label>
+          </option>
+          <option>
+            <label>Commercial</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
@@ -457,14 +534,21 @@
     </category>
     <category>
       <name>Human Dimensions</name>
-      <icon>urn:uuid:74796f5a-4c7a-4d1b-92d2-5bce7ae64e0b</icon>
+      <icon>icon-man</icon>
       <filter>
         <name>Human Dimensions</name>
-        <rendering>selectionButtons</rendering>
         <filterOptions>
-          <option>Surveys</option>
-          <option>Census/Demographic</option>
-          <option>Economic</option>
+          <option>
+            <label>Surveys</label>
+          </option>
+          <option>
+            <label>Census/Demographic</label>
+            <value>Census/Demographic</value>
+            <value>Census</value>
+          </option>
+          <option>
+            <label>Economic</label>
+          </option>
         </filterOptions>
         <searchFields>
           <searchField>abstract</searchField>
