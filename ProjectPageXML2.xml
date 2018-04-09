@@ -321,7 +321,7 @@
       </filter>
       <filter>
         <name>SASAP Region</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Alaska Peninsula &amp; Aleutian Islands</label>
           </option>
@@ -373,7 +373,7 @@
       </filter>
       <filter>
         <name>ADFG Management Area</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>>Arctic-Yukon-Kuskokwim</label>
           </option>
@@ -402,7 +402,7 @@
       <icon>icon-fish</icon>
       <filter>
         <name>Species</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Sockeye</label>
             <value>Sockeye</value>
@@ -450,7 +450,7 @@
       <icon>icon-graph</icon>
       <filter>
         <name>Fish Productivity</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Escapement</label>
           </option>
@@ -478,7 +478,7 @@
       <icon>icon-wave</icon>
       <filter>
         <name>Habitat</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Land Use</label>
           </option>
@@ -505,7 +505,7 @@
       <icon>label-paper</icon>
       <filter>
         <name>Management</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Harvest</label>
           </option>
@@ -537,7 +537,7 @@
       <icon>icon-man</icon>
       <filter>
         <name>Human Dimensions</name>
-        <filterOptions>
+        <filterOptions selectionType="many">
           <option>
             <label>Surveys</label>
           </option>
