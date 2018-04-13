@@ -3,7 +3,6 @@
     <collectionID>urn:uuid:a8a14f26-2bc5-4638-8683-3737c2c97015</collectionID>
   </projectCollection>
   <title>State of Alaska's Salmon and People</title>
-  <synopsis>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</synopsis>
   <personnel>
     <individualName>
       <givenName>Courtney</givenName>
@@ -273,14 +272,8 @@
       ![Map](knb.109199.1)]]></markdown>
   </resultsOverview>
   <funding>
-    <fundingDescription>State of Alaska Salmon and People is funded by the Gordon and Betty Moore
-      Foundation.</fundingDescription>
-    <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have
-      been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso,
-      Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have
-      led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated
-      outreach and communication. This work was funded by generous support of the Gordon and Betty
-      Moore Foundation.</acknowledgements>
+    <para>State of Alaska Salmon and People is funded by the Gordon and Betty Moore
+      Foundation.</para>
   </funding>
   <award>State of Alaska Salmon and People (Gordon and Betty Moore Foundation Award 5124)
       <funderName>Gordon and Betty Moore Foundation</funderName>
@@ -296,6 +289,16 @@
     <title>Data Task Forces for Better Synthesis Studies</title>
     <awardUrl>NA</awardUrl>
   </award>
+  <collection>![CDATA[
+        {collection json here}]]
+  </collection>
+  <synopsis>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</synopsis>
+  <acknowledgements>Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have
+      been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso,
+      Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have
+      led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated
+      outreach and communication. This work was funded by generous support of the Gordon and Betty
+      Moore Foundation.</acknowledgements>
   <logos>
     <image>
       <imageBytes> R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 </imageBytes>
@@ -305,260 +308,4 @@
       <imageBytes> R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs= </imageBytes>
     </image>
   </logos>
-  <filterCategories>
-    <category>
-      <name>Geography</name>
-      <icon>icon-globe</icon>
-      <filter>
-        <name>River/system</name>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-      <filter>
-        <name>SASAP Region</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Alaska Peninsula &amp; Aleutian Islands</label>
-          </option>
-          <option>
-            <label>Arctic</label>
-          </option>
-          <option>
-            <label>Bristol Bay</label>
-          </option>
-          <option>
-            <label>Chignik</label>
-          </option>
-          <option>
-            <label>Cook Inlet</label>
-          </option>
-          <option>
-            <label>Copper River</label>
-          </option>
-          <option>
-            <label>Kodiak</label>
-          </option>
-          <option>
-            <label>Kotzebue Sound</label>
-          </option>
-          <option>
-            <label>Kuskokwim</label>
-          </option>
-          <option>
-            <label>Norton Sound</label>
-          </option>
-          <option>
-            <label>Prince William Sound</label>
-          </option>
-          <option>
-            <label>Southeast</label>
-          </option>
-          <option>
-            <label>Yukon</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-      <filter>
-        <name>ADFG Management Area</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>>Arctic-Yukon-Kuskokwim</label>
-          </option>
-          <option>
-            <label>Arctic-Yukon-Kuskokwim</label>
-          </option>
-          <option>
-            <label>Southeast Region</label>
-          </option>
-          <option>
-            <label>Westward Region</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-    </category>
-    <category>
-      <name>Species</name>
-      <icon>icon-fish</icon>
-      <filter>
-        <name>Species</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Sockeye</label>
-            <value>Sockeye</value>
-            <value>Oncorhynchus nerka</value>
-            <value>nerka</value>
-          </option>
-          <option>
-            <label>Chinook</label>
-            <value>Chinook</value>
-            <value>Oncorhynchus tshawytscha</value>
-            <value>tshawytscha</value>
-          </option>
-          <option>
-            <label>Coho</label>
-            <value>Coho</value>
-            <value>Oncorhynchus kisutch</value>
-            <value>kisutch</value>
-          </option>
-          <option>
-            <label>Chum</label>
-            <value>Chum</value>
-            <value>Oncorhynchus keta</value>
-            <value>keta</value>
-          </option>
-          <option>
-            <label>Pink</label>
-            <value>Pink</value>
-            <value>Oncorhynchus gorbuscha</value>
-            <value>gorbuscha</value>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-          <searchField>species</searchField>
-        </searchFields>
-      </filter>
-    </category>
-    <category>
-      <name>Fish Producitivity</name>
-      <icon>icon-graph</icon>
-      <filter>
-        <name>Fish Productivity</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Escapement</label>
-          </option>
-          <option>
-            <label>Age, Sex, Length</label>
-            <value>Age, Sex, Length</value>
-            <value>ASL</value>
-          </option>
-          <option>
-            <label>Brood Tables</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-    </category>
-    <category>
-      <name>Habitat</name>
-      <icon>icon-wave</icon>
-      <filter>
-        <name>Habitat</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Land Use</label>
-          </option>
-          <option>
-            <label>Landscape</label>
-          </option>
-          <option>
-            <label>Temperature</label>
-          </option>
-          <option>
-            <label>Precipitation</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-        </searchFields>
-      </filter>
-    </category>
-    <category>
-      <name>Management</name>
-      <icon>label-paper</icon>
-      <filter>
-        <name>Management</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Harvest</label>
-          </option>
-          <option>
-            <label>Governance</label>
-          </option>
-          <option>
-            <label>Subsistence</label>
-          </option>
-          <option>
-            <label>Hatcheries</label>
-          </option>
-          <option>
-            <label>Commercial</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-    </category>
-    <category>
-      <name>Human Dimensions</name>
-      <icon>icon-man</icon>
-      <filter>
-        <name>Human Dimensions</name>
-        <filterOptions selectionType="many">
-          <option>
-            <label>Surveys</label>
-          </option>
-          <option>
-            <label>Census/Demographic</label>
-            <value>Census/Demographic</value>
-            <value>Census</value>
-          </option>
-          <option>
-            <label>Economic</label>
-          </option>
-        </filterOptions>
-        <searchFields>
-          <searchField>abstract</searchField>
-          <searchField>title</searchField>
-          <searchField>methods</searchField>
-          <searchField>keywords</searchField>
-          <searchField>attributeName</searchField>
-          <searchField>attributeDefinition</searchField>
-        </searchFields>
-      </filter>
-    </category>
-  </filterCategories>
 </project>
