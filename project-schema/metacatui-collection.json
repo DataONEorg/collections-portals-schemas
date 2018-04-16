@@ -1,0 +1,141 @@
+{
+  "$schema": "eml://ecoinformatics.org/collections",
+  "$id": "http://ecoinformatics.org/collections",
+  "title": "Collection",
+  "description": "A collection of datasets",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for a collection",
+      "type": "string"
+    },
+    "name": {
+      "description": "Unique name of collection",
+      "type": "string"
+    },
+    "label": {
+      "description": "Full title/label to describe the collection",
+      "type": "string"
+    },
+    "synopsis": {
+      "description": "Brief description of the purpose of the collection",
+      "type": "string"
+    },
+    "definition": {
+      "type": "object",
+      "oneOf": [
+        {
+          "list_of_identifiers": {
+            "description": "List of data package PIDs.",
+            "type": "array",
+            "maxItems": 20
+          }
+        },
+        {
+          "$ref": "#/definitions/category"
+        }
+      ]
+    },
+    "filterCategories": {
+      "type": "array",
+      "manyOf": [
+        {
+          "$ref": "#/definitions/category"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "definition"
+  ],
+  "definitions": {
+    "category": {
+      "type": "object",
+      "$id": "/definitions/category",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "filters": {
+          "type": "array",
+          "manyOf": [
+          {
+            "$ref": "#/definitions/filter"
+          }
+        ]
+      }
+      },
+      "required": ["filters"]
+    },
+    "filter": {
+      "type": "object",
+      "$id": "/definitions/filter",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "display": {
+          "type": "boolean",
+          "default": true
+        },
+        "multiselect": {
+          "type": "boolean",
+          "default": true
+        },
+        "searchFields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "searchSubstrings": {
+          "type": "boolean",
+          "default": false
+        },
+        "isnumeric": {
+          "type": "boolean",
+          "default": false
+        },
+        "min": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        },
+        "exclude": {
+          "type": "boolean",
+          "default": true
+        },
+        "manyOf": [
+          {
+            "title": "values",
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          }
+        ]
+      },
+      "required": [
+        "label",
+        "searchFields"
+      ]
+    }
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "id": "urn:uuid:cfee4086-62cf-482b-b1c6-b7194bfd095b",
+  "name": "SASAP",
+  "label": "State of Alaska's Salmona and People",
+  "synposis": "Collection of original and compiled datasets covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories.",
+  "definition": {
+    "category": {
+      "label": "SASAP Project Definition",
+      "values": {
+        "label": "SASAP",
+        "value": "SASAP"
+      },
+      "searchFields": "projectKeyword"
+    }
+  },
+  "filterCategories": [
+    {
+      "label": "geography",
+      "icon": "globe",
+      "filters": [
+        {
+          "id": "id:1242429",
+          "label": "River/System",
+          "description": "Rivers or river systems",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords"
+          ]
+        },
+        {
+          "id": "id:23131",
+          "label": "SASAP Region",
+          "description": "Regions as delineated by SASAP",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords",
+            "attributeName",
+            "attributeDefinition"
+          ],
+          "values": [
+            {
+              "label": "Alaska Peninsula and Aleutian Islands",
+              "value": "Alaska Peninsula and Aleutian Islands"
+            },
+            {
+              "label": "Arctic",
+              "value": "Arctic"
+            },
+            {
+              "label": "Bristol Bay",
+              "value": "Bristol Bay"
+            },
+            {
+              "label": "Chignik",
+              "value": "Chignik"
+            },
+            {
+              "label": "Copper River",
+              "value": "Copper River"
+            },
+            {
+              "label": "Kodiak",
+              "value": "Kodiak"
+            },
+            {
+              "label": "Kotzebue Sound",
+              "value": "Kotzebue Sound"
+            },
+            {
+              "label": "Kuskokwim",
+              "value": "Kuskokwim"
+            },
+            {
+              "label": "Norton Sound",
+              "value": "Norton Sound"
+            },
+            {
+              "label": "Prince William Sound",
+              "value": "Prince William Sound"
+            },
+            {
+              "label": "Southeast",
+              "value": "Southeast"
+            },
+            {
+              "label": "Yukon",
+              "value": "Yukon"
+            }
+          ]
+        },
+        {
+          "id": "id:123456",
+          "label": "ADFG Management Area",
+          "description": "Alaska Department of Fish and Game Management Area",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords",
+            "attributeName",
+            "attributeDefinition"
+          ],
+          "values": [
+            {
+              "label": "Arctic-Yukon-Kuskokwim",
+              "value": "Arctic-Yukon-Kuskokwim"
+            },
+            {
+              "label": "Arctic-Yukon-Kuskokwim",
+              "value": "Arctic-Yukon-Kuskokwim"
+            },
+            {
+              "label": "Southeast Region",
+              "value": "Southeast Region"
+            },
+            {
+              "label": "Westward Region",
+              "value": "Westward Region"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "species",
+      "icon": "fish",
+      "filters": [
+        {
+          "id": "id:12421",
+          "label": "Species",
+          "description": "Species of salmon, common names",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords",
+            "taxon"
+          ],
+          "values": [
+            {
+              "label": "Sockeye",
+              "value": [
+                "Sockeye",
+                "Oncorhynchus nerka",
+                "nerka"
+              ]
+            },
+            {
+              "label": "Chinook",
+              "value": [
+                "Chinook",
+                "Oncorhynchus tshawytscha",
+                "tshawytscha"
+              ]
+            },
+            {
+              "label": "Coho",
+              "value": [
+                "Coho",
+                "Oncorhynchus kisutch",
+                "kisutch"
+              ]
+            },
+            {
+              "label": "Chum",
+              "value": [
+                "Chum",
+                "Oncorhynchus keta",
+                "keta"
+              ]
+            },
+            {
+              "label": "Pink",
+              "value": [
+                "Pink",
+                "Oncorhynchus gorbuscha",
+                "gorbuscha"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Fish Productivity",
+      "icon": "graph",
+      "filters": [
+        {
+          "id": "id:535241",
+          "label": "Fish Productivity",
+          "description": "Escapement, ASL, or brood table information",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords"
+          ],
+          "values": [
+            {
+              "label": "Escapement",
+              "value": "Escapement"
+            },
+            {
+              "label": "Age, Sex, Length",
+              "value": [
+                "Age, Sex, Length",
+                "ASL"
+              ]
+            },
+            {
+              "label": "Brood Tables",
+              "value": "Brood Tables"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Habitat",
+      "icon": "wave",
+      "filters": [
+        {
+          "id": "id:12412",
+          "label": "Habitat",
+          "description": "Search of habitat variables",
+          "display": true,
+          "searchFields": [
+            "abstract",
+            "methods",
+            "title",
+            "keywords"
+          ]
+        }
+      ],
+      "values": [
+        {
+          "label": "Land Use",
+          "value": "Land Use"
+        },
+        {
+          "label": "Landscape",
+          "value": "Landscape"
+        },
+        {
+          "label": "Temperature",
+          "value": "Temperature"
+        },
+        {
+          "label": "Precipitation",
+          "value": "Precipitation"
+        }
+      ]
+    },
+    {
+      "label": "Management",
+      "icon": "paper",
+      "filters": {
+        "id": "id:12412",
+        "label": "Management",
+        "description": "Management",
+        "display": true,
+        "searchFields": [
+          "abstract",
+          "methods",
+          "title",
+          "keywords"
+        ],
+        "values": [
+          {
+            "label": "Harvest",
+            "value": "Harvest"
+          },
+          {
+            "label": "Governance",
+            "value": "Governance"
+          },
+          {
+            "label": "Subsistence",
+            "value": "Subsistence"
+          },
+          {
+            "label": "Hatcheries",
+            "value": "Hatcheries"
+          },
+          {
+            "label": "Commercial",
+            "value": "Commercial"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Human Dimensions",
+      "icon": "man",
+      "filters": {
+        "id": "id:325235",
+        "label": "Human Dimensions",
+        "description": "Human Dimensions",
+        "display": true,
+        "searchFields": [
+          "abstract",
+          "methods",
+          "title",
+          "keywords"
+        ],
+        "values": [
+          {
+            "label": "Surveys",
+            "value": [
+              "Surveys",
+              "Survey"
+            ]
+          },
+          {
+            "label": "Census/Demographic",
+            "value": [
+              "Census/Demographic",
+              "Census",
+              "Demographic"
+            ]
+          },
+          {
+            "label": "Economic",
+            "value": "Economic"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Data attribute",
+      "icon": "table",
+      "filters": {
+        "id": "id:1",
+        "label": "density, length, etc",
+        "display": true,
+        "searchFields": [
+          "attributeName",
+          "attributeLabel"
+        ]
+      }
+    },
+    {
+      "label": "Data files",
+      "icon": "data-table",
+      "filters": {
+        "id": "id:2",
+        "label": "Data files",
+        "display": true,
+        "searchFields": "documents",
+        "values": {
+          "label": "Only results with data",
+          "value": true
+        }
+      }
+    },
+    {
+      "label": "Creator",
+      "icon": "user",
+      "filters": {
+        "id": "id:3",
+        "label": "Name",
+        "display": true,
+        "searchFields": "originText"
+      }
+    },
+    {
+      "label": "Year",
+      "icon": "calendar",
+      "filters": [
+        {
+          "id": "id:4",
+          "label": "Year",
+          "display": true,
+          "isnumeric": true,
+          "min": 1800,
+          "max": 2018,
+          "searchFields": [
+            "beginDate",
+            "endDate"
+          ]
+        },
+        {
+          "id": "id:5",
+          "label": "Data Coverage",
+          "display": true,
+          "isnumeric": true,
+          "searchFields": [
+            "beginDate",
+            "endDate"
+          ],
+          "values": {
+            "label": "Data coverage",
+            "value": true
+          }
+        },
+        {
+          "id": "id:6",
+          "label": "Publish Year",
+          "display": true,
+          "isnumeric": true,
+          "searchFields": [
+            "datePublished",
+            "dateUploaded"
+          ],
+          "values": {
+            "label": "Publish Year",
+            "value": true
+          }
+        }
+      ]
+    },
+    {
+      "label": "Identifier",
+      "icon": "bullseye",
+      "filters": {
+        "id": "id:7",
+        "label": "DOI or ID",
+        "display": false,
+        "searchFields": [
+          "id",
+          "documents",
+          "resourceMap"
+        ]
+      }
+    },
+    {
+      "label": "Taxon",
+      "icon": "sitemap",
+      "filters": {
+        "id": "id:8",
+        "label": "Class, family, etc.",
+        "display": true,
+        "searchFields": [
+          "kingdom",
+          "phylum",
+          "class",
+          "order",
+          "family",
+          "genus",
+          "species"
+        ]
+      }
+    },
+    {
+      "label": "Location",
+      "icon": "globe",
+      "filters": {
+        "id": "id:9",
+        "label": "Location",
+        "display": true,
+        "searchFields": "siteText"
+      }
+    },
+    {
+      "label": "Search",
+      "filters": {
+        "id": "id:9",
+        "label": "Search phrase",
+        "display": true,
+        "searchFields": "*"
+      }
+    }
+  ]
+}
