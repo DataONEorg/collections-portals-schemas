@@ -4,16 +4,24 @@
   "label": "State of Alaska's Salmona and People",
   "synposis": "Collection of original and compiled datasets covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories.",
   "definition": {
-    "category": {
-      "label": "SASAP Project Definition",
-      "values": {
-        "label": "SASAP",
-        "value": "SASAP"
-      },
-      "searchFields": "projectKeyword"
+    "listOfIdentifiers": [
+      "urn:uuid:153fddab-43d5-4b5e-a84d-23611998e1dd",
+      "urn:uuid:17d7ef0e-fb78-48ec-9286-7310d17ec187"
+    ],
+    "listOfFilterGroups": {
+      "filterGroup": {
+        "filter": {
+          "enabled": true,
+          "display": false,
+          "searchFields": "projectKeyword",
+          "values": {
+            "value": "SASAP"
+          }
+        }
+      }
     }
   },
-  "filterCategories": [
+  "optionalFilterGroups": [
     {
       "label": "geography",
       "icon": "globe",
@@ -23,11 +31,30 @@
           "label": "River/System",
           "description": "Rivers or river systems",
           "display": true,
+          "enabled": true,
+          "multiselect": true,
+          "searchType": "OR",
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            }
           ]
         },
         {
@@ -35,13 +62,40 @@
           "label": "SASAP Region",
           "description": "Regions as delineated by SASAP",
           "display": true,
+          "enabled": true,
+          "multiselect": true,
+          "searchType": "OR",
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords",
-            "attributeName",
-            "attributeDefinition"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "attributeName",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "attributeDefinition",
+              "substring": "contains"
+            }
           ],
           "values": [
             {
@@ -99,13 +153,40 @@
           "label": "ADFG Management Area",
           "description": "Alaska Department of Fish and Game Management Area",
           "display": true,
+          "enabled": true,
+          "multiselect": true,
+          "searchType": "OR",
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords",
-            "attributeName",
-            "attributeDefinition"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "attributeName",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "attributeDefinition",
+              "substring": "contains"
+            }
           ],
           "values": [
             {
@@ -137,12 +218,34 @@
           "label": "Species",
           "description": "Species of salmon, common names",
           "display": true,
+          "enabled": true,
+          "multiselect": false,
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords",
-            "taxon"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "taxon",
+              "substring": "contains"
+            }
           ],
           "values": [
             {
@@ -198,11 +301,29 @@
           "label": "Fish Productivity",
           "description": "Escapement, ASL, or brood table information",
           "display": true,
+          "enabled": true,
+          "multiselect": false,
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            }
           ],
           "values": [
             {
@@ -233,11 +354,29 @@
           "label": "Habitat",
           "description": "Search of habitat variables",
           "display": true,
+          "enabled": true,
+          "multiselect": false,
           "searchFields": [
-            "abstract",
-            "methods",
-            "title",
-            "keywords"
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            }
           ]
         }
       ],
@@ -268,11 +407,29 @@
         "label": "Management",
         "description": "Management",
         "display": true,
+        "enabled": true,
+        "multiselect": false,
         "searchFields": [
-          "abstract",
-          "methods",
-          "title",
-          "keywords"
+          {
+            "namespace": "solr",
+            "field": "abstract",
+            "substring": "contains"
+          },
+          {
+            "namespace": "eml",
+            "field": "methods",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "title",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "keywords",
+            "substring": "contains"
+          }
         ],
         "values": [
           {
@@ -306,11 +463,29 @@
         "label": "Human Dimensions",
         "description": "Human Dimensions",
         "display": true,
+        "enabled": true,
+        "multiselect": false,
         "searchFields": [
-          "abstract",
-          "methods",
-          "title",
-          "keywords"
+          {
+            "namespace": "solr",
+            "field": "abstract",
+            "substring": "contains"
+          },
+          {
+            "namespace": "eml",
+            "field": "methods",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "title",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "keywords",
+            "substring": "contains"
+          }
         ],
         "values": [
           {
@@ -342,9 +517,18 @@
         "id": "id:1",
         "label": "density, length, etc",
         "display": true,
+        "enabled": true,
         "searchFields": [
-          "attributeName",
-          "attributeLabel"
+          {
+            "namespace": "solr",
+            "field": "attributeName",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "attributeLabel",
+            "substring": "contains"
+          }
         ]
       }
     },
@@ -355,7 +539,13 @@
         "id": "id:2",
         "label": "Data files",
         "display": true,
-        "searchFields": "documents",
+        "enabled": true,
+        "searchFields":
+        {
+          "namespace": "solr",
+          "field": "documents",
+          "substring": "contains"
+        },
         "values": {
           "label": "Only results with data",
           "value": true
@@ -369,7 +559,13 @@
         "id": "id:3",
         "label": "Name",
         "display": true,
-        "searchFields": "originText"
+        "enabled": true,
+        "searchFields":
+        {
+          "namespace": "solr",
+          "field": "originText",
+          "substring": "contains"
+        }
       }
     },
     {
@@ -380,22 +576,39 @@
           "id": "id:4",
           "label": "Year",
           "display": true,
-          "isnumeric": true,
-          "min": 1800,
-          "max": 2018,
+          "enabled": true,
+          "isDate": true,
+          "minDate": "1800-01-01",
+          "maxDate": "2018-01-01",
           "searchFields": [
-            "beginDate",
-            "endDate"
+            {
+              "namespace": "solr",
+              "field": "beginDate",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "endDate",
+              "substring": "contains"
+            }
           ]
         },
         {
           "id": "id:5",
           "label": "Data Coverage",
           "display": true,
-          "isnumeric": true,
+          "enabled": true,
           "searchFields": [
-            "beginDate",
-            "endDate"
+            {
+              "namespace": "solr",
+              "field": "beginDate",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "endDate",
+              "substring": "contains"
+            }
           ],
           "values": {
             "label": "Data coverage",
@@ -406,10 +619,18 @@
           "id": "id:6",
           "label": "Publish Year",
           "display": true,
-          "isnumeric": true,
+          "enabled": true,
           "searchFields": [
-            "datePublished",
-            "dateUploaded"
+            {
+              "namespace": "solr",
+              "field": "datePublished",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "dateUploaded",
+              "substring": "contains"
+            }
           ],
           "values": {
             "label": "Publish Year",
@@ -425,10 +646,23 @@
         "id": "id:7",
         "label": "DOI or ID",
         "display": false,
+        "enabled": false,
         "searchFields": [
-          "id",
-          "documents",
-          "resourceMap"
+          {
+            "namespace": "solr",
+            "field": "id",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "documents",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "resourceMap",
+            "substring": "contains"
+          }
         ]
       }
     },
@@ -439,14 +673,43 @@
         "id": "id:8",
         "label": "Class, family, etc.",
         "display": true,
+        "enabled": true,
         "searchFields": [
-          "kingdom",
-          "phylum",
-          "class",
-          "order",
-          "family",
-          "genus",
-          "species"
+          {
+            "namespace": "solr",
+            "field": "kingdom",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "phylum",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "class",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "order",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "family",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "genus",
+            "substring": "contains"
+          },
+          {
+            "namespace": "solr",
+            "field": "species",
+            "substring": "contains"
+          }
         ]
       }
     },
@@ -457,7 +720,13 @@
         "id": "id:9",
         "label": "Location",
         "display": true,
-        "searchFields": "siteText"
+        "enabled": true,
+        "searchFields":
+        {
+          "namespace": "solr",
+          "field": "siteText",
+          "substring": "contains"
+        }
       }
     },
     {
@@ -466,7 +735,19 @@
         "id": "id:9",
         "label": "Search phrase",
         "display": true,
-        "searchFields": "*"
+        "enabled": true,
+        "searchFields": [
+          {
+            "namespace": "solr",
+            "field": "*",
+            "substring": "contains"
+          },
+          {
+            "namespace": "eml",
+            "field": "*",
+            "substring": "contains"
+          }    
+        ]
       }
     }
   ]

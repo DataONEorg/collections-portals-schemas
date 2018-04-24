@@ -2,58 +2,51 @@
   "$schema": "eml://ecoinformatics.org/collections",
   "$id": "http://ecoinformatics.org/collections",
   "title": "Collection",
-  "description": "A collection of datasets",
   "type": "object",
   "properties": {
     "id": {
-      "description": "The unique identifier for a collection",
       "type": "string"
     },
     "name": {
-      "description": "Unique name of collection",
       "type": "string"
     },
     "label": {
-      "description": "Full title/label to describe the collection",
       "type": "string"
     },
     "synopsis": {
-      "description": "Brief description of the purpose of the collection",
       "type": "string"
     },
     "definition": {
       "type": "object",
-      "oneOf": [
-        {
-          "list_of_identifiers": {
-            "description": "List of data package PIDs.",
-            "type": "array",
-            "maxItems": 20
-          }
+      "properties": {
+        "listOfIdentifiers": {
+          "type": "array",
         },
-        {
-          "$ref": "#/definitions/category"
+        "listOfFilterGroups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/filterGroup"
+          }
         }
-      ]
+      }
     },
-    "filterCategories": {
+    "optionalFilterGroups": {
       "type": "array",
-      "manyOf": [
-        {
-          "$ref": "#/definitions/category"
-        }
-      ]
+      "items": {
+        "type": "object",
+        "$ref": "#/definitions/filterGroup"
+      }
     }
   },
   "required": [
     "id",
-    "name",
-    "definition"
+    "name"
   ],
   "definitions": {
-    "category": {
+    "filterGroup": {
       "type": "object",
-      "$id": "/definitions/category",
+      "$id": "/definitions/filterGroup",
       "properties": {
         "label": {
           "type": "string"
@@ -61,16 +54,22 @@
         "icon": {
           "type": "string"
         },
+        "searchType": {
+          "type": "string",
+          "enum": ["AND", "OR"],
+          "default": "AND"
+        },
         "filters": {
           "type": "array",
-          "manyOf": [
-          {
+          "items": {
+            "type": "object",
             "$ref": "#/definitions/filter"
           }
-        ]
-      }
+        }
       },
-      "required": ["filters"]
+      "required": [
+        "filters"
+      ]
     },
     "filter": {
       "type": "object",
@@ -85,55 +84,88 @@
         "description": {
           "type": "string"
         },
+        "icon": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
         "display": {
           "type": "boolean",
           "default": true
         },
         "multiselect": {
           "type": "boolean",
-          "default": true
+          "default": false
+        },
+        "searchType": {
+          "type": "string",
+          "enum": ["AND", "OR"],
+          "default": "OR"
         },
         "searchFields": {
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "namespace": {
+                "type": "string"
+              },
+              "field": {
+                "type": "string"
+              },
+              "substring": {
+                "type": "string",
+                "enum": [
+                  "beginsWith",
+                  "endsWith",
+                  "contains"
+                ]
+              }
+            }
           }
-        },
-        "searchSubstrings": {
-          "type": "boolean",
-          "default": false
         },
         "isnumeric": {
           "type": "boolean",
           "default": false
         },
-        "min": {
+        "numericMin": {
           "type": "number"
         },
-        "max": {
+        "numericMax": {
           "type": "number"
         },
-        "exclude": {
+        "isDate": {
+          "type": "boolean"
+        },
+        "dateMin": {
+          "type": "date-time"
+        },
+        "dateMax": {
+          "type": "date-time"
+        },
+        "negate": {
           "type": "boolean",
           "default": true
         },
-        "manyOf": [
-          {
-            "title": "values",
+        "values": {
+          "type": "array",
+          "items": {
             "type": "object",
             "properties": {
               "label": {
                 "type": "string"
               },
               "value": {
-                "type": "string"
+                "type": "array"
               }
             }
           }
-        ]
+        }
       },
       "required": [
-        "label",
+        "enabled",
         "searchFields"
       ]
     }

@@ -1,0 +1,38 @@
+Collection: Collection of data packages
+  id: Unique identifier for a collection
+  name: Title of the collections
+  label: Full title/label that will be rendered to describe the collection
+  synopsis: Brief description of the purpose of the collection
+  definition: Datasets that define the collection. List of PIDs and/or one or more filterGroups.
+      listOfIdentifiers: Array of data package PIDs
+      filterGroup: Group of filters that can be applied to packages
+
+filterGroup: A group of filters
+  label: Label that describes the group of filters (example: Geography)
+  icon: Icon that represents the group of filters
+  searchType: Specify if filters should use AND or OR logic in query construction among filters within the group (eg River=="Copper River" AND Sasap.Region=="AK Peninsula")
+  filters: Array of filters in filter group
+
+filter: A set of search terms and values used to filter data packages
+  id: Unique id to set directly on the Backbone model
+  label: The string that will display in the UI for this filter
+  description: Description of filter (used for tooltips)
+  icon: Reference to an icon for the filter
+  enabled: If true, this filter will be used to subset datasets on the backend whether or not it is visible in the UI
+  display: If true, will be displayed as a filter choice in the UI
+  multiselect: If true, can select multiple values to query
+  searchType: Specify if values should be AND or OR'ed in query - only applicable to multiselect options
+  searchFields: Array of search field objects
+    namespace: Index/namespace to query
+    field: name of field/attribute to query
+    substring: If set to true, will wrap the search values in wildcards to search for substrings.
+               Options are beginsWith, endsWith, contains
+  isNumeric: If set to true, indicates this filter is for a numeric Solr field and will display as a slider (e.g. Year filter)
+  numericMin: Minimum value for numeric slider
+  numericMax: Max value for numeric slider
+  isDate: If set to true, indicates this filter is for a date Solr Field
+  dateMin: Minimum value for date slider
+  dateMax: Max value for date slider
+  negate: If set to true, will include the "-" character to exclude documents matching this filter from search results (e.g. -obsoletedBy:*)
+  values: Array of objects containing labels to be rendered and values to be searchFields. If no values exist, filter will be rendered a search box.
+    label: label that is displayed in dropdown, checkbox, etc.
