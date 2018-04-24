@@ -4,16 +4,24 @@
   "label": "State of Alaska's Salmona and People",
   "synposis": "Collection of original and compiled datasets covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories.",
   "definition": {
-    "category": {
-      "label": "SASAP Project Definition",
-      "values": {
-        "label": "SASAP",
-        "value": "SASAP"
-      },
-      "searchFields": "projectKeyword"
+    "listOfIdentifiers": [
+      "urn:uuid:153fddab-43d5-4b5e-a84d-23611998e1dd",
+      "urn:uuid:17d7ef0e-fb78-48ec-9286-7310d17ec187"
+    ],
+    "listOfFilterGroups": {
+      "filterGroup": {
+        "filter": {
+          "enabled": true,
+          "display": false,
+          "searchFields": "projectKeyword",
+          "values": {
+            "value": "SASAP"
+          }
+        }
+      }
     }
   },
-  "filterCategories": [
+  "optionalFilterGroups": [
     {
       "label": "geography",
       "icon": "globe",
@@ -23,6 +31,7 @@
           "label": "River/System",
           "description": "Rivers or river systems",
           "display": true,
+          "enabled": true,
           "searchFields": [
             "abstract",
             "methods",
