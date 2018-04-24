@@ -32,8 +32,11 @@
           "description": "Rivers or river systems",
           "display": true,
           "enabled": true,
+<<<<<<< HEAD
           "multiselect": true,
           "searchType": "OR",
+=======
+>>>>>>> d71ff5e4c0622bffb483978f5ff3ad2f815d63d2
           "searchFields": [
             {
               "namespace": "solr",
