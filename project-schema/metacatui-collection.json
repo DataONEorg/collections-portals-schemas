@@ -20,7 +20,7 @@
       "type": "object",
       "properties": {
         "listOfIdentifiers": {
-          "type": "array",
+          "type": "array"
         },
         "listOfFilterGroups": {
           "type": "array",
@@ -63,7 +63,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "$ref": "#/definitions/filter"
+            "$ref": "/definitions/filter"
           }
         }
       },
@@ -140,10 +140,10 @@
           "type": "boolean"
         },
         "dateMin": {
-          "type": "date-time"
+          "type": "string"
         },
         "dateMax": {
-          "type": "date-time"
+          "type": "string"
         },
         "negate": {
           "type": "boolean",

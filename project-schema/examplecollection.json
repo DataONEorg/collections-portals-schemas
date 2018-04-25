@@ -8,18 +8,30 @@
       "urn:uuid:153fddab-43d5-4b5e-a84d-23611998e1dd",
       "urn:uuid:17d7ef0e-fb78-48ec-9286-7310d17ec187"
     ],
-    "listOfFilterGroups": {
-      "filterGroup": {
-        "filter": {
-          "enabled": true,
-          "display": false,
-          "searchFields": "projectKeyword",
-          "values": {
-            "value": "SASAP"
+    "listOfFilterGroups": [
+      {
+        "filters": [
+          {
+            "enabled": true,
+            "display": false,
+            "searchFields": [
+              {
+                "namespace": "solr",
+                "field": "projectKeyword",
+                "substring": "beginsWith"
+              }
+            ],
+            "values": [
+              {
+                "value": [
+                  "SASAP"
+                ]
+              }
+            ]
           }
-        }
+        ]
       }
-    }
+    ]
   },
   "optionalFilterGroups": [
     {
@@ -32,11 +44,8 @@
           "description": "Rivers or river systems",
           "display": true,
           "enabled": true,
-<<<<<<< HEAD
           "multiselect": true,
           "searchType": "OR",
-=======
->>>>>>> d71ff5e4c0622bffb483978f5ff3ad2f815d63d2
           "searchFields": [
             {
               "namespace": "solr",
@@ -103,51 +112,75 @@
           "values": [
             {
               "label": "Alaska Peninsula and Aleutian Islands",
-              "value": "Alaska Peninsula and Aleutian Islands"
+              "value": [
+                "Alaska Peninsula and Aleutian Islands"
+              ]
             },
             {
               "label": "Arctic",
-              "value": "Arctic"
+              "value": [
+                "Arctic"
+              ]
             },
             {
               "label": "Bristol Bay",
-              "value": "Bristol Bay"
+              "value": [
+                "Bristol Bay"
+              ]
             },
             {
               "label": "Chignik",
-              "value": "Chignik"
+              "value": [
+                "Chignik"
+              ]
             },
             {
               "label": "Copper River",
-              "value": "Copper River"
+              "value": [
+                "Copper River"
+              ]
             },
             {
               "label": "Kodiak",
-              "value": "Kodiak"
+              "value": [
+                "Kodiak"
+              ]
             },
             {
               "label": "Kotzebue Sound",
-              "value": "Kotzebue Sound"
+              "value": [
+                "Kotzebue Sound"
+              ]
             },
             {
               "label": "Kuskokwim",
-              "value": "Kuskokwim"
+              "value": [
+                "Kuskokwim"
+              ]
             },
             {
               "label": "Norton Sound",
-              "value": "Norton Sound"
+              "value": [
+                "Norton Sound"
+              ]
             },
             {
               "label": "Prince William Sound",
-              "value": "Prince William Sound"
+              "value": [
+                "Prince William Sound"
+              ]
             },
             {
               "label": "Southeast",
-              "value": "Southeast"
+              "value": [
+                "Southeast"
+              ]
             },
             {
               "label": "Yukon",
-              "value": "Yukon"
+              "value": [
+                "Yukon"
+              ]
             }
           ]
         },
@@ -194,19 +227,27 @@
           "values": [
             {
               "label": "Arctic-Yukon-Kuskokwim",
-              "value": "Arctic-Yukon-Kuskokwim"
+              "value": [
+                "Arctic-Yukon-Kuskokwim"
+              ]
             },
             {
               "label": "Arctic-Yukon-Kuskokwim",
-              "value": "Arctic-Yukon-Kuskokwim"
+              "value": [
+                "Arctic-Yukon-Kuskokwim"
+              ]
             },
             {
               "label": "Southeast Region",
-              "value": "Southeast Region"
+              "value": [
+                "Southeast Region"
+              ]
             },
             {
               "label": "Westward Region",
-              "value": "Westward Region"
+              "value": [
+                "Westward Region"
+              ]
             }
           ]
         }
@@ -331,7 +372,9 @@
           "values": [
             {
               "label": "Escapement",
-              "value": "Escapement"
+              "value": [
+                "Escapement"
+              ]
             },
             {
               "label": "Age, Sex, Length",
@@ -342,7 +385,9 @@
             },
             {
               "label": "Brood Tables",
-              "value": "Brood Tables"
+              "value": [
+                "Brood Tables"
+              ]
             }
           ]
         }
@@ -386,190 +431,226 @@
       "values": [
         {
           "label": "Land Use",
-          "value": "Land Use"
+          "value": [
+            "Land Use"
+          ]
         },
         {
           "label": "Landscape",
-          "value": "Landscape"
+          "value": [
+            "Landscape"
+          ]
         },
         {
           "label": "Temperature",
-          "value": "Temperature"
+          "value": [
+            "Temperature"
+          ]
         },
         {
           "label": "Precipitation",
-          "value": "Precipitation"
+          "value": [
+            "Precipitation"
+          ]
         }
       ]
     },
     {
       "label": "Management",
       "icon": "paper",
-      "filters": {
-        "id": "id:12412",
-        "label": "Management",
-        "description": "Management",
-        "display": true,
-        "enabled": true,
-        "multiselect": false,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "abstract",
-            "substring": "contains"
-          },
-          {
-            "namespace": "eml",
-            "field": "methods",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "title",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "keywords",
-            "substring": "contains"
-          }
-        ],
-        "values": [
-          {
-            "label": "Harvest",
-            "value": "Harvest"
-          },
-          {
-            "label": "Governance",
-            "value": "Governance"
-          },
-          {
-            "label": "Subsistence",
-            "value": "Subsistence"
-          },
-          {
-            "label": "Hatcheries",
-            "value": "Hatcheries"
-          },
-          {
-            "label": "Commercial",
-            "value": "Commercial"
-          }
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:12412",
+          "label": "Management",
+          "description": "Management",
+          "display": true,
+          "enabled": true,
+          "multiselect": false,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            }
+          ],
+          "values": [
+            {
+              "label": "Harvest",
+              "value": [
+                "Harvest"
+              ]
+            },
+            {
+              "label": "Governance",
+              "value": [
+                "Governance"
+              ]
+            },
+            {
+              "label": "Subsistence",
+              "value": [
+                "Subsistence"
+              ]
+            },
+            {
+              "label": "Hatcheries",
+              "value": [
+                "Hatcheries"
+              ]
+            },
+            {
+              "label": "Commercial",
+              "value": [
+                "Commercial"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Human Dimensions",
       "icon": "man",
-      "filters": {
-        "id": "id:325235",
-        "label": "Human Dimensions",
-        "description": "Human Dimensions",
-        "display": true,
-        "enabled": true,
-        "multiselect": false,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "abstract",
-            "substring": "contains"
-          },
-          {
-            "namespace": "eml",
-            "field": "methods",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "title",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "keywords",
-            "substring": "contains"
-          }
-        ],
-        "values": [
-          {
-            "label": "Surveys",
-            "value": [
-              "Surveys",
-              "Survey"
-            ]
-          },
-          {
-            "label": "Census/Demographic",
-            "value": [
-              "Census/Demographic",
-              "Census",
-              "Demographic"
-            ]
-          },
-          {
-            "label": "Economic",
-            "value": "Economic"
-          }
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:325235",
+          "label": "Human Dimensions",
+          "description": "Human Dimensions",
+          "display": true,
+          "enabled": true,
+          "multiselect": false,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "abstract",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "methods",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "title",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "keywords",
+              "substring": "contains"
+            }
+          ],
+          "values": [
+            {
+              "label": "Surveys",
+              "value": [
+                "Surveys",
+                "Survey"
+              ]
+            },
+            {
+              "label": "Census/Demographic",
+              "value": [
+                "Census/Demographic",
+                "Census",
+                "Demographic"
+              ]
+            },
+            {
+              "label": "Economic",
+              "value": [
+                "Economic"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Data attribute",
       "icon": "table",
-      "filters": {
-        "id": "id:1",
-        "label": "density, length, etc",
-        "display": true,
-        "enabled": true,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "attributeName",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "attributeLabel",
-            "substring": "contains"
-          }
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:1",
+          "label": "density, length, etc",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "attributeName",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "attributeLabel",
+              "substring": "contains"
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Data files",
       "icon": "data-table",
-      "filters": {
-        "id": "id:2",
-        "label": "Data files",
-        "display": true,
-        "enabled": true,
-        "searchFields":
+      "filters": [
         {
-          "namespace": "solr",
-          "field": "documents",
-          "substring": "contains"
-        },
-        "values": {
-          "label": "Only results with data",
-          "value": true
+          "id": "id:2",
+          "label": "Data files",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "documents",
+              "substring": "contains"
+            }
+          ],
+          "values": [
+            {
+              "label": "Only results with data",
+              "value": [
+                true
+              ]
+            }
+          ]
         }
-      }
+      ]
     },
     {
       "label": "Creator",
       "icon": "user",
-      "filters": {
-        "id": "id:3",
-        "label": "Name",
-        "display": true,
-        "enabled": true,
-        "searchFields":
+      "filters": [
         {
-          "namespace": "solr",
-          "field": "originText",
-          "substring": "contains"
+          "id": "id:3",
+          "label": "Name",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "originText",
+              "substring": "contains"
+            }
+          ]
         }
-      }
+      ]
     },
     {
       "label": "Year",
@@ -613,10 +694,14 @@
               "substring": "contains"
             }
           ],
-          "values": {
-            "label": "Data coverage",
-            "value": true
-          }
+          "values": [
+            {
+              "label": "Data coverage",
+              "value": [
+                true
+              ]
+            }
+          ]
         },
         {
           "id": "id:6",
@@ -635,123 +720,136 @@
               "substring": "contains"
             }
           ],
-          "values": {
-            "label": "Publish Year",
-            "value": true
-          }
+          "values": [
+            {
+              "label": "Publish Year",
+              "value": [
+                true
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "label": "Identifier",
       "icon": "bullseye",
-      "filters": {
-        "id": "id:7",
-        "label": "DOI or ID",
-        "display": false,
-        "enabled": false,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "id",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "documents",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "resourceMap",
-            "substring": "contains"
-          }
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:7",
+          "label": "DOI or ID",
+          "display": false,
+          "enabled": false,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "id",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "documents",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "resourceMap",
+              "substring": "contains"
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Taxon",
       "icon": "sitemap",
-      "filters": {
-        "id": "id:8",
-        "label": "Class, family, etc.",
-        "display": true,
-        "enabled": true,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "kingdom",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "phylum",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "class",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "order",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "family",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "genus",
-            "substring": "contains"
-          },
-          {
-            "namespace": "solr",
-            "field": "species",
-            "substring": "contains"
-          }
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:8",
+          "label": "Class, family, etc.",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "kingdom",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "phylum",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "class",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "order",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "family",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "genus",
+              "substring": "contains"
+            },
+            {
+              "namespace": "solr",
+              "field": "species",
+              "substring": "contains"
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Location",
       "icon": "globe",
-      "filters": {
-        "id": "id:9",
-        "label": "Location",
-        "display": true,
-        "enabled": true,
-        "searchFields":
+      "filters": [
         {
-          "namespace": "solr",
-          "field": "siteText",
-          "substring": "contains"
+          "id": "id:9",
+          "label": "Location",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "siteText",
+              "substring": "contains"
+            }
+          ]
         }
-      }
+      ]
     },
     {
       "label": "Search",
-      "filters": {
-        "id": "id:9",
-        "label": "Search phrase",
-        "display": true,
-        "enabled": true,
-        "searchFields": [
-          {
-            "namespace": "solr",
-            "field": "*",
-            "substring": "contains"
-          },
-          {
-            "namespace": "eml",
-            "field": "*",
-            "substring": "contains"
-          }    
-        ]
-      }
+      "filters": [
+        {
+          "id": "id:9",
+          "label": "Search phrase",
+          "display": true,
+          "enabled": true,
+          "searchFields": [
+            {
+              "namespace": "solr",
+              "field": "*",
+              "substring": "contains"
+            },
+            {
+              "namespace": "eml",
+              "field": "*",
+              "substring": "contains"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
