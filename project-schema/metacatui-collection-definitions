@@ -1,27 +1,17 @@
-<<<<<<< HEAD
 Collection: Collection of data packages
-=======
-Collection: Collection of datasets
->>>>>>> d71ff5e4c0622bffb483978f5ff3ad2f815d63d2
   id: Unique identifier for a collection
   name: Title of the collections
   label: Full title/label that will be rendered to describe the collection
   synopsis: Brief description of the purpose of the collection
   definition: Datasets that define the collection. List of PIDs and/or one or more filterGroups.
       listOfIdentifiers: Array of data package PIDs
-      filterGroup: Group of filters that can be applied to packages
+      listOfFilterGroups: Array of groups of filters that can be applied to packages
+  optionalFilterGroups: Array of groups of filters that will be displayed in the UI
 
-<<<<<<< HEAD
 filterGroup: A group of filters
   label: Label that describes the group of filters (example: Geography)
   icon: Icon that represents the group of filters
   searchType: Specify if filters should use AND or OR logic in query construction among filters within the group (eg River=="Copper River" AND Sasap.Region=="AK Peninsula")
-=======
-filterGroup: A group of filters with a common theme.
-  label: Label that describes the group of filters (example: Geography)
-  icon: Icon that represents the group of filters
-  searchType: Specify if filters should use AND or OR logic in query construction among filters (eg species==sockeye and sasap region==AK Peninsula)
->>>>>>> d71ff5e4c0622bffb483978f5ff3ad2f815d63d2
   filters: Array of filters in filter group
 
 filter: A set of search terms and values used to filter data packages
