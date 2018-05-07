@@ -1,0 +1,173 @@
+{
+  "$schema": "eml://ecoinformatics.org/collections",
+  "$id": "http://ecoinformatics.org/collections",
+  "title": "Collection",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "synopsis": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "object",
+      "properties": {
+        "listOfIdentifiers": {
+          "type": "array"
+        },
+        "listOfFilterGroups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/filterGroup"
+          }
+        }
+      }
+    },
+    "optionalFilterGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "$ref": "#/definitions/filterGroup"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ],
+  "definitions": {
+    "filterGroup": {
+      "type": "object",
+      "$id": "/definitions/filterGroup",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "searchType": {
+          "type": "string",
+          "enum": ["AND", "OR"],
+          "default": "AND"
+        },
+        "filters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "/definitions/filter"
+          }
+        }
+      },
+      "required": [
+        "filters"
+      ]
+    },
+    "filter": {
+      "type": "object",
+      "$id": "/definitions/filter",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "display": {
+          "type": "boolean",
+          "default": true
+        },
+        "multiselect": {
+          "type": "boolean",
+          "default": false
+        },
+        "searchType": {
+          "type": "string",
+          "enum": ["AND", "OR"],
+          "default": "OR"
+        },
+        "searchFields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "namespace": {
+                "type": "string"
+              },
+              "field": {
+                "type": "string"
+              },
+              "substring": {
+                "type": "string",
+                "enum": [
+                  "beginsWith",
+                  "endsWith",
+                  "contains"
+                ]
+              }
+            }
+          }
+        },
+        "isnumeric": {
+          "type": "boolean",
+          "default": false
+        },
+        "numericMin": {
+          "type": "number"
+        },
+        "numericMax": {
+          "type": "number"
+        },
+        "isDate": {
+          "type": "boolean"
+        },
+        "dateMin": {
+          "type": "string"
+        },
+        "dateMax": {
+          "type": "string"
+        },
+        "negate": {
+          "type": "boolean",
+          "default": true
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "array"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "enabled",
+        "searchFields"
+      ]
+    }
+  }
+}
