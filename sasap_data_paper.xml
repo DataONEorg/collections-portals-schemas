@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml
+    xmlns:eml="eml://ecoinformatics.org/eml-2.2.0"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0 xsd/eml.xsd"
+    packageId="urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd" system="https://arcticdata.io">
+  <dataset>
+    <title>Sockeye salmon brood tables, northeastern Pacific, 1922-2016.</title>
+    <creator id="147491412692844">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator id="9363437076168534">
+      <individualName>
+        <givenName>Rich</givenName>
+        <surName>Brenner</surName>
+      </individualName>
+      <organizationName>Alaska Department of Fish and Game</organizationName>
+      <electronicMailAddress>richard.brenner@alaska.gov</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Greg</givenName>
+        <surName>Ruggerone</surName>
+      </individualName>
+      <electronicMailAddress>gruggerone@nrccorp.com</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Brendan</givenName>
+        <surName>Connors</surName>
+      </individualName>
+      <electronicMailAddress>Brendan.Connors@dfo-mpo.gc.ca </electronicMailAddress>
+    </creator>
+    <metadataProvider id="3039500420886440">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </metadataProvider>
+    <pubDate>2017-11-20</pubDate>
+    <abstract>
+      <markdown>Brood tables, also called run reconstructions, utilize annual estimates of the total run (commercial catch plus escapement), and samples of ages, to estimate the number of recruits per age class. These data are useful for salmon biologists to understand salmon productivity and salmon life histories. These data can come in a number of different formats, but generally follow the pattern of: rows for each brood year, and columns for the estimated number of fish in each age class. This dataset consists of reformatted and compiled sockeye salmon (*Oncorhynchus nerka*) brood tables from Alaska, British Columbia, and Washington. Although temporal coverage varies by stock, many of the brood tables were updated in 2016, and some have reconstructions dating back to 1922. These datasets were gathered as part of the [State of Alaskan Salmon and People project](https://alaskasalmonandpeople.org/). Source information for the datasets can be found in the SourceInfo.csv file. A description of the merging and quality assurance process can be found in the broodTableProcessing.html file. Productivity (R/S) should not be directly compared among the stocks because some escapement counts are indices. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
+      </markdown>
+    </abstract>
+    <keywordSet>
+      <keyword>sockeye</keyword>
+      <keyword>brood table</keyword>
+      <keyword>run reconstruction</keyword>
+      <keyword>salmon</keyword>
+      <keywordThesaurus>None</keywordThesaurus>
+    </keywordSet>
+    <licensed>
+        <licenseName>NA</licenseName>
+        <url>NA</url>
+        <identifier>NA</identifier>
+    </licensed>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>These data are from rivers of the northeast Pacific (Alaska, British Columbia, and Washington).</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>179.39</westBoundingCoordinate>
+          <eastBoundingCoordinate>-122.127</eastBoundingCoordinate>
+          <northBoundingCoordinate>70.378</northBoundingCoordinate>
+          <southBoundingCoordinate>47.487</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2016</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1922</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+   <purpose>
+        <markdown>
+            The dataset presented here consists of reformatted and compiled brood tables from 48 stocks of sockeye salmon (*Oncorhynchus nerka*) across Alaska, British Columbia, and Washington. Brood tables, also called run reconstructions, utilize annual estimates of the total run (commercial catch plus escapement), and samples of ages, to estimate the number of recruits per age class. These data are useful for salmon biologists to understand salmon productivity and salmon life histories. These data can come in a number of different formats, but generally follow the pattern of: rows for each brood year, and columns for the estimated number of fish in each age class. These datasets were gathered as part of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/), a large collaborative project that seeks to inform salmon management in Alaska by synthesizing data from a wide variety of sources. Source information (i.e. individuals who provided data) for the original datasets can be found in the SourceInfo.csv file. A description of the merging and quality assurance process can be found in the broodTableProcessing.html file, which is rendered from the broodTableProcessing.Rmd file. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3). Productivity (R/S) should not be directly compared among the stocks because some escapement counts are indices.
+        </markdown>
+    </purpose>
+    <introduction>
+        <markdown>
+            Salmon are a critically important natural resource in socioecological systems of Alaska, with integral roles in the cultures, economies, and ecosystems of the state. However, research and management of wild salmon is hampered by the fragmentation of data that could otherwise provide powerful insights into the biology and sustainability of salmon systems if they were integrated. The reconciliation of these datasets is one goal of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/) (SASAP). SASAP consists of several synthesis working groups that are focused on specific questions related to salmon biology and management. One of these working groups, "Interacting Effects of Ocean Climate and At-Sea Competition on Alaskan Salmon", is using long-term salmon monitoring data to predict potential future trends in Alaskan salmon stocks.
+
+            One way of assessing salmon stocks is through the estimation of brood tables, in which the number of recruits from each age class of returning salmon is calculated using age class samples and the total run size (commercial catch plus escapement). The brood table data can then be used for evaluating productivity and viability of a population. Brood tables estimated from monitoring data exist for several salmon stocks across the northeast Pacific. The SASAP Data Task Force, a team organized specifically for data recovery tasks for the SASAP project, extracted these tables from their original reports, reformatted them for consistency (e.g. in column names), and compiled them together in the open-source language R for process documentation and reproducibility.
+        </markdown>
+    </introduction>
+    <gettingStarted>
+        <markdown>
+            This dataset contains 6 files. **BroodTables.csv** is the data file containing compiled brood table data. **StockInfo.csv** contains location and source/acquisition information for each salmon stock, and **SourceInfo.csv** lists the source information (the contact person who provided access to the data). The file **broodTableProcessing.html** is the output produced by the R Markdown file **broodTableProcessing.Rmd**, and it presents the reformatting and quality assurance steps that were taken to produce the "BroodTables.csv" file from the original tables. There is also a metadata file, **broodTable_metadata.xml**, which defines all attributes (i.e., columns) found in the .csv files, as well as other metadata about the overall dataset. The metadata are written in the [Ecological Metadata Language](https://knb.ecoinformatics.org/#external//emlparser/docs/index.html) (EML).
+
+            ## Understanding the brood table
+            If you open BroodTables.csv, you will see 34 columns.
+            * The first three columns contain stock information: the numeric identifier given to a stock, the species (in this dataset *O. nerka* is the only species represented), and the name of the stock, which is typically the name of the water body in which it is found.
+            * The next 6 columns contain location information at different levels of spatial organization (Ocean region, SASAP region, sub-region, etc.) which are defined in the metadata. The latitude and longitude typically represent the location where monitoring data were collected, but may represent the head of the water body if the exact monitoring location was unavailable.
+            * The UseFlag column identifies any rows where we may not want to include the data in an analysis, either because of questions about quality or consistency of the estimation method, or because there was not enough data for age classes from that year.
+            * BroodYear contains the brood year whose age classes are being estimated.
+            * TotalEscapement contains the total escapement value (number of returning fish that were not harvested) for a particular brood year.
+            * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.
+            * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.
+
+            ## Understanding the .Rmd
+            The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
+
+            For details on age class estimation methods used to construct the original brood tables, see the source documents
+        </markdown>
+    </gettingStarted>
+    <acknowledgements>
+        We thank Aaron Dufault, Rich Brenner, Curry Cunningham, Sue Grant, Bronwyn McDonald, Mike Lapointe, Brendan Connors, Kevin Schaberg, Mark Willette, Zachary Liller, Karl English, Jim Irvine, Diana Dobson, M. Stockwell, K. Hyatt, Greg Buck, and Richard Alexander for providing access to data included in this dataset.
+    </acknowledgements>
+    <contact id="1131392445849499">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>Data formatting</title>
+            <para>Brood tables for 48 sockeye salmon stocks were extracted from written reports by Alaska Department of Fish and Game or from .xls files. All tables were examined to determine which columns needed to be consistent in order to compile them together. Reformatting then proceeded in R. Any unncessary or redundant columns were dropped. All brood tables were assigned columns for stock ID, brood year, region, subregion, a use flag based on the QA process, total escapement, and age classes 0.1 through 4.5. If theses columns were already present, they were given a new name for consistency if necessary. If they were absent, then they were generated during the process of compiling the tables together and filled with NAs. Stock ID and UseFlag columns were input manually for each table. When all tables were reformatted, they were compiled with the `bind_rows` function, ensuring that all columns were present. After compiling, we joined the data table with the stock info table (StockInfo.csv) to derive additional location information, dropping columns that were deemed unncessary.
+            </para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <section>
+            <title>Quality assurance</title>
+            <para>Quality assurance steps were also completed programmatically in R. We checked first for acceptable values: that years were numeric and within reasonable bounds with no NAs, that age class columns were integers greater than or equal to zero with no NAs, and that escapement values were numeric values greater than zero. Several calculated values for recruits in the age class columns were real numbers instead of integers, but the data were meant to be interpreted as integers (number of fish) so we rounded all age class values down to the nearest integer. We also checked the total escapement values, some of which had values of zero. Upon examining these values, we found that they did not represent true zeros but instead indicated that no data were available, so we replaced them with NAs. We flagged these rows with "0" in the UseFlag column, because they cannot be used to calculate recruits per spawner.
+            </para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <section>
+            <title>Calculation of small age classes</title>
+            <para>We systematically estimated some minor return age groups in order to include more years that could be analyzed. This procedure involved the most recent year for which an old age group has not yet returned. If age-specific abundance was `NA` and abundance was less than 10% of the total brood return in the previous 2 brood years, then the abundance for that age group was estimated using the mean of the age-specific values from the previous 2 brood years. If the age-specific value to be filled in was greater than 10% of the total brood return, then that value remained `NA`.
+            </para>
+            <para>We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. -------WRITE IT AS AN EQUATION HERE????------- We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
+            </para>
+          </section>
+        </description>
+      </methodStep>
+      <methodStep>
+        <description>
+          <section>
+            <title>Additional quality assurance steps</title>
+            <para>Following the age class infilling procedure, we set the UseFlag value based on whether a row had complete age class estimation, i.e., all major age classes had real values and not NA. Major age classes were those age classes where the long term mean was greater than 1% of the total recruits for that population.
+            ---------EMBED THIS EQUATION HERE SOMEHOW????--------
+            Any rows within major age classes that had NA values present were flagged with "0" in the UseFlag column.
+            </para>
+            <para>Next, we made corrections to specific stocks. We corrected the 1980 escapement value for the Kvichak River stock based on estimates of a mortality event that occurred during extremely high water, and we flagged the pre-1965 years for Black Lake and Chignik Lake because no other stocks have data prior to that year. Coghill River had been flagged because it had only two years of data for a rare age class (1.4), but this is a minor age class so we removed the flag. We also removed the flags for Portage River and Seymour River because they too had some NA values in relatively small age classes.
+            </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>State of Alaska's Salmon and People</title>
+      <personnel>
+        <individualName>
+          <givenName>Matt</givenName>
+          <surName>Jones</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Ian</givenName>
+          <surName>Dutton</surName>
+        </individualName>
+        <organizationName>Nautilus Impact Investing</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Frank</givenName>
+          <surName>Davis</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>principalInvestigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Jeanette</givenName>
+          <surName>Clark</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>dataCoordinator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Jared</givenName>
+          <surName>Kibele</surName>
+        </individualName>
+        <organizationName>NCEAS/UCSB</organizationName>
+        <role>programmer</role>
+      </personnel>
+      <award>
+          <funderName>Gordon and Betty Moore Foundation</funderName>
+          <awardNumber>5124</awardNumber>
+          <title>State of Alaska’s Salmon and People</title>
+      </award>
+      <award>
+          <funderName>Gordon and Betty Moore Foundation</funderName>
+          <awardNumber>5451</awardNumber>
+          <title>Data Task Forces for Better Synthesis Studies</title>
+      </award>
+    </project>
+    <dataTable>
+      <entityName>BroodTables.csv</entityName>
+      <physical scope="document">
+        <objectName>BroodTables.csv</objectName>
+        <size unit="bytes">475640</size>
+        <authentication method="SHA1">140be52c18d112c7e06adb2751f2a6effd622a98</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/csv</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:c747eee7-89fd-44ba-bce1-a14d0670792d</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Stock.ID</attributeName>
+          <attributeDefinition>Unique stock identifier</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>unique stock identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>species of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>species of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Stock</attributeName>
+          <attributeDefinition>Stock name, generally river where stock is found</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Stock name, generally river where stock is found</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Ocean.Region</attributeName>
+          <attributeDefinition>Ocean region</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>WC = West Coast, GOA = Gulf of Alaska, BS = Bering Sea</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Region</attributeName>
+          <attributeDefinition>Region of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Region of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Sub.Region</attributeName>
+          <attributeDefinition>Sub.Region of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sub.Region of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Jurisdiction</attributeName>
+          <attributeDefinition>Management jurisdiction</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Management jurisdiction</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Lat</attributeName>
+          <attributeDefinition>Latitude</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Lon</attributeName>
+          <attributeDefinition>Longitude</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>UseFlag</attributeName>
+          <attributeDefinition>Indicates if data should be used in analysis</attributeDefinition>
+          <measurementScale>
+            <ordinal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>0 = do not use data, 1 = use data</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </ordinal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>BroodYear</attributeName>
+          <attributeDefinition>Brood Year</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no escapement data exist</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TotalEscapement</attributeName>
+          <attributeDefinition>Total escapement value</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R0.1</attributeName>
+          <attributeDefinition>number of recruits in 0.1 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R0.2</attributeName>
+          <attributeDefinition>number of recruits in 0.2 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R0.3</attributeName>
+          <attributeDefinition>number of recruits in 0.3 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R0.4</attributeName>
+          <attributeDefinition>number of recruits in 0.4 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R0.5</attributeName>
+          <attributeDefinition>number of recruits in 0.5 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R1.1</attributeName>
+          <attributeDefinition>number of recruits in 1.1 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R1.2</attributeName>
+          <attributeDefinition>number of recruits in 1.2 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R1.3</attributeName>
+          <attributeDefinition>number of recruits in 1.3 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R1.4</attributeName>
+          <attributeDefinition>number of recruits in 1.4 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R1.5</attributeName>
+          <attributeDefinition>number of recruits in 1.5 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R2.1</attributeName>
+          <attributeDefinition>number of recruits in 2.1 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R2.2</attributeName>
+          <attributeDefinition>number of recruits in 2.2 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R2.3</attributeName>
+          <attributeDefinition>number of recruits in 2.3 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R2.4</attributeName>
+          <attributeDefinition>number of recruits in 2.4 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R3.1</attributeName>
+          <attributeDefinition>number of recruits in 3.1 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R3.2</attributeName>
+          <attributeDefinition>number of recruits in 3.2 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R3.3</attributeName>
+          <attributeDefinition>number of recruits in 3.3 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R3.4</attributeName>
+          <attributeDefinition>number of recruits in 3.4 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R4.1</attributeName>
+          <attributeDefinition>number of recruits in 4.1 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R4.2</attributeName>
+          <attributeDefinition>number of recruits in 4.2 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>R4.3</attributeName>
+          <attributeDefinition>number of recruits in 4.3 age class</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates for this age class</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>TotalRecruits</attributeName>
+          <attributeDefinition>number of total recruits</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>number</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>no valid estimates</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <dataTable>
+      <entityName>StockInfo.csv</entityName>
+      <physical scope="document">
+        <objectName>StockInfo.csv</objectName>
+        <size unit="bytes">16148</size>
+        <authentication method="SHA1">62e39364c79028d6071c94cfff146ac662e698b9</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/csv</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:178c61cc-6119-42c2-9387-5b0b602324d4</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Stock.ID</attributeName>
+          <attributeDefinition>Unique stock identifier</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Unique stock identifier</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Species</attributeName>
+          <attributeDefinition>species of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>species of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Stock</attributeName>
+          <attributeDefinition>Stock name, generally river where stock is found</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Stock name, generally river where stock is found</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Date.data.obtained</attributeName>
+          <attributeDefinition>Date data was obtained; if original data did not specify the day, the day is recorded as 01</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Date.data.incorporated</attributeName>
+          <attributeDefinition>Date data was incorporated into database; if original data did not specify the day, the day is recorded as 01</attributeDefinition>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Ocean.Region</attributeName>
+          <attributeDefinition>Ocean region</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>WC = West Coast, GOA = Gulf of Alaska, BS = Bering Sea</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Region</attributeName>
+          <attributeDefinition>Region of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Region of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Sub.Region</attributeName>
+          <attributeDefinition>Sub.Region of stock</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Sub.Region of stock</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Jurisdiction</attributeName>
+          <attributeDefinition>Management jurisdiction</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Management jurisdiction</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Lat</attributeName>
+          <attributeDefinition>Latitude</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Lon</attributeName>
+          <attributeDefinition>Longitude</attributeDefinition>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Source.ID</attributeName>
+          <attributeDefinition>Source.ID, matches source.ID in source info file</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Source.ID, matches source.ID in source info file</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>Comment..we.will.update.this.later.</attributeName>
+          <attributeDefinition>stock comments</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>stock comments</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>NA</code>
+            <codeExplanation>information not provided/recorded</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <dataTable>
+      <entityName>SourceInfo.csv</entityName>
+      <physical scope="document">
+        <objectName>SourceInfo.csv</objectName>
+        <size unit="bytes">777</size>
+        <authentication method="SHA1">56092cdb6040e95fb48979adc1ed7bcdcd8af0a4</authentication>
+        <dataFormat>
+          <externallyDefinedFormat>
+            <formatName>text/csv</formatName>
+          </externallyDefinedFormat>
+        </dataFormat>
+        <distribution scope="document">
+          <online>
+            <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:47fa131f-f5be-409d-b13b-8d9756a6239e</url>
+          </online>
+        </distribution>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>Source.ID</attributeName>
+          <attributeDefinition>Source.ID as seen in stock info table</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Source.ID as seen in stock info table</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+        <attribute>
+          <attributeName>Source</attributeName>
+          <attributeDefinition>Source description</attributeDefinition>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Source description</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+        </attribute>
+      </attributeList>
+    </dataTable>
+    <otherEntity id="urn:uuid:cecd46e4-095b-4f25-918f-190bea9cd6de" scope="document">
+          <entityName>broodTableProcessing.Rmd</entityName>
+          <physical scope="document">
+            <objectName>broodTableProcessing.Rmd</objectName>
+            <size unit="bytes">19199</size>
+            <authentication method="SHA1">a87eef65e120b0c4bbf640d7095afc6bda931031</authentication>
+            <dataFormat>
+              <externallyDefinedFormat>
+                <formatName>application/R</formatName>
+              </externallyDefinedFormat>
+            </dataFormat>
+            <distribution scope="document">
+              <online>
+                <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:2e1f4408-6cbc-4acd-97b2-a0635a316952</url>
+              </online>
+            </distribution>
+          </physical>
+          <entityType>Other</entityType>
+        </otherEntity>
+        <otherEntity id="urn:uuid:3b2f95ad-7b41-49b5-b272-1f8847218c6a" scope="document">
+          <entityName>broodTableProcessing.html</entityName>
+          <physical scope="document">
+            <objectName>broodTableProcessing.html</objectName>
+            <size unit="bytes">1556476</size>
+            <authentication method="SHA1">dbfcffc75d3036ce302068e8e9bb544aec03cd08</authentication>
+            <dataFormat>
+              <externallyDefinedFormat>
+                <formatName>text/html</formatName>
+              </externallyDefinedFormat>
+            </dataFormat>
+            <distribution scope="document">
+              <online>
+                <url function="download">https://cn.dataone.org/cn/v2/resolve/urn:uuid:c1ef6abb-f0e1-49f6-9705-171bb765366d</url>
+              </online>
+            </distribution>
+          </physical>
+          <entityType>Other</entityType>
+        </otherEntity>
+    <referencePublication>
+        <bibtex>
+            @article{ludwig_2018,
+                title = {Permafrost carbon and nitrogen, Yukon-Kuskokwim Delta, Alaska},
+                url = {http://ecosphere.esa.org/article/yyyy.zzzzzzz},
+                doi = {10.xxxx/yyyy.zzzzzz},
+                journal = {EcoSphere},
+                author = {Ludwig, Sarah},
+                year = {2018}
+            }
+        </bibtex>
+    </referencePublication>
+    <literatureCited>
+        <bibtex>
+        @manual{R,
+            title = {R: A Language and Environment for Statistical Computing},
+            author = {{R Core Team}},
+            organization = {R Foundation for Statistical Computing},
+            address = {Vienna, Austria},
+            year = {2018},
+            url = {https://www.R-project.org/},
+        }
+        </bibtex>
+    </literatureCited>
+  </dataset>
+</eml:eml>
