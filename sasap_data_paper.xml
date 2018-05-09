@@ -75,10 +75,10 @@
       <temporalCoverage>
         <rangeOfDates>
           <beginDate>
-            <calendarDate>2016</calendarDate>
+            <calendarDate>1922</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>1922</calendarDate>
+            <calendarDate>2016</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -111,8 +111,6 @@
 
             ## Understanding the .Rmd
             The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
-
-            For details on age class estimation methods used to construct the original brood tables, see the source documents
         </markdown>
     </gettingStarted>
     <acknowledgements>
@@ -214,11 +212,13 @@
       </personnel>
       <award>
           <funderName>Gordon and Betty Moore Foundation</funderName>
+          <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
           <awardNumber>5124</awardNumber>
           <title>State of Alaska’s Salmon and People</title>
       </award>
       <award>
           <funderName>Gordon and Betty Moore Foundation</funderName>
+          <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
           <awardNumber>5451</awardNumber>
           <title>Data Task Forces for Better Synthesis Studies</title>
       </award>
