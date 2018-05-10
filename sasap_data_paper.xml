@@ -7,14 +7,6 @@
     packageId="urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd" system="https://arcticdata.io">
   <dataset>
     <title>Sockeye salmon brood tables, northeastern Pacific, 1922-2016.</title>
-    <creator id="147491412692844">
-      <individualName>
-        <givenName>Jeanette</givenName>
-        <surName>Clark</surName>
-      </individualName>
-      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
-      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
-    </creator>
     <creator id="9363437076168534">
       <individualName>
         <givenName>Rich</givenName>
@@ -37,6 +29,21 @@
       </individualName>
       <electronicMailAddress>Brendan.Connors@dfo-mpo.gc.ca </electronicMailAddress>
     </creator>
+    <creator id="147491412692844">
+      <individualName>
+        <givenName>Jeanette</givenName>
+        <surName>Clark</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+      <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </creator>
+    <creator>
+      <individualName>
+        <givenName>Stephanie</givenName>
+        <surName>Freund</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
+    </creator>
     <metadataProvider id="3039500420886440">
       <individualName>
         <givenName>Jeanette</givenName>
@@ -44,6 +51,13 @@
       </individualName>
       <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
       <electronicMailAddress>jclark@nceas.ucsb.edu</electronicMailAddress>
+    </metadataProvider>
+    <metadataProvider>
+      <individualName>
+        <givenName>Stephanie</givenName>
+        <surName>Freund</surName>
+      </individualName>
+      <organizationName>National Center for Ecological Analysis and Synthesis</organizationName>
     </metadataProvider>
     <pubDate>2017-11-20</pubDate>
     <abstract>
