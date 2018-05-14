@@ -61,7 +61,7 @@
     </metadataProvider>
     <pubDate>2017-11-20</pubDate>
     <abstract>
-      <markdown>Brood tables, also called run reconstructions, utilize annual estimates of the total run (commercial catch plus escapement), and samples of ages, to estimate the number of recruits per age class. These data are useful for salmon biologists to understand salmon productivity and salmon life histories. These data can come in a number of different formats, but generally follow the pattern of: rows for each brood year, and columns for the estimated number of fish in each age class. This dataset consists of reformatted and compiled sockeye salmon (*Oncorhynchus nerka*) brood tables from Alaska, British Columbia, and Washington. Although temporal coverage varies by stock, many of the brood tables were updated in 2016, and some have reconstructions dating back to 1922. These datasets were gathered as part of the [State of Alaskan Salmon and People project](https://alaskasalmonandpeople.org/). Source information for the datasets can be found in the SourceInfo.csv file. A description of the merging and quality assurance process can be found in the broodTableProcessing.html file. Productivity (R/S) should not be directly compared among the stocks because some escapement counts are indices. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
+      <markdown>Salmon brood tables, also called run reconstructions, utilize annual estimates of the total run (commercial catch plus escapement), and samples of ages, to estimate the number of recruits per age class. These data are useful for salmon biologists to understand salmon productivity and salmon life histories. These data can come in a number of different formats, but generally follow the pattern of: rows for each brood year, and columns for the estimated number of fish in each age class. This dataset consists of reformatted and compiled sockeye salmon (*Oncorhynchus nerka*) brood tables from Alaska, British Columbia, and Washington. Although temporal coverage varies by stock, many of the brood tables were updated in 2016, and some have reconstructions dating back to 1922. These datasets were gathered as part of the [State of Alaskan Salmon and People project](https://alaskasalmonandpeople.org/). Source information for the datasets can be found in the SourceInfo.csv file. A description of the merging and quality assurance process can be found in the broodTableProcessing.html file. Productivity (R/S) should not be directly compared among the stocks because some escapement counts are indices. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
       </markdown>
     </abstract>
     <keywordSet>
@@ -72,9 +72,9 @@
       <keywordThesaurus>None</keywordThesaurus>
     </keywordSet>
     <licensed>
-        <licenseName>NA</licenseName>
-        <url>NA</url>
-        <identifier>NA</identifier>
+        <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+        <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+        <identifier>CC-BY-4.0</identifier>
     </licensed>
     <coverage>
       <geographicCoverage>
@@ -97,18 +97,18 @@
         </rangeOfDates>
       </temporalCoverage>
     </coverage>
-   <purpose>
-        <markdown>
-            The dataset presented here consists of reformatted and compiled brood tables from 48 stocks of sockeye salmon (*Oncorhynchus nerka*) across Alaska, British Columbia, and Washington. Brood tables, also called run reconstructions, utilize annual estimates of the total run (commercial catch plus escapement), and samples of ages, to estimate the number of recruits per age class. These data are useful for salmon biologists to understand salmon productivity and salmon life histories. These data can come in a number of different formats, but generally follow the pattern of: rows for each brood year, and columns for the estimated number of fish in each age class. These datasets were gathered as part of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/), a large collaborative project that seeks to inform salmon management in Alaska by synthesizing data from a wide variety of sources. Source information (i.e. individuals who provided data) for the original datasets can be found in the SourceInfo.csv file. A description of the merging and quality assurance process can be found in the broodTableProcessing.html file, which is rendered from the broodTableProcessing.Rmd file. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3). Productivity (R/S) should not be directly compared among the stocks because some escapement counts are indices.
-        </markdown>
     </purpose>
     <introduction>
         <markdown>
-            Salmon are a critically important natural resource in socioecological systems of Alaska, with integral roles in the cultures, economies, and ecosystems of the state. However, research and management of wild salmon is hampered by the fragmentation of data that could otherwise provide powerful insights into the biology and sustainability of salmon systems if they were integrated. The reconciliation of these datasets is one goal of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/) (SASAP). SASAP consists of several synthesis working groups that are focused on specific questions related to salmon biology and management. One of these working groups, "Interacting Effects of Ocean Climate and At-Sea Competition on Alaskan Salmon", is using long-term salmon monitoring data to predict potential future trends in Alaskan salmon stocks.
+            Salmon are a critically important natural resource in socioecological systems of Alaska, with integral roles in the cultures, economies, and ecosystems of the state. Observed declines in salmon populations and body size have led to growing concern about the sustainability and future of salmon production ([@Ohlberger_et_al_2018], [@Ricker_1981]). However, research and management of wild salmon is hampered by the fragmentation of data that could otherwise provide powerful insights into the biology and sustainability of Pacific salmon systems if they were integrated ([@Hampton_et_al_2013], [@Peterman_2004]). The reconciliation of these datasets is one goal of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/) (SASAP). SASAP consists of several synthesis working groups that are focused on specific questions related to salmon biology and management. One of these working groups, "Interacting Effects of Ocean Climate and At-Sea Competition on Alaskan Salmon", is using long-term salmon monitoring data to predict potential future trends in Alaskan salmon stocks.
 
-            One way of assessing salmon stocks is through the estimation of brood tables, in which the number of recruits from each age class of returning salmon is calculated using age class samples and the total run size (commercial catch plus escapement). The brood table data can then be used for evaluating productivity and viability of a population. Brood tables estimated from monitoring data exist for several salmon stocks across the northeast Pacific. The SASAP Data Task Force, a team organized specifically for data recovery tasks for the SASAP project, extracted these tables from their original reports, reformatted them for consistency (e.g. in column names), and compiled them together in the open-source language R for process documentation and reproducibility.
+            One way of assessing salmon stocks is through the estimation of brood tables, in which the number of recruits from each age class of returning salmon is calculated using age class samples and the total run size (commercial catch plus escapement). The brood table data can then be used for evaluating productivity and viability of a population and for refining management goals (e.g. [@Nelson_et_al_2006]). Brood tables estimated from monitoring data exist for several salmon stocks across the northeast Pacific. The SASAP Data Task Force, a team organized specifically for data recovery tasks for the SASAP project, extracted these tables from their original reports, reformatted them for consistency (e.g. in column names), and compiled them together in the open-source language R for process documentation and reproducibility.
         </markdown>
     </introduction>
+    <purpose>
+         <markdown>
+             The dataset presented here consists of reformatted and compiled brood tables from 48 stocks of sockeye salmon (*Oncorhynchus nerka*) across Alaska, British Columbia, and Washington. These datasets were gathered as part of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/), a large collaborative project that seeks to inform salmon management in Alaska by synthesizing data from a wide variety of sources. Source information (i.e. individuals who provided data) for the original datasets can be found in the SourceInfo.csv file. Although this project focuses on Alaskan salmon management, stocks from British Columbia and Washington are included for examining sockeye salmon population trends more broadly. Regions vary in the number of stocks with data -- while some regions are represented by multiple stocks in the dataset, AYK (Arctic-Yukon-Kuskokwim), northern British Columbia, and Washington have data for only one stock ![Figure 1](https://github.com/smfreund/project-papers/blob/master/stocks_per_region.png). Temporal coverage varies somewhat by stock, ranging from 35 years of data for Goodnews River to 95 years of data for Black Lake and Chignik Lake ![Figure 2](https://github.com/smfreund/project-papers/blob/master/temporal_coverage.png). Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
+         </markdown>
     <gettingStarted>
         <markdown>
             This dataset contains 6 files. **BroodTables.csv** is the data file containing compiled brood table data. **StockInfo.csv** contains location and source/acquisition information for each salmon stock, and **SourceInfo.csv** lists the source information (the contact person who provided access to the data). The file **broodTableProcessing.html** is the output produced by the R Markdown file **broodTableProcessing.Rmd**, and it presents the reformatting and quality assurance steps that were taken to produce the "BroodTables.csv" file from the original tables. There is also a metadata file, **broodTable_metadata.xml**, which defines all attributes (i.e., columns) found in the .csv files, as well as other metadata about the overall dataset. The metadata are written in the [Ecological Metadata Language](https://knb.ecoinformatics.org/#external//emlparser/docs/index.html) (EML).
@@ -1121,25 +1121,78 @@
         </otherEntity>
     <referencePublication>
         <bibtex>
-            @article{ludwig_2018,
-                title = {Permafrost carbon and nitrogen, Yukon-Kuskokwim Delta, Alaska},
-                url = {http://ecosphere.esa.org/article/yyyy.zzzzzzz},
-                doi = {10.xxxx/yyyy.zzzzzz},
-                journal = {EcoSphere},
-                author = {Ludwig, Sarah},
-                year = {2018}
+            @article{Brenner_et_al_2018,
+                author = {Rich Brenner and Greg Ruggerone and Brendan Connors and
+                Jeanette Clark and Stephanie Freund}
+                title = {Sockeye salmon brood tables, northeastern Pacific, 1922-2016},
+                journal = {Knowledge Network for Biocomplexity},
+                year = {2018},
+                url = {https://knb.ecoinformatics.org/#view/urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd},
             }
         </bibtex>
     </referencePublication>
     <literatureCited>
         <bibtex>
+        @article{Hampton_et_al_2013,
+            author = {Stephanie E Hampton and Carly A Strasser and Joshua J Tewksbury
+            and Wendy K Gram and Amber E Budden and Archer L Batcheller and
+            Clifford S Duke and John H Porter},
+            title = {Big data and the future of ecology},
+            journal = {Frontiers in Ecology and the Environment},
+            volume = {11},
+            year = {2013},
+            pages = {156--162},
+            url = {https://doi.org/10.1890/120103},
+            doi = {10.1890/120103}
+        }
+        @techreport{Nelson_et_al_2006,
+            author = {Patricia A Nelson and James J Hasbrouck and Mark J Witteveen
+            and Kenneth A Bouwens and Ivan Vining},
+            title = {Review of salmon escapement goals in Alaska Peninsula and Aleutian Islands
+            management areas report to the Alaska Board of Fisheries, 2004},
+            series = {Fishery Manuscript},
+            volume = {06-03},
+            publisher = {Alaska Department of Fish and Game},
+            address = {Juneau AK},
+            year = {2006}
+        }
+        @article{Ohlberger_et_al_2018,
+            author = {Jan Ohlberger and Eric J Ward and Daniel E Schindler and Bert Lewis},
+            title = {Demographic changes in Chinook salmon across the Northeast Pacific Ocean},
+            journal = {Fish and Fisheries},
+            volume = {19},
+            year = {2018},
+            pages = {533--546},
+            url = {https://doi.org/10.1111/faf.12272}
+            doi = {10.1111/faf.12272}
+        }
+        @article{Peterman_2004,
+            author = {Randall M Peterman},
+            title = {Possible solutions to some challenges facing fisheries scientists and managers},
+            journal = {ICES Journal of Marine Science},
+            volume = {61},
+            year = {2004},
+            pages = {1331--1343},
+            url = {https://doi.org/10.1016/j.icesjms.2004.08.017}
+            doi = {10.1016/j.icesjms.2004.08.017}
+        }
         @manual{R,
             title = {R: A Language and Environment for Statistical Computing},
-            author = {{R Core Team}},
+            author = {R Core Team},
             organization = {R Foundation for Statistical Computing},
             address = {Vienna, Austria},
             year = {2018},
             url = {https://www.R-project.org/},
+        }
+        @article{Ricker_1981,
+            author = {W E Ricker},
+            title = {Changes in the average size and average age of Pacific salmon},
+            journal = {Canadian Journal of Fisheries and Aquatic Sciences},
+            volume = {38},
+            year = {1981},
+            pages = {1636--1656},
+            url = {https://doi.org/10.1139/f81-213}
+            doi = {10.1139/f81-213}
         }
         </bibtex>
     </literatureCited>
