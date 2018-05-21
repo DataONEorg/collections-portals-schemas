@@ -3,7 +3,7 @@
     xmlns:eml="eml://ecoinformatics.org/eml-2.2.0"
     xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0 xsd/eml.xsd"
+    xsi:schemaLocation="/home/sfreund/eml.xsd"
     packageId="urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd" system="https://arcticdata.io">
     <dataset>
         <title>Sockeye salmon brood tables, northeastern Pacific, 1922-2016.</title>
@@ -27,7 +27,7 @@
                 <givenName>Brendan</givenName>
                 <surName>Connors</surName>
             </individualName>
-            <electronicMailAddress>Brendan.Connors@dfo-mpo.gc.ca </electronicMailAddress>
+            <electronicMailAddress>Brendan.Connors@dfo-mpo.gc.ca</electronicMailAddress>
         </creator>
         <creator id="147491412692844">
             <individualName>
@@ -127,44 +127,6 @@
                 * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.
                 * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.
 
-                Table 1.
-                | attribute name  | domain    | unit   | missing value explanation (if NA)     | attribute definition                             |
-                |-----------------|-----------|--------|---------------------------------------|--------------------------------------------------|
-                | Stock.ID        | text      | NA     | NA                                    | unique stock identifier                          |
-                | Species         | text      | NA     | NA                                    | species of stock                                 |
-                | Stock           | text      | NA     | NA                                    | stock name, generally river where stock is found |
-                | Ocean.Region    | text      | NA     | NA                                    | ocean region                                     |
-                | Region          | text      | NA     | NA                                    | region of stock                                  |
-                | Sub.Region      | text      | NA     | NA                                    | subregion of stock                               |
-                | Jurisdiction    | text      | NA     | NA                                    | management jurisdiction                          |
-                | Lat             | numeric   | degree | NA                                    | latitude                                         |
-                | Lon             | numeric   | degree | NA                                    | longitude                                        |
-                | UseFlag         | text      | NA     | NA                                    | indicates if data should be used in analysis     |
-                | BroodYear       | date-time | NA     | no escapement data exist              | brood year                                       |
-                | TotalEscapement | numeric   | number | no valid estimates for this age class | total escapement value                           |
-                | R0.1            | numeric   | number | no valid estimates for this age class | number of recruits in 0.1 age class              |
-                | R0.2            | numeric   | number | no valid estimates for this age class | number of recruits in 0.2 age class              |
-                | R0.3            | numeric   | number | no valid estimates for this age class | number of recruits in 0.3 age class              |
-                | R0.4            | numeric   | number | no valid estimates for this age class | number of recruits in 0.4 age class              |
-                | R0.5            | numeric   | number | no valid estimates for this age class | number of recruits in 0.5 age class              |
-                | R1.1            | numeric   | number | no valid estimates for this age class | number of recruits in 1.1 age class              |
-                | R1.2            | numeric   | number | no valid estimates for this age class | number of recruits in 1.2 age class              |
-                | R1.3            | numeric   | number | no valid estimates for this age class | number of recruits in 1.3 age class              |
-                | R1.4            | numeric   | number | no valid estimates for this age class | number of recruits in 1.4 age class              |
-                | R1.5            | numeric   | number | no valid estimates for this age class | number of recruits in 1.5 age class              |
-                | R2.1            | numeric   | number | no valid estimates for this age class | number of recruits in 2.1 age class              |
-                | R2.2            | numeric   | number | no valid estimates for this age class | number of recruits in 2.2 age class              |
-                | R2.3            | numeric   | number | no valid estimates for this age class | number of recruits in 2.3 age class              |
-                | R2.4            | numeric   | number | no valid estimates for this age class | number of recruits in 2.4 age class              |
-                | R3.1            | numeric   | number | no valid estimates for this age class | number of recruits in 3.1 age class              |
-                | R3.2            | numeric   | number | no valid estimates for this age class | number of recruits in 3.2 age class              |
-                | R3.3            | numeric   | number | no valid estimates for this age class | number of recruits in 3.3 age class              |
-                | R3.4            | numeric   | number | no valid estimates for this age class | number of recruits in 3.4 age class              |
-                | R4.1            | numeric   | number | no valid estimates for this age class | number of recruits in 4.1 age class              |
-                | R4.2            | numeric   | number | no valid estimates for this age class | number of recruits in 4.2 age class              |
-                | R4.3            | numeric   | number | no valid estimates for this age class | number of recruits in 4.3 age class              |
-                | TotalRecruits   | numeric   | number | no valid estimates                    | number of total recruits                         |
-
                 ## Understanding the .Rmd
                 The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
             </markdown>
@@ -204,10 +166,10 @@
                     <section>
                         <title>Calculation of small age classes</title>
                         <markdown>We systematically estimated some minor return age groups in order to include more years that could be analyzed. This procedure involved the most recent year for which an old age group has not yet returned. If the age-specific value to be filled in was greater than 10% of the total brood return, then that value remained `NA`. If age-specific abundance was `NA` and abundance was less than 10% of the total brood return in the previous 2 brood years, then the abundance for that age group was estimated using the mean of the age-specific values from the previous 2 brood years.
-                            $$R_i = \frac{R_i-1 + R_i-2}{2}$$
+                        $$R_i = \frac{R_i-1 + R_i-2}{2}$$
 
-                            We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
-                        </para>
+                        We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
+                        </markdwon>
                     </section>
                 </description>
             </methodStep>
@@ -216,11 +178,11 @@
                     <section>
                         <title>Additional quality assurance steps</title>
                         <markdown>Following the age class infilling procedure, we set the UseFlag value based on whether a row had complete age class estimation, i.e., all major age classes had real values and not NA. Major age classes were those age classes where the long term mean was greater than 1% of the total recruits for that population, i.e.:
-                            $$\mu_R $>$ (0.01)\mu_TR$$
+                        $$\mu_R $>$ (0.01)\mu_TR$$
 
-                            Any rows within major age classes that had NA values present were flagged with "0" in the UseFlag column.
+                        Any rows within major age classes that had NA values present were flagged with "0" in the UseFlag column.
 
-                            Next, we made corrections to specific stocks. We corrected the 1980 escapement value for the Kvichak River stock based on estimates of a mortality event that occurred during extremely high water, and we flagged the pre-1965 years for Black Lake and Chignik Lake because no other stocks have data prior to that year. Coghill River had been flagged because it had only two years of data for a rare age class (1.4), but this is a minor age class so we removed the flag. We also removed the flags for Portage River and Seymour River because they too had some NA values in relatively small age classes.
+                        Next, we made corrections to specific stocks. We corrected the 1980 escapement value for the Kvichak River stock based on estimates of a mortality event that occurred during extremely high water, and we flagged the pre-1965 years for Black Lake and Chignik Lake because no other stocks have data prior to that year. Coghill River had been flagged because it had only two years of data for a rare age class (1.4), but this is a minor age class so we removed the flag. We also removed the flags for Portage River and Seymour River because they too had some NA values in relatively small age classes.
                         </markdown>
                     </section>
                 </description>
@@ -1207,9 +1169,10 @@
                 author = {Rich Brenner and Greg Ruggerone and Brendan Connors and
                 Jeanette Clark and Stephanie Freund}
                 title = {Sockeye salmon brood tables, northeastern Pacific, 1922-2016},
-                journal = {Knowledge Network for Biocomplexity},
+                journal = {Ecosphere},
                 year = {2018},
-                url = {https://knb.ecoinformatics.org/#view/urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd},
+                url = {https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.0000},
+                doi={10.1002/ecs0.0000}
                 }
             </bibtex>
         </referencePublication>
