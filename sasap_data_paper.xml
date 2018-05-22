@@ -3,8 +3,8 @@
     xmlns:eml="eml://ecoinformatics.org/eml-2.2.0"
     xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="/Users/datateam/Desktop/eml.xsd"
-    packageId="urn:uuid:8746daec-c8a9-40c9-8d15-9f0d68269ebd" system="https://arcticdata.io">
+    xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0 /Users/datateam/Desktop/eml.xsd"
+    packageId="urn:uuid:51d2fbd5-b9ac-426d-8198-9e9ab113def1" system="https://knb.ecoinformatics.org">
     <dataset>
         <title>Sockeye salmon brood tables, northeastern Pacific, 1922-2016.</title>
         <creator id="9363437076168534">
