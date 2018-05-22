@@ -169,7 +169,7 @@
                         $$R_i = \frac{R_i-1 + R_i-2}{2}$$
 
                         We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
-                        </markdwon>
+                        </markdown>
                     </section>
                 </description>
             </methodStep>
