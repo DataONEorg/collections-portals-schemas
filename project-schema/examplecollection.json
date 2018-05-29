@@ -2,7 +2,7 @@
   "id": "urn:uuid:cfee4086-62cf-482b-b1c6-b7194bfd095b",
   "name": "SASAP",
   "label": "State of Alaska's Salmon and People",
-  "synposis": "Collection of original and compiled datasets covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories.",
+  "synopsis": "Collection of original and compiled datasets covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories.",
   "definition": {
     "listOfIdentifiers": [
       "urn:uuid:153fddab-43d5-4b5e-a84d-23611998e1dd",
