@@ -108,26 +108,34 @@
         <purpose>
             <markdown>
                 The dataset presented here consists of reformatted and compiled brood tables from 48 stocks of sockeye salmon (*Oncorhynchus nerka*) across Alaska, British Columbia, and Washington. These datasets were gathered as part of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/), a large collaborative project that seeks to inform salmon management in Alaska by synthesizing data from a wide variety of sources. Source information (i.e. individuals who provided data) for the original datasets can be found in the SourceInfo.csv file. Although this project focuses on Alaskan salmon management, stocks from British Columbia and Washington are included for examining sockeye salmon population trends more broadly. Regions vary in the number of stocks with data -- while some regions are represented by multiple stocks in the dataset, AYK (Arctic-Yukon-Kuskokwim), northern British Columbia, and Washington have data for only one stock (Figure 1).
-                ![Figure 1](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:62731e0f-023c-4d93-b16c-1ce17c2d2a2e).
+                
+                ![Figure 1](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:62731e0f-023c-4d93-b16c-1ce17c2d2a2e)  
+                Figure 1.
+                
                 Temporal coverage varies somewhat by stock, ranging from 35 years of data for Goodnews River to 95 years of data for Black Lake and Chignik Lake (Figure 2).
-                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb). Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
+                
+                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb)   
+                Figure 2.
+                
+                Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
             </markdown>
         </purpose>
         <gettingStarted>
             <markdown>
                 This dataset contains 6 files. **BroodTables.csv** is the data file containing compiled brood table data. **StockInfo.csv** contains location and source/acquisition information for each salmon stock, and **SourceInfo.csv** lists the source information (the contact person who provided access to the data). The file **broodTableProcessing.html** is the output produced by the R Markdown file **broodTableProcessing.Rmd**, and it presents the reformatting and quality assurance steps that were taken to produce the "BroodTables.csv" file from the original tables. There is also a metadata file, **broodTable_metadata.xml**, which defines all attributes (i.e., columns) found in the .csv files, as well as other metadata about the overall dataset. The metadata are written in the [Ecological Metadata Language](https://knb.ecoinformatics.org/#external//emlparser/docs/index.html) (EML).
 
-                ## Understanding the brood table
+                #### Understanding the brood table
                 If you open BroodTables.csv, you will see 34 columns.
-                * The first three columns contain stock information: the numeric identifier given to a stock, the species (in this dataset *O. nerka* is the only species represented), and the name of the stock, which is typically the name of the water body in which it is found.
-                * The next 6 columns contain location information at different levels of spatial organization (Ocean region, SASAP region, sub-region, etc.) which are defined in the metadata. The latitude and longitude typically represent the location where monitoring data were collected, but may represent the head of the water body if the exact monitoring location was unavailable.
-                * The UseFlag column identifies any rows where we may not want to include the data in an analysis, either because of questions about quality or consistency of the estimation method, or because there was not enough data for age classes from that year.
-                * BroodYear contains the brood year whose age classes are being estimated.
-                * TotalEscapement contains the total escapement value (number of returning fish that were not harvested) for a particular brood year.
-                * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.
-                * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.
+                
+                * The first three columns contain stock information: the numeric identifier given to a stock, the species (in this dataset *O. nerka* is the only species represented), and the name of the stock, which is typically the name of the water body in which it is found.  
+                * The next 6 columns contain location information at different levels of spatial organization (Ocean region, SASAP region, sub-region, etc.) which are defined in the metadata. The latitude and longitude typically represent the location where monitoring data were collected, but may represent the head of the water body if the exact monitoring location was unavailable.  
+                * The UseFlag column identifies any rows where we may not want to include the data in an analysis, either because of questions about quality or consistency of the estimation method, or because there was not enough data for age classes from that year.  
+                * BroodYear contains the brood year whose age classes are being estimated.  
+                * TotalEscapement contains the total escapement value (number of returning fish that were not harvested) for a particular brood year.  
+                * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.  
+                * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.  
 
-                ## Understanding the .Rmd
+                #### Understanding the .Rmd
                 The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
             </markdown>
         </gettingStarted>
@@ -147,7 +155,8 @@
                 <description>
                     <section>
                         <title>Data formatting</title>
-                        <markdown>Brood tables for 48 sockeye salmon stocks were extracted from written reports by Alaska Department of Fish and Game or from .xls files. All tables were examined to determine which columns needed to be consistent in order to compile them together. Reformatting then proceeded in R. Any unnecessary or redundant columns were dropped. All brood tables were assigned columns for stock ID, brood year, region, subregion, a use flag based on the QA process, total escapement, and age classes 0.1 through 4.5. If these columns were already present, they were given a new name for consistency if necessary. If they were absent, then they were generated during the process of compiling the tables together and filled with NAs. Stock ID and UseFlag columns were input manually for each table. When all tables were reformatted, they were compiled with the `bind_rows` function, ensuring that all columns were present. After compiling, we joined the data table with the stock info table (StockInfo.csv) to derive additional location information, dropping columns that were deemed unnecessary.
+                        <markdown>
+                          Brood tables for 48 sockeye salmon stocks were extracted from written reports by Alaska Department of Fish and Game or from .xls files. All tables were examined to determine which columns needed to be consistent in order to compile them together. Reformatting then proceeded in R. Any unnecessary or redundant columns were dropped. All brood tables were assigned columns for stock ID, brood year, region, subregion, a use flag based on the QA process, total escapement, and age classes 0.1 through 4.5. If these columns were already present, they were given a new name for consistency if necessary. If they were absent, then they were generated during the process of compiling the tables together and filled with NAs. Stock ID and UseFlag columns were input manually for each table. When all tables were reformatted, they were compiled with the `bind_rows` function, ensuring that all columns were present. After compiling, we joined the data table with the stock info table (StockInfo.csv) to derive additional location information, dropping columns that were deemed unnecessary.
                         </markdown>
                     </section>
                 </description>
@@ -156,7 +165,8 @@
                 <description>
                     <section>
                         <title>Quality assurance</title>
-                        <markdown>Quality assurance steps were also completed programmatically in R. We checked first for acceptable values: that years were numeric and within reasonable bounds with no NAs, that age class columns were integers greater than or equal to zero with no NAs, and that escapement values were numeric values greater than zero. Several calculated values for recruits in the age class columns were real numbers instead of integers, but the data were meant to be interpreted as integers (number of fish) so we rounded all age class values down to the nearest integer. We also checked the total escapement values, some of which had values of zero. Upon examining these values, we found that they did not represent true zeros but instead indicated that no data were available, so we replaced them with NAs. We flagged these rows with "0" in the UseFlag column, because they cannot be used to calculate recruits per spawner.
+                        <markdown>
+                          Quality assurance steps were also completed programmatically in R. We checked first for acceptable values: that years were numeric and within reasonable bounds with no NAs, that age class columns were integers greater than or equal to zero with no NAs, and that escapement values were numeric values greater than zero. Several calculated values for recruits in the age class columns were real numbers instead of integers, but the data were meant to be interpreted as integers (number of fish) so we rounded all age class values down to the nearest integer. We also checked the total escapement values, some of which had values of zero. Upon examining these values, we found that they did not represent true zeros but instead indicated that no data were available, so we replaced them with NAs. We flagged these rows with "0" in the UseFlag column, because they cannot be used to calculate recruits per spawner.
                         </markdown>
                     </section>
                 </description>
@@ -165,10 +175,11 @@
                 <description>
                     <section>
                         <title>Calculation of small age classes</title>
-                        <markdown>We systematically estimated some minor return age groups in order to include more years that could be analyzed. This procedure involved the most recent year for which an old age group has not yet returned. If the age-specific value to be filled in was greater than 10% of the total brood return, then that value remained NA. If age-specific abundance was NA and abundance was less than 10% of the total brood return in the previous 2 brood years, then the abundance for that age group was estimated using the mean of the age-specific values from the previous 2 brood years.
-                        $$R_i = \frac{R_{i-1} + R_{i-2}}{2}$$
+                        <markdown>
+                          We systematically estimated some minor return age groups in order to include more years that could be analyzed. This procedure involved the most recent year for which an old age group has not yet returned. If the age-specific value to be filled in was greater than 10% of the total brood return, then that value remained NA. If age-specific abundance was NA and abundance was less than 10% of the total brood return in the previous 2 brood years, then the abundance for that age group was estimated using the mean of the age-specific values from the previous 2 brood years.
+                          $$R_i = \frac{R_{i-1} + R_{i-2}}{2}$$
 
-                        We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
+                          We began by calculating the total number of recruits across age classes for every row. Then we defined a function to complete the process described above. We then ran this function over the compiled brood table, and recalculated the total number of recruits based on the new, infilled age class columns.
                         </markdown>
                     </section>
                 </description>
@@ -177,12 +188,13 @@
                 <description>
                     <section>
                         <title>Additional quality assurance steps</title>
-                        <markdown>Following the age class infilling procedure, we set the UseFlag value based on whether a row had complete age class estimation, i.e., all major age classes had real values and not NA. Major age classes were those age classes where the long term mean was greater than 1% of the total recruits for that population, i.e.:
-                        $$\mu_R > {0.01 \times \mu_{TR}}$$
+                        <markdown>
+                          Following the age class infilling procedure, we set the UseFlag value based on whether a row had complete age class estimation, i.e., all major age classes had real values and not NA. Major age classes were those age classes where the long term mean was greater than 1% of the total recruits for that population, i.e.:
+                          $$\mu_R > {0.01 \times \mu_{TR}}$$
 
-                        Any rows within major age classes that had NA values present were flagged with "0" in the UseFlag column.
+                          Any rows within major age classes that had NA values present were flagged with "0" in the UseFlag column.
 
-                        Next, we made corrections to specific stocks. We corrected the 1980 escapement value for the Kvichak River stock based on estimates of a mortality event that occurred during extremely high water, and we flagged the pre-1965 years for Black Lake and Chignik Lake because no other stocks have data prior to that year. Coghill River had been flagged because it had only two years of data for a rare age class (1.4), but this is a minor age class so we removed the flag. We also removed the flags for Portage River and Seymour River because they too had some NA values in relatively small age classes.
+                          Next, we made corrections to specific stocks. We corrected the 1980 escapement value for the Kvichak River stock based on estimates of a mortality event that occurred during extremely high water, and we flagged the pre-1965 years for Black Lake and Chignik Lake because no other stocks have data prior to that year. Coghill River had been flagged because it had only two years of data for a rare age class (1.4), but this is a minor age class so we removed the flag. We also removed the flags for Portage River and Seymour River because they too had some NA values in relatively small age classes.
                         </markdown>
                     </section>
                 </description>
