@@ -109,11 +109,13 @@
             <markdown>
                 The dataset presented here consists of reformatted and compiled brood tables from 48 stocks of sockeye salmon (*Oncorhynchus nerka*) across Alaska, British Columbia, and Washington. These datasets were gathered as part of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/), a large collaborative project that seeks to inform salmon management in Alaska by synthesizing data from a wide variety of sources. Source information (i.e. individuals who provided data) for the original datasets can be found in the SourceInfo.csv file. Although this project focuses on Alaskan salmon management, stocks from British Columbia and Washington are included for examining sockeye salmon population trends more broadly. Regions vary in the number of stocks with data -- while some regions are represented by multiple stocks in the dataset, AYK (Arctic-Yukon-Kuskokwim), northern British Columbia, and Washington have data for only one stock (Figure 1).
                 
-                ![Figure 1](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:62731e0f-023c-4d93-b16c-1ce17c2d2a2e).
+                ![Figure 1](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:62731e0f-023c-4d93-b16c-1ce17c2d2a2e)  
+                Figure 1.
                 
                 Temporal coverage varies somewhat by stock, ranging from 35 years of data for Goodnews River to 95 years of data for Black Lake and Chignik Lake (Figure 2).
                 
-                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb). 
+                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb)   
+                Figure 2.
                 
                 Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
             </markdown>
@@ -124,13 +126,14 @@
 
                 #### Understanding the brood table
                 If you open BroodTables.csv, you will see 34 columns.
-                * The first three columns contain stock information: the numeric identifier given to a stock, the species (in this dataset *O. nerka* is the only species represented), and the name of the stock, which is typically the name of the water body in which it is found.
-                * The next 6 columns contain location information at different levels of spatial organization (Ocean region, SASAP region, sub-region, etc.) which are defined in the metadata. The latitude and longitude typically represent the location where monitoring data were collected, but may represent the head of the water body if the exact monitoring location was unavailable.
-                * The UseFlag column identifies any rows where we may not want to include the data in an analysis, either because of questions about quality or consistency of the estimation method, or because there was not enough data for age classes from that year.
-                * BroodYear contains the brood year whose age classes are being estimated.
-                * TotalEscapement contains the total escapement value (number of returning fish that were not harvested) for a particular brood year.
-                * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.
-                * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.
+                
+                * The first three columns contain stock information: the numeric identifier given to a stock, the species (in this dataset *O. nerka* is the only species represented), and the name of the stock, which is typically the name of the water body in which it is found.  
+                * The next 6 columns contain location information at different levels of spatial organization (Ocean region, SASAP region, sub-region, etc.) which are defined in the metadata. The latitude and longitude typically represent the location where monitoring data were collected, but may represent the head of the water body if the exact monitoring location was unavailable.  
+                * The UseFlag column identifies any rows where we may not want to include the data in an analysis, either because of questions about quality or consistency of the estimation method, or because there was not enough data for age classes from that year.  
+                * BroodYear contains the brood year whose age classes are being estimated.  
+                * TotalEscapement contains the total escapement value (number of returning fish that were not harvested) for a particular brood year.  
+                * Age class columns: These columns are presented in European Notation, where the first number is the number of winters spent in freshwater before going to sea, and the second number is the number of winters spent at sea. For example, fish in the column R1.2 spent 1 winter in freshwater and 2 winters at sea.  
+                * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.  
 
                 #### Understanding the .Rmd
                 The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
