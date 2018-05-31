@@ -113,7 +113,9 @@
                 
                 Temporal coverage varies somewhat by stock, ranging from 35 years of data for Goodnews River to 95 years of data for Black Lake and Chignik Lake (Figure 2).
                 
-                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb). Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
+                ![Figure 2](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:78cd5968-8707-4f96-95ea-3d56383cb1bb). 
+                
+                Geographic information beyond the stock name and latitude and longitude includes region, sub-region (e.g. Bristol Bay North within Bristol Bay), and ocean region (either Bering Sea or Gulf of Alaska), allowing for analysis of trends at multiple spatial scales. Age classes are given in European Notation, where the first number is the number of winters spent in freshwater before going to sea (1 winter in freshwater = age-1.X), and the second number is the number of winters spent at sea (3 winters at sea = age-X.3).
             </markdown>
         </purpose>
         <gettingStarted>
