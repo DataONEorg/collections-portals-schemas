@@ -100,9 +100,9 @@
         </coverage>
         <introduction>
             <markdown>
-                Salmon are a critically important natural resource in socioecological systems of Alaska, with integral roles in the cultures, economies, and ecosystems of the state. Observed declines in salmon populations and body size have led to growing concern about the sustainability and future of salmon production ([@Ohlberger_et_al_2018], [@Ricker_1981]). However, research and management of wild salmon is hampered by the fragmentation of data that could otherwise provide powerful insights into the biology and sustainability of Pacific salmon systems if they were integrated ([@Hampton_et_al_2013], [@Peterman_2004]). The reconciliation of these datasets is one goal of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/) (SASAP). SASAP consists of several synthesis working groups that are focused on specific questions related to salmon biology and management. One of these working groups, "Interacting Effects of Ocean Climate and At-Sea Competition on Alaskan Salmon", is using long-term salmon monitoring data to predict potential future trends in Alaskan salmon stocks.
+                Salmon are a critically important natural resource in socioecological systems of Alaska, with integral roles in the cultures, economies, and ecosystems of the state. Observed declines in salmon populations and body size have led to growing concern about the sustainability and future of salmon production [@Ohlberger_et_al_2018; @Ricker_1981]. However, research and management of wild salmon is hampered by the fragmentation of data that could otherwise provide powerful insights into the biology and sustainability of Pacific salmon systems if they were integrated [@Hampton_et_al_2013; @Peterman_2004]. The reconciliation of these datasets is one goal of the [State of Alaska's Salmon and People project](https://alaskasalmonandpeople.org/) (SASAP). SASAP consists of several synthesis working groups that are focused on specific questions related to salmon biology and management. One of these working groups, "Interacting Effects of Ocean Climate and At-Sea Competition on Alaskan Salmon", is using long-term salmon monitoring data to predict potential future trends in Alaskan salmon stocks.
 
-                One way of assessing salmon stocks is through the estimation of brood tables, in which the number of recruits from each age class of returning salmon is calculated using age class samples and the total run size (commercial catch plus escapement). The brood table data can then be used for evaluating productivity and viability of a population and for refining management goals (e.g. [@Nelson_et_al_2006]). Brood tables estimated from monitoring data exist for several salmon stocks across the northeast Pacific. The SASAP Data Task Force, a team organized specifically for data recovery tasks for the SASAP project, extracted these tables from their original reports, reformatted them for consistency (e.g. in column names), and compiled them together in the open-source language R for process documentation and reproducibility.
+                One way of assessing salmon stocks is through the estimation of brood tables, in which the number of recruits from each age class of returning salmon is calculated using age class samples and the total run size (commercial catch plus escapement). The brood table data can then be used for evaluating productivity and viability of a population and for refining management goals (e.g. @Nelson_et_al_2006). Brood tables estimated from monitoring data exist for several salmon stocks across the northeast Pacific. The SASAP Data Task Force, a team organized specifically for data recovery tasks for the SASAP project, extracted these tables from their original reports, reformatted them for consistency (e.g. in column names), and compiled them together in the open-source language R for process documentation and reproducibility.
             </markdown>
         </introduction>
         <purpose>
@@ -136,7 +136,7 @@
                 * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.  
 
                 #### Understanding the .Rmd
-                The file broodTableProcessing.Rmd is an R Markdown file that can be run in [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
+                The file broodTableProcessing.Rmd is an R Markdown file that can be run in R [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
             </markdown>
         </gettingStarted>
         <acknowledgements>
@@ -1220,7 +1220,7 @@
                 volume = {19},
                 year = {2018},
                 pages = {533--546},
-                url = {https://doi.org/10.1111/faf.12272}
+                url = {https://doi.org/10.1111/faf.12272},
                 doi = {10.1111/faf.12272}
                 }
                 @article{Peterman_2004,
@@ -1230,7 +1230,7 @@
                 volume = {61},
                 year = {2004},
                 pages = {1331--1343},
-                url = {https://doi.org/10.1016/j.icesjms.2004.08.017}
+                url = {https://doi.org/10.1016/j.icesjms.2004.08.017},
                 doi = {10.1016/j.icesjms.2004.08.017}
                 }
                 @manual{R,
@@ -1239,7 +1239,7 @@
                 organization = {R Foundation for Statistical Computing},
                 address = {Vienna, Austria},
                 year = {2018},
-                url = {https://www.R-project.org/},
+                url = {https://www.R-project.org/}
                 }
                 @article{Ricker_1981,
                 author = {W E Ricker},
@@ -1248,7 +1248,7 @@
                 volume = {38},
                 year = {1981},
                 pages = {1636--1656},
-                url = {https://doi.org/10.1139/f81-213}
+                url = {https://doi.org/10.1139/f81-213},
                 doi = {10.1139/f81-213}
                 }
             </bibtex>
