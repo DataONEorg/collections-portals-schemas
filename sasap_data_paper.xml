@@ -136,7 +136,7 @@
                 * TotalRecruits contains the total recruitment value (the sum of the age class values) for a particular brood year.  
 
                 #### Understanding the .Rmd
-                The file broodTableProcessing.Rmd is an R Markdown file that can be run in R [@R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
+                The file broodTableProcessing.Rmd is an R Markdown file that can be run in R [R Core @R]. It describes the data reformatting and quality assurance procedures used to create BroodTables.csv, with functional code chunks that complete these steps. The .Rmd renders an html document, broodTableProcessing.html.
             </markdown>
         </gettingStarted>
         <acknowledgements>
