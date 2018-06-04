@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml
+    xmlns:eml="eml://ecoinformatics.org/eml-2.2.0"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="eml://ecoinformatics.org/eml-2.2.0 /Users/datateam/Desktop/eml.xsd"
+    packageId="urn:uuid:qqqqzzzz-rrrr-4444-8888-111111111111" system="https://knb.ecoinformatics.org">
+    <dataset>
+        <title>Nutrient utilization traits of phytoplankton.</title>
+        <creator>
+            <individualName>
+                <givenName>Kyle F.</givenName>
+                <surName>Edwards</surName>
+            </individualName>
+            <organizationName>Department of Oceanography, University of Hawaii, Honolulu, Hawaii</organizationName>
+            <electronicMailAddress>kfe@hawaii.edu</electronicMailAddress>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Christopher A.</givenName>
+                <surName>Klausmeier</surName>
+            </individualName>
+            <organizationName>W.K. Kellogg Biological Station, Michigan State University, Hickory Corners, Michigan</organizationName>
+            <organizationName>Department of Plant Biology, Michigan State University, East Lansing, Michigan</organizationName>
+        </creator>
+        <creator>
+            <individualName>
+                <givenName>Elena</givenName>
+                <surName>Litchman</surName>
+            </individualName>
+            <organizationName>W.K. Kellogg Biological Station, Michigan State University, Hickory Corners, Michigan</organizationName>
+            <organizationName>Department of Zoology, Michigan State University, East Lansing, Michigan</organizationName>
+            <electronicMailAddress>litchman@msu.edu</electronicMailAddress>
+        </creator>
+        <pubDate>2015-08-01</pubDate>
+        <abstract>
+            <markdown>
+                This paper presents a compilation of nutrient utilization traits of marine and freshwater phytoplankton. The literature was comprehensively searched for culture experiments using nitrate, ammonium, or phosphate as the limiting nutrient. The following traits were extracted: the response of growth to nutrient supply (maximum growth rate under unlimited nutrient supply and the nutrient concentration at which growth is half‐saturated); the response of internal nutrient content to nutrient supply (the minimum subsistence quota at which growth ceases and the maximum nutrient quota under unlimited nutrient supply); and nutrient uptake kinetics for nutrient‐limited cells (maximum uptake rate and the nutrient concentration at which uptake is half‐saturated). The resulting data set includes 1319 measurements on 129 species from 138 publications. Potential uses of these data include studies of community structure and trait evolution, parameterization of ecosystem models, and biofuel development.
+            </markdown>
+        </abstract>
+        <keywordSet>
+            <keyword>algae</keyword>
+            <keyword>allometry</keyword>
+            <keyword>competition</keyword>
+            <keyword>Droop</keyword>
+            <keyword>Monod</keyword>
+            <keyword>nitrogen</keyword>
+            <keyword>phosphorus</keyword>
+            <keyword>physiology</keyword>
+            <keyword>stoichiometry</keyword>
+            <keyword>uptake kinetics</keyword>
+            <keywordThesaurus>None</keywordThesaurus>
+        </keywordSet>
+        <licensed>
+            <licenseName>Creative Commons Attribution 4.0 International</licenseName>
+            <url>https://spdx.org/licenses/CC-BY-4.0.html</url>
+            <identifier>CC-BY-4.0</identifier>
+        </licensed>
+        <coverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>2001</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>2013</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+        </coverage>
+        <purpose>
+            <markdown>
+                The objective of the project is to compile existing data on nutrient utilization traits of phytoplankton, which will permit analyses of trait variation and covariation across species, community trait structure, trait-based models, and other topics. The data set includes 1319 measurements on 129 unique species from 138 publications. We also present a compilation of cell volume measurements covering the species for which nutrient utilization traits have been measured.
+            </markdown>
+        </purpose>
+        <gettingStarted>
+            <markdown>
+                The data set is downloadable as a single archive, [NutrientTraits.zip](http://esapubs.org/archive/ecol/E096/202/NutrientTraits.zip) (29 KB), which contains the following *.csv files:
+
+                *Table 1*: Nutrient utilization traits. Each row presents a single species/strain from one publication. If multiple traits were measured on that strain in that publication, they are all listed in the same row. If the same strain was tested at multiple temperatures, the measurements from each temperature are recorded in different rows. Temperature of the experiment, irradiance, daylength, taxon, system (freshwater/marine), isolate ID, cell volume, C per cell, and citation source are all included as well. 66KB, 385 rows, 42 columns.
+
+                *Table 2*: Citation information for nutrient utilization traits, with a corresponding integer code that matches with the citation column in Table 1. 28 KB, 138 rows, 2 columns
+
+                *Table 3*: Cell volume measurements for nearly all species in the nutrient trait data set. These measurements supplement those in Table 1, which only includes measurements reported in the nutrient trait publications. The volume measurements in Table 1 are presented again, along with measurements from the literature for species not measured in the nutrient trait publications. 30 KB, 135 rows, 4 columns
+            </markdown>
+        </gettingStarted>
+        <acknowledgements>
+            Data compilation was supported by NSF grants OCE 0928819, DEB 0845932, and DEB 0845825.
+        </acknowledgements>
+        <contact>
+            <individualName>
+                <givenName>Kyle F.</givenName>
+                <surName>Edwards</surName>
+            </individualName>
+            <organizationName>Department of Oceanography, University of Hawaii, Honolulu, Hawaii</organizationName>
+            <electronicMailAddress>kfe@hawaii.edu</electronicMailAddress>
+        </contact>
+        <contact>
+            <individualName>
+                <givenName>Elena</givenName>
+                <surName>Litchman</surName>
+            </individualName>
+            <organizationName>W.K. Kellogg Biological Station, Michigan State University, Hickory Corners, Michigan</organizationName>
+            <organizationName>Department of Zoology, Michigan State University, East Lansing, Michigan</organizationName>
+            <electronicMailAddress>litchman@msu.edu</electronicMailAddress>
+        </contact>
+        <methods>
+            <methodStep>
+                <description>
+                    <section>
+                        <title>Data acquisition, methodology, and criteria for inclusion</title>
+                        <markdown>
+                            We comprehensively searched the literature for studies that used unialgal cultures to measure how phytoplankton growth, nutrient content, and nutrient uptake rate respond to nutrient supply. We focused on experiments using nitrate, ammonium, or phosphate as the limiting nutrient. We only compiled studies where light was not strongly limiting, and where only a single nutrient was limiting. For one diazotroph (*Trichodesmium*), the experiments compiled here did not include nitrogen in the medium.
+
+                            #### Growth as a function of external nutrient concentration
+                            The response of growth to external nutrient supply is typically characterized by the Monod curve [@Monod_1949], $\mu(R) = \frac{\mu_{max}R}{K_m+R}$, where $\mu$ is the specific growth rate as a function of external nutrient concentration $R$, $\mu_{max}$ is the asymptotic specific growth rate under infinite nutrient concentration, and $K_m$ is the nutrient concentration at which growth equals half of $\mu_{max}$. The Monod curve is usually fit using data from batch cultures, where nutrient supply is varied over a wide range and the corresponding growth rates are measured; or, alternatively, using data from chemostat experiments, where dilution rate is varied and the corresponding steady-state external nutrient concentration is measured. In nearly all cases we report the values of $\mu_{max}$ and $K_m$ reported by the authors of the study, although in a few cases where a Monod fit was not reported we extracted data from figures to fit a curve.
+
+                            A number of studies did not measure Monod-type growth curves but did report the maximum growth rate obtained under saturating nutrient supply, for example in batch culture or in chemostat experiments measuring nutrient content as a function of dilution rate. We have included those measurements as estimates of $\mu_{max}$.
+
+                            #### Growth as a function of nutrient content
+                            Phytoplankton growth under limitation by a single nutrient is typically a hyperbolic function of the internal concentration (or quota) of that nutrient. This relationship is most often characterized with the Droop model [@Droop_1973], $\mu(Q) = \mu_\infty(1 - \frac{Q}{Q_{min}})$, where $\mu$ is specific growth rate as a function of cellular nutrient quota $Q$, $Q_{min}$ is the minimum quota at which growth ceases, and is the hypothetical asymptotic growth rate at infinite nutrient quota [@Klausmeier_et_al_2004]. For studies that fit the Droop curve or a similar hyperbolic model, we report and $Q_{min}$ as reported by the authors. Nutrient quota can be measured on a per cell or per cellular carbon basis, and we have included studies that use both approaches. It should be noted that  does not quantify an attainable growth rate, but is rather a curve-fitting parameter, and will exceed the true $\mu$ to a degree that depends on the magnitude of luxury nutrient consumption [@Grover_1991].
+
+                            Some studies did not measure growth over a range of nutrient quotas, but estimated Qmin as the nutrient content when a nutrient-limited batch culture reaches stationary phase and ceases to grow. We have included these estimates of the minimum subsistence quota.
+
+                            The nutrient quota obtained under saturating nutrient supply ($Q_{max}$) reflects the ability of a cell to store excess nutrient, and may determine the outcome of competition under variable nutrient supply [@Grover_1991]. $Q_{max}$ is somewhat tricky to define, because the quota obtained under saturating supply of all nutrients may be less than the quota obtained when growth is slowed because a second nutrient is limiting [@Elrifi_and_Turpin_1985]. With this caveat in mind, we have recorded estimates of $Q_{max}$ for a variety of species. In these studies $Q_{max}$ may be estimated as the nutrient content under exponential growth with saturating nutrient supply, or as the nutrient content after 3–24 hours of saturated nutrient uptake.
+
+                            #### Uptake kinetics
+                            Nutrient uptake rate as a function of nutrient concentration is typically quantified with the hyperbolic Michaelis-Menten curve, where the uptake rate equals $\frac{V_{max}R}{K+R}$, and where $V_{max}$ is the asymptotic maximum rate of uptake at infinite concentration of the nutrient $R$, and $K$ is the concentration at which uptake rate equals half of $V_{max}$. It is often the case that $V_{max}$ for a nutrient increases as the cellular content of that nutrient declines [@Gotham_and_Rhee_1981]. Therefore, we have recorded estimates of the Michaelis-Menten parameters, using only experiments where the cells were preconditioned to be strongly nutrient-depleted or nutrient-starved. We made this decision so that uptake parameters would be comparable across species in reflecting uptake abilities under nutrient limitation. It is often the case that nitrogen-starved cells will initially exhibit relatively slow uptake when re-supplied with nitrate, and uptake will increase substantially after supplying the cells with a moderate concentration of nitrate for a period of minutes to hours [@Eppley_et_al_1969]. A number of studies in our compilation used such a procedure before measuring nitrate uptake rates. Some studies did not measure uptake rate across a range of nutrient concentrations, but measured $V_{max}$ by supplying cells with a large, saturating pulse of nutrients.
+                        </markdown>
+                    </section>
+                </description>
+            </methodStep>
+            <methodStep>
+                <description>
+                    <section>
+                        <title>Units</title>
+                        <markdown>
+                            We converted all measurements to a common set of units: specific growth (day$^{-1}$) for $\mu_{max}$ and $\mu_\infty$, $\mu$mol L$^{-1}$ for $K_m$ and $K$, $\mu$mol cell$^{-1}$ for $Q_{min}$, and $\mu$mol cell$^{-1}$ hr$^{-1}$ for $V_{max}$. For the small number of cases where a trait was measured multiple times on the same isolate, these values were averaged. Some studies measured $V_{max}$ and/or $Q_{min}$ in carbon-specific units, which we will refer to as $V_{max:C}$ and $Q_{min:C}$. These measurements have been recorded separately, in units of $\mu$mol nutrient per $\mu$mol C (for $Q_{min:C}$), or $\mu$mol nutrient per $\mu$mol C hr$^{-1}$ (for $V_{max:C}$). If C per cell was measured in the same study, or if we could find an estimate of C per cell measured on the same isolate, we calculated $V_{max}$ and $Q_{min}$ from $V_{max:C}$ and $Q_{min:C}$. Sources for C:cell data are documented in the data set. In a few cases traits were measured on a dry mass basis, and we converted these to carbon-specific values assuming that carbon is 50% of dry mass.
+                        </markdown>
+                    </section>
+                </description>
+            </methodStep>
+            <methodStep>
+                <description>
+                    <section>
+                        <title>Nomenclature</title>
+                        <markdown>
+                            We have not exhaustively cross-referenced our data set against recent nomenclatural changes, but for older studies we have updated species names such that all studies in the data set that test the same species are reported with a consistent name. When a name was changed the name used in the original study is recorded in a “synonym” column.
+
+                            When possible, we have recorded a strain identifier for each experiment, using an identification code from a large culture collection. Culture collection abbreviations include CCMP (National Center for Marine Algae and Protozoa), SAG (Experimental Phycology and Culture Collection of Algae at the University of Goettingen), CCAP (Culture Collection of Algae and Protozoa), UTEX (The Culture Collection of Algae at the University of Texas at Austin), RCC (Roscoff Culture Collection), NEPCC (Canadian Center for the Culture of Microorganisms), and PCC (Pasteur Culture Collection). A few commonly-studied isolates of Synechococcus, Prochlorococcus, Trichodesmium, and Emiliania are listed by the strain name given in the source publication.
+
+                            To facilitate comparison of traits between taxonomic groups, we have coded each species according to the coarse taxonomic groups often used for phytoplankton. These include chlorophyte, chrysophyte, coccolithophore, cryptomonad, cyanobacteria, desmid, diatom, dinoflagellate, euglenoid, haptophyte (other than coccolithophores), pelagophyte, raphidophyte, and xanthophyte. We have also coded whether the species was isolated from a freshwater or marine environment; estuarine species have been coded as marine.
+                        </markdown>
+                    </section>
+                </description>
+            </methodStep>
+            <methodStep>
+                <description>
+                    <section>
+                        <title>Cell Volume</title>
+                        <markdown>
+                            To facilitate the comparison of species that differ vastly in cell size, we have compiled estimates of cell volume for nearly all species in the data set. If volume was measured in the original study, that value was recorded. In a few cases the diameter was reported for approximately spherical cells, and we converted diameters to volumes assuming a spherical shape. If no studies on a species measured cell volume, we recorded a volume estimate from a different publication when possible. Sources for volume estimates are recorded in the data set.
+                        </markdown>
+                    </section>
+                </description>
+            </methodStep>
+            <methodStep>
+                <description>
+                    <section>
+                        <title>Use of the data in previous publications</title>
+                        <markdown>
+                            Subsets of the dataset have been used in previous publications by the authors. @Litchman_et_al_2007 analyzed trait correlations, allometric relationships, and taxonomic differences for nitrate and ammonium traits of marine phytoplankton. @Litchman_et_al_2009 used allometric relationships of nitrate and phosphate utilization traits to parameterize an eco-evolutionary model. Edwards et al. (2011) analyzed trait correlations for nitrate and phosphate traits of marine and freshwater phytoplankton. Edwards et al. (2012) analyzed allometric relationships for nitrate and phosphate traits of marine and freshwater phytoplankton. @Edwards_et_al_2013a compared nitrate traits to time series of marine phytoplankton, and @Edwards_et_al_2013b compared phosphate traits to spatial distributions of freshwater phytoplankton. @Edwards_et_al_2013c analyzed trait correlations of phosphate traits in freshwater phytoplankton, and used these relationships to parameterize a model of competition. Of these publications, raw trait data was included in @Edwards_et_al_2013b and @Edwards_et_al_2013c.
+
+                            The trait data presented here includes all of the trait data used in these publications, with the following exceptions: Edwards et al. (2012) and @Edwards_et_al_2013a include data on maximum growth rate from thermal response curves compiled in @Thomas_et_al_2012; @Edwards_et_al_2013a, @Edwards_et_al_2013b, and @Edwards_et_al_2013c use light utilization trait data, which have been compiled in Schwaderer et al. (2011) and Edwards et al. (2015); a few measurements of uptake kinetics used in previous analyses were not included in the present data set because the cultures were not conditioned to be strongly nutrient-depleted before measuring uptake, which is a criterion used in the present compilation to ensure comparability across species. The data set presented here also includes a few entries appropriate for the previous analyses but not previously used, either because they are from literature published subsequently, or because they are from publications newly discovered by the authors during preparation of the data set.
+                        </markdown>
+                    </section>
+                </description>
+            </methodStep>
+        </methods>
+        <project>
+            <title>Trait-based approaches to phytoplankton communities</title>
+            <personnel>
+                <individualName>
+                    <givenName>Elena</givenName>
+                    <surName>Litchman</surName>
+                </individualName>
+                <organizationName>W.K. Kellogg Biological Station, Michigan State University, Hickory Corners, Michigan</organizationName>
+                <organizationName>Department of Zoology, Michigan State University, East Lansing, Michigan</organizationName>
+                <electronicMailAddress>litchman@msu.edu</electronicMailAddress>
+                <role>Originator</role>
+            </personnel>
+            <personnel>
+                <individualName>
+                    <givenName>Christopher A.</givenName>
+                    <surName>Klausmeier</surName>
+                </individualName>
+                <organizationName>W.K. Kellogg Biological Station, Michigan State University, Hickory Corners, Michigan</organizationName>
+                <organizationName>Department of Plant Biology, Michigan State University, East Lansing, Michigan</organizationName>
+                <role>Originator</role>
+            </personnel>
+            <award>
+                <funderName>National Science Foundation</funderName>
+                <funderIdentifier>http://dx.doi.org/10.13039/100000001</funderIdentifier>
+                <awardNumber>DEB 0610531</awardNumber>
+                <title>Vertical distribution of phytoplankton</title>
+            </award>
+            <award>
+                <funderName>National Science Foundation</funderName>
+                <funderIdentifier>http://dx.doi.org/10.13039/100000001</funderIdentifier>
+                <awardNumber>DEB 0610532</awardNumber>
+                <title>QEIB: Novel Approaches to Plankton Seasonal Succession</title>
+            </award>
+            <award>
+                <funderName>National Science Foundation</funderName>
+                <funderIdentifier>http://dx.doi.org/10.13039/100000001</funderIdentifier>
+                <awardNumber>DEB 0845932</awardNumber>
+                <title>CAREER: Mechanisms of Phytoplankton Community Re-organization Under Global Change</title>
+            </award>
+            <award>
+                <funderName>National Science Foundation</funderName>
+                <funderIdentifier>http://dx.doi.org/10.13039/100000001</funderIdentifier>
+                <awardNumber>DEB 0845825</awardNumber>
+                <title>CAREER: Modeling Complexity in Plankton Communities</title>
+            </award>
+            <award>
+                <funderName>National Science Foundation</funderName>
+                <funderIdentifier>http://dx.doi.org/10.13039/100000001</funderIdentifier>
+                <awardNumber>OCE 0928819</awardNumber>
+                <title>Phytoplankton Traits, Functional Groups and Community Organization: A Synthesis</title>
+            </award>
+        </project>
+        <otherEntity id="urn:uuid:wwwwwwww-111-xxxx-2222-555555555555" scope="document">
+          <entityName>NutrientTraits.zip</entityName>
+          <entityDescription>Nutrient utilization traits of phytoplankton (Table 1), citation information (Table 2), and cell volume measurements (Table 3).</entityDescription>
+          <physical scope="document">
+            <objectName>NutrientTraits.zip</objectName>
+            <size unit="bytes">29000</size>
+            <authentication method="SHA1">eea495550b172644396fe7dc2be3b011f4f7b8c6</authentication>
+            <dataFormat>
+              <externallyDefinedFormat>
+                <formatName>application/zip</formatName>
+              </externallyDefinedFormat>
+            </dataFormat>
+            <distribution scope="document">
+              <online>
+                <url function="download">http://esapubs.org/archive/ecol/E096/202/NutrientTraits.zip</url>
+              </online>
+            </distribution>
+          </physical>
+          <entityType>Other</entityType>
+        </otherEntity>
+        <referencePublication>
+            <bibtex>
+                @article{Edwards_et_al_2013a,
+                author = {KFE Edwards and E Litchman and CA Klausmeier},
+                title = {Functional traits explain phytoplankton community structure and seasonal dynamics in a marine ecosystem},
+                journal = {Ecology Letters},
+                volume = {16},
+                year = {2013},
+                pages = {56--63},
+                url = {https://doi.org/10.1111/ele.12012},
+                doi = {10.1111/ele.12012}
+                }
+                @article{Edwards_et_al_2013b,
+                author = {KFE Edwards and E Litchman and CA Klausmeier},
+                title = {Functional traits explain phytoplankton responses to environmental gradients across lakes of the United States},
+                journal = {Ecology},
+                volume = {94},
+                year = {2013},
+                pages = {1626--1635},
+                url = {https://doi.org/10.1890/12-1459.1},
+                doi = {10.1890/12-1459.1}
+                }
+                @article{Edwards_et_al_2013c,
+                author = {KFE Edwards and CA Klausmeier and E Litchman},
+                title = {A three-way trade-off maintains functional diversity under variable resource supply},
+                journal = {The American Naturalist},
+                volume = {182},
+                year = {2013},
+                pages = {786--800},
+                url = {https://doi.org/10.1086/673532},
+                doi = {10.1086/673532}
+                }
+                @article{Litchman_et_al_2007,
+                author = {E Litchman and CA Klausmeier and OM Schofield and PG Falkowski},
+                title = {The role of functional traits and trade-offs in structuring phytoplankton communities: scaling from cellular to ecosystem level},
+                journal = {Ecology Letters},
+                volume = {10},
+                year = {2007},
+                pages = {1170--1181},
+                url = {https://doi.org/10.1111/j.1461-0248.2007.01117.x},
+                doi = {10.1111/j.1461-0248.2007.01117.x}
+                }
+                @article{Litchman_et_al_2009,
+                author = {E Litchman and CA Klausmeier and K Yoshiyama},
+                title = {Contrasting size evolution in marine and freshwater diatoms},
+                journal = {PNAS},
+                volume = {106},
+                year = {2009},
+                pages = {2665--2670},
+                url = {https://doi.org/10.1073/pnas.0810891106},
+                doi = {10.1073/pnas.0810891106}
+                }
+            </bibtex>
+        </referencePublication>
+        <literatureCited>
+            <bibtex>
+                @article{Boyd_et_al_2013,
+                author = {PW Boyd and TA Rynearson and A Armstrong and F Fu and K Hayashi and DA Hutchins and RM Kudela and E Litchman and MR Mulholland and U Passow and RF Strzepek and KA Whittaker and E Yu and MK Thomas},
+                title = {Marine phytoplankton temperature versus growth responses from polar to tropical waters--outcome of a scientific community-wide study},
+                journal = {PloS One},
+                volume = {8},
+                year = {2013},
+                pages = {e63091},
+                url = {https://doi.org/10.1371/journal.pone.0063091},
+                doi = {10.1371/journal.pone.0063091}
+                }
+                @article{Bruggeman_2011,
+                author = {J Bruggeman},
+                title = {A phylogenetic approach to the estimation of phytoplankton traits},
+                journal = {Journal of Phycology},
+                volume = {47},
+                year = {2011},
+                pages = {52--65},
+                url = {https://doi.org/10.1111/j.1529-8817.2010.00946.x},
+                doi = {10.1111/j.1529-8817.2010.00946.x}
+                }
+                @article{Droop_1973,
+                author = {MR Droop},
+                title = {Some thoughts on nutrient limitation in algae},
+                journal = {Journal of Phycology},
+                volume = {9},
+                year = {1973},
+                pages = {264--272},
+                url = {https://doi.org/10.1111/j.1529-8817.1973.tb04092.x},
+                doi = {10.1111/j.1529-8817.1973.tb04092.x}
+                }
+                @article{Elrifi_and_Turpin_1985,
+                author = {IR Elfrifi and DH Turpin},
+                title = {Steady-state luxury consumption and the concept of optimum nutrient ratios: A study with phosphate and nitrate limited Selenastrum minutum (Chlorophyta)},
+                journal = {Journal of Phycology},
+                volume = {21},
+                year = {1985},
+                pages = {592--602},
+                url = {https://doi.org/10.1111/j.0022-3646.1985.00592.x},
+                doi = {10.1111/j.0022-3646.1985.00592.x}
+                }
+                @article{Eppley_et_al_1969,
+                author = {RW Eppley and JN Rogers and JJ McCarthy},
+                title = {Half-saturation constants for uptake of nitrate and ammonium by marine phytoplankton},
+                journal = {Limnology and Oceanography},
+                volume = {14},
+                year = {1969},
+                pages = {912--920},
+                url = {https://doi.org/10.4319/lo.1969.14.6.0912},
+                doi = {10.4319/lo.1969.14.6.0912}
+                }
+                @article{Gotham_and_Rhee_1981,
+                author = {IJ Gotham and GY Rhee},
+                title = {Comparative kinetic studies of nitrate-limited growth and nitrate uptake in phytoplankton continuous culture},
+                journal = {Journal of Phycology},
+                volume = {17},
+                year = {1981},
+                pages = {309--314},
+                url = {https://doi.org/10.1111/j.1529-8817.1981.tb00856.x},
+                doi = {10.1111/j.1529-8817.1981.tb00856.x}
+                }
+                @article{Grover_1991,
+                author = {JP Grover},
+                title = {Resource competition in a variable environment: phytoplankton growing according to the variable-internal-stores model},
+                journal = {American Naturalist},
+                volume = {138},
+                year = {1991},
+                pages = {811--835},
+                url = {https://doi.org/10.1086/285254},
+                doi = {10.1086/285254}
+                }
+                @article{Klausmeier_et_al_2004,
+                author = {CA Klausmeier and E Litchman and SA Levin},
+                title = {Phytoplankton growth and stoichiometry under multiple nutrient limitation},
+                journal = {Limnology and Oceanography},
+                volume = {49},
+                year = {2004},
+                pages = {1463--1470},
+                url = {https://doi.org/10.4319/lo.2004.49.4_part_2.1463},
+                doi = {10.4319/lo.2004.49.4_part_2.1463}
+                }
+                @article{Maranon_et_al_2013,
+                author = {E Mara{\~n}{\'o}n and P Cermen{\~n}o and DC L{\'o}pez-Sandoval and T. Rodr{\'i}guez-Ramos and C Sobrino and M Huete-Ortega and JM Blanco and J Rodr{\'i}guez},
+                title = {Unimodal size scaling of phytoplankton growth and the size dependence of nutrient uptake and use},
+                journal = {Ecology Letters},
+                volume = {16},
+                year = {2013},
+                pages = {371--379},
+                url = {https://doi.org/10.1111/ele.12052},
+                doi = {10.1111/ele.12052}
+                }
+                @article{Monod_1949,
+                author = {J Monod},
+                title = {The growth of bacterial cultures},
+                journal = {Annual Review of Microbiology},
+                volume = {3},
+                year = {1949},
+                pages = {371--394},
+                url = {https://doi.org/10.1146/annurev.mi.03.100149.002103},
+                doi = {10.1146/annurev.mi.03.100149.002103}
+                }
+                @article{Morel_1987,
+                author = {FMM Morel},
+                title = {Kinetics of nutrient uptake and growth in phytoplankton},
+                journal = {Journal of Phycology},
+                volume = {23},
+                year = {1987},
+                pages = {137--150},
+                url = {https://doi.org/10.1111/j.0022-3646.1987.00137.x},
+                doi = {10.1111/j.0022-3646.1987.00137.x}
+                }
+                @article{Quigg_et_al_2011,
+                author = {A Quigg and AJ Irwin and ZV Finkel},
+                title = {Evolutionary inheritance of elemental stoichiometry in phytoplankton},
+                journal = {Proceedings. Biological Sciences / The Royal Society},
+                volume = {278},
+                year = {2011},
+                pages = {526--534},
+                url = {https://doi.org/10.1098/rspb.2010.1356},
+                doi = {10.1098/rspb.2010.1356}
+                }
+                @article{Shuter_1978,
+                author = {BJ Shuter},
+                title = {Size dependence of phosphorus and nitrogen subsistence quotas in unicellular microorganisms},
+                journal = {Limnology and Oceanography},
+                volume = {23},
+                year = {1978},
+                pages = {1248--1255},
+                url = {https://doi.org/10.4319/lo.1978.23.6.1248},
+                doi = {10.4319/lo.1978.23.6.1248}
+                }
+                @article{Smayda_1997,
+                author = {TJ Smayda},
+                title = {Harmful algal blooms: Their ecophysiology and general relevance to phytoplankton blooms in the sea},
+                journal = {Limnology and Oceanography},
+                volume = {42},
+                year = {1997},
+                pages = {1137--1153},
+                url = {https://doi.org/10.4319/lo.1997.42.5_part_2.1137},
+                doi = {10.4319/lo.1997.42.5_part_2.1137}
+                }
+                @article{Thomas_et_al_2012,
+                author = {MK Thomas and CT Kremer and CA Klausmeier and E Litchman},
+                title = {A global pattern of thermal adaptation in marine phytoplankton},
+                journal = {Science},
+                volume = {338},
+                year = {2012},
+                pages = {1085--1088},
+                url = {https://doi.org/10.1126/science.1224836},
+                doi = {10.1126/science.1224836}
+                }
+            </bibtex>
+        </literatureCited>
+    </dataset>
+</eml:eml>
