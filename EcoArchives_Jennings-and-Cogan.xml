@@ -71,6 +71,11 @@
         <purpose>
             <markdown>
             The objective of the project is to improve knowledge of marine food webs; to support development of models of human and environmental impacts. The dataset includes 5535 records of $\delta{15}$N and $\delta^{13}$C natural abundance for individual marine fishes and squids from the Celtic Sea, Channel, Irish Sea and North Sea in the northeast Atlantic. Data were collected from 2002 to 2010. Individuals from each species in each region were sampled to span the range of body sizes present. For species with juvenile stages living offshore the sampling included juveniles. For species with juvenile stages using estuaries and coastal habitats it did not. The range of species and body sizes included in the dataset and the associated $\delta{15}$N and $\delta^{13}$C estimates for muscle tissue are summarized in Figs. 1 and 2.
+            
+            ![Fig. 1. Summary of the ranges of species and body sizes for which $\delta{15}$N data are available. Data presented are for all sampling years and areas combined. Vertical blue bars indicate mean $\delta{15}$N by species. Points are ‘jittered’ (i.e., offset) to increase visibility. Taxonomy follows Table 2.](http://esapubs.org/archive/ecol/E096/226/Fig1.png)
+            
+            
+            ![Fig. 2. Summary of the ranges of species and body sizes for which $\delta^{13}$C data are available. Data presented are for all sampling years and areas combined. Vertical blue bars indicate mean $\delta^{13}$C by species. Points are ‘jittered’ to increase visibility. Taxonomy follows Table 2.](http://esapubs.org/archive/ecol/E096/226/Fig2.png)
             </markdown>
         </purpose>
         <acknowledgements>
