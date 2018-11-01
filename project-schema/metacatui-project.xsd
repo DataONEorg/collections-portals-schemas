@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0"
     xmlns:res="eml://ecoinformatics.org/resource-2.2.0"
-    xmlns:txt="eml://ecoinformatics.org/text-2.2.0" 
+    xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:ent="eml://ecoinformatics.org/entity-2.2.0"
-    xmlns:pro="eml://ecoinformatics.org/project-2.2.0">
+    xmlns:pro="eml://ecoinformatics.org/project-2.2.0"
+    xmlns:col="http://ecoinformatics.org/collection">
     <xs:import namespace="eml://ecoinformatics.org/project-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-project.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-text.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/resource-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-resource.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/entity-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-entity.xsd"/>
-    
+    <xs:import namespace="http://ecoinformatics.org/collection" schemaLocation="metacatui-collection.xsd"/>
+
     <xs:complexType name="MetacatUIProjectType">
         <xs:complexContent>
-            <xs:extension base="pro:ResearchProjectType">
+            <xs:extension base="col:MetacatUICollectionType">
                 <xs:sequence>
-                    <xs:element name="collection" type="txt:TextType" minOccurs="1">
-                        <xs:annotation>
-                            <xs:appinfo>
-                                <doc:tooltip>Project Collection</doc:tooltip>
-                                <doc:summary>Includes all collection information</doc:summary>
-                                <doc:description>This field stores all collection information associated with a project
-                                in a JSON block.</doc:description>
-                                <doc:example>![CDATA[{collection json here}]]</doc:example>
-                            </xs:appinfo>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element name="synopsis" type="res:NonEmptyStringType" minOccurs="1">
-                        <xs:annotation>
-                            <xs:appinfo>
-                                <doc:tooltip>Project Synopsis</doc:tooltip>
-                                <doc:summary>Brief synopsis of project for the homepage</doc:summary>
-                                <doc:description>A brief synopsis of project to follow the project title on the homepage</doc:description>
-                                <doc:example>We are a collaborative group of scientists and community memmbers
-                                    devoted to preserving species diversity in Tenessee riparian habitats.</doc:example>
-                            </xs:appinfo>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project acknowledgements</doc:tooltip>
                                 <doc:summary>Acknoweledgement of individuals and groups that contributed to the project</doc:summary>
                                 <doc:description>The acknowledgement field is used to provide acknowledgements
-                                    to any individuals or groups that may have assisted on the project but are not 
+                                    to any individuals or groups that may have assisted on the project but are not
                                     directly releated to funding or an award.</doc:description>
                             </xs:appinfo>
                         </xs:annotation>
@@ -64,7 +44,7 @@
                                 <doc:tooltip>Project description</doc:tooltip>
                                 <doc:summary>Project overview and description with information about the purpose of the project</doc:summary>
                                 <doc:description>This field is used to describe a project and will be presented
-                                    on the project landing page. Content can either be a markdown document to include images 
+                                    on the project landing page. Content can either be a markdown document to include images
                                     and basic formatting, or plain text. This should include information on the purpose of the project
                                     and any other useful information for visitors to the landing page.</doc:description>
                             </xs:appinfo>
@@ -76,7 +56,7 @@
                                 <doc:tooltip>Project results or analyses</doc:tooltip>
                                 <doc:summary>Project results can include tables, figures, maps, and other summary information.</doc:summary>
                                 <doc:description>This section can contain project results or any preliminary analyses and figures.
-                                    This can be a markdown document which includes figures and formatted text from analyses conducted 
+                                    This can be a markdown document which includes figures and formatted text from analyses conducted
                                     with the project data holdings, or can be plain text.</doc:description>
                             </xs:appinfo>
                         </xs:annotation>

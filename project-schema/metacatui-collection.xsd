@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0"
+    xmlns:res="eml://ecoinformatics.org/resource-2.2.0"
+    xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
+    xmlns:ent="eml://ecoinformatics.org/entity-2.2.0"
+    xmlns:pro="eml://ecoinformatics.org/project-2.2.0">
+    <xs:import namespace="eml://ecoinformatics.org/project-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-project.xsd"/>
+    <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-text.xsd"/>
+    <xs:import namespace="eml://ecoinformatics.org/resource-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-resource.xsd"/>
+    <xs:import namespace="eml://ecoinformatics.org/entity-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-entity.xsd"/>
+
+    <xs:complexType name="MetacatUICollectionType">
+      <xs:sequence>
+        <xs:element name="name" type="txt:TextType" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>name</doc:tooltip>
+                  <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
+                  <doc:example>NCEAS-datasets</doc:example>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="label" type="txt:TextType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>label</doc:tooltip>
+                  <doc:description>Full title/label that describes the collection</doc:description>
+                  <doc:example>NCEAS datasets</doc:example>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="synopsis" type="txt:TextType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>synopsis</doc:tooltip>
+                  <doc:description>Brief description of the purpose of the collection</doc:description>
+                  <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="definition" minOccurs="1">
+          <xs:choice>
+            <xs:complexType name="listOfIdentifiers">
+              <xs:element name="id" type="xs:string" minOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>id</doc:tooltip>
+                        <doc:description>An identifier for a data object to be included in this collection.</doc:description>
+                        <doc:example>https://cn.dataone.org/cn/v2/object/urn:uuid:c7ff70a0-65a1-4bea-9d79-1d577a27f72c</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+              </xs:element>
+            </xs:complexType>
+            <xs:complexType name="listOfFilterGroups">
+              <xs:element name="filterGroup" minOccurs="1">
+                <xs:complexType name="filterGroup">
+                  <xs:sequence>
+                    <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:appinfo>
+                              <doc:tooltip>label</doc:tooltip>
+                              <doc:description>Label that describes the group of filters</doc:description>
+                              <doc:example>Geography</doc:example>
+                          </xs:appinfo>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="operator" type="xs:string" minOccurs="1" maxOccurs="1">
+                      <xs:annotation>
+                          <xs:appinfo>
+                              <doc:tooltip>operator</doc:tooltip>
+                              <doc:description>Specify if filters should use AND or OR logic in query construction among filters within the group</doc:description>
+                              <doc:example>OR</doc:example>
+                          </xs:appinfo>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="filter" minOccurs="1">
+                      <xs:complexType name="filter">
+                        <xs:sequence>
+                          <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>label</doc:tooltip>
+                                    <doc:description>A short label that will display in the UI for this filter</doc:description>
+                                    <doc:example>River/System</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>description</doc:tooltip>
+                                    <doc:description>Description of filter (used for tooltips)</doc:description>
+                                    <doc:example>The river name where data was collected.</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="icon" type="xs:string" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>icon</doc:tooltip>
+                                    <doc:description>Reference to an icon name to display</doc:description>
+                                    <doc:example>water</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="enabled" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>enabled</doc:tooltip>
+                                    <doc:description>If true, this filter will be used to subset datasets on the backend whether or not it is visible in the UI</doc:description>
+                                    <doc:example>true</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="display" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>display</doc:tooltip>
+                                    <doc:description>If true, will be displayed as a filter choice in the UI</doc:description>
+                                    <doc:example>true</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="searchFields" minOccurs="1">
+                            <xs:complexType name="searchFields">
+                              <xs:sequence>
+                                <xs:element name="namespace" type="xs:string" minOccurs="1" maxOccurs="1">
+                                  <xs:annotation>
+                                      <xs:appinfo>
+                                          <doc:tooltip>namespace</doc:tooltip>
+                                          <doc:description>Index/namespace to query</doc:description>
+                                          <doc:example>solr</doc:example>
+                                      </xs:appinfo>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="field" type="xs:string" minOccurs="1" maxOccurs="1">
+                                  <xs:annotation>
+                                      <xs:appinfo>
+                                          <doc:tooltip>field</doc:tooltip>
+                                          <doc:description>name of field/attribute to query</doc:description>
+                                          <doc:example>site</doc:example>
+                                      </xs:appinfo>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="value" type="xs:string" minOccurs="0" maxOccurs="1">
+                                  <xs:annotation>
+                                      <xs:appinfo>
+                                          <doc:tooltip>value</doc:tooltip>
+                                          <doc:description>Value to query for the corresponding field(s)</doc:description>
+                                          <doc:example>California</doc:example>
+                                      </xs:appinfo>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="filterType" type="xs:string" minOccurs="1" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>filter type</doc:tooltip>
+                                    <doc:description>The type of value set on this filter. Either number, date, text, or boolean</doc:description>
+                                    <doc:example>number, date, text, or boolean</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="numericMin" type="xs:int" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Numeric min</doc:tooltip>
+                                    <doc:description>Minimum value for numeric slider</doc:description>
+                                    <doc:example>20</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="numericMax" type="xs:int" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Numeric max</doc:tooltip>
+                                    <doc:description>Maximum value for numeric slider</doc:description>
+                                    <doc:example>200</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="dateMin" type="xs:date" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Date min</doc:tooltip>
+                                    <doc:description>Minimum value for date slider</doc:description>
+                                    <doc:example>2018-01-01</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="dateMax" type="xs:date" minOccurs="0" maxOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Date max</doc:tooltip>
+                                    <doc:description>Maximum value for date slider</doc:description>
+                                    <doc:example>2018-01-01</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="textChoice" type="xs:string" minOccurs="0">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Text choice</doc:tooltip>
+                                    <doc:description>A possible filter text value that is not applied to the query until chosen by the user.</doc:description>
+                                    <doc:example>Chinook salmon</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="textChoiceOperator" type="xs:string" minOccurs="0" minOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>text choice operator</doc:tooltip>
+                                    <doc:description>Specify if values should be AND or OR'ed in query</doc:description>
+                                    <doc:example>OR</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="textChoiceIsRadio" type="xs:boolean" minOccurs="0" minOccurs="1">
+                            <xs:annotation>
+                                <xs:appinfo>
+                                    <doc:tooltip>Text choice is a boolean</doc:tooltip>
+                                    <doc:description>Specify if the user can only choose one option</doc:description>
+                                    <doc:example>true</doc:example>
+                                </xs:appinfo>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:complexType>
+          </xs:choice>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+</xs:schema>
