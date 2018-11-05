@@ -6,11 +6,13 @@
     xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:ent="eml://ecoinformatics.org/entity-2.2.0"
     xmlns:pro="eml://ecoinformatics.org/project-2.2.0"
+    xmlns:par="eml://ecoinformatics.org/party-2.2.0"
     xmlns:col="http://ecoinformatics.org/datasetcollection">
     <xs:import namespace="eml://ecoinformatics.org/project-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-project.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-text.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/resource-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-resource.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/entity-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-entity.xsd"/>
+    <xs:import namespace="eml://ecoinformatics.org/party-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-party.xsd"/>
     <xs:import namespace="http://ecoinformatics.org/datasetcollection" schemaLocation="metacatui-collection.xsd"/>
 
     <xs:complexType name="DatasetProjectType">
@@ -57,6 +59,14 @@
                                 <doc:description>This section can contain project results or any preliminary analyses and figures.
                                     This can be a markdown document which includes figures and formatted text from analyses conducted
                                     with the project data holdings, or can be plain text.</doc:description>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="personnel" type="par:ResponsibleParty" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <doc:tooltip>Project personnel</doc:tooltip>
+                                <doc:description>Contact and role information for people involved in the research project.</doc:description>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
