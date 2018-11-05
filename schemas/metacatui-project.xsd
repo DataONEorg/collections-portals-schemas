@@ -6,42 +6,41 @@
     xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:ent="eml://ecoinformatics.org/entity-2.2.0"
     xmlns:pro="eml://ecoinformatics.org/project-2.2.0"
-    xmlns:col="http://ecoinformatics.org/collection">
+    xmlns:col="http://ecoinformatics.org/datasetcollection">
     <xs:import namespace="eml://ecoinformatics.org/project-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-project.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-text.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/resource-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-resource.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/entity-2.2.0" schemaLocation="/Users/datateam/local_repos/eml/xsd/eml-entity.xsd"/>
-    <xs:import namespace="http://ecoinformatics.org/collection" schemaLocation="metacatui-collection.xsd"/>
+    <xs:import namespace="http://ecoinformatics.org/datasetcollection" schemaLocation="metacatui-collection.xsd"/>
 
-    <xs:complexType name="MetacatUIProjectType">
+    <xs:complexType name="DatasetProjectType">
         <xs:complexContent>
-            <xs:extension base="col:MetacatUICollectionType">
+            <xs:extension base="col:DatasetCollectionType">
                 <xs:sequence>
-                    <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0">
+                    <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project acknowledgements</doc:tooltip>
-                                <doc:summary>Acknoweledgement of individuals and groups that contributed to the project</doc:summary>
+                                <doc:summary>An acknowledgement of individuals and groups that contributed to the project.</doc:summary>
                                 <doc:description>The acknowledgement field is used to provide acknowledgements
                                     to any individuals or groups that may have assisted on the project but are not
-                                    directly releated to funding or an award.</doc:description>
+                                    directly related to funding or an award.</doc:description>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="logos" type="ent:ImageListType" minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="logo" type="ent:ImageListType" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:appinfo>
-                                <doc:tooltip>Project logos</doc:tooltip>
-                                <doc:summary>Logos for the project</doc:summary>
-                                <doc:description>These are logos that represent the project. They should be square (same x and y dimensions)
-                                    and </doc:description>
+                                <doc:tooltip>Project logo</doc:tooltip>
+                                <doc:summary>A logo image that represents the project.</doc:summary>
+                                <doc:description>A logo image that represents the project. May be restrictied to certain proportions or size.</doc:description>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="projectDescription" type="txt:TextType" minOccurs="0">
+                    <xs:element name="overview" type="txt:TextType" minOccurs="0">
                         <xs:annotation>
                             <xs:appinfo>
-                                <doc:tooltip>Project description</doc:tooltip>
+                                <doc:tooltip>Project overview</doc:tooltip>
                                 <doc:summary>Project overview and description with information about the purpose of the project</doc:summary>
                                 <doc:description>This field is used to describe a project and will be presented
                                     on the project landing page. Content can either be a markdown document to include images
@@ -50,7 +49,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="resultsOverview" type="txt:TextType" minOccurs="0">
+                    <xs:element name="results" type="txt:TextType" minOccurs="0">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project results or analyses</doc:tooltip>
@@ -61,8 +60,228 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
+                    <xs:element name="filterGroup" type="FilterGroupType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <doc:tooltip>Filter group</doc:tooltip>
+                                <doc:summary>Filter group to display in the user interface to further subset the datasets in this project.</doc:summary>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+
+    <xs:complexType name="FilterGroupType">
+      <xs:sequence>
+        <xs:element name="label" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Label</doc:tooltip>
+                  <doc:description>A short label to display in the user interface for this filter group.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Description</doc:tooltip>
+                  <doc:description>A brief description of this filter group that will be displayed in the user interface as help text.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="icon" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Icon name</doc:tooltip>
+                  <doc:description>An icon name, chosen from a library of supported icon fonts.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="filter" type="UserInterfaceFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Filter</doc:tooltip>
+                  <doc:description>A user interface filter to display inside this filter group.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:FilterType">
+          <xs:sequence>
+            <xs:element name="label" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Label</doc:tooltip>
+                        <doc:summary>A short 1-2 work label to display for this filter.</doc:summary>
+                        <doc:description>A short 1-2 work label to display for this filter.</doc:description>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="placeholder" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Placeholder</doc:tooltip>
+                        <doc:summary>A short placeholder string</doc:summary>
+                        <doc:description>A short placeholder string to display for this filter.
+                          For example, the placeholder text to show in an HTML text input.</doc:description>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="icon" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Icon</doc:tooltip>
+                        <doc:summary>An icon name</doc:summary>
+                        <doc:description>An icon name, chosen from a library of supported icon fonts.</doc:description>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Description</doc:tooltip>
+                        <doc:summary>A brief description of this filter.</doc:summary>
+                        <doc:description>A brief description of this filter that will be displayed in the user interface as help text.</doc:description>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceDateFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:UserInterfaceFilterType">
+          <xs:sequence>
+            <xs:element name="min" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Minimum date</doc:tooltip>
+                        <doc:description>The minimum date to display in a date picker user interface tool.</doc:description>
+                        <doc:example>2004-04-12</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="max" type="xs:date" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Maximum date</doc:tooltip>
+                        <doc:description>The maximum date to display in a date picker user interface tool.</doc:description>
+                        <doc:example>2004-04-12</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceNumericFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:UserInterfaceFilterType">
+          <xs:sequence>
+            <xs:element name="min" type="xs:float" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Minimum number</doc:tooltip>
+                        <doc:description>The minimum number to display in a number input user interface tool.</doc:description>
+                        <doc:example>1.5</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="max" type="xs:float" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Maximum number</doc:tooltip>
+                        <doc:description>The maximum number to display in a number input user interface tool.</doc:description>
+                        <doc:example>1.5</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceBooleanFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:UserInterfaceFilterType">
+          <xs:sequence>
+            <xs:element name="trueLabel" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>True label</doc:tooltip>
+                        <doc:description>A label to display in a toggle when the tool is set to true.</doc:description>
+                        <doc:example>Male</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="falseLabel" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>False label</doc:tooltip>
+                        <doc:description>A label to display in a toggle when the tool is set to false.</doc:description>
+                        <doc:example>Female</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceChoiceFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:UserInterfaceFilterType">
+          <xs:sequence>
+            <xs:element name="choice" type="ChoiceType" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Choice</doc:tooltip>
+                        <doc:description>One of many options to display in the interface as a filter value choice.</doc:description>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="chooseMultiple" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <doc:tooltip>Choose multiple options</doc:tooltip>
+                        <doc:description>If set to true, the user is able to select multiple filter choices at once.</doc:description>
+                        <doc:example>true</doc:example>
+                    </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ChoiceType">
+      <xs:sequence>
+        <xs:element name="label" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Label</doc:tooltip>
+                  <doc:description>A short label to display in the user interface for this filter value.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Value</doc:tooltip>
+                  <doc:description>The value to use in the query when this choice is selected.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
 </xs:schema>
