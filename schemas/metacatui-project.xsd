@@ -19,17 +19,6 @@
         <xs:complexContent>
             <xs:extension base="col:DatasetCollectionType">
                 <xs:sequence>
-                    <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0" maxOccurs="1">
-                        <xs:annotation>
-                            <xs:appinfo>
-                                <doc:tooltip>Project acknowledgements</doc:tooltip>
-                                <doc:summary>An acknowledgement of individuals and groups that contributed to the project.</doc:summary>
-                                <doc:description>The acknowledgement field is used to provide acknowledgements
-                                    to any individuals or groups that may have assisted on the project but are not
-                                    directly related to funding or an award.</doc:description>
-                            </xs:appinfo>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="logo" type="ent:ImageListType" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:appinfo>
@@ -67,6 +56,25 @@
                             <xs:appinfo>
                                 <doc:tooltip>Project personnel</doc:tooltip>
                                 <doc:description>Contact and role information for people involved in the research project.</doc:description>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <doc:tooltip>Project acknowledgements</doc:tooltip>
+                                <doc:summary>An acknowledgement of individuals and groups that contributed to the project.</doc:summary>
+                                <doc:description>The acknowledgement field is used to provide acknowledgements
+                                    to any individuals or groups that may have assisted on the project but are not
+                                    directly related to funding or an award.</doc:description>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="branding" type="BrandingType" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <doc:tooltip>Branding</doc:tooltip>
+                                <doc:summary>Contains brand styling information to use in user interfaces for this project.</doc:summary>
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
@@ -322,6 +330,50 @@
               <xs:appinfo>
                   <doc:tooltip>Value</doc:tooltip>
                   <doc:description>The value to use in the query when this choice is selected.</doc:description>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BrandingType">
+      <xs:sequence>
+        <xs:element name="primaryColor" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Primary color</doc:tooltip>
+                  <doc:summary>The primary color for this brand, represented via a hexadecimal color code.
+                    This color will be used often in the user interface.</doc:summary>
+                  <doc:example>#FF0000</doc:example>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
+                  </xs:restriction>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="secondaryColor" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Secondary color</doc:tooltip>
+                  <doc:summary>The secondary color for this brand, represented via a hexadecimal color code.
+                    This color will be used less frequently than the primary color in the user interface.</doc:summary>
+                    <doc:example>#FF0000</doc:example>
+                    <xs:restriction base="xs:string">
+                      <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
+                    </xs:restriction>
+              </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="accentColor" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+              <xs:appinfo>
+                  <doc:tooltip>Accent color</doc:tooltip>
+                  <doc:summary>The accent color for this brand, represented via a hexadecimal color code.
+                    This color will be used sparingly in the user interface.</doc:summary>
+                    <doc:example>#FF0000</doc:example>
+                    <xs:restriction base="xs:string">
+                      <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
+                    </xs:restriction>
               </xs:appinfo>
           </xs:annotation>
         </xs:element>
