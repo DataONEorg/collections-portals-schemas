@@ -39,7 +39,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="overview" type="txt:TextType" minOccurs="0">
+                    <xs:element name="overview" type="txt:TextType" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project overview</doc:tooltip>
@@ -51,7 +51,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="results" type="txt:TextType" minOccurs="0">
+                    <xs:element name="results" type="txt:TextType" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project results or analyses</doc:tooltip>
@@ -62,7 +62,7 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="personnel" type="par:ResponsibleParty" minOccurs="0" maxOccurs="1">
+                    <xs:element name="personnel" type="par:ResponsibleParty" minOccurs="0" maxOccurs="unbounded">
                         <xs:annotation>
                             <xs:appinfo>
                                 <doc:tooltip>Project personnel</doc:tooltip>
@@ -93,7 +93,7 @@
               </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
               <xs:appinfo>
                   <doc:tooltip>Description</doc:tooltip>
@@ -101,7 +101,7 @@
               </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="icon" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:element name="icon" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
               <xs:appinfo>
                   <doc:tooltip>Icon name</doc:tooltip>

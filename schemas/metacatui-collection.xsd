@@ -13,7 +13,7 @@
 
     <xs:complexType name="DatasetCollectionType">
       <xs:sequence>
-        <xs:element name="name" type="txt:TextType" minOccurs="1" maxOccurs="1">
+        <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
           <xs:annotation>
               <xs:appinfo>
                   <doc:tooltip>Name</doc:tooltip>
@@ -22,7 +22,7 @@
               </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="label" type="txt:TextType" minOccurs="0" maxOccurs="1">
+        <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
               <xs:appinfo>
                   <doc:tooltip>Label</doc:tooltip>
@@ -91,7 +91,7 @@
           </xs:appinfo>
       </xs:annotation>
       <xs:sequence>
-        <xs:element name="searchField" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:element name="field" type="xs:string" minOccurs="1" maxOccurs="1">
           <xs:annotation>
               <xs:appinfo>
                   <doc:tooltip>Search field</doc:tooltip>
