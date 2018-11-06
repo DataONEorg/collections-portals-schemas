@@ -86,6 +86,14 @@
                             </xs:appinfo>
                         </xs:annotation>
                     </xs:element>
+                    <xs:element name="hideMetrics" type="xs:boolean" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <doc:tooltip>Hide metric</doc:tooltip>
+                                <doc:summary>If set to true, metrics about this project will be hidden from the user interface.</doc:summary>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
                     <xs:element name="filterGroup" type="FilterGroupType" minOccurs="0" maxOccurs="unbounded">
                         <xs:annotation>
                             <xs:appinfo>
