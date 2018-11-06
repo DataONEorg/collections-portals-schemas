@@ -109,14 +109,48 @@
               </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="filter" type="UserInterfaceFilterType" minOccurs="1" maxOccurs="unbounded">
-          <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Filter</doc:tooltip>
-                  <doc:description>A user interface filter to display inside this filter group.</doc:description>
-              </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
+        <xs:choice>
+          <xs:element name="textFilter" type="UserInterfaceFilterType" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:appinfo>
+                    <doc:tooltip>Text filter</doc:tooltip>
+                    <doc:summary>A text-based filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+                </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="dateFilter" type="UserInterfaceDateFilterType" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:appinfo>
+                    <doc:tooltip>Date filter</doc:tooltip>
+                    <doc:summary>A date filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+                </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="numericFilter" type="UserInterfaceNumericFilterType" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:appinfo>
+                    <doc:tooltip>Numeric filter</doc:tooltip>
+                    <doc:summary>A numberic filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+                </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="booleanFilter" type="UserInterfaceBooleanFilterType" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:appinfo>
+                    <doc:tooltip>Boolean filter</doc:tooltip>
+                    <doc:summary>A boolean/toggle filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+                </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="choiceFilter" type="UserInterfaceChoiceFilterType" minOccurs="1" maxOccurs="unbounded">
+            <xs:annotation>
+                <xs:appinfo>
+                    <doc:tooltip>Choice filter</doc:tooltip>
+                    <doc:summary>A filter to display in a user interface that allows the user to further subset project datasets from a pre-defined list of options.</doc:summary>
+                </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:choice>
       </xs:sequence>
     </xs:complexType>
 
