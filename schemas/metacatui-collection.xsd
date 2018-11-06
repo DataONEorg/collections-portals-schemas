@@ -60,26 +60,15 @@
               <doc:example>See the individual sub-elements for specific examples.</doc:example>
           </xs:appinfo>
       </xs:annotation>
-      <xs:choice>
-        <xs:element name="id" type="xs:string" minOccurs="1" maxOccurs="unbounded">
-          <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>ID</doc:tooltip>
-                  <doc:description>An identifier for a data object to be included in this collection.</doc:description>
-                  <doc:example>https://cn.dataone.org/cn/v2/object/urn:uuid:c7ff70a0-65a1-4bea-9d79-1d577a27f72c</doc:example>
-              </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="filter" type="FilterType" minOccurs="1" maxOccurs="unbounded">
-          <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Filter</doc:tooltip>
-                  <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
-                  <doc:example></doc:example>
-              </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-      </xs:choice>
+      <xs:element name="filter" type="FilterType" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+            <xs:appinfo>
+                <doc:tooltip>Filter</doc:tooltip>
+                <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
+                <doc:example></doc:example>
+            </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:complexType>
 
     <xs:complexType name="FilterType">
