@@ -15,38 +15,38 @@
       <xs:sequence>
         <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Name</doc:tooltip>
-                  <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
-                  <doc:example>NCEAS-datasets</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Name</doc:tooltip>
+              <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
+              <doc:example>NCEAS-datasets</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
         <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Label</doc:tooltip>
-                  <doc:description>Full title/label that describes the collection</doc:description>
-                  <doc:example>NCEAS datasets</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Label</doc:tooltip>
+              <doc:description>Full title/label that describes the collection</doc:description>
+              <doc:example>NCEAS datasets</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
         <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Description</doc:tooltip>
-                  <doc:description>Brief description of the purpose of the collection</doc:description>
-                  <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Description</doc:tooltip>
+              <doc:description>Brief description of the purpose of the collection</doc:description>
+              <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
         <xs:element name="definition" type="DefinitionType" minOccurs="1" maxOccurs="1">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Definition</doc:tooltip>
-                  <doc:description>Defines which datasets are a part of this collection.</doc:description>
-                  <doc:example>See the individual sub-elements for specific examples.</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Definition</doc:tooltip>
+              <doc:description>Defines which datasets are a part of this collection.</doc:description>
+              <doc:example>See the individual sub-elements for specific examples.</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
@@ -54,57 +54,55 @@
 
     <xs:complexType name="DefinitionType">
       <xs:annotation>
-          <xs:appinfo>
-              <doc:tooltip>Definition</doc:tooltip>
-              <doc:description>Defines which datasets are a part of this collection.</doc:description>
-              <doc:example>See the individual sub-elements for specific examples.</doc:example>
-          </xs:appinfo>
+        <xs:appinfo>
+          <doc:tooltip>Definition</doc:tooltip>
+          <doc:description>Defines which datasets are a part of this collection.</doc:description>
+          <doc:example>See the individual sub-elements for specific examples.</doc:example>
+        </xs:appinfo>
       </xs:annotation>
       <xs:element name="filter" type="FilterType" minOccurs="1" maxOccurs="unbounded">
         <xs:annotation>
-            <xs:appinfo>
-                <doc:tooltip>Filter</doc:tooltip>
-                <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
-                <doc:example></doc:example>
-            </xs:appinfo>
+          <xs:appinfo>
+            <doc:tooltip>Filter</doc:tooltip>
+            <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
+          </xs:appinfo>
         </xs:annotation>
       </xs:element>
     </xs:complexType>
 
     <xs:complexType name="FilterType">
       <xs:annotation>
-          <xs:appinfo>
-              <doc:tooltip>Filter</doc:tooltip>
-              <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
-              <doc:example></doc:example>
-          </xs:appinfo>
+        <xs:appinfo>
+          <doc:tooltip>Filter</doc:tooltip>
+          <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
+        </xs:appinfo>
       </xs:annotation>
       <xs:sequence>
         <xs:element name="field" type="xs:string" minOccurs="1" maxOccurs="1">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Search field</doc:tooltip>
-                  <doc:description>The name of the search field/attribute to query.</doc:description>
-                  <doc:example>site</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Search field</doc:tooltip>
+              <doc:description>The name of the search field/attribute to query.</doc:description>
+              <doc:example>site</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
         <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Value</doc:tooltip>
-                  <doc:description>Value to query for the corresponding field(s)</doc:description>
-                  <doc:example>California</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Value</doc:tooltip>
+              <doc:description>Value to query for the corresponding field(s)</doc:description>
+              <doc:example>California</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
         <xs:element name="operator" type="xs:string" minOccurs="0" maxOccurs="1" default="AND">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Operator</doc:tooltip>
-                  <doc:description>If more than one value in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
-                  <doc:example>AND</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Operator</doc:tooltip>
+              <doc:description>If more than one value in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
+              <doc:example>AND</doc:example>
+            </xs:appinfo>
           </xs:annotation>
           <xs:simpleType>
             <xs:restriction base="xs:string">
@@ -115,11 +113,11 @@
         </xs:element>
         <xs:element name="exclude" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
           <xs:annotation>
-              <xs:appinfo>
-                  <doc:tooltip>Exclude</doc:tooltip>
-                  <doc:description>If set to true, this filter will be used to exclude (rather than include) datasets from the query results.</doc:description>
-                  <doc:example>true</doc:example>
-              </xs:appinfo>
+            <xs:appinfo>
+              <doc:tooltip>Exclude</doc:tooltip>
+              <doc:description>If set to true, this filter will be used to exclude (rather than include) datasets from the query results.</doc:description>
+              <doc:example>true</doc:example>
+            </xs:appinfo>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
