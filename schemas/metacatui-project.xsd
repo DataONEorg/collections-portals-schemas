@@ -257,7 +257,7 @@
     <xs:complexType name="UserInterfaceBooleanFilterType">
       <xs:complexContent>
         <xs:extension base="col:UserInterfaceFilterType">
-          <xs:sequence>
+          <xs:sequence minOccurs="0">
             <xs:element name="trueLabel" type="xs:string" minOccurs="1" maxOccurs="1">
                 <xs:annotation>
                     <xs:appinfo>
