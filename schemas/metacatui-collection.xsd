@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
-    xmlns="http://ecoinformatics.org/datasetcollection"
-    targetNamespace="http://ecoinformatics.org/datasetcollection"
+    xmlns="http://ecoinformatics.org/datasetcollection-beta1"
+    targetNamespace="http://ecoinformatics.org/datasetcollection-beta1"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>

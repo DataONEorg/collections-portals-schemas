@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
-    xmlns="http://ecoinformatics.org/datasetproject"
-    targetNamespace="http://ecoinformatics.org/datasetproject"
+    xmlns="http://ecoinformatics.org/datasetproject-beta1"
+    targetNamespace="http://ecoinformatics.org/datasetproject-beta1"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0"
     xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:par="eml://ecoinformatics.org/party-2.2.0"
-    xmlns:col="http://ecoinformatics.org/datasetcollection">
+    xmlns:col="http://ecoinformatics.org/datasetcollection-beta1">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="eml-text.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/party-2.2.0" schemaLocation="eml-party.xsd"/>
-    <xs:import namespace="http://ecoinformatics.org/datasetcollection" schemaLocation="metacatui-collection.xsd"/>
+    <xs:import namespace="http://ecoinformatics.org/datasetcollection-beta1" schemaLocation="metacatui-collection.xsd"/>
 
     <xs:complexType name="DatasetProjectType">
       <xs:complexContent>
@@ -64,6 +64,15 @@
                   <doc:description>The acknowledgement field is used to provide acknowledgements
                     to any individuals or groups that may have assisted on the project but are not
                     directly related to funding or an award.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="acknowledgmentsLogo" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Logo image identifier</doc:tooltip>
+                  <doc:summary>A logo image for a project funder.</doc:summary>
+                  <doc:description>The identifier of the logo image for this project. May be restrictied to certain proportions or size.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
