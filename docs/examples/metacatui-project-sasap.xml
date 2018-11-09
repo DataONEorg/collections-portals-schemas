@@ -1,0 +1,633 @@
+<?xml version="1.0" ?>
+<project xmlns=""
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="">
+
+    <!-- TODO: fill in basic project info -->
+
+    <!-- === from collection schema === -->
+    <name>SASAP</name>
+    <label>State of Alaska's Salmon and People</label>
+    <definition></definition>
+
+    <!-- === from project schema === -->
+    <logo></logo>
+    <overview></overview>
+    <results></results>
+    <personnel></personnel>
+    <acknowledgments></acknowledgments>
+    <acknowledgmentsLogo></acknowledgmentsLogo>
+    <branding></branding>
+    <map></map>
+    <hideMetrics>false</hideMetrics>
+
+    <!-- ====== Geography Filter Group ====== -->
+    <filterGroup>
+
+        <label>Geography</label>
+        <description>The specific site in Alaska that the data pertain to</description> <!-- TODO: reword description -->
+        <icon>fa-globe</icon>
+
+        <!-- === waterbody sub-filter === -->
+        <choiceFilter>
+            <field>site</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>Waterbody</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Rivers, river systems, or other waterbodies</description>
+
+          	<choice>
+                <label>Copper River</label>
+                <value>*copper river*</value>
+            </choice>
+          	<choice>
+                <label>Tanana River</label>
+                <value>*tanana river*</value>
+            </choice>
+          	<choice>
+                <label>Porcupine River</label>
+                <value>*porcupine river*</value>
+            </choice>
+          	<choice>
+                <label>Koyukuk River</label>
+                <value>*koyukuk river*</value>
+            </choice>
+          	<choice>
+                <label>Colville River</label>
+                <value>*colville river*</value>
+            </choice>
+            <!-- .... and many, many, many more ... -->
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+
+        <!-- === SASAP Region subfilter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>SASAP Region</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>State of Alaska's Salmon and People region</description>
+
+        	<choice>
+    	        <label>Alaska Peninsula and Aleutian Islands</label>
+    	        <value>*alaska peninsula and aleutian islands*</value>
+            </choice>
+
+          	<choice>
+            	<label>Arctic</label>
+            	<value>*arctic*</value>
+            </choice>
+
+        	<choice>
+            	<label>Bristol Bay</label>
+            	<value>*bristol bay*</value>
+            </choice>
+
+        	<choice>
+            	<label>Chignik</label>
+            	<value>*chignik*</value>
+            </choice>
+
+        	<choice>
+            	<label>Cook Inlet</label>
+            	<value>*cook inlet*</value>
+            </choice>
+
+        	<choice>
+            	<label>Copper River</label>
+            	<value>*copper river*</value>
+            </choice>
+
+        	<choice>
+            	<label>Kodiak</label>
+            	<value>*kodiak*</value>
+            </choice>
+
+        	<choice>
+            	<label>Kotzebue</label>
+            	<value>*kotzebue*</value>
+            </choice>
+
+        	<choice>
+            	<label>Kuskokwim</label>
+            	<value>*kuskokwim*</value>
+            </choice>
+
+        	<choice>
+            	<label>Prince William Sound</label>
+            	<value>*prince william sound*</value>
+            </choice>
+
+        	<choice>
+            	<label>Norton Sound</label>
+            	<value>*norton sound*</value>
+            </choice>
+
+        	<choice>
+            	<label>Southeast</label>
+            	<value>*southeast*</value>
+            </choice>
+
+        	<choice>
+            	<label>Yukon</label>
+            	<value>*yukon*</value>
+            </choice>
+
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- === ADFG area subfilter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>ADFG management area</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Alaska Department of Fish and Game commercial management area</description>
+        	<choice>
+                <label>Arctic-Yukon-Kuskokwim</label>
+                <value>*arctic-yukon-kuskokwim*</value>
+            </choice>
+        	<choice>
+                <label>Central Region</label>
+                <value>*central region*</value>
+            </choice>
+        	<choice>
+                <label>Southeast Region</label>
+                <value>*southeast region*</value>
+            </choice>
+        	<choice>
+                <label>Westward Region</label>
+                <value>*westward region*</value>
+            </choice>
+            <!-- .... and many, many, many more ... -->
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+    </filterGroup>
+
+    <!-- ====== Species Filter Group ====== -->
+    <filterGroup>
+
+        <label>Species</label>
+        <description>Species of salmon, common names</description>
+        <icon>fa-fish</icon>
+
+        <choiceFilter>
+            <field>species</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude>  -->
+            <label>Species</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Salmon species, by common name</description>
+        	<choice>
+                <label>Sockeye</label>
+                <value>Oncorhynchus nerka</value>
+            </choice>
+        	<choice>
+                <label>Chinook</label>
+                <value>Oncorhynchus tshawytscha</value>
+            </choice>
+        	<choice>
+                <label>Coho</label>
+                <value>Oncorhynchus kisutch</value>
+            </choice>
+        	<choice>
+                <label>Chum</label>
+                <value>Oncorhynchus keta</value>
+            </choice>
+        	<choice>
+                <label>Pink</label>
+                <value>Oncorhynchus gorbuscha</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Theme Filter Group ====== -->
+    <filterGroup>
+        <label>Theme</label>
+        <description>Topic covered by the data</description>
+        <icon>fa-shapes</icon>
+
+        <!-- Fish Productivity sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Fish Productivity</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-fish</icon>
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label>Escapement</label>
+                <value>escapement</value>
+            </choice>
+        	<choice>
+                <label>Age, sex, length</label>
+                <value>Age, sex, length</value>
+            </choice>
+        	<choice>
+                <label>Brood table</label>
+                <value>Brood table</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Habitat sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Habitat</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-water</icon>
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label>Land use</label>
+                <value>land use</value>
+            </choice>
+        	<choice>
+                <label>Temperature</label>
+                <value>temperature</value>
+            </choice>
+        	<choice>
+                <label>Precipitation</label>
+                <value>precipitation</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Management sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Management</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-file-contract</icon>
+            <description><!-- TODO: describe fish productivity--></description>
+        	<choice>
+                <label>Harvest</label>
+                <value>harvest</value>
+            </choice>
+        	<choice>
+                <label>Governance</label>
+                <value>governance</value>
+            </choice>
+        	<choice>
+                <label>Hatcheries</label>
+                <value>hatcheries</value>
+            </choice>
+        	<choice>
+                <label>Commercial</label>
+                <value>commercial</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Human dimensions sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Human Dimensions</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-users</icon>
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label>Surveys</label>
+                <value>survey</value>
+            </choice>
+        	<choice>
+                <label>Census and Demographic</label>
+                <value>census and demographic</value>
+            </choice>
+        	<choice>
+                <label>Economic</label>
+                <value>economic</value>
+            </choice>
+        </choiceFilter>
+
+    <!-- ====== Featured Filter Group ====== -->
+    <filterGroup>
+
+        <label>Featured</label>
+        <description><!-- TODO: describe--></description>
+        <icon>fa-star</icon>
+
+        <booleanFilter>
+            <field>keywords</field>
+            <value>featured</value>
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Featured</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description><!-- TODO: describe --></description>
+            <trueLabel>featured</trueLabel>
+            <falseLabel><!-- TODO: what to put here? not featured? Can this be optional?--></falseLabel>
+        </booleanFilter>
+
+    </filterGroup>
+
+    <!-- ====== Creator/Organization/Working Group Filter Group ====== -->
+    <filterGroup>
+
+        <label>Creators</label>
+        <description>The people, organization, or working group attributed with creating the data</description>
+        <icon>fa-user-edit</icon>
+
+        <!-- Organization sub-fitler -->
+        <choiceFilter>
+            <field>contactOrganization</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Organization</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-university</icon>
+            <description>Organization that provided the data</description>
+          	<choice>
+            	<label>Alaska Department of Commerce, Community, and Economic Development (all divisions)</label>
+            	<value>Alaska Department of Commerce, Community, and Economic Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</label>
+            	<value>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game (all departments)</label>
+            	<value>Alaska Department of Fish and Game</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Commercial Fisheries Entry Commission</label>
+            	<value>Alaska Department of Fish and Game, Commercial Fisheries Entry Commission</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Central Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Central Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Southeast Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Southeast Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Habitat</label>
+            	<value>Alaska Department of Fish and Game, Division of Habitat</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Sport Fish</label>
+            	<value>Alaska Department of Fish and Game, Division of Sport Fish</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Subsistence</label>
+            	<value>Alaska Department of Fish and Game, Division of Subsistence</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Mark, Tag and Age Laboratory</label>
+            	<value>Alaska Department of Fish and Game, Mark, Tag and Age Laboratory</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Labor and Workforce Development</label>
+            	<value>Alaska Department of Labor and Workforce Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Labor and Workforce Development, Research and Analysis Section</label>
+            	<value>Alaska Department of Labor and Workforce Development, Research and Analysis Section</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</label>
+            	<value>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Public Safety, Division of Alaska Wildlife Troopers</label>
+            	<value>Alaska Department of Public Safety, Division of Alaska Wildlife Troopers</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Division of Legislative Finance</label>
+            	<value>Alaska Division of Legislative Finance</value>
+            </choice>
+          	<choice>
+            	<label>Auburn University</label>
+            	<value>Auburn University</value>
+            </choice>
+          	<choice>
+            	<label>Cook Inlet Keeper</label>
+            	<value>Cook Inlet Keeper</value>
+            </choice>
+          	<choice>
+            	<label>Fisheries and Oceans Canada</label>
+            	<value>Fisheries and Oceans Canada</value>
+            </choice>
+          	<choice>
+            	<label>LGL Limited</label>
+            	<value>LGL Limited</value>
+            </choice>
+          	<choice>
+            	<label>National Center for Ecological Analysis and Synthesis</label>
+            	<value>National Center for Ecological Analysis and Synthesis</value>
+            </choice>
+          	<choice>
+            	<label>National Historic Geographic Information System</label>
+            	<value>National Historic Geographic Information System</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service (all divisions)</label>
+            	<value>National Park Service</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Central Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Central Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>Natural Resources Consultants, Inc.</label>
+            	<value>Natural Resources Consultants, Inc.</value>
+            </choice>
+          	<choice>
+            	<label>North Pacific Anadromous Fish Commission</label>
+            	<value>North Pacific Anadromous Fish Commission</value>
+            </choice>
+          	<choice>
+            	<label>Orutsararmiut Traditional Native Council</label>
+            	<value>Orutsararmiut Traditional Native Council</value>
+            </choice>
+          	<choice>
+            	<label>Pacific Salmon Commission</label>
+            	<value>Pacific Salmon Commission</value>
+            </choice>
+          	<choice>
+            	<label>Pacific Seafood Processors Association</label>
+            	<value>Pacific Seafood Processors Association</value>
+            </choice>
+          	<choice>
+            	<label>Southeast Alaska Long-term Monitoring Network</label>
+            	<value>Southeast Alaska Long-term Monitoring Network</value>
+            </choice>
+          	<choice>
+            	<label>United States Census Bureau</label>
+            	<value>United States Census Bureau</value>
+            </choice>
+          	<choice>
+            	<label>United States Fish and Wildlife Service</label>
+            	<value>United States Fish and Wildlife Service</value>
+            </choice>
+          	<choice>
+            	<label>United States Geological Survey</label>
+            	<value>United States Geological Survey</value>
+            </choice>
+          	<choice>
+                <label>University of Alaska (all)</label>
+                <value>University of Alaska</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage</label>
+            	<value>University of Alaska Anchorage</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage, Alaska Center for Conservation Science</label>
+            	<value>University of Alaska Anchorage, Alaska Center for Conservation Science</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage, Institute of Social and Economic Research</label>
+            	<value>University of Alaska Anchorage, Institute of Social and Economic Research</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Fairbanks</label>
+            	<value>University of Alaska Fairbanks</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Fairbanks, Alaska Native Language Center</label>
+            	<value>University of Alaska Fairbanks, Alaska Native Language Center</value>
+            </choice>
+          	<choice>
+            	<label>Washington Department of Fish and Wildlife</label>
+            	<value>Washington Department of Fish and Wildlife</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Investigator / Person subfilter -->
+        <choiceFilter>
+            <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
+            <value></value> <!-- ?? -->
+            <operator>AND</operator>
+            <exclude>false</exclude>
+            <label>Person</label> <!-- TODO: label this. person? personnel? Investigator? -->
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-user</icon>
+            <description>The people who created or provided the data</description>
+          	<choice>
+                <!-- TODO: decide: list all the personnel here, or should we have a free text field..? -->
+                <label>individual name</label>
+                <value>individual name</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+    </filterGroup>
+
+    <!-- ====== Year Filter Group ====== -->
+    <filterGroup>
+
+        <label>Year</label>
+        <description>Year the data pertain to or year of publication</description>
+        <icon>fa-calendar</icon>
+
+        <!-- date published -->
+        <dateFilter>
+            <field>datePublished</field>
+            <value></value> <!-- ??? all years beteen min and max -->
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Year of publication</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description></description>
+            <min>2015-01-01</min>
+            <max>2018-01-01</max>
+            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
+        </dateFilter>
+
+        <!-- date coverage -->
+        <!-- TODO: how to do this? only one <field> allowed, but need to query both -->
+        <!-- i.e. beginDate > min AND endDate < max -->
+        <dateFilter>
+            <field>beginDate</field>
+            <field>beginDate</field>
+            <value></value> <!-- ??? all years beteen min and max -->
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Year of publication</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description></description>
+            <min>1882-01-01</min>
+            <max>2018-01-01</max>
+            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
+        </dateFilter>
+
+    </filterGroup>
+
+    <!-- ====== Identifier Filter Group ====== -->
+    <filterGroup>
+
+        <label>Identifier</label>
+        <description>unique ID of data package or object</description>
+        <icon>fa-bullseye</icon>
+        <textFilter>
+
+            <field>id</field>
+            <field>documents</field>
+            <field>resourceMap</field>
+            <!-- TODO: how to query these three fields ? only one <field> allowed. -->
+            <value></value> <!-- to be entered by user -->
+            <operator>AND</operator>
+            <exclude>false</exclude>
+
+            <label>DOI or ID</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>unique ID of data package or object</description>
+
+        </textFilter>
+
+    </filterGroup>
+
+</project>
