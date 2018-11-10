@@ -3,29 +3,291 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="">
 
-    <!-- TODO: fill in basic project info -->
-
-    <!-- === from collection schema === -->
     <name>SASAP</name>
     <label>State of Alaska's Salmon and People</label>
-    <definition></definition>
+    <!-- TODO: check how to translate the query below into the definitions > filter syntax -->
+    <!-- projectText:'State of Alaska's Salmon and People' AND (*:* NOT obsoletedBy:*) -->
+    <definition>
+        <filter>
+            <field>projectText</field>
+            <value>State of Alaska's Salmon and People</value>
+        </filter>
+        <filter>
+            <field>obsoletedBy</field>
+            <value>*</value>
+            <exclude>true</exclude>
+        </filter>
+    </definition>
 
-    <!-- === from project schema === -->
-    <logo></logo>
-    <overview></overview>
-    <results></results>
-    <personnel></personnel>
-    <acknowledgments></acknowledgments>
-    <acknowledgmentsLogo></acknowledgmentsLogo>
-    <branding></branding>
-    <map></map>
+    <!-- TODO: logos should be identifiers -->
+    <logo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+    </logo>
+
+    <overview>
+        <![CDATA[
+Problem Statement --- Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management questions that have not been addressed. A synthesis approach allows these fragmented collections of data to be combined, offering a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to gain new understandings of salmon social-ecological systems and to inform systematic salmon management into the future. However, these data are dispersed across a variety of sources and formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data enabling interdisciplinary analysis. ![Commercial fishing boats](knb.109201.1) Goals --- The SASAP project specifically seeks to access and integrate data from a wide variety of sources, including data that have previously been inaccessible. Data Task Force members compile these disparate datasets into larger datasets in a standardized format, allowing for more powerful analyses. We then provide access to SASAP data collections for use by wild salmon researchers, analysts, and advocates to answer scientific, economic, social, and cultural questions around salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska's salmon system health and drive sustainable management of the system. ![Sockeye](knb.109200.1) Our Data --- Our data collections include both original and compiled (derived) datasets, covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories. Data collections can be searched through using filters by thematic categories, and can be further explored with subsetting and visualization tools before downloading. ![Map of size declines](knb.109199.1) Who We Are --- SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists across resource sectors. Our approach is to build collaborations (working groups) of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap. The Data Task Force consists of a projects data coordinator, a scientific programmer, and several student interns and postgraduate fellows at NCEAS. The task force facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life cycle. ![Team](knb.109198.1)
+]]>
+    </overview>
+    <results>
+        <![CDATA[
+Escapement --- The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration. ![Escapement](knb.109196.1) Age, sex, and length --- Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska. ![ASL](knb.109197.1) Maps and regional data --- This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
+]]>
+    </results>
+
+    <!-- === Personnel === -->
+    <personnel>
+        <individualName>
+            <givenName>Courtney</givenName>
+            <surName>Carothers</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Socio-Eco</positionName>
+        <electronicMailAddress>clcarothers@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Rachel</givenName>
+            <surName>Donkersloot</surName>
+        </individualName>
+        <organizationName>(Alaska Marine Conservation Council)</organizationName>
+        <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
+        <electronicMailAddress>rachel@akmarine.org</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Michael</givenName>
+            <surName>Jones</surName>
+        </individualName>
+        <organizationName>(Michigan State University)</organizationName>
+        <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
+        <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Steve</givenName>
+            <surName>Langdon</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Governance</positionName>
+        <electronicMailAddress>sjlandgdon@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Coowe</givenName>
+            <surName>Walker</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>cmwalker9@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <salutation>Dr.</salutation>
+            <givenName>Frank</givenName>
+            <surName>Davis</surName>
+        </individualName>
+        <organizationName>(NCEAS/UCSB)</organizationName>
+        <positionName>Lead Principal Investigator</positionName>
+        <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
+        <phone>(805)893-2500</phone>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <salutation>Dr.</salutation>
+            <givenName>Ian</givenName>
+            <surName>Dutton</surName>
+        </individualName>
+        <organizationName>(NII)</organizationName>
+        <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
+        <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
+        <phone>(907)280-8923</phone>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Jessica</givenName>
+            <surName>Black</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Socio-Eco & Well-Being and Alaska Salmon Systems</positionName>
+        <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Taylor</givenName>
+            <surName>Brelsford</surName>
+        </individualName>
+        <positionName>Co-Lead, Gov</positionName>
+        <electronicMailAddress>brelsfot@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Robert W.</givenName>
+            <surName>Campbell</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress/>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>James</givenName>
+            <surName>Fall</surName>
+        </individualName>
+        <organizationName>(Alaska Department of Fish & Game)</organizationName>
+        <positionName>Co-Lead, Gov</positionName>
+        <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Kristin B.</givenName>
+            <surName>Gorman</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress>kgorman@pwscc.org</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Ryan</givenName>
+            <surName>King</surName>
+        </individualName>
+        <organizationName>(Baylor University)</organizationName>
+        <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>Ryan_S_King@baylor.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Bert</givenName>
+            <surName>Lewis</surName>
+        </individualName>
+        <organizationName>(Alaska Department of Fish & Game)</organizationName>
+        <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+        <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Mark</givenName>
+            <surName>Rains</surName>
+        </individualName>
+        <organizationName>(University of South Florida)</organizationName>
+        <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>mrains@usf.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Peter S.</givenName>
+            <surName>Rand</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress>prand@pwssc.org</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Dan</givenName>
+            <surName>Rinella</surName>
+        </individualName>
+        <organizationName>(US Fish and Wildlife Service)</organizationName>
+        <positionName>Co-Lead, Bio-Phys</positionName>
+        <electronicMailAddress>daniel_rinella@fws.gov</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Tobias</givenName>
+            <surName>Schwoerer</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Socio-Eco</positionName>
+        <electronicMailAddress>tschwoerer@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Charles</givenName>
+            <surName>Simenstad</surName>
+        </individualName>
+        <organizationName>(University of Washington)</organizationName>
+        <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>simenstd@u.washington.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+    <personnel>
+        <individualName>
+            <givenName>Peter</givenName>
+            <surName>Westley</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+        <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </personnel>
+
+    <acknowledgments>
+        Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
+    </acknowledgments>
+    <!-- TODO: acknowledgmentsLogos should be identifiers -->
+    <acknowledgmentsLogo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
+    <acknowledgmentsLogo>
+        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
+    </acknowledgmentsLogo>
+
+    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
+    <branding>
+        <primaryColor>#02A5AB</primaryColor>
+        <secondaryColor>#D0CA4E</secondaryColor>
+        <accentColor>#D74F33</accentColor>
+    </branding>
+
+    <map>
+        <!-- TODO: choose zoom level -->
+        <zoomLevel>50</zoomLevel>
+        <centerCoordinates>
+            <latitude>63.217889</latitude>
+            <longitude>-156.844462</longitude>
+        </centerCoordinates>
+        <shapeColor>#D0CA4E</shapeColor>
+    </map>
+
     <hideMetrics>false</hideMetrics>
 
     <!-- ====== Geography Filter Group ====== -->
     <filterGroup>
 
         <label>Geography</label>
-        <description>The specific site in Alaska that the data pertain to</description> <!-- TODO: reword description -->
+        <description>The specific site that the data relate to</description>
         <icon>fa-globe</icon>
 
         <!-- === waterbody sub-filter === -->
@@ -59,7 +321,7 @@
                 <label>Colville River</label>
                 <value>*colville river*</value>
             </choice>
-            <!-- .... and many, many, many more ... -->
+            <!-- .... TODO: once SASAP metadata is updated with locations, add all waterbody options here ... -->
 
             <chooseMultiple>true</chooseMultiple>
 
@@ -153,7 +415,7 @@
             <label>ADFG management area</label>
             <!-- <placeholder></placeholder> -->
             <!-- <icon></icon> -->
-            <description>Alaska Department of Fish and Game commercial management area</description>
+            <description>Alaska Department of Fish and Game management area</description>
         	<choice>
                 <label>Arctic-Yukon-Kuskokwim</label>
                 <value>*arctic-yukon-kuskokwim*</value>
@@ -350,7 +612,7 @@
     <!-- ====== Creator/Organization/Working Group Filter Group ====== -->
     <filterGroup>
 
-        <label>Creators</label>
+        <label>Creators</label><!-- @jeanette can you think of a better name for this group? -->
         <description>The people, organization, or working group attributed with creating the data</description>
         <icon>fa-user-edit</icon>
 
@@ -543,22 +805,51 @@
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
 
-        <!-- Investigator / Person subfilter -->
+        <!-- Investigator / Person sub-filter -->
+        <!-- TODO: @jeanette should the user choose from a list of all personnel here, or should we have a free text field..? -->
         <choiceFilter>
             <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
             <value></value> <!-- ?? -->
             <operator>AND</operator>
             <exclude>false</exclude>
-            <label>Person</label> <!-- TODO: label this. person? personnel? Investigator? -->
+            <label>Person</label> <!-- TODO: @jeanette person? personnel? Investigator? -->
             <!-- <placeholder></placeholder> -->
             <icon>fa-user</icon>
             <description>The people who created or provided the data</description>
           	<choice>
-                <!-- TODO: decide: list all the personnel here, or should we have a free text field..? -->
-                <label>individual name</label>
-                <value>individual name</value>
+                <!-- TODO: @jeanette should the user choose from a list of all personnel here, or should we have a free text field..? -->
+                <label>Jeanette Clark</label>
+                <value>Jeanette Clark</value>
             </choice>
+            <choice>
+                <label>Jared Kibele</label>
+                <value>Jared Kibele</value>
+            </choice>
+            <choice>
+                <label>Meagan Krupa</label>
+                <value>Meagan Krupa</value>
+            </choice>
+            <!-- ... many more ... -->
             <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Working group sub-filter -->
+        <!-- Management sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <!-- <operator>OR</operator> -->
+            <exclude>false</exclude>
+            <label>Working group</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>fa-users</icon>
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label></label>
+                <value></value>
+            </choice>
+            <!-- TODO: fill in working groups -->
+            <chooseMultiple>false</chooseMultiple>
         </choiceFilter>
 
     </filterGroup>
@@ -616,9 +907,9 @@
             <field>id</field>
             <field>documents</field>
             <field>resourceMap</field>
-            <!-- TODO: how to query these three fields ? only one <field> allowed. -->
+            <!-- TODO: how to query all of these three fields ? only one <field> allowed. -->
             <value></value> <!-- to be entered by user -->
-            <operator>AND</operator>
+            <operator>OR</operator>
             <exclude>false</exclude>
 
             <label>DOI or ID</label>
