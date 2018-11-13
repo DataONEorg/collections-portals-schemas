@@ -6,46 +6,54 @@
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>
 
-    <xs:complexType name="DatasetCollectionType">
-      <xs:sequence>
-        <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Name</doc:tooltip>
-              <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
-              <doc:example>NCEAS-datasets</doc:example>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Label</doc:tooltip>
-              <doc:description>Full title/label that describes the collection</doc:description>
-              <doc:example>NCEAS datasets</doc:example>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Description</doc:tooltip>
-              <doc:description>Brief description of the purpose of the collection</doc:description>
-              <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="definition" type="DefinitionType" minOccurs="1" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Definition</doc:tooltip>
-              <doc:description>Defines which datasets are a part of this collection.</doc:description>
-              <doc:example>See the individual sub-elements for specific examples.</doc:example>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
+    <xs:element name="collection">
+      <xs:annotation>
+        <xs:appinfo>
+          <doc:tooltip>Collection</doc:tooltip>
+          <doc:summary>A collection of related datasets</doc:summary>
+        </xs:appinfo>
+      </xs:annotation>
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Name</doc:tooltip>
+                <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
+                <doc:example>NCEAS-datasets</doc:example>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Label</doc:tooltip>
+                <doc:description>Full title/label that describes the collection</doc:description>
+                <doc:example>NCEAS datasets</doc:example>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Description</doc:tooltip>
+                <doc:description>Brief description of the purpose of the collection</doc:description>
+                <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="definition" type="DefinitionType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Definition</doc:tooltip>
+                <doc:description>Defines which datasets are a part of this collection.</doc:description>
+                <doc:example>See the individual sub-elements for specific examples.</doc:example>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
 
     <xs:complexType name="DefinitionType">
       <xs:annotation>
@@ -55,14 +63,16 @@
           <doc:example>See the individual sub-elements for specific examples.</doc:example>
         </xs:appinfo>
       </xs:annotation>
-      <xs:element name="filter" type="FilterType" minOccurs="1" maxOccurs="unbounded">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Filter</doc:tooltip>
-            <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
+      <xs:sequence>
+        <xs:element name="filter" type="FilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Filter</doc:tooltip>
+              <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="FilterType">

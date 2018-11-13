@@ -12,7 +12,14 @@
     <xs:import namespace="eml://ecoinformatics.org/party-2.2.0" schemaLocation="eml-party.xsd"/>
     <xs:import namespace="http://ecoinformatics.org/datasetcollection-beta1" schemaLocation="metacatui-collection.xsd"/>
 
-    <xs:complexType name="DatasetProjectType">
+    <xs:element name="project">
+     <xs:annotation>
+       <xs:appinfo>
+         <doc:tooltip>Project</doc:tooltip>
+         <doc:summary>A collection of datasets related or belonging to a research project, and metadata about the project.</doc:summary>
+       </xs:appinfo>
+     </xs:annotation>
+     <xs:complexType>
       <xs:complexContent>
         <xs:extension base="col:DatasetCollectionType">
           <xs:sequence>
@@ -97,6 +104,7 @@
         </xs:extension>
       </xs:complexContent>
     </xs:complexType>
+  </xs:element>
 
     <xs:complexType name="FilterGroupType">
       <xs:sequence>
