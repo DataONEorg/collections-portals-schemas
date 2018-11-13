@@ -76,35 +76,20 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="branding" type="BrandingType" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Branding</doc:tooltip>
-                  <doc:summary>Contains brand styling information to use in user interfaces for this project.</doc:summary>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
-            <xs:element name="map" type="MapType" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Map options</doc:tooltip>
-                  <doc:summary>A series of options for how to display a geographic map of the datsets in this project.</doc:summary>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
-            <xs:element name="hideMetrics" type="xs:boolean" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Hide metric</doc:tooltip>
-                  <doc:summary>If set to true, metrics about this project will be hidden from the user interface.</doc:summary>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
             <xs:element name="filterGroup" type="FilterGroupType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Filter group</doc:tooltip>
                   <doc:summary>Filter group to display in the user interface to further subset the datasets in this project.</doc:summary>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Additional option</doc:tooltip>
+                  <doc:summary>The OptionType allows projects to specify any custom, unstructured configuration or setting.
+                  These options may be used by user interfaces to pass on display options.</doc:summary>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
@@ -357,109 +342,34 @@
       </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="MapType">
+    <xs:complexType name="OptionType">
+      <xs:annotation>
+        <xs:appinfo>
+          <doc:tooltip>Additional option</doc:tooltip>
+          <doc:summary>The OptionType allows projects to specify any custom, unstructured configuration or setting.
+          These options may be used by user interfaces to pass on display options.</doc:summary>
+        </xs:appinfo>
+      </xs:annotation>
       <xs:sequence>
-        <xs:element name="zoomLevel" minOccurs="0" maxOccurs="1">
+        <xs:element name="optionName" type="xs:string" minOccurs="1" maxOccurs="1">
           <xs:annotation>
             <xs:appinfo>
-              <doc:tooltip>Map zoom level</doc:tooltip>
-              <doc:description>A zoom level to use for a map in a user interface.</doc:description>
-            </xs:appinfo>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:integer">
-              <xs:minInclusive value="0"/>
-              <xs:maxInclusive value="100"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="centerCoordinates" type="GeographicCoordinatesType" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Center geographic point</doc:tooltip>
-              <doc:description>A latitude, longitude geographic point on which the map should be centered.</doc:description>
+              <doc:tooltip>Option name</doc:tooltip>
+              <doc:description>The name of this optional configuration</doc:description>
+              <doc:example>primaryColor</doc:example>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="shapeColor" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:element name="optionValue" type="xs:string" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
-              <doc:tooltip>Map tile color</doc:tooltip>
-              <doc:description>A color to use for shapes and/or markers on the map, represented by a hexadecimal color code.</doc:description>
-            </xs:appinfo>
-          </xs:annotation>
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="GeographicCoordinatesType">
-      <xs:sequence>
-        <xs:element name="latitude" minOccurs="1" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:decimal">
-              <xs:minInclusive value="-90.0"/>
-              <xs:maxInclusive value="90.0"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="longitude" minOccurs="1" maxOccurs="1">
-          <xs:simpleType>
-            <xs:restriction base="xs:decimal">
-              <xs:minInclusive value="-180.0"/>
-              <xs:maxInclusive value="180.0"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-
-    <xs:complexType name="BrandingType">
-      <xs:sequence>
-        <xs:element name="primaryColor" type="xs:string" minOccurs="1" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Primary color</doc:tooltip>
-              <doc:summary>The primary color for this brand, represented via a hexadecimal color code.
-                This color will be used often in the user interface.</doc:summary>
-              <doc:example>#FF0000</doc:example>
-              <xs:restriction base="xs:string">
-                <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
-              </xs:restriction>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="secondaryColor" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Secondary color</doc:tooltip>
-              <doc:summary>The secondary color for this brand, represented via a hexadecimal color code.
-                This color will be used less frequently than the primary color in the user interface.</doc:summary>
-                <doc:example>#FF0000</doc:example>
-                <xs:restriction base="xs:string">
-                  <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
-                </xs:restriction>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="accentColor" type="xs:string" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Accent color</doc:tooltip>
-              <doc:summary>The accent color for this brand, represented via a hexadecimal color code.
-                This color will be used sparingly in the user interface.</doc:summary>
-              <doc:example>#FF0000</doc:example>
-              <xs:restriction base="xs:string">
-                <xs:pattern value="#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})"/>
-              </xs:restriction>
+              <doc:tooltip>Option value</doc:tooltip>
+              <doc:description>The value of this optional configuration</doc:description>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
+
 
 </xs:schema>

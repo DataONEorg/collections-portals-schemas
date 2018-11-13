@@ -1,0 +1,25 @@
+primaryColor
+The most frequent color, represented via hexadecimal color code, to use in the profile page UI
+
+secondaryColor
+The second most frequent color, represented via hexadecimal color code, to use in the profile page UI
+
+accentColor
+The least frequent color, represented via hexadecimal color code, to use in the profile page UI
+
+hideMetrics
+Boolean
+If set to true, metrics about this project will be hidden from the profile pages
+
+mapZoomLevel
+Integer
+A zoom level to use for a map
+
+mapCenterLatitude
+The geographic latitude on which the map should be centered
+
+mapCenterLongitude
+The geographic longitude on which the map should be centered
+
+mapShapeColor
+A color to use for shapes and/or markers on the map, represented by a hexadecimal color code.
