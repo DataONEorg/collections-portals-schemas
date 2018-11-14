@@ -84,7 +84,7 @@
         </xs:appinfo>
       </xs:annotation>
       <xs:sequence>
-        <xs:element name="field" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:element name="field" type="xs:string" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Search field</doc:tooltip>
@@ -102,7 +102,7 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="operator" type="xs:string" minOccurs="0" maxOccurs="1" default="AND">
+        <xs:element name="operator" minOccurs="0" maxOccurs="1" default="AND">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Operator</doc:tooltip>
