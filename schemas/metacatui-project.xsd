@@ -132,8 +132,8 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:choice>
-          <xs:element name="textFilter" type="UserInterfaceFilterType" minOccurs="1" maxOccurs="unbounded">
+        <xs:choice minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="textFilter" type="UserInterfaceFilterType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Text filter</doc:tooltip>
@@ -141,7 +141,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="dateFilter" type="UserInterfaceDateFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="dateFilter" type="UserInterfaceDateFilterType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Date filter</doc:tooltip>
@@ -149,7 +149,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="numericFilter" type="UserInterfaceNumericFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="numericFilter" type="UserInterfaceNumericFilterType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Numeric filter</doc:tooltip>
@@ -157,7 +157,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="booleanFilter" type="UserInterfaceBooleanFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="booleanFilter" type="UserInterfaceBooleanFilterType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Boolean filter</doc:tooltip>
@@ -165,7 +165,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="choiceFilter" type="UserInterfaceChoiceFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:element name="choiceFilter" type="UserInterfaceChoiceFilterType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Choice filter</doc:tooltip>
