@@ -6,14 +6,16 @@
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>
 
-    <xs:element name="collection">
+      <xs:element name="collection" type="CollectionType">
+      </xs:element>
+
+  <xs:complexType name="CollectionType">
       <xs:annotation>
         <xs:appinfo>
           <doc:tooltip>Collection</doc:tooltip>
           <doc:summary>A collection of related datasets</doc:summary>
         </xs:appinfo>
       </xs:annotation>
-      <xs:complexType>
         <xs:sequence>
           <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1">
             <xs:annotation>
@@ -52,8 +54,7 @@
             </xs:annotation>
           </xs:element>
         </xs:sequence>
-      </xs:complexType>
-    </xs:element>
+  </xs:complexType>
 
     <xs:complexType name="DefinitionType">
       <xs:annotation>
