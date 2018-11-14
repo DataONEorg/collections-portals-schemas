@@ -931,7 +931,7 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
       <optionValue>-156.844462</optionValue>
     </option>
     <option>
-        <optionName>shapeColor</optionName>
+        <optionName>mapShapeColor</optionName>
         <optionValue>#D0CA4E</optionValue>
     </option>
 
