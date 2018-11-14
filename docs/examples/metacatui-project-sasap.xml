@@ -1,7 +1,7 @@
-<?xml version="1.0" ?>
-<project xmlns=""
+<?xml version="1.0" encoding="UTF-8"?>
+<proj:project xmlns:proj="http://ecoinformatics.org/datasetproject-beta1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="">
+    xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
 
     <name>SASAP</name>
     <label>State of Alaska's Salmon and People</label>
@@ -35,8 +35,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
 ]]>
     </results>
 
-    <!-- === Personnel === -->
-    <personnel>
+    <!-- === associatedParty === -->
+    <associatedParty>
         <individualName>
             <givenName>Courtney</givenName>
             <surName>Carothers</surName>
@@ -45,9 +45,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Lead, Socio-Eco</positionName>
         <electronicMailAddress>clcarothers@alaska.edu</electronicMailAddress>
         <role>primary project member</role>
-        <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Rachel</givenName>
             <surName>Donkersloot</surName>
@@ -57,8 +56,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>rachel@akmarine.org</electronicMailAddress>
         <role>primary project member</role>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Michael</givenName>
             <surName>Jones</surName>
@@ -68,8 +67,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
         <role>primary project member</role>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Steve</givenName>
             <surName>Langdon</surName>
@@ -79,8 +78,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>sjlandgdon@alaska.edu</electronicMailAddress>
         <role>primary project member</role>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Coowe</givenName>
             <surName>Walker</surName>
@@ -90,8 +89,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>cmwalker9@alaska.edu</electronicMailAddress>
         <role>primary project member</role>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <salutation>Dr.</salutation>
             <givenName>Frank</givenName>
@@ -102,8 +101,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
         <phone>(805)893-2500</phone>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <salutation>Dr.</salutation>
             <givenName>Ian</givenName>
@@ -114,18 +113,18 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
         <phone>(907)280-8923</phone>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Jessica</givenName>
             <surName>Black</surName>
         </individualName>
         <organizationName>(University of Alaska)</organizationName>
-        <positionName>Co-Lead, Socio-Eco & Well-Being and Alaska Salmon Systems</positionName>
+        <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
         <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Taylor</givenName>
             <surName>Brelsford</surName>
@@ -133,8 +132,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Gov</positionName>
         <electronicMailAddress>brelsfot@alaska.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Robert W.</givenName>
             <surName>Campbell</surName>
@@ -143,18 +142,18 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
         <electronicMailAddress/>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>James</givenName>
             <surName>Fall</surName>
         </individualName>
-        <organizationName>(Alaska Department of Fish & Game)</organizationName>
+        <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
         <positionName>Co-Lead, Gov</positionName>
         <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Kristin B.</givenName>
             <surName>Gorman</surName>
@@ -163,8 +162,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
         <electronicMailAddress>kgorman@pwscc.org</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Ryan</givenName>
             <surName>King</surName>
@@ -173,18 +172,18 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai Lowlands</positionName>
         <electronicMailAddress>Ryan_S_King@baylor.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Bert</givenName>
             <surName>Lewis</surName>
         </individualName>
-        <organizationName>(Alaska Department of Fish & Game)</organizationName>
+        <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
         <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
         <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Mark</givenName>
             <surName>Rains</surName>
@@ -193,8 +192,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
         <electronicMailAddress>mrains@usf.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Peter S.</givenName>
             <surName>Rand</surName>
@@ -203,8 +202,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
         <electronicMailAddress>prand@pwssc.org</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Dan</givenName>
             <surName>Rinella</surName>
@@ -213,8 +212,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Bio-Phys</positionName>
         <electronicMailAddress>daniel_rinella@fws.gov</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Tobias</givenName>
             <surName>Schwoerer</surName>
@@ -223,8 +222,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Socio-Eco</positionName>
         <electronicMailAddress>tschwoerer@alaska.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Charles</givenName>
             <surName>Simenstad</surName>
@@ -233,8 +232,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
         <electronicMailAddress>simenstd@u.washington.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
-    <personnel>
+    </associatedParty>
+    <associatedParty>
         <individualName>
             <givenName>Peter</givenName>
             <surName>Westley</surName>
@@ -243,7 +242,7 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
         <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
         <role>project member</role>
-    </personnel>
+    </associatedParty>
 
     <acknowledgments>
         Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
@@ -260,28 +259,10 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
         https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
+    </acknowledgmentsLogo>
     <acknowledgmentsLogo>
         https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
     </acknowledgmentsLogo>
-
-    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
-    <branding>
-        <primaryColor>#02A5AB</primaryColor>
-        <secondaryColor>#D0CA4E</secondaryColor>
-        <accentColor>#D74F33</accentColor>
-    </branding>
-
-    <map>
-        <!-- TODO: choose zoom level -->
-        <zoomLevel>50</zoomLevel>
-        <centerCoordinates>
-            <latitude>63.217889</latitude>
-            <longitude>-156.844462</longitude>
-        </centerCoordinates>
-        <shapeColor>#D0CA4E</shapeColor>
-    </map>
-
-    <hideMetrics>false</hideMetrics>
 
     <!-- ====== Geography Filter Group ====== -->
     <filterGroup>
@@ -586,6 +567,7 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
                 <value>economic</value>
             </choice>
         </choiceFilter>
+    </filterGroup>
 
     <!-- ====== Featured Filter Group ====== -->
     <filterGroup>
@@ -806,18 +788,18 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         </choiceFilter>
 
         <!-- Investigator / Person sub-filter -->
-        <!-- TODO: @jeanette should the user choose from a list of all personnel here, or should we have a free text field..? -->
+        <!-- TODO: @jeanette should the user choose from a list of all associatedParty here, or should we have a free text field..? -->
         <choiceFilter>
             <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
             <value></value> <!-- ?? -->
             <operator>AND</operator>
             <exclude>false</exclude>
-            <label>Person</label> <!-- TODO: @jeanette person? personnel? Investigator? -->
+            <label>Person</label> <!-- TODO: @jeanette person? associatedParty? Investigator? -->
             <!-- <placeholder></placeholder> -->
             <icon>fa-user</icon>
             <description>The people who created or provided the data</description>
           	<choice>
-                <!-- TODO: @jeanette should the user choose from a list of all personnel here, or should we have a free text field..? -->
+                <!-- TODO: @jeanette should the user choose from a list of all associatedParty here, or should we have a free text field..? -->
                 <label>Jeanette Clark</label>
                 <value>Jeanette Clark</value>
             </choice>
@@ -881,7 +863,6 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <!-- i.e. beginDate > min AND endDate < max -->
         <dateFilter>
             <field>beginDate</field>
-            <field>beginDate</field>
             <value></value> <!-- ??? all years beteen min and max -->
             <!-- <operator>AND</operator> -->
             <!-- <exclude>false</exclude> -->
@@ -921,4 +902,40 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
 
     </filterGroup>
 
-</project>
+    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
+    <option>
+        <optionName>primaryColor</optionName>
+        <optionValue>#02A5AB</optionValue>
+    </option>
+    <option>
+        <optionName>secondaryColor</optionName>
+        <optionValue>#D0CA4E</optionValue>
+    </option>
+    <option>
+        <optionName>accentColor</optionName>
+        <optionValue>#D74F33</optionValue>
+    </option>
+
+    <option>
+      <optionName>mapZoomLevel</optionName>
+      <optionValue>9</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLatitude</optionName>
+      <optionValue>63.217889</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLongitude</optionName>
+      <optionValue>-156.844462</optionValue>
+    </option>
+    <option>
+        <optionName>shapeColor</optionName>
+        <optionValue>#D0CA4E</optionValue>
+    </option>
+
+    <option>
+      <optionName>hideMetrics</optionName>
+      <optionValue>false</optionValue>
+    </option>
+
+</proj:project>
