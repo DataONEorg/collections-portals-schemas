@@ -21,7 +21,7 @@
      </xs:annotation>
      <xs:complexType>
       <xs:complexContent>
-        <xs:extension base="col:DatasetCollectionType">
+        <xs:extension base="col:CollectionType">
           <xs:sequence>
             <xs:element name="logo" type="xs:string" minOccurs="0" maxOccurs="1">
               <xs:annotation>
@@ -55,10 +55,10 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="personnel" type="par:ResponsibleParty" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="associatedParty" type="par:ResponsibleParty" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
-                  <doc:tooltip>Project personnel</doc:tooltip>
+                  <doc:tooltip>Associated party</doc:tooltip>
                   <doc:description>Contact and role information for people involved in the research project.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
@@ -224,7 +224,7 @@
 
     <xs:complexType name="UserInterfaceDateFilterType">
       <xs:complexContent>
-        <xs:extension base="col:UserInterfaceFilterType">
+        <xs:extension base="UserInterfaceFilterType">
           <xs:sequence>
             <xs:element name="min" type="xs:date" minOccurs="1" maxOccurs="1">
               <xs:annotation>
@@ -251,7 +251,7 @@
 
     <xs:complexType name="UserInterfaceNumericFilterType">
       <xs:complexContent>
-        <xs:extension base="col:UserInterfaceFilterType">
+        <xs:extension base="UserInterfaceFilterType">
           <xs:sequence>
             <xs:element name="min" type="xs:float" minOccurs="1" maxOccurs="1">
               <xs:annotation>
@@ -278,7 +278,7 @@
 
     <xs:complexType name="UserInterfaceBooleanFilterType">
       <xs:complexContent>
-        <xs:extension base="col:UserInterfaceFilterType">
+        <xs:extension base="UserInterfaceFilterType">
           <xs:sequence minOccurs="0">
             <xs:element name="trueLabel" type="xs:string" minOccurs="1" maxOccurs="1">
               <xs:annotation>
@@ -305,7 +305,7 @@
 
     <xs:complexType name="UserInterfaceChoiceFilterType">
       <xs:complexContent>
-        <xs:extension base="col:UserInterfaceFilterType">
+        <xs:extension base="UserInterfaceFilterType">
           <xs:sequence>
             <xs:element name="choice" type="ChoiceType" minOccurs="1" maxOccurs="unbounded">
               <xs:annotation>
