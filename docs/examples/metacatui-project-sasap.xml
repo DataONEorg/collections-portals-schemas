@@ -1,10 +1,12 @@
 <?xml version="1.0" ?>
+<!--TODO: add xml namespace and schemalocation attributes-->
 <project xmlns=""
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="">
 
     <name>SASAP</name>
     <label>State of Alaska's Salmon and People</label>
+    <description>All datasets from the KNB repository that were produced by or are related to the State of Alaska's Salmon and People project.</description>
     <!-- TODO: check how to translate the query below into the definitions > filter syntax -->
     <!-- projectText:'State of Alaska's Salmon and People' AND (*:* NOT obsoletedBy:*) -->
     <definition>
@@ -263,25 +265,6 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
     <acknowledgmentsLogo>
         https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
     </acknowledgmentsLogo>
-
-    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
-    <branding>
-        <primaryColor>#02A5AB</primaryColor>
-        <secondaryColor>#D0CA4E</secondaryColor>
-        <accentColor>#D74F33</accentColor>
-    </branding>
-
-    <map>
-        <!-- TODO: choose zoom level -->
-        <zoomLevel>50</zoomLevel>
-        <centerCoordinates>
-            <latitude>63.217889</latitude>
-            <longitude>-156.844462</longitude>
-        </centerCoordinates>
-        <shapeColor>#D0CA4E</shapeColor>
-    </map>
-
-    <hideMetrics>false</hideMetrics>
 
     <!-- ====== Geography Filter Group ====== -->
     <filterGroup>
@@ -921,4 +904,43 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
 
     </filterGroup>
 
+    <!-- ====== Display options ====== -->
+    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
+    <option>
+        <optionName>primaryColor</optionName>
+        <optionValue>#02A5AB</optionValue>
+    </option>
+    <option>
+        <optionName>secondaryColor</optionName>
+        <optionValue></optionValue>
+    </option>
+    <option>
+        <optionName>accentColor</optionName>
+        <optionValue>#D0CA4E</optionValue>
+    </option>
+    <option>
+        <optionName></optionName>
+        <optionValue>#D74F33</optionValue>
+    </option>
+    <!-- TODO: choose zoom level -->
+    <option>
+        <optionName>mapZoomLevel</optionName>
+        <optionValue>50</optionValue>
+    </option>
+    <option>
+        <optionName>mapCenterLatitude</optionName>
+        <optionValue>63.217889</optionValue>
+    </option>
+    <option>
+        <optionName>mapCenterLongitude</optionName>
+        <optionValue>-156.844462</optionValue>
+    </option>
+    <option>
+        <optionName>mapShapeColor</optionName>
+        <optionValue>#D0CA4E</optionValue>
+    </option>
+    <option>
+        <optionName>higeMetrics</optionName>
+        <optionValue>false</optionValue>
+    </option>
 </project>
