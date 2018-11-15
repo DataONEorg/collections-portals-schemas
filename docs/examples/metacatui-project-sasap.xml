@@ -574,7 +574,7 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
     <filterGroup>
 
         <label>Featured</label>
-        <description><!-- TODO: describe--></description>
+        <description>Datasets featured in SASAP academic output</description>
         <icon>fa-star</icon>
 
         <booleanFilter>
@@ -585,9 +585,9 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
             <label>Featured</label>
             <!-- <placeholder></placeholder> -->
             <!-- <icon></icon> -->
-            <description><!-- TODO: describe --></description>
+            <description>View only featured datasets</description>
             <trueLabel>featured</trueLabel>
-            <falseLabel><!-- TODO: what to put here? not featured? Can this be optional?--></falseLabel>
+            <falseLabel><!-- TODO: "all datasets"? Can this be optional?--></falseLabel>
         </booleanFilter>
 
     </filterGroup>
@@ -595,8 +595,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
     <!-- ====== Creator/Organization/Working Group Filter Group ====== -->
     <filterGroup>
 
-        <label>Creators</label><!-- @jeanette can you think of a better name for this group? -->
-        <description>The people, organization, or working group attributed with creating the data</description>
+        <label>People and Organizations</label>
+        <description>The people, organization, or working group attributed with creating or using the data</description>
         <icon>fa-user-edit</icon>
 
         <!-- Organization sub-fitler -->
