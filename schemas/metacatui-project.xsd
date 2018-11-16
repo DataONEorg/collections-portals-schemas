@@ -161,7 +161,15 @@
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Boolean filter</doc:tooltip>
-                <doc:summary>A boolean/toggle filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+                <doc:summary>A boolean filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="toggleFilter" type="UserInterfaceToggleFilterType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Toggle filter</doc:tooltip>
+                <doc:summary>A toggle filter to display in a user interface that allows the user to further subset project datasets.</doc:summary>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
@@ -279,22 +287,59 @@
     <xs:complexType name="UserInterfaceBooleanFilterType">
       <xs:complexContent>
         <xs:extension base="UserInterfaceFilterType">
-          <xs:sequence minOccurs="0">
+          <xs:sequence>
+            <xs:element name="value" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Value</doc:tooltip>
+                  <doc:description>The boolean value to include in the search query - can only be either true or false.</doc:description>
+                  <doc:example>true</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UserInterfaceToggleFilterType">
+      <xs:complexContent>
+        <xs:extension base="UserInterfaceFilterType">
+          <xs:sequence>
+            <xs:element name="trueValue" type="xs:string" minOccurs="1" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>True value</doc:tooltip>
+                  <doc:description>The value to use in the query when the toggle is on.</doc:description>
+                  <doc:example>f</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="trueLabel" type="xs:string" minOccurs="1" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>True label</doc:tooltip>
-                  <doc:description>A label to display in a toggle when the tool is set to true.</doc:description>
-                  <doc:example>Male</doc:example>
+                  <doc:description>A label to display in a toggle in the on position.</doc:description>
+                  <doc:example>Female</doc:example>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="falseLabel" type="xs:string" minOccurs="1" maxOccurs="1">
+            <xs:element name="falseValue" type="xs:string" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>False value</doc:tooltip>
+                  <doc:description>The value to use in the query when the toggle is off. If a falseValue is not specified,
+                  then this filter will not be included in the query.</doc:description>
+                  <doc:example>m</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="falseLabel" type="xs:string" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>False label</doc:tooltip>
-                  <doc:description>A label to display in a toggle when the tool is set to false.</doc:description>
-                  <doc:example>Female</doc:example>
+                  <doc:description>A label to display in a toggle in the off position.</doc:description>
+                  <doc:example>Male</doc:example>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
