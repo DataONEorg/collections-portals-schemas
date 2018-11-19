@@ -11,44 +11,64 @@
       <markdown>
         <![CDATA[
 ---
-creator:Robyn
-purpose:demonstration
+creator: Robyn
+date: 2018-11-19
+purpose: demonstration
+some meta name:
+ - a list
+ - of values
 ---
 
-# Features to test:
-- Inline HTML & docbook tags
-- Automatic Paragraphs
-- Headers
-- Blockquotes
-- Lists
-- Code Blocks
-- Horizontal Rules
-- Links
-- Emphasis
-- Inline Code
-- Images
-- Fenced Codeblocks
-- Syntax Highlighting
-- Tables
-- Metadata
-- URL Autolinking
-- Custom IDs on Headlines
-- Footnotes and Other Links
-- Todos
-- Strikethrough
-- Definition Lists
-- Math
-- Citation-references
-- Bibliography formatting
-- XSS filter
+# Features to test: {toc}
+- [x] [Inline HTML](#inlinehtml)
+- [ ] [Docbook Tags](#docbooktags)
+- [x] Automatic Paragraphs
+- [x] Headers
+- [x] Blockquotes
+- [x] Lists
+- [x] Code Blocks
+- [x] Horizontal Rules
+- [x] Links
+- [x] Emphasis
+- [x] Inline Code
+- [x] Images
+- [x] Fenced Codeblocks
+- [x] Syntax Highlighting
+- [x] Tables
+- [x] Metadata
+- [x] URL Autolinking
+- [x] Custom IDs on Headlines
+- [x] Footnotes and Other Links
+- [x] Todos
+- [x] Strikethrough
+- [x] Definition Lists
+- [ ] Math
+- [x] Citation-references
+- [x] Bibliography formatting
+- [x] XSS filter
 
-# Inline HTML & docbook tags
+Extensions required:
+-
+
+# Inline HTML
 
 <h3>This is surrounded by `h3` tags</h3>
 <strong>This is surrounded by `strong` tags</strong>
-<para>This line and the next one are surrounded by `para` tags</para>
-<para>This should also be a paragraph</para>
-<p>What other `docbook` tags need to be tested? Here is an example<subscript>subscript</subscript></p>
+
+*back to [table of contents](#toc)*
+
+# Docbook Tags
+
+This is the example text...
+```html
+<para>This line and the next one are surrounded by `para` tags</para><para>This should also be a paragraph. Here is an example of a <subscript>subscript</subscript></para>
+```
+
+This is how it is rendered:
+
+<para>This line and the next one are surrounded by `para` tags</para><para>This should also be a paragraph. Here is an example of a <subscript>subscript</subscript></para>
+
+Without the `xssfilter` extension, the original tags are preserved in the HTML. With the `xssfilter` on, the tags are displayed as text between paragraphs.
 
 # Automatic Paragraphs
 
@@ -60,15 +80,13 @@ linebreaks
 
 # Headers
 
-If the above is large, then headers work.
+If the above "Headers" text is large, then headers work.
 
 # Blockquotes
 
 > This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote.
 
 # Lists
-
-The following list info comes from the showdown demo
 
 Showdown supports ordered (numbered) and unordered (bulleted) lists.
 
@@ -93,18 +111,6 @@ You can make an ordered list by preceding list items with a number.
 ```
 
 It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Showdown produces. So you can use the same number in all items if you wish to.
-
-### TaskLists (GFM Style)
-
-Showdown also supports GFM styled takslists if the **`tasklists`** option is enabled.
-
-```md
- - [x] checked list item
- - [ ] unchecked list item
-```
-
- - [x] checked list item
- - [ ] unchecked list item
 
 ### List syntax
 
@@ -176,7 +182,7 @@ This is valid for other block elements such as blockquotes:
     > inside a list item.
 ```
 
-or event other lists.
+or even other lists.
 
 ### Nested lists
 
@@ -231,18 +237,17 @@ To put a *indented style* code block within a list item, the code block needs to
 
 # Code Blocks
 
-```
+```md
 This is a block of code
 ```
 
 # Horizontal Rules
 
+Here are how three dashes (`---`) are rendered:
 ---
-===
+
 
 # Links
-
-Info from showdown demo:
 
 ### Simple
 
@@ -254,7 +259,7 @@ link to <http://www.google.com/>
 this is my email <somedude@mail.com>
 ```
 
-In the case of email addreses, Showdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots.
+In the case of email addresses, Showdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots.
 You can disable this obfuscation setting **`encodeEmails`** option to `false`.
 
 With the option **`simplifiedAutoLink`** enabled, Showdown will automagically turn every valid URL it finds in the text body to links for you, without the need to wrap them in `<>`.
@@ -271,27 +276,10 @@ You can create an inline link by wrapping link text in brackets ( `[ ]` ), and t
 
 For example, to create a hyperlink to github.com/showdownjs/showdown, with a link text that says, Get Showdown!, you'd write this in Markdown: `[Get Showdown!](https://github.com/showdownjs/showdown)`.
 
-### Reference Style
-
-You can also use the reference style, like this:
-
-```md
-this is a [link to google][1]
-
-[1]: www.google.com
-```
-
-Showdown also supports implicit link references:
-
-```md
-this is a link to [google][]
-
-[google]: www.google.com
-```
 
 # Emphasis
 
-**yep.**
+**bold** and *italics*
 
 # Inline Code
 
@@ -304,10 +292,10 @@ Inline image syntax looks like this: ```![Alt text](url/to/image)```. For exampl
 
 # Fenced Codeblocks
 
-```
+```r
 # This has already been demonstrated, but here is another example.
 
-library(libraRy)
+library(SomeLibraRy)
 
 this %>%
     is() %>%
@@ -318,22 +306,29 @@ this %>%
 
 # Syntax Highlighting
 
-```javascript
+In this example, show down has been extended to use [highlightjs](https://highlightjs.org/usage/). Highlight js has plenty of style sheets to choose from, and can be customized to highlight most of the common languages (including R and Python).
+
+Here's an example of some javascript:
+
+```js
 
 var x = 5;
 var str = 'str';
-
-/* need to figure out how to use syntax highlighting */
-
+console.log(str);
+/* a comment */
 ```
 
 # Tables
+
+This requires the option `tables` to be set to `true`
+here is a table:
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | **col 3 is**  | right-aligned | $1600 |
 | col 2 is      | *centered*    |   $12 |
 | zebra stripes | ~~are neat~~  |    $1 |
+
 
 # Metadata
 
@@ -347,23 +342,99 @@ You can search for things on www.google.com
 
 # Custom IDs on Headlines {this-is-my-custom-id}
 
-Check the console. This header should have the id `this-is-my-custom-id`. For this to work, the option `customizedHeaderId` must be set to `true` in `new showdown.Converter()`
+Check the console. This header should have the id `this-is-my-custom-id`. For this to work, the option `customizedHeaderId` must be set to `true` in `new showdown.Converter()`.
+
+The custom id shows up, but with dashes (`-`) removed.
 
 # Footnotes and Other Links
 
+Reference links are created like so:
+
+```md
+this is a [link to google][1]
+
+[1]: www.google.com
+
+this is a link to [google][]
+
+[google]: www.google.com
+```
+
+Here is that example in action:
+
+this is a link to [google][]
+
+[google]: www.google.com
+
+Footnotes can be created with this extension: https://github.com/Kriegslustig/showdown-footnotes
+
 # Todos
+
+### TaskLists (GFM Style)
+
+Showdown also supports GFM styled takslists if the **`tasklists`** option is enabled.
+
+```md
+ - [x] checked list item
+ - [ ] unchecked list item
+```
+
+ - [x] checked list item
+ - [ ] unchecked list item
 
 # Strikethrough
 
+syntax:
+```md
+~~strikethrough~~
+```
+
+~~This is a strikethrough~~
+
 # Definition Lists
+
+Not supported. But if a user really wants one, they can create it using the regular `<dl>`, `<dt>`, `<dd>` HTML tags. Like so:
+
+```html
+<dl>
+  <dt>SGML</dt>
+    <dd>The Standard Generalized Markup Language</dd>
+  <dt>HTML</dt>
+     <dd>The Hypertext Markup Language</dd>
+     <dd>The markup language you use to create web pages.</dd>
+  <dt>XML</dt>
+    <dd>The Extensible Markup Language</dd>
+</dl>
+```
+
+<dl>
+  <dt>SGML</dt>
+    <dd>The Standard Generalized Markup Language</dd>
+  <dt>HTML</dt>
+     <dd>The Hypertext Markup Language</dd>
+     <dd>The markup language you use to create web pages.</dd>
+  <dt>XML</dt>
+    <dd>The Extensible Markup Language</dd>
+</dl>
 
 # Math
 
-# Citation-references
+Math should be possible using the [showdown-katex extension](https://github.com/obedm503/showdown-katex). However, I think it's too complicated to demonstrate using this JSfiddle environment (no CDN available).
 
-# Bibliography formatting
+# Citation-references & Bibliography formatting
+
+The same goes for citations and biliographies, but we should be able to implement them using the [citation.js-showdown extension](https://github.com/larsgw/citation.js-showdown).
 
 # XSS filter
+
+<script>alert('xss filtering failed!')</script>
+Showdown doesn’t include an XSS filter, so you must provide your own. See details of vulnerabilities outlined  (here)[https://github.com/showdownjs/showdown/wiki/Markdown's-XSS-Vulnerability-(and-how-to-mitigate-it)]. I used the [Showdown XSS Filter extension](https://github.com/VisionistInc/showdown-xss-filter) in this fiddle. If it worked, you should not see an alert. Here is the script that should be removed:
+
+```html
+<script>alert('xss filtering failed!')</script>
+```
+
+
 
 ]]>
       </markdown>
