@@ -581,7 +581,7 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
         <description>Datasets featured in SASAP academic output</description>
         <icon>fa-star</icon>
 
-        <booleanFilter>
+        <toggleFilter>
             <field>keywords</field>
             <value>featured</value>
             <!-- <operator>AND</operator> -->
@@ -590,9 +590,8 @@ Escapement --- The salmon life cycle begins in freshwater streams when adult sal
             <!-- <placeholder></placeholder> -->
             <!-- <icon></icon> -->
             <description>View only featured datasets</description>
-            <trueLabel>featured</trueLabel>
-            <falseLabel><!-- TODO: "all datasets"? Can this be optional?--></falseLabel>
-        </booleanFilter>
+            <trueValue>featured</trueValue>
+        </toggleFilter>
 
     </filterGroup>
 

@@ -315,7 +315,7 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="trueLabel" type="xs:string" minOccurs="1" maxOccurs="1">
+            <xs:element name="trueLabel" type="xs:string" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>True label</doc:tooltip>
