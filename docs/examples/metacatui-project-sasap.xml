@@ -10,13 +10,8 @@
     <!-- projectText:'State of Alaska's Salmon and People' AND (*:* NOT obsoletedBy:*) -->
     <definition>
         <filter>
-            <field>projectText</field>
-            <value>State of Alaska's Salmon and People</value>
-        </filter>
-        <filter>
-            <field>obsoletedBy</field>
-            <value>*</value>
-            <exclude>true</exclude>
+            <field>project</field>
+            <value>State of Alaska’s Salmon and People</value>
         </filter>
     </definition>
 
