@@ -50,6 +50,8 @@ The purpose of this example is to test the features of *[showdownjs](https://git
 - [ ] [XSS filter](#xssfilter) *DIY?*
 - [x] [Bootstrap classes](#bootstrapclasses)
 - [x] [Emojis](#emojis)
+- [ ] [Citations](#citations)
+- [ ] [Math](#math)
 
 # Extensions required:
 
@@ -409,9 +411,17 @@ The custom id shows up, but with dashes (`-`) removed.
 
 # Footnotes and Other Links
 
-Footnotes can be created with this extension: https://github.com/Kriegslustig/showdown-footnotes
-Difficult to test in JSfiddle
+Some word or something that needs explaining[^1].
 
+[^1]: The explanation.
+
+[^1]: A single line
+footnote
+
+[^5]:
+  This is a paragraph.
+
+  _That_ is another paragraph which is still within the same footnote.
 
 *back to [table of contents](#toc)*
 
@@ -526,7 +536,32 @@ extension to also allow font awesome icons [here](https://github.com/dbtek/showd
 
 *back to [table of contents](#toc)*
 
+# Citations
+
+^[Q21972834]
+^[10.5281/zenodo.1005176]
+^[doi:10.5063/F1R78CF3]
+
+# Math
+
+### block
+
+&& x = (-b+-sqrt(b^2-4ac))/(2a) &&
+
+```asciimath
+E=mc^2
+```
+
+### inline
+
+Here is some $E=mc^2$ math $R^2=x(2*4)$ that is inline
+
+
+
 ]]>
+
+
+
       </markdown>
     </overview>
 
