@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proj:project xmlns:proj="http://ecoinformatics.org/datasetproject-beta1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
+
+    <name>MarkdownExample</name>
+    <label>An XML project doc containing complex markdown</label>
+    <description>A fake project to test the limits of showdown's markdown to HTML converter</description>
+
+    <overview>
+      <markdown>
+        <![CDATA[
+---
+creator: Robyn
+date: 2018-11-19
+purpose: demonstration
+another:
+ - a list
+ - of values
+---
+
+The purpose of this example is to test the features of *[showdownjs](https://github.com/showdownjs).*
+
+# Features tested: {toc}
+- [x] [Inline HTML](#inlinehtml)
+- [ ] [Docbook Tags](#docbooktags)
+- [x] [Automatic Paragraphs](#automaticparagraphs)
+- [x] [Headers](#headers)
+- [x] [Blockquotes](#blockquotes)
+- [x] [Lists](#lists)
+- [x] [Code Blocks](#codeblocks)
+- [x] [Horizontal Rules](#horizontalrules)
+- [x] [Links](#links)
+- [x] [Emphasis](#emphasis)
+- [x] [Inline Code](#inlinecode)
+- [x] [Images](#images)
+- [x] [Fenced Codeblocks](#fencedcodeblocks)
+- [x] [Syntax Highlighting](#syntaxhighlighting)
+- [x] [Tables](#tables)
+- [x] [Metadata](#metadata)
+- [x] [URL Autolinking](#urlautolinking)
+- [x] [Custom IDs on Headlines](#thisismycustomid)
+- [x] [Footnotes and Other Links](#footnotesandotherlinks) *more testing requried*
+- [x] [Todos](#todos)
+- [x] [Strikethrough](#strikethrough)
+- [ ] [Definition Lists](#definitionlists) *not supported*
+- [x] [Math](#math) *more testing requried*
+- [x] [Citation-references](#citationreferences) *more testing requried*
+- [x] [Bibliography formatting](#bibliographyformatting) *more testing requried*
+- [ ] [XSS filter](#xssfilter) *DIY?*
+- [x] [Bootstrap classes](#bootstrapclasses)
+- [x] [Emojis](#emojis)
+
+# Extensions required:
+
+Working:
+- **DIY:** showdown-highlightjs
+- **DIY:** showdown-bootstrap
+
+To be tested in metacatUI:
+- [citation-js-showdown](https://github.com/larsgw/citation.js-showdown)
+- [showdown-katex](https://obedm503.github.io/showdown-katex/)
+- [showdown-footnotes](https://github.com/Kriegslustig/showdown-footnotes)
+
+To create?
+- [showdown-xss-filter](https://github.com/VisionistInc/showdown-xss-filter)
+
+
+# Inline HTML
+
+<h3>This is surrounded by `h3` tags</h3>
+<strong>This is surrounded by `strong` tags</strong>
+
+*back to [table of contents](#toc)*
+
+# Docbook Tags
+
+This is the example text...
+```html
+<para>This line and the next one are surrounded by `para` tags</para><para>This should also be a paragraph. Here is an example of a <subscript>subscript</subscript></para>
+```
+
+This is how it is rendered:
+
+<para>This line and the next one are surrounded by `para` tags</para><para>This should also be a paragraph. Here is an example of a <subscript>subscript</subscript></para>
+
+The original tags are preserved in the HTML, but are not styled or converted to html.
+
+*back to [table of contents](#toc)*
+
+# Automatic Paragraphs
+
+A paragraph is created by using
+
+two
+
+linebreaks
+
+*back to [table of contents](#toc)*
+
+# Headers
+
+If the above "Headers" text is large, then headers work.
+
+*back to [table of contents](#toc)*
+
+# Blockquotes
+
+> This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote. This is a block quote.
+
+*back to [table of contents](#toc)*
+
+# Lists
+
+Showdown supports ordered (numbered) and unordered (bulleted) lists.
+
+### Unordered lists
+
+You can make an unordered list by preceding list items with either a *, a - or a +. Markers are interchangeable too.
+
+```md
+* Item
++ Item
+- Item
+```
+
+### Ordered lists
+
+You can make an ordered list by preceding list items with a number.
+
+```md
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Showdown produces. So you can use the same number in all items if you wish to.
+
+### List syntax
+
+List markers typically start at the left margin, but may be indented by up to three spaces.
+
+```md
+   * this is valid
+   * this is too
+```
+
+List markers must be followed by one or more spaces or a tab.
+
+To make lists look nice, you can wrap items with hanging indents:
+
+```md
+*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+```
+
+But if you want to be lazy, you don’t have to
+
+If one list item is separated by a blank line, Showdown will wrap all the list items in `<p>` tags in the HTML output.
+So this input:
+
+```md
+* Bird
+
+* Magic
+* Johnson
+```
+
+Results in:
+
+```html
+<ul>
+<li><p>Bird</p></li>
+<li><p>Magic</p></li>
+<li><p>Johnson</p></li>
+</ul>
+```
+
+This differs from other markdown implementations such as GFM (github) or commonmark.
+
+### Nested blocks
+
+List items may consist of multiple paragraphs. Each subsequent paragraph in a list item must be indented by either 4 spaces or one tab:
+
+```md
+1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+```
+
+This is valid for other block elements such as blockquotes:
+
+```md
+*   A list item with a blockquote:
+
+    > This is a blockquote
+    > inside a list item.
+```
+
+or even other lists.
+
+### Nested lists
+
+You can create nested lists by indenting list items by **four** spaces.
+
+```md
+1.  Item 1
+    1. A corollary to the above item.
+    2. Yet another point to consider.
+2.  Item 2
+    * A corollary that does not need to be ordered.
+    * This is indented four spaces
+    * You might want to consider making a new list.
+3.  Item 3
+```
+
+This behavior is consistent with the original spec but differs from other implementations suck as GFM or commonmark. Prior to version 1.5, you just needed to indent two spaces for it to be considered a sublist.
+You can disable the **four spaces requirement** with option **`disableForced4SpacesIndentedSublists`**
+
+To nest a third (or more) sublist level, you need to indent 4 extra spaces (or 1 extra tab) for each level.
+
+```md
+1.  level 1
+    1.  Level 2
+        *   Level 3
+    2.  level 2
+        1.  Level 3
+1.  Level 1
+```
+
+### Nested code blocks
+
+You can nest fenced codeblocks the same way you nest other block elements, by indenting by fours spaces or a tab:
+
+```md
+1.  Some code:
+
+    ```js
+    var foo = 'bar';
+    console.log(foo);
+    ```
+```
+
+To put a *indented style* code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs:
+
+```md
+1.  Some code:
+
+    var foo = 'bar';
+    console.log(foo);
+```
+
+*back to [table of contents](#toc)*
+
+# Code Blocks
+
+```md
+This is a block of code
+```
+
+*back to [table of contents](#toc)*
+
+# Horizontal Rules
+
+Here are how three dashes (`---`) with a line break before and after are rendered:
+
+---
+
+*back to [table of contents](#toc)*
+
+# Links
+
+### Simple
+
+If you wrap a valid URL or email in `<>` it will be turned into a link whose text is the link itself.
+
+```md
+link to <http://www.google.com/>
+
+this is my email <somedude@mail.com>
+```
+
+In the case of email addresses, Showdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots.
+You can disable this obfuscation setting **`encodeEmails`** option to `false`.
+
+With the option **`simplifiedAutoLink`** enabled, Showdown will automagically turn every valid URL it finds in the text body to links for you, without the need to wrap them in `<>`.
+
+```md
+link to http://www.google.com/
+
+this is my email somedude@mail.com
+```
+
+### Inline
+
+You can create an inline link by wrapping link text in brackets ( `[ ]` ), and then wrapping the link in parentheses ( `( )` ).
+
+For example, to create a hyperlink to github.com/showdownjs/showdown, with a link text that says, Get Showdown!, you'd write this in Markdown: `[Get Showdown!](https://github.com/showdownjs/showdown)`.
+
+### Reference links
+
+```md
+this is a [link to google][1]
+
+[1]: www.google.com
+
+this is a link to [google][]
+
+[google]: www.google.com
+```
+
+*back to [table of contents](#toc)*
+
+# Emphasis
+
+**bold** and *italics*
+
+*back to [table of contents](#toc)*
+
+# Inline Code
+
+Use single backticks (`) to format text in a special monospace format like `this`. Everything within the backticks appear as-is, with no other special formatting.
+
+*back to [table of contents](#toc)*
+
+# Images
+
+Inline image syntax looks like this: ```![Alt text](url/to/image)```. For example:
+![Dataone logo](https://www.dataone.org/sites/default/files/d1-logo-v8_aligned_left.png)
+
+*back to [table of contents](#toc)*
+
+# Fenced Codeblocks
+
+```r
+# This has already been demonstrated, but here is another example.
+
+library(SomeLibraRy)
+
+this %>%
+    is() %>%
+    fenced() %>%
+    code()
+
+```
+
+*back to [table of contents](#toc)*
+
+# Syntax Highlighting
+
+In this example, show down has been extended to use [highlightjs](https://highlightjs.org/usage/). Highlight js has plenty of style sheets to choose from, and can be customized to highlight most of the common languages (including R and Python).
+
+Here's an example of some javascript:
+
+```js
+
+var x = 5;
+var str = 'str';
+console.log(str);
+/* a comment */
+```
+
+*back to [table of contents](#toc)*
+
+# Tables
+
+This requires the option `tables` to be set to `true`
+here is a table:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| **col 3 is**  | right-aligned | $1600 |
+| col 2 is      | *centered*    |   $12 |
+| zebra stripes | ~~are neat~~  |    $1 |
+
+
+*back to [table of contents](#toc)*
+
+# Metadata
+
+metadata: Metadata support is enabled when creating a new converter (`new showdown.Converter()`), by adding the argument `metadata: true`. Then information between `---` and `---` at the top of this document can be accessed using `converter.getMetadata()`. If successful, the information extracted will be displayed at the very bottom of this jsfiddle document.
+
+*back to [table of contents](#toc)*
+
+# URL Autolinking
+
+with the argument `simplifiedAutoLink` set to `true` in the `new showdown.Converter()`, text like `www.google.com` will be converted to `<a href="www.google.com">www.google.com</a>`. Like so:
+
+You can search for things on www.google.com
+
+*back to [table of contents](#toc)*
+
+# Custom IDs on Headlines {this-is-my-custom-id}
+
+Check the console. This header should have the id `this-is-my-custom-id`. It works, but the dashes are removed. The option `customizedHeaderId` must be set to `true` in `new showdown.Converter()`.
+
+The custom id shows up, but with dashes (`-`) removed.
+
+*back to [table of contents](#toc)*
+
+# Footnotes and Other Links
+
+Footnotes can be created with this extension: https://github.com/Kriegslustig/showdown-footnotes
+Difficult to test in JSfiddle
+
+
+*back to [table of contents](#toc)*
+
+# Todos
+
+### TaskLists (GFM Style)
+
+Showdown also supports GFM styled takslists if the **`tasklists`** option is enabled.
+
+```md
+ - [x] checked list item
+ - [ ] unchecked list item
+```
+
+ - [x] checked list item
+ - [ ] unchecked list item
+
+# Strikethrough
+
+syntax:
+```md
+~~strikethrough~~
+```
+
+~~This is a strikethrough~~
+
+*back to [table of contents](#toc)*
+
+# Definition Lists
+
+Not supported. But if a user really wants one, they can create it using the regular `<dl>`, `<dt>`, `<dd>` HTML tags. Like so:
+
+```html
+<dl>
+  <dt>SGML</dt>
+    <dd>The Standard Generalized Markup Language</dd>
+  <dt>HTML</dt>
+     <dd>The Hypertext Markup Language</dd>
+     <dd>The markup language you use to create web pages.</dd>
+  <dt>XML</dt>
+    <dd>The Extensible Markup Language</dd>
+</dl>
+```
+
+<dl>
+  <dt>SGML</dt>
+    <dd>The Standard Generalized Markup Language</dd>
+  <dt>HTML</dt>
+     <dd>The Hypertext Markup Language</dd>
+     <dd>The markup language you use to create web pages.</dd>
+  <dt>XML</dt>
+    <dd>The Extensible Markup Language</dd>
+</dl>
+
+*back to [table of contents](#toc)*
+
+# Math
+
+Math should be possible using the [showdown-katex extension](https://github.com/obedm503/showdown-katex). However, it's too complicated to demonstrate using this JSfiddle environment (no CDN available).
+
+*back to [table of contents](#toc)*
+
+# Citation-references & Bibliography formatting
+
+The same goes for citations and biliographies, but we should be able to implement them using the [citation.js-showdown extension](https://github.com/larsgw/citation.js-showdown).
+
+*back to [table of contents](#toc)*
+
+# XSS filter
+
+This is an important thing to consider because users will be able to input scripts like so:
+
+```html
+<script>alert('xss filtering is required!')</script>
+```
+
+Showdown doesn’t include an XSS filter, so you must provide your own. See details of vulnerabilities outlined  (here)[https://github.com/showdownjs/showdown/wiki/Markdown's-XSS-Vulnerability-(and-how-to-mitigate-it)]. There is a [Showdown XSS Filter extension](https://github.com/VisionistInc/showdown-xss-filter) available, but when used in this fiddle, the docbook tags were converted to text, the tasklist (todo) checkboxes broke, the syntax highlighting stopped working, and the head ids were removed. You can see this in action by adding `xssfilter` to the list of extensions.
+
+*back to [table of contents](#toc)*
+
+# Bootstrap classes
+
+These can be added with a DIY extension, as outlined [here](https://github.com/showdownjs/showdown/wiki/Add-default-classes-for-each-HTML-element).
+
+The following classes were added automatically in this demonstration:
+
+```js
+const classMap = {
+  h1: 'ui large header',
+  h2: 'ui medium header',
+  ul: 'ui list',
+  li: 'ui item'
+}
+```
+
+*back to [table of contents](#toc)*
+
+# Emojis
+
+This is not important, but emoji support is built in!
+
+:+1:
+:tada:
+:smiley:
+:cat:
+:fried_shrimp:
+:computer:
+
+more [here](https://github.com/showdownjs/showdown/wiki/emojis)
+extension to also allow font awesome icons [here](https://github.com/dbtek/showdown-icon)
+
+
+*back to [table of contents](#toc)*
+
+]]>
+      </markdown>
+    </overview>
+
+</proj:project>
