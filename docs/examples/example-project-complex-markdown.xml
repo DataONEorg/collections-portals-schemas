@@ -88,6 +88,32 @@ This is how it is rendered:
 
 The original tags are preserved in the HTML, but are not styled or converted to html.
 
+-----
+
+Some more docbook tags:
+
+<citetitle>citetitle</citetitle>
+<emphasis>emphasis</emphasis>
+<ulink url="https://xkcd.com/">ulink with url</ulink>
+<title>title</title>
+<literallayout>Literal Layout
+   Hope this will
+        Preserve
+            White space
+
+
+        </literallayout>
+<itemizedlist>
+    <listitem>itemizedlist item one</listitem>
+    <listitem>itemizedlist item two</listitem>
+</itemizedlist>
+<orderedlist>
+    <listitem>ordered list item one</listitem>
+    <listitem>ordered list item two</listitem>
+</orderedlist>
+<subscript>subscript</subscript>
+<superscript>superscript</superscript>
+
 *back to [table of contents](#toc)*
 
 # Automatic Paragraphs
