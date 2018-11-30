@@ -6,8 +6,6 @@
     <name>SASAP</name>
     <label>State of Alaska's Salmon and People</label>
     <description>All datasets from the KNB repository that were produced by or are related to the State of Alaska's Salmon and People project.</description>
-    <!-- TODO: check how to translate the query below into the definitions > filter syntax -->
-    <!-- projectText:'State of Alaska's Salmon and People' AND (*:* NOT obsoletedBy:*) -->
     <definition>
         <filter>
             <field>project</field>
@@ -15,9 +13,8 @@
         </filter>
     </definition>
 
-    <!-- TODO: logos should be identifiers -->
     <logo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
     </logo>
 
     <overview>
@@ -271,21 +268,21 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     <acknowledgments>
         Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
     </acknowledgments>
-    <!-- TODO: acknowledgmentsLogos should be identifiers -->
+
     <acknowledgmentsLogo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
+        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
+        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
+        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
+        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
     </acknowledgmentsLogo>
 
     <!-- ====== Geography Filter Group ====== -->
@@ -308,23 +305,23 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
           	<choice>
                 <label>Copper River</label>
-                <value>*copper river*</value>
+                <value>copper river</value>
             </choice>
           	<choice>
                 <label>Tanana River</label>
-                <value>*tanana river*</value>
+                <value>tanana river</value>
             </choice>
           	<choice>
                 <label>Porcupine River</label>
-                <value>*porcupine river*</value>
+                <value>porcupine river</value>
             </choice>
           	<choice>
                 <label>Koyukuk River</label>
-                <value>*koyukuk river*</value>
+                <value>koyukuk river</value>
             </choice>
           	<choice>
                 <label>Colville River</label>
-                <value>*colville river*</value>
+                <value>colville river</value>
             </choice>
             <!-- .... TODO: once SASAP metadata is updated with locations, add all waterbody options here ... -->
 
@@ -338,6 +335,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <!-- <exclude>false</exclude> -->
+            <matchSubstring>true</matchSubstring>
             <label>SASAP Region</label>
             <!-- <placeholder></placeholder> -->
             <!-- <icon></icon> -->
@@ -345,67 +343,67 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         	<choice>
     	        <label>Alaska Peninsula and Aleutian Islands</label>
-    	        <value>*alaska peninsula and aleutian islands*</value>
+    	        <value>alaska peninsula and aleutian islands</value>
             </choice>
 
           	<choice>
             	<label>Arctic</label>
-            	<value>*arctic*</value>
+            	<value>arctic</value>
             </choice>
 
         	<choice>
             	<label>Bristol Bay</label>
-            	<value>*bristol bay*</value>
+            	<value>bristol bay</value>
             </choice>
 
         	<choice>
             	<label>Chignik</label>
-            	<value>*chignik*</value>
+            	<value>chignik</value>
             </choice>
 
         	<choice>
             	<label>Cook Inlet</label>
-            	<value>*cook inlet*</value>
+            	<value>cook inlet</value>
             </choice>
 
         	<choice>
             	<label>Copper River</label>
-            	<value>*copper river*</value>
+            	<value>copper river</value>
             </choice>
 
         	<choice>
             	<label>Kodiak</label>
-            	<value>*kodiak*</value>
+            	<value>kodiak</value>
             </choice>
 
         	<choice>
             	<label>Kotzebue</label>
-            	<value>*kotzebue*</value>
+            	<value>kotzebue</value>
             </choice>
 
         	<choice>
             	<label>Kuskokwim</label>
-            	<value>*kuskokwim*</value>
+            	<value>kuskokwim</value>
             </choice>
 
         	<choice>
             	<label>Prince William Sound</label>
-            	<value>*prince william sound*</value>
+            	<value>prince william sound</value>
             </choice>
 
         	<choice>
             	<label>Norton Sound</label>
-            	<value>*norton sound*</value>
+            	<value>norton sound</value>
             </choice>
 
         	<choice>
             	<label>Southeast</label>
-            	<value>*southeast*</value>
+            	<value>southeast</value>
             </choice>
 
         	<choice>
             	<label>Yukon</label>
-            	<value>*yukon*</value>
+            	<value>yukon</value>
             </choice>
 
             <chooseMultiple>true</chooseMultiple>
@@ -423,19 +421,19 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <description>Alaska Department of Fish and Game management area</description>
         	<choice>
                 <label>Arctic-Yukon-Kuskokwim</label>
-                <value>*arctic-yukon-kuskokwim*</value>
+                <value>arctic-yukon-kuskokwim</value>
             </choice>
         	<choice>
                 <label>Central Region</label>
-                <value>*central region*</value>
+                <value>central region</value>
             </choice>
         	<choice>
                 <label>Southeast Region</label>
-                <value>*southeast region*</value>
+                <value>southeast region</value>
             </choice>
         	<choice>
                 <label>Westward Region</label>
-                <value>*westward region*</value>
+                <value>westward region</value>
             </choice>
             <!-- .... and many, many, many more ... -->
             <chooseMultiple>true</chooseMultiple>
@@ -548,7 +546,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <label>Management</label>
             <!-- <placeholder></placeholder> -->
             <icon>fa-file-contract</icon>
-            <description><!-- TODO: describe fish productivity--></description>
+            <description>Data about harvest, governance, hatcheries and commercial fishing</description>
         	<choice>
                 <label>Harvest</label>
                 <value>harvest</value>
@@ -577,7 +575,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <label>Human Dimensions</label>
             <!-- <placeholder></placeholder> -->
             <icon>fa-users</icon>
-            <description><!-- TODO: describe --></description>
+            <description>Data that incorporate surveys, census, demographic, or economic data</description>
         	<choice>
                 <label>Surveys</label>
                 <value>survey</value>
@@ -811,35 +809,18 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         </choiceFilter>
 
         <!-- Investigator / Person sub-filter -->
-        <!-- TODO: @jeanette should the user choose from a list of all associatedParty here, or should we have a free text field..? -->
-        <choiceFilter>
+        <textFilter>
             <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
             <value></value> <!-- ?? -->
             <operator>AND</operator>
             <exclude>false</exclude>
-            <label>Person</label> <!-- TODO: @jeanette person? associatedParty? Investigator? -->
+            <label>Person</label>
             <!-- <placeholder></placeholder> -->
             <icon>fa-user</icon>
             <description>The people who created or provided the data</description>
-          	<choice>
-                <!-- TODO: @jeanette should the user choose from a list of all associatedParty here, or should we have a free text field..? -->
-                <label>Jeanette Clark</label>
-                <value>Jeanette Clark</value>
-            </choice>
-            <choice>
-                <label>Jared Kibele</label>
-                <value>Jared Kibele</value>
-            </choice>
-            <choice>
-                <label>Meagan Krupa</label>
-                <value>Meagan Krupa</value>
-            </choice>
-            <!-- ... many more ... -->
-            <chooseMultiple>true</chooseMultiple>
-        </choiceFilter>
+        </textFilter>
 
         <!-- Working group sub-filter -->
-        <!-- Management sub filter -->
         <choiceFilter>
             <field>keywords</field>
             <value></value> <!-- ??? -->
@@ -848,7 +829,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <label>Working group</label>
             <!-- <placeholder></placeholder> -->
             <icon>fa-users</icon>
-            <description><!-- TODO: describe --></description>
+            <description>The working group who created, compiled, or used the data</description>
         	<choice>
                 <label></label>
                 <value></value>
@@ -882,11 +863,10 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         </dateFilter>
 
         <!-- date coverage -->
-        <!-- TODO: how to do this? only one <field> allowed, but need to query both -->
-        <!-- i.e. beginDate > min AND endDate < max -->
         <dateFilter>
             <field>beginDate</field>
-            <value></value> <!-- ??? all years beteen min and max -->
+            <field>endDate</field> <!-- ??? all years beteen min and max -->
+            <value></value>
             <!-- <operator>AND</operator> -->
             <!-- <exclude>false</exclude> -->
             <label>Year of publication</label>
@@ -911,7 +891,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <field>id</field>
             <field>documents</field>
             <field>resourceMap</field>
-            <!-- TODO: how to query all of these three fields ? only one <field> allowed. -->
             <value></value> <!-- to be entered by user -->
             <operator>OR</operator>
             <exclude>false</exclude>
@@ -926,7 +905,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     </filterGroup>
 
     <!-- ====== Display options ====== -->
-    <!-- TODO: choose branding colours... these were extracted from this image https://alaskasalmonandpeople.org/wp-content/themes/sasap/img/underwater.jpg -->
+    <!-- TODO: choose branding colours -->
     <option>
         <optionName>primaryColor</optionName>
         <optionValue>#02A5AB</optionValue>
