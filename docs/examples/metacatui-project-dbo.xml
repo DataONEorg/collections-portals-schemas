@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proj:project xmlns:proj="http://ecoinformatics.org/datasetproject-beta1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
+
+    <name>DBO</name>
+    <label>Distributed Biological Observatory</label>
+    <description>All datasets that were produced by or that are related to the Distributed Biological Observatory</description>
+    <definition>
+        <filter>
+            <field>project</field>
+            <value>Distributed Biological Observatory</value>
+        </filter>
+    </definition>
+
+    <logo>
+        <!-- TODO -->
+    </logo>
+
+    <overview>
+      <markdown>
+<![CDATA[
+The dramatic seasonal retreats and thinning of sea ice, record-setting seawater temperatures and multiple observations of biological changes in the Pacific Arctic sector precipitated an international workshop to evaluate ecosystem response to climate forcing. In May 2009, NOAA convened the Biology-Sea Ice Workshop comprised of 20 national and international scientists, including physical, geochemical and biological field scientists and modelers. A key outcome of the workshop was an EOS article entitled “Biological Response to Recent Pacific Arctic Sea Ice Retreats”. In addition to an overview of observed biophysical changes in the ecosystem, the article suggested a framework for the development of a biological observatory by international members of the Pacific Arctic Group (PAG; http://pag.arcticportal.org).
+
+The "Distributed Biological Observatory (DBO)" is envisioned as a change detection array along a latitudinal gradient extending from the northern Bering Sea to the Barrow Arc [map of sites and example of change in sea ice and Chl-a]. DBO sampling is focused on transects centered on locations of high productivity, biodiversity and rates of biological change. The DBO sampling framework was initially tested during the successful 2010 Pilot Study, which consisted of international ship occupations of two of the DBO sites, one in the SE Chukchi Sea and one across upper Barrow Canyon. Provisional results of the 2010 Pilot Study were the central topic at the December 2010 PAG meeting in Tokyo, Japan, and at the March 2011 DBO workshop in Seoul, Korea, held immediately prior to the international Arctic Science Summit Week. Approximately 90 people attended the one-day DBO workshop in Seoul, including invited speakers who presented ideas for efforts to expand the DBO concept to the Eastern Arctic. In addition, provisional data sets were presented and planning efforts for the 2011 Pilot Study were initiated.
+
+Notably, several U.S. agencies have endorsed the DBO concept in the Arctic research planning documents, including: (1) the 2010 NOAA Arctic Strategic Plan, (2) aspects in the BOEMRE Alaska Region planning efforts in the Chukchi Sea (COMIDA-Hanna Shoal), (3) statements in the recent USGS Science “Needs to Inform Decisions on Outer Continental Shelf Energy Development in the Chukchi and Beaufort Seas Alaska” document, and (4) interest by the Shell-ConocoPhillips-StatOil environmental program to occupy the Barrow Canyon DBO line in 2011. Perhaps most importantly, the DBO is specifically included in the draft US National Ocean Policy Strategic Plan. In addition, the Marine Working Group of the International Arctic Science Committee (IASC) has endorsed the DBO, is supporting similar activities in the Atlantic sector of the Arctic, and will co-sponsor the DOBO workshop in Victoria, Canada in November 2011. Also, the IASC-SCAR bipolar action group for the Arctic and Antarctic recently identified the DBO concept of latitudinal transects and stations as a possible mode for biological observations in the Antarctic, too.
+]]>
+      </markdown>
+    </overview>
+    <results>
+      <markdown><!-- TODO -->
+        <![CDATA[
+
+]]>
+      </markdown>
+    </results>
+
+    <!-- === associatedParty === -->
+    <associatedParty>
+        <individualName>
+            <givenName>Jacqueline M.</givenName>
+            <surName>Grebmeier</surName>
+        </individualName>
+        <organizationName>(University of Maryland Center for Environmental Science, Chesapeake Biological Laboratory)</organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress>jgrebmei@cbl.umces.edu</electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName>Sue E.</givenName>
+            <surName>Moore</surName>
+        </individualName>
+        <organizationName>(NOAA Fisheries Office of Science and Technology, Marine Ecosystems Division)</organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress>sue.moore@noaa.gov</electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName></givenName>
+            <surName></surName>
+        </individualName>
+        <organizationName></organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress></electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName></givenName>
+            <surName></surName>
+        </individualName>
+        <organizationName></organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress></electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName>James E.</givenName>
+            <surName>Overland</surName>
+        </individualName>
+        <organizationName>(Pacific Marine Environmental Laboratory)</organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress>james.e.overland@noaa.gov</electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName>Robert S.</givenName>
+            <surName>Pickart</surName>
+        </individualName>
+        <organizationName>(Woods Hole Oceanographic Institution)</organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress>rpickart@whoi.edu</electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <associatedParty>
+        <individualName>
+            <givenName>Karen</givenName>
+            <surName>Frey</surName>
+        </individualName>
+        <organizationName>(Clark University, Graduate School of Geography)</organizationName>
+        <positionName>DBO Science Steering Committee - USA member</positionName>
+        <electronicMailAddress>kfrey@clarku.edu</electronicMailAddress>
+        <role><!-- TODO --></role>
+    </associatedParty>
+
+    <!-- TODO: add DBO Data Subcommittee members? -->
+    <!-- TODO: add Full Pacific Arctic Group (PAG) members ? -->
+
+    <acknowledgments>
+        <!-- TODO: acknowledgement text here -->
+    </acknowledgments>
+
+    <acknowledgmentsLogo>
+        <!-- TODO: upload and link to acknowledgment logos -->
+    </acknowledgmentsLogo>
+
+    <!-- ====== Projects or Datasets Filter Group ====== -->
+    <filterGroup>
+
+        <label>Projects or Datasets</label>
+        <description><!-- TODO: describe difference between projects and datasets--></description>
+        <icon>fa-file-text</icon>
+
+        <toggleFilter>
+            <field>keywords</field>
+            <value></value>
+            <label>Projects or Datasets</label>
+            <trueValue>Project</trueValue>
+            <trueLabel>Projects</trueLabel>
+            <falseValue>Dataset</falseValue>
+            <falseLabel>Datasets</falseLabel>
+        </toggleFilter>
+
+    </filterGroup>
+
+    <!-- ====== Transects Filter Group ====== -->
+    <filterGroup>
+
+        <label>Transect</label>
+        <description>regional "hotspot" transect lines and stations located along a latitudinal gradient which are considered to exhibit high productivity, biodiversity, and overall rates of change</description>
+        <icon>fa-globe</icon>
+
+        <!-- === sub-filter === -->
+        <choiceFilter>
+            <field>site</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>Transect</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <!-- <description></description> -->
+
+            <choice>
+                <label> DBO 1 - Southern St. Lawrence </label>
+                <value> DBO 1 - Southern St. Lawrence </value>
+            </choice>
+            <choice>
+                <label> DBO 2 - Chirikov Basin </label>
+                <value> DBO 2 - Chirikov Basin </value>
+            </choice>
+            <choice>
+                <label> DBO 3 - Southern Chukchi Sea </label>
+                <value> DBO 3 - Southern Chukchi Sea </value>
+            </choice>
+            <choice>
+                <label> DBO 4 - NE Chukchi Sea </label>
+                <value> DBO 4 - NE Chukchi Sea </value>
+            </choice>
+            <choice>
+                <label> DBO 5 - Barrow Canyon </label>
+                <value> DBO 5 - Barrow Canyon </value>
+            </choice>
+            <choice>
+                <label> DBO 6 - Beaufort Sea - 152 W </label>
+                <value> DBO 6 - Beaufort Sea - 152 W </value>
+            </choice>
+            <choice>
+                <label> DBO 7 - Beaufort Sea - 143 W </label>
+                <value> DBO 7 - Beaufort Sea - 143 W </value>
+            </choice>
+            <choice>
+                <label> DBO 8 - Beaufort Sea - Cape Bathurst </label>
+                <value> DBO 8 - Beaufort Sea - Cape Bathurst </value>
+            </choice>
+
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Researcher Filter Group ====== -->
+    <filterGroup>
+
+        <label>Researcher</label>
+        <description>Researcher</description>
+        <icon>fa-user-edit</icon>
+
+        <!-- === sub-filter === -->
+        <choiceFilter>
+            <field>origin</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>Researcher</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <!-- <description></description> -->
+            <choice>
+                <label>Kevin R. Arrigo</label>
+                <value>Kevin R. Arrigo</value>
+            </choice>
+            <choice>
+                <label>Carin J. Ashjian</label>
+                <value>Carin J. Ashjian</value>
+            </choice>
+            <choice>
+                <label>Catherine L. Berchok</label>
+                <value>Catherine L. Berchok</value>
+            </choice>
+            <choice>
+                <label>John Burns</label>
+                <value>John Burns</value>
+            </choice>
+            <choice>
+                <label>Lee W. Cooper</label>
+                <value>Lee W. Cooper</value>
+            </choice>
+            <choice>
+                <label>Kathy Crane</label>
+                <value>Kathy Crane</value>
+            </choice>
+            <choice>
+                <label>Kyungho Chung</label>
+                <value>Kyungho Chung</value>
+            </choice>
+            <choice>
+                <label>Doug Dasher</label>
+                <value>Doug Dasher</value>
+            </choice>
+            <choice>
+                <label>Robert H. Day</label>
+                <value>Robert H. Day</value>
+            </choice>
+            <choice>
+                <label>Kenneth H. Dunton</label>
+                <value>Kenneth H. Dunton</value>
+            </choice>
+            <choice>
+                <label>Lisa B. Eisner</label>
+                <value>Lisa B. Eisner</value>
+            </choice>
+            <choice>
+                <label>Ed Farley</label>
+                <value>Ed Farley</value>
+            </choice>
+            <choice>
+                <label>Louis Fortier</label>
+                <value>Louis Fortier</value>
+            </choice>
+            <choice>
+                <label>Martin Fortier</label>
+                <value>Martin Fortier</value>
+            </choice>
+            <choice>
+                <label>Karen E. Frey</label>
+                <value>Karen E. Frey</value>
+            </choice>
+            <choice>
+                <label>Jacqueline M. Grebmeier</label>
+                <value>Jacqueline M. Grebmeier</value>
+            </choice>
+            <choice>
+                <label>Ian Hartwell</label>
+                <value>Ian Hartwell</value>
+            </choice>
+            <choice>
+                <label>Jianfeng He</label>
+                <value>Jianfeng He</value>
+            </choice>
+            <choice>
+                <label>Toru Hirawake</label>
+                <value>Toru Hirawake</value>
+            </choice>
+            <choice>
+                <label>Katrin Iken</label>
+                <value>Katrin Iken</value>
+            </choice>
+            <choice>
+                <label>Motoyo Itoh</label>
+                <value>Motoyo Itoh</value>
+            </choice>
+            <choice>
+                <label>Sung-Ho Kang</label>
+                <value>Sung-Ho Kang</value>
+            </choice>
+            <choice>
+                <label>Takashi Kikuchi</label>
+                <value>Takashi Kikuchi</value>
+            </choice>
+            <choice>
+                <label>Keith Levesque</label>
+                <value>Keith Levesque</value>
+            </choice>
+            <choice>
+                <label>Terri Lomax</label>
+                <value>Terri Lomax</value>
+            </choice>
+            <choice>
+                <label>Humfrey Melling</label>
+                <value>Humfrey Melling</value>
+            </choice>
+            <choice>
+                <label>Sue E. Moore</label>
+                <value>Sue E. Moore</value>
+            </choice>
+            <choice>
+                <label>Jim Murphy</label>
+                <value>Jim Murphy</value>
+            </choice>
+            <choice>
+                <label>Jeffrey M. Napp</label>
+                <value>Jeffrey M. Napp</value>
+            </choice>
+            <choice>
+                <label>Shigeto Nishino</label>
+                <value>Shigeto Nishino</value>
+            </choice>
+            <choice>
+                <label>Robert S. Pickart</label>
+                <value>Robert S. Pickart</value>
+            </choice>
+            <choice>
+                <label>Sigrid A. Salo</label>
+                <value>Sigrid A. Salo</value>
+            </choice>
+            <choice>
+                <label>Phyllis J. Stabeno</label>
+                <value>Phyllis J. Stabeno</value>
+            </choice>
+            <choice>
+                <label>Svein Vagle</label>
+                <value>Svein Vagle</value>
+            </choice>
+            <choice>
+                <label>Thomas J. Weingartner</label>
+                <value>Thomas J. Weingartner</value>
+            </choice>
+            <choice>
+                <label>Terry E. Whitledge</label>
+                <value>Terry E. Whitledge</value>
+            </choice>
+            <choice>
+                <label>Rebecca A. Woodgate</label>
+                <value>Rebecca A. Woodgate</value>
+            </choice>
+            <choice>
+                <label>Yu Xingguang</label>
+                <value>Yu Xingguang</value>
+            </choice>
+            <choice>
+                <label>Eun Jin Yang</label>
+                <value>Eun Jin Yang</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Vessel Filter Group ====== -->
+    <filterGroup>
+
+        <label>Vessel</label>
+        <description>Vessel</description>
+        <icon>fa-ship</icon>
+
+        <!-- === sub-filter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <label>Vessel</label>
+
+            <choice>
+                <label>Alaska Endeavor</label>
+                <value>Alaska Endeavor</value>
+            </choice>
+            <choice>
+                <label>Alaskan Enterprise</label>
+                <value>Alaskan Enterprise</value>
+            </choice>
+            <choice>
+                <label>Alaskan Explorer</label>
+                <value>Alaskan Explorer</value>
+            </choice>
+            <choice>
+                <label>Amundsen</label>
+                <value>Amundsen</value>
+            </choice>
+            <choice>
+                <label>Annika Marie</label>
+                <value>Annika Marie</value>
+            </choice>
+            <choice>
+                <label>Aquila</label>
+                <value>Aquila</value>
+            </choice>
+            <choice>
+                <label>Araon</label>
+                <value>Araon</value>
+            </choice>
+            <choice>
+                <label>Fairweather</label>
+                <value>Fairweather</value>
+            </choice>
+            <choice>
+                <label>Healy</label>
+                <value>Healy</value>
+            </choice>
+            <choice>
+                <label>Khromov</label>
+                <value>Khromov</value>
+            </choice>
+            <choice>
+                <label>Louis S. St-Laurent</label>
+                <value>Louis S. St-Laurent</value>
+            </choice>
+            <choice>
+                <label>Mirai</label>
+                <value>Mirai</value>
+            </choice>
+            <choice>
+                <label>Moana Wave</label>
+                <value>Moana Wave</value>
+            </choice>
+            <choice>
+                <label>Mystery Bay</label>
+                <value>Mystery Bay</value>
+            </choice>
+            <choice>
+                <label>Norseman II</label>
+                <value>Norseman II</value>
+            </choice>
+            <choice>
+                <label>Oden</label>
+                <value>Oden</value>
+            </choice>
+            <choice>
+                <label>Oscar Dyson</label>
+                <value>Oscar Dyson</value>
+            </choice>
+            <choice>
+                <label>Oshura-Maru</label>
+                <value>Oshura-Maru</value>
+            </choice>
+            <choice>
+                <label>Ronald H. Brown</label>
+                <value>Ronald H. Brown</value>
+            </choice>
+            <choice>
+                <label>Sir Wilfrid Laurier</label>
+                <value>Sir Wilfrid Laurier</value>
+            </choice>
+            <choice>
+                <label>Viktor Buynitskiy</label>
+                <value>Viktor Buynitskiy</value>
+            </choice>
+            <choice>
+                <label>Westward Wind</label>
+                <value>Westward Wind</value>
+            </choice>
+            <choice>
+                <label>Xuelong</label>
+                <value>Xuelong</value>
+            </choice>
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Year Filter Group ====== -->
+    <filterGroup>
+
+        <label>Year</label>
+        <description>Year of ...</description><!-- TODO: year of what? -->
+        <icon>fa-calendar</icon>
+
+        <!-- === sub-filter === -->
+        <choiceFilter>
+            <field><!-- TODO: which dates? --></field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <label>Year</label>
+
+            <choice>
+                <label>2010</label>
+                <value>2010</value>
+            </choice>
+            <choice>
+                <label>2011</label>
+                <value>2011</value>
+            </choice>
+            <choice>
+                <label>2012</label>
+                <value>2012</value>
+            </choice>
+            <choice>
+                <label>2013</label>
+                <value>2013</value>
+            </choice>
+            <choice>
+                <label>2014</label>
+                <value>2014</value>
+            </choice>
+            <choice>
+                <label>2015</label>
+                <value>2015</value>
+            </choice>
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Keywords Fitler Group ====== -->
+    <filterGroup>
+
+        <label>Keywords</label>
+        <description>Topic covered by the data</description><!--TODO: is this accurate? -->
+        <icon>fa-star</icon>
+
+        <!-- === sub-filter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <label>Keywords</label>
+
+            <choice>
+                <label>ADCP</label>
+                <value>ADCP</value>
+            </choice>
+            <choice>
+                <label>Benthos</label>
+                <value>Benthos</value>
+            </choice>
+            <choice>
+                <label>Chlorophyll</label>
+                <value>Chlorophyll</value>
+            </choice>
+            <choice>
+                <label>CTD</label>
+                <value>CTD</value>
+            </choice>
+            <choice>
+                <label>Epifauna</label>
+                <value>Epifauna</value>
+            </choice>
+            <choice>
+                <label>Fish</label>
+                <value>Fish</value>
+            </choice>
+            <choice>
+                <label>Macrofauna</label>
+                <value>Macrofauna</value>
+            </choice>
+            <choice>
+                <label>Marine Mammal Acoustics</label>
+                <value>Marine Mammal Acoustics</value>
+            </choice>
+            <choice>
+                <label>Marine Mammal Survey</label>
+                <value>Marine Mammal Survey</value>
+            </choice>
+            <choice>
+                <label>Marine Mammal Watch</label>
+                <value>Marine Mammal Watch</value>
+            </choice>
+            <choice>
+                <label>Mooring</label>
+                <value>Mooring</value>
+            </choice>
+            <choice>
+                <label>Nutrients</label>
+                <value>Nutrients</value>
+            </choice>
+            <choice>
+                <label>Phytoplankton</label>
+                <value>Phytoplankton</value>
+            </choice>
+            <choice>
+                <label>Satellite</label>
+                <value>Satellite</value>
+            </choice>
+            <choice>
+                <label>Seabird Survey</label>
+                <value>Seabird Survey</value>
+            </choice>
+            <choice>
+                <label>Sediment</label>
+                <value>Sediment</value>
+            </choice>
+            <choice>
+                <label>Zooplankton</label>
+                <value>Zooplankton</value>
+            </choice>
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Display options ====== -->
+    <!-- TODO: choose branding colours -->
+    <option>
+        <optionName>primaryColor</optionName>
+        <optionValue>#6289AA</optionValue>
+    </option>
+    <option>
+        <optionName>secondaryColor</optionName>
+        <optionValue>#db0d2c</optionValue>
+    </option>
+    <option>
+        <optionName>accentColor</optionName>
+        <optionValue>#000066</optionValue>
+    </option>
+    <!-- TODO: check map coordinates / zoom -->
+    <option>
+      <optionName>mapZoomLevel</optionName>
+      <optionValue>9</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLatitude</optionName>
+      <optionValue>63.217889</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLongitude</optionName>
+      <optionValue>-156.844462</optionValue>
+    </option>
+    <option>
+        <optionName>mapShapeColor</optionName>
+        <optionValue>#D0CA4E</optionValue>
+    </option>
+
+    <option>
+      <optionName>hideMetrics</optionName>
+      <optionValue>false</optionValue>
+    </option>
+
+</proj:project>
