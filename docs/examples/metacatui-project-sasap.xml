@@ -5,7 +5,7 @@
 
     <name>SASAP</name>
     <label>State of Alaska's Salmon and People</label>
-    <description>All datasets from the KNB repository that were produced by or are related to the State of Alaska's Salmon and People project.</description>
+    <description>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</description>
     <definition>
         <filter>
             <field>project</field>

@@ -5,7 +5,7 @@
 
     <name>DBO</name>
     <label>Distributed Biological Observatory</label>
-    <description>All datasets that were produced by or that are related to the Distributed Biological Observatory</description>
+    <description>The Distributed Biological Observatory (DBO) is a multi-agency, ship-based research program studying biological responses to rapid physical changes in the Arctic marine ecosystem</description>
     <definition>
         <filter>
             <field>project</field>
@@ -56,28 +56,6 @@ Notably, several U.S. agencies have endorsed the DBO concept in the Arctic resea
         <organizationName>(NOAA Fisheries Office of Science and Technology, Marine Ecosystems Division)</organizationName>
         <positionName>DBO Science Steering Committee - USA member</positionName>
         <electronicMailAddress>sue.moore@noaa.gov</electronicMailAddress>
-        <role><!-- TODO --></role>
-    </associatedParty>
-
-    <associatedParty>
-        <individualName>
-            <givenName></givenName>
-            <surName></surName>
-        </individualName>
-        <organizationName></organizationName>
-        <positionName>DBO Science Steering Committee - USA member</positionName>
-        <electronicMailAddress></electronicMailAddress>
-        <role><!-- TODO --></role>
-    </associatedParty>
-
-    <associatedParty>
-        <individualName>
-            <givenName></givenName>
-            <surName></surName>
-        </individualName>
-        <organizationName></organizationName>
-        <positionName>DBO Science Steering Committee - USA member</positionName>
-        <electronicMailAddress></electronicMailAddress>
         <role><!-- TODO --></role>
     </associatedParty>
 
