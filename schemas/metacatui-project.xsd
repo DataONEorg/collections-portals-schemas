@@ -6,6 +6,7 @@
     xmlns:doc="eml://ecoinformatics.org/documentation-2.2.0"
     xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:par="eml://ecoinformatics.org/party-2.2.0"
+    xmlns:proj="eml://ecoinformatics.org/project-2.2.0"
     xmlns:col="http://ecoinformatics.org/datasetcollection-beta1">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="eml-text.xsd"/>
@@ -78,10 +79,18 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Logo image identifier</doc:tooltip>
-                  <doc:summary>A logo image for a project funder.</doc:summary>
+                  <doc:summary>A logo image for an acknowledged group.</doc:summary>
                   <doc:description>The identifier of the logo image for this project. May be restrictied to certain proportions or size.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
+            </xs:element>
+            <xs:element name="award" type="ProjectAwardType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <doc:tooltip>Award</doc:tooltip>
+                    <doc:description>Specific information about the funding awards received by the project</doc:description>
+                  </xs:appinfo>
+                </xs:annotation>
             </xs:element>
             <xs:element name="filterGroup" type="FilterGroupType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
@@ -105,6 +114,24 @@
       </xs:complexContent>
     </xs:complexType>
   </xs:element>
+
+    <xs:complexType name="ProjectAwardType">
+        <xs:complexContent>
+            <xs:extension base="proj:AwardType">
+                <xs:sequence>
+                    <xs:element name="funderLogo" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:appinfo>
+                              <doc:tooltip>Logo image identifier</doc:tooltip>
+                              <doc:summary>A logo image of the funding agency.</doc:summary>
+                              <doc:description>The identifier of the logo image for this funding agency. May be restrictied to certain proportions or size.</doc:description>
+                            </xs:appinfo>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
 
     <xs:complexType name="FilterGroupType">
       <xs:sequence>

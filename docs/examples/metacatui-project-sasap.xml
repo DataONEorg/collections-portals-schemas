@@ -285,6 +285,22 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
     </acknowledgmentsLogo>
 
+    <award>
+        <funderName>Gordon and Betty Moore Foundation</funderName>
+        <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
+        <awardNumber>5124</awardNumber>
+        <title>State of Alaska’s Salmon and People</title>
+        <funderLogo><!--TODO--></funderLogo>
+    </award>
+    <award>
+        <funderName>Gordon and Betty Moore Foundation</funderName>
+        <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
+        <awardNumber>5451</awardNumber>
+        <title>Data Task Forces for Better Synthesis Studies</title>
+        <funderLogo><!--TODO--></funderLogo>
+    </award>
+
+
     <!-- ====== Geography Filter Group ====== -->
     <filterGroup>
 
