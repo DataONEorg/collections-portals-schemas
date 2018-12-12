@@ -306,7 +306,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>Geography</label>
         <description>The specific site that the data relate to</description>
-        <icon>fa-globe</icon>
+        <icon>globe</icon>
 
         <!-- === waterbody sub-filter === -->
         <choiceFilter>
@@ -462,7 +462,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>Species</label>
         <description>Species of salmon, common names</description>
-        <icon>fa-fish</icon>
+        <icon>sitemap</icon>
 
         <choiceFilter>
             <field>species</field>
@@ -501,7 +501,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     <filterGroup>
         <label>Theme</label>
         <description>Topic covered by the data</description>
-        <icon>fa-shapes</icon>
+        <icon>book</icon>
 
         <!-- Fish Productivity sub filter -->
         <choiceFilter>
@@ -511,7 +511,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Fish Productivity</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-fish</icon>
+            <!--<icon>fish</icon>-->
             <description><!-- TODO: describe --></description>
         	<choice>
                 <label>Escapement</label>
@@ -536,7 +536,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Habitat</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-water</icon>
+            <!--<icon>water</icon>-->
             <description><!-- TODO: describe --></description>
         	<choice>
                 <label>Land use</label>
@@ -561,7 +561,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Management</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-file-contract</icon>
+            <icon>file</icon>
             <description>Data about harvest, governance, hatcheries and commercial fishing</description>
         	<choice>
                 <label>Harvest</label>
@@ -590,7 +590,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Human Dimensions</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-users</icon>
+            <icon>group</icon>
             <description>Data that incorporate surveys, census, demographic, or economic data</description>
         	<choice>
                 <label>Surveys</label>
@@ -612,7 +612,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>Featured</label>
         <description>Datasets featured in SASAP academic output</description>
-        <icon>fa-star</icon>
+        <icon>star</icon>
 
         <toggleFilter>
             <field>keywords</field>
@@ -633,7 +633,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>People and Organizations</label>
         <description>The people, organization, or working group attributed with creating or using the data</description>
-        <icon>fa-user-edit</icon>
+        <icon>group</icon>
 
         <!-- Organization sub-fitler -->
         <choiceFilter>
@@ -643,7 +643,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Organization</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-university</icon>
+            <icon>building</icon>
             <description>Organization that provided the data</description>
           	<choice>
             	<label>Alaska Department of Commerce, Community, and Economic Development (all divisions)</label>
@@ -832,7 +832,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Person</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-user</icon>
+            <icon>user</icon>
             <description>The people who created or provided the data</description>
         </textFilter>
 
@@ -844,7 +844,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <exclude>false</exclude>
             <label>Working group</label>
             <!-- <placeholder></placeholder> -->
-            <icon>fa-users</icon>
+            <icon>group</icon>
             <description>The working group who created, compiled, or used the data</description>
         	<choice>
                 <label></label>
@@ -861,7 +861,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>Year</label>
         <description>Year the data pertain to or year of publication</description>
-        <icon>fa-calendar</icon>
+        <icon>calendar</icon>
 
         <!-- date published -->
         <dateFilter>
@@ -901,7 +901,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <label>Identifier</label>
         <description>unique ID of data package or object</description>
-        <icon>fa-bullseye</icon>
+        <icon>bullseye</icon>
         <textFilter>
 
             <field>id</field>
