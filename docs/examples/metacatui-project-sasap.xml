@@ -885,7 +885,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value>
             <!-- <operator>AND</operator> -->
             <!-- <exclude>false</exclude> -->
-            <label>Year of publication</label>
+            <label>Year of data coverage</label>
             <!-- <placeholder></placeholder> -->
             <!-- <icon></icon> -->
             <description></description>
@@ -948,8 +948,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
       <optionValue>-156.844462</optionValue>
     </option>
     <option>
-        <optionName>mapShapeColor</optionName>
-        <optionValue>#D0CA4E</optionValue>
+        <optionName>mapShapeHue</optionName>
+        <optionValue>344</optionValue>
     </option>
 
     <option>

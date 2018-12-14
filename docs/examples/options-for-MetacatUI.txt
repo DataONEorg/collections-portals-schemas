@@ -21,5 +21,5 @@ The geographic latitude on which the map should be centered
 mapCenterLongitude
 The geographic longitude on which the map should be centered
 
-mapShapeColor
-A color to use for shapes and/or markers on the map, represented by a hexadecimal color code.
+mapShapeHue
+A hue to use for shape and/or marker colors on the map, represented by a 3-digit hue number.
