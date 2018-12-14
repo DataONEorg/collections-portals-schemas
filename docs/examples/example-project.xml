@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proj:project xmlns:proj="http://ecoinformatics.org/datasetproject-beta1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
+
+    <name>example-project</name>
+    <label>An example project</label>
+    <description>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</description>
+    <definition>
+        <filter>
+            <field>text</field>
+            <value>*</value>
+        </filter>
+    </definition>
+
+    <logo>
+        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+    </logo>
+
+    <overview>
+      <markdown>
+        <![CDATA[
+Problem Statement
+---
+Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management questions that have not been addressed. A synthesis approach allows these fragmented collections of data to be combined, offering a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to gain new understandings of salmon social-ecological systems and to inform systematic salmon management into the future. However, these data are dispersed across a variety of sources and formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data enabling interdisciplinary analysis. ![Commercial fishing boats](knb.109201.1)
+
+Goals
+---
+The SASAP project specifically seeks to access and integrate data from a wide variety of sources, including data that have previously been inaccessible. Data Task Force members compile these disparate datasets into larger datasets in a standardized format, allowing for more powerful analyses. We then provide access to SASAP data collections for use by wild salmon researchers, analysts, and advocates to answer scientific, economic, social, and cultural questions around salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska's salmon system health and drive sustainable management of the system. ![Sockeye](knb.109200.1)
+
+Our Data
+---
+Our data collections include both original and compiled (derived) datasets, covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories. Data collections can be searched through using filters by thematic categories, and can be further explored with subsetting and visualization tools before downloading. ![Map of size declines](knb.109199.1)
+
+Who We Are
+---
+SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists across resource sectors. Our approach is to build collaborations (working groups) of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap. The Data Task Force consists of a projects data coordinator, a scientific programmer, and several student interns and postgraduate fellows at NCEAS. The task force facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life cycle. ![Team](knb.109198.1)
+]]>
+      </markdown>
+    </overview>
+    <results>
+      <markdown>
+        <![CDATA[
+Escapement
+---
+The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration. ![Escapement](knb.109196.1)
+
+Age, sex, and length
+---
+Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
+
+Maps and regional data
+---
+This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
+]]>
+      </markdown>
+    </results>
+
+    <!-- === associatedParty === -->
+    <associatedParty>
+        <individualName>
+            <givenName>Courtney</givenName>
+            <surName>Carothers</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Socio-Eco</positionName>
+        <electronicMailAddress>clcarothers@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Rachel</givenName>
+            <surName>Donkersloot</surName>
+        </individualName>
+        <organizationName>(Alaska Marine Conservation Council)</organizationName>
+        <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
+        <electronicMailAddress>rachel@akmarine.org</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Michael</givenName>
+            <surName>Jones</surName>
+        </individualName>
+        <organizationName>(Michigan State University)</organizationName>
+        <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
+        <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Steve</givenName>
+            <surName>Langdon</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Governance</positionName>
+        <electronicMailAddress>sjlandgdon@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Coowe</givenName>
+            <surName>Walker</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>cmwalker9@alaska.edu</electronicMailAddress>
+        <role>primary project member</role>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <salutation>Dr.</salutation>
+            <givenName>Frank</givenName>
+            <surName>Davis</surName>
+        </individualName>
+        <organizationName>(NCEAS/UCSB)</organizationName>
+        <positionName>Lead Principal Investigator</positionName>
+        <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
+        <phone>(805)893-2500</phone>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <salutation>Dr.</salutation>
+            <givenName>Ian</givenName>
+            <surName>Dutton</surName>
+        </individualName>
+        <organizationName>(NII)</organizationName>
+        <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
+        <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
+        <phone>(907)280-8923</phone>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Jessica</givenName>
+            <surName>Black</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
+        <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Taylor</givenName>
+            <surName>Brelsford</surName>
+        </individualName>
+        <positionName>Co-Lead, Gov</positionName>
+        <electronicMailAddress>brelsfot@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Robert W.</givenName>
+            <surName>Campbell</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress/>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>James</givenName>
+            <surName>Fall</surName>
+        </individualName>
+        <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
+        <positionName>Co-Lead, Gov</positionName>
+        <electronicMailAddress>jim.fall@alaska.gov</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Kristin B.</givenName>
+            <surName>Gorman</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress>kgorman@pwscc.org</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Ryan</givenName>
+            <surName>King</surName>
+        </individualName>
+        <organizationName>(Baylor University)</organizationName>
+        <positionName>Co-Lead, Integrated WaterShed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>Ryan_S_King@baylor.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Bert</givenName>
+            <surName>Lewis</surName>
+        </individualName>
+        <organizationName>(Alaska Department of Fish &amp; Game)</organizationName>
+        <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+        <electronicMailAddress>bert.lewis@alaska.gov</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Mark</givenName>
+            <surName>Rains</surName>
+        </individualName>
+        <organizationName>(University of South Florida)</organizationName>
+        <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>mrains@usf.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Peter S.</givenName>
+            <surName>Rand</surName>
+        </individualName>
+        <organizationName>(Prince William Sound Science Center)</organizationName>
+        <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
+        <electronicMailAddress>prand@pwssc.org</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Dan</givenName>
+            <surName>Rinella</surName>
+        </individualName>
+        <organizationName>(US Fish and Wildlife Service)</organizationName>
+        <positionName>Co-Lead, Bio-Phys</positionName>
+        <electronicMailAddress>daniel_rinella@fws.gov</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Tobias</givenName>
+            <surName>Schwoerer</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Socio-Eco</positionName>
+        <electronicMailAddress>tschwoerer@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Charles</givenName>
+            <surName>Simenstad</surName>
+        </individualName>
+        <organizationName>(University of Washington)</organizationName>
+        <positionName>Co-Lead, Integrated Watershed Management for Salmon in Kenai Lowlands</positionName>
+        <electronicMailAddress>simenstd@u.washington.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+    <associatedParty>
+        <individualName>
+            <givenName>Peter</givenName>
+            <surName>Westley</surName>
+        </individualName>
+        <organizationName>(University of Alaska)</organizationName>
+        <positionName>Co-Lead, Consistency, Causes, and Consequences of Salmon Size Declines</positionName>
+        <electronicMailAddress>pwestley@alaska.edu</electronicMailAddress>
+        <role>project member</role>
+    </associatedParty>
+
+    <acknowledgments>
+        Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
+    </acknowledgments>
+
+    <acknowledgmentsLogo>
+        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
+    </acknowledgmentsLogo>
+    <acknowledgmentsLogo>
+        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
+    </acknowledgmentsLogo>
+
+    <award>
+        <funderName>Gordon and Betty Moore Foundation</funderName>
+        <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
+        <awardNumber>5124</awardNumber>
+        <title>State of Alaska’s Salmon and People</title>
+        <funderLogo><!--TODO--></funderLogo>
+    </award>
+    <award>
+        <funderName>Gordon and Betty Moore Foundation</funderName>
+        <funderIdentifier>https://dx.doi.org/10.13039/100000936</funderIdentifier>
+        <awardNumber>5451</awardNumber>
+        <title>Data Task Forces for Better Synthesis Studies</title>
+        <funderLogo><!--TODO--></funderLogo>
+    </award>
+
+
+    <!-- ====== Geography Filter Group ====== -->
+    <filterGroup>
+
+        <label>Geography</label>
+        <description>The specific site that the data relate to</description>
+        <icon>globe</icon>
+
+        <!-- === waterbody sub-filter === -->
+        <choiceFilter>
+            <field>site</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>Waterbody</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Rivers, river systems, or other waterbodies</description>
+
+          	<choice>
+                <label>Copper River</label>
+                <value>copper river</value>
+            </choice>
+          	<choice>
+                <label>Tanana River</label>
+                <value>tanana river</value>
+            </choice>
+          	<choice>
+                <label>Porcupine River</label>
+                <value>porcupine river</value>
+            </choice>
+          	<choice>
+                <label>Koyukuk River</label>
+                <value>koyukuk river</value>
+            </choice>
+          	<choice>
+                <label>Colville River</label>
+                <value>colville river</value>
+            </choice>
+            <!-- .... TODO: once SASAP metadata is updated with locations, add all waterbody options here ... -->
+
+            <chooseMultiple>true</chooseMultiple>
+
+        </choiceFilter>
+
+        <!-- === SASAP Region subfilter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <matchSubstring>true</matchSubstring>
+            <label>SASAP Region</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>State of Alaska's Salmon and People region</description>
+
+        	<choice>
+    	        <label>Alaska Peninsula and Aleutian Islands</label>
+    	        <value>alaska peninsula and aleutian islands</value>
+            </choice>
+
+          	<choice>
+            	<label>Arctic</label>
+            	<value>arctic</value>
+            </choice>
+
+        	<choice>
+            	<label>Bristol Bay</label>
+            	<value>bristol bay</value>
+            </choice>
+
+        	<choice>
+            	<label>Chignik</label>
+            	<value>chignik</value>
+            </choice>
+
+        	<choice>
+            	<label>Cook Inlet</label>
+            	<value>cook inlet</value>
+            </choice>
+
+        	<choice>
+            	<label>Copper River</label>
+            	<value>copper river</value>
+            </choice>
+
+        	<choice>
+            	<label>Kodiak</label>
+            	<value>kodiak</value>
+            </choice>
+
+        	<choice>
+            	<label>Kotzebue</label>
+            	<value>kotzebue</value>
+            </choice>
+
+        	<choice>
+            	<label>Kuskokwim</label>
+            	<value>kuskokwim</value>
+            </choice>
+
+        	<choice>
+            	<label>Prince William Sound</label>
+            	<value>prince william sound</value>
+            </choice>
+
+        	<choice>
+            	<label>Norton Sound</label>
+            	<value>norton sound</value>
+            </choice>
+
+        	<choice>
+            	<label>Southeast</label>
+            	<value>southeast</value>
+            </choice>
+
+        	<choice>
+            	<label>Yukon</label>
+            	<value>yukon</value>
+            </choice>
+
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- === ADFG area subfilter === -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
+            <label>ADFG management area</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Alaska Department of Fish and Game management area</description>
+        	<choice>
+                <label>Arctic-Yukon-Kuskokwim</label>
+                <value>arctic-yukon-kuskokwim</value>
+            </choice>
+        	<choice>
+                <label>Central Region</label>
+                <value>central region</value>
+            </choice>
+        	<choice>
+                <label>Southeast Region</label>
+                <value>southeast region</value>
+            </choice>
+        	<choice>
+                <label>Westward Region</label>
+                <value>westward region</value>
+            </choice>
+            <!-- .... and many, many, many more ... -->
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <booleanFilter>
+            <field>isPublic</field>
+            <label>Show only public datasets</label>
+            <!-- <icon></icon> -->
+            <description>If set, will only show public datasets</description>
+        </booleanFilter>
+
+    </filterGroup>
+
+    <!-- ====== Species Filter Group ====== -->
+    <filterGroup>
+
+        <label>Species</label>
+        <description>Species of salmon, common names</description>
+        <icon>sitemap</icon>
+
+        <choiceFilter>
+            <field>species</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude>  -->
+            <label>Species</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Salmon species, by common name</description>
+        	<choice>
+                <label>Sockeye</label>
+                <value>Oncorhynchus nerka</value>
+            </choice>
+        	<choice>
+                <label>Chinook</label>
+                <value>Oncorhynchus tshawytscha</value>
+            </choice>
+        	<choice>
+                <label>Coho</label>
+                <value>Oncorhynchus kisutch</value>
+            </choice>
+        	<choice>
+                <label>Chum</label>
+                <value>Oncorhynchus keta</value>
+            </choice>
+        	<choice>
+                <label>Pink</label>
+                <value>Oncorhynchus gorbuscha</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+    </filterGroup>
+
+    <!-- ====== Theme Filter Group ====== -->
+    <filterGroup>
+        <label>Theme</label>
+        <description>Topic covered by the data</description>
+        <icon>book</icon>
+
+        <!-- Fish Productivity sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Fish Productivity</label>
+            <!-- <placeholder></placeholder> -->
+            <!--<icon>fish</icon>-->
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label>Escapement</label>
+                <value>escapement</value>
+            </choice>
+        	<choice>
+                <label>Age, sex, length</label>
+                <value>Age, sex, length</value>
+            </choice>
+        	<choice>
+                <label>Brood table</label>
+                <value>Brood table</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Habitat sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Habitat</label>
+            <!-- <placeholder></placeholder> -->
+            <!--<icon>water</icon>-->
+            <description><!-- TODO: describe --></description>
+        	<choice>
+                <label>Land use</label>
+                <value>land use</value>
+            </choice>
+        	<choice>
+                <label>Temperature</label>
+                <value>temperature</value>
+            </choice>
+        	<choice>
+                <label>Precipitation</label>
+                <value>precipitation</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Management sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Management</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>file</icon>
+            <description>Data about harvest, governance, hatcheries and commercial fishing</description>
+        	<choice>
+                <label>Harvest</label>
+                <value>harvest</value>
+            </choice>
+        	<choice>
+                <label>Governance</label>
+                <value>governance</value>
+            </choice>
+        	<choice>
+                <label>Hatcheries</label>
+                <value>hatcheries</value>
+            </choice>
+        	<choice>
+                <label>Commercial</label>
+                <value>commercial</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Human dimensions sub filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Human Dimensions</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>group</icon>
+            <description>Data that incorporate surveys, census, demographic, or economic data</description>
+        	<choice>
+                <label>Surveys</label>
+                <value>survey</value>
+            </choice>
+        	<choice>
+                <label>Census and Demographic</label>
+                <value>census and demographic</value>
+            </choice>
+        	<choice>
+                <label>Economic</label>
+                <value>economic</value>
+            </choice>
+        </choiceFilter>
+
+        <toggleFilter>
+            <field>text</field>
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Male or female</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>Limit to datasets that mention male or female</description>
+            <trueLabel>Male</trueLabel>
+            <trueValue>male</trueValue>
+            <falseLabel>Female</falseLabel>
+            <falseValue>female</falseValue>
+        </toggleFilter>
+
+    </filterGroup>
+
+    <!-- ====== Featured Filter Group ====== -->
+    <filterGroup>
+
+        <label>Featured</label>
+        <description>Datasets featured in SASAP academic output</description>
+        <icon>star</icon>
+
+        <toggleFilter>
+            <field>keywords</field>
+            <value>featured</value>
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Featured</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>View only featured datasets</description>
+            <trueValue>featured</trueValue>
+        </toggleFilter>
+
+        <numericFilter>
+          <field>southBoundCoord</field>
+          <label>Numeric filter test</label>
+          <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+          <min>1.03</min>
+          <max>141.78</max>
+        </numericFilter>
+
+        <numericFilter>
+          <field>southBoundCoord</field>
+          <label>Another numeric filter</label>
+          <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+          <min>0</min>
+          <max>100</max>
+        </numericFilter>
+
+    </filterGroup>
+
+    <!-- ====== Creator/Organization/Working Group Filter Group ====== -->
+    <filterGroup>
+
+        <label>People and Organizations</label>
+        <description>The people, organization, or working group attributed with creating or using the data</description>
+        <icon>group</icon>
+
+        <!-- Organization sub-fitler -->
+        <choiceFilter>
+            <field>contactOrganization</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+            <label>Organization</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>building</icon>
+            <description>Organization that provided the data</description>
+          	<choice>
+            	<label>Alaska Department of Commerce, Community, and Economic Development (all divisions)</label>
+            	<value>Alaska Department of Commerce, Community, and Economic Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</label>
+            	<value>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game (all departments)</label>
+            	<value>Alaska Department of Fish and Game</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Commercial Fisheries Entry Commission</label>
+            	<value>Alaska Department of Fish and Game, Commercial Fisheries Entry Commission</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Central Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Central Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Southeast Region</label>
+            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Southeast Region</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Habitat</label>
+            	<value>Alaska Department of Fish and Game, Division of Habitat</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Sport Fish</label>
+            	<value>Alaska Department of Fish and Game, Division of Sport Fish</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Division of Subsistence</label>
+            	<value>Alaska Department of Fish and Game, Division of Subsistence</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Fish and Game, Mark, Tag and Age Laboratory</label>
+            	<value>Alaska Department of Fish and Game, Mark, Tag and Age Laboratory</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Labor and Workforce Development</label>
+            	<value>Alaska Department of Labor and Workforce Development</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Labor and Workforce Development, Research and Analysis Section</label>
+            	<value>Alaska Department of Labor and Workforce Development, Research and Analysis Section</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</label>
+            	<value>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Department of Public Safety, Division of Alaska Wildlife Troopers</label>
+            	<value>Alaska Department of Public Safety, Division of Alaska Wildlife Troopers</value>
+            </choice>
+          	<choice>
+            	<label>Alaska Division of Legislative Finance</label>
+            	<value>Alaska Division of Legislative Finance</value>
+            </choice>
+          	<choice>
+            	<label>Auburn University</label>
+            	<value>Auburn University</value>
+            </choice>
+          	<choice>
+            	<label>Cook Inlet Keeper</label>
+            	<value>Cook Inlet Keeper</value>
+            </choice>
+          	<choice>
+            	<label>Fisheries and Oceans Canada</label>
+            	<value>Fisheries and Oceans Canada</value>
+            </choice>
+          	<choice>
+            	<label>LGL Limited</label>
+            	<value>LGL Limited</value>
+            </choice>
+          	<choice>
+            	<label>National Center for Ecological Analysis and Synthesis</label>
+            	<value>National Center for Ecological Analysis and Synthesis</value>
+            </choice>
+          	<choice>
+            	<label>National Historic Geographic Information System</label>
+            	<value>National Historic Geographic Information System</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service (all divisions)</label>
+            	<value>National Park Service</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Central Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Central Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</label>
+            	<value>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</value>
+            </choice>
+          	<choice>
+            	<label>Natural Resources Consultants, Inc.</label>
+            	<value>Natural Resources Consultants, Inc.</value>
+            </choice>
+          	<choice>
+            	<label>North Pacific Anadromous Fish Commission</label>
+            	<value>North Pacific Anadromous Fish Commission</value>
+            </choice>
+          	<choice>
+            	<label>Orutsararmiut Traditional Native Council</label>
+            	<value>Orutsararmiut Traditional Native Council</value>
+            </choice>
+          	<choice>
+            	<label>Pacific Salmon Commission</label>
+            	<value>Pacific Salmon Commission</value>
+            </choice>
+          	<choice>
+            	<label>Pacific Seafood Processors Association</label>
+            	<value>Pacific Seafood Processors Association</value>
+            </choice>
+          	<choice>
+            	<label>Southeast Alaska Long-term Monitoring Network</label>
+            	<value>Southeast Alaska Long-term Monitoring Network</value>
+            </choice>
+          	<choice>
+            	<label>United States Census Bureau</label>
+            	<value>United States Census Bureau</value>
+            </choice>
+          	<choice>
+            	<label>United States Fish and Wildlife Service</label>
+            	<value>United States Fish and Wildlife Service</value>
+            </choice>
+          	<choice>
+            	<label>United States Geological Survey</label>
+            	<value>United States Geological Survey</value>
+            </choice>
+          	<choice>
+                <label>University of Alaska (all)</label>
+                <value>University of Alaska</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage</label>
+            	<value>University of Alaska Anchorage</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage, Alaska Center for Conservation Science</label>
+            	<value>University of Alaska Anchorage, Alaska Center for Conservation Science</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Anchorage, Institute of Social and Economic Research</label>
+            	<value>University of Alaska Anchorage, Institute of Social and Economic Research</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Fairbanks</label>
+            	<value>University of Alaska Fairbanks</value>
+            </choice>
+          	<choice>
+            	<label>University of Alaska Fairbanks, Alaska Native Language Center</label>
+            	<value>University of Alaska Fairbanks, Alaska Native Language Center</value>
+            </choice>
+          	<choice>
+            	<label>Washington Department of Fish and Wildlife</label>
+            	<value>Washington Department of Fish and Wildlife</value>
+            </choice>
+            <chooseMultiple>true</chooseMultiple>
+        </choiceFilter>
+
+        <!-- Investigator / Person sub-filter -->
+        <textFilter>
+            <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
+            <value></value> <!-- ?? -->
+            <operator>AND</operator>
+            <exclude>false</exclude>
+            <label>Person</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>user</icon>
+            <description>The people who created or provided the data</description>
+        </textFilter>
+
+        <!-- Working group sub-filter -->
+        <choiceFilter>
+            <field>keywords</field>
+            <value></value> <!-- ??? -->
+            <!-- <operator>OR</operator> -->
+            <exclude>false</exclude>
+            <label>Working group</label>
+            <!-- <placeholder></placeholder> -->
+            <icon>group</icon>
+            <description>The working group who created, compiled, or used the data</description>
+        	<choice>
+                <label></label>
+                <value></value>
+            </choice>
+            <!-- TODO: fill in working groups -->
+            <chooseMultiple>false</chooseMultiple>
+        </choiceFilter>
+
+    </filterGroup>
+
+    <!-- ====== Year Filter Group ====== -->
+    <filterGroup>
+
+        <label>Year</label>
+        <description>Year the data pertain to or year of publication</description>
+        <icon>calendar</icon>
+
+        <!-- date published -->
+        <dateFilter>
+            <field>datePublished</field>
+            <value></value> <!-- ??? all years beteen min and max -->
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Year of publication</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description></description>
+            <min>2015-01-01</min>
+            <max>2018-01-01</max>
+            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
+        </dateFilter>
+
+        <!-- date coverage -->
+        <dateFilter>
+            <field>beginDate</field>
+            <field>endDate</field> <!-- ??? all years beteen min and max -->
+            <value></value>
+            <!-- <operator>AND</operator> -->
+            <!-- <exclude>false</exclude> -->
+            <label>Year of data coverage</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description></description>
+            <min>1882-01-01</min>
+            <max>2018-01-01</max>
+            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
+        </dateFilter>
+
+    </filterGroup>
+
+    <!-- ====== Identifier Filter Group ====== -->
+    <filterGroup>
+
+        <label>Identifier</label>
+        <description>unique ID of data package or object</description>
+        <icon>bullseye</icon>
+        <textFilter>
+
+            <field>id</field>
+            <field>documents</field>
+            <field>resourceMap</field>
+            <value></value> <!-- to be entered by user -->
+            <operator>OR</operator>
+            <exclude>false</exclude>
+
+            <label>DOI or ID</label>
+            <!-- <placeholder></placeholder> -->
+            <!-- <icon></icon> -->
+            <description>unique ID of data package or object</description>
+
+        </textFilter>
+
+        <numericFilter>
+          <field>southBoundCoord</field>
+          <label>Numeric filter with no min or max</label>
+          <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+        </numericFilter>
+
+    </filterGroup>
+
+    <!-- ====== Display options ====== -->
+    <!-- TODO: choose branding colours -->
+    <option>
+        <optionName>primaryColor</optionName>
+        <optionValue>#ff38b3</optionValue>
+    </option>
+    <option>
+        <optionName>secondaryColor</optionName>
+        <optionValue>#5638ff</optionValue>
+    </option>
+    <option>
+        <optionName>accentColor</optionName>
+        <optionValue>#38ff7e</optionValue>
+    </option>
+
+    <option>
+      <optionName>mapZoomLevel</optionName>
+      <optionValue>7</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLatitude</optionName>
+      <optionValue>100</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLongitude</optionName>
+      <optionValue>-100</optionValue>
+    </option>
+    <option>
+        <optionName>mapShapeHue</optionName>
+        <optionValue>60</optionValue>
+    </option>
+
+    <option>
+      <optionName>hideMetrics</optionName>
+      <optionValue>false</optionValue>
+    </option>
+
+</proj:project>
