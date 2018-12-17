@@ -306,6 +306,21 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
+            <xs:element name="step" type="xs:float" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Step</doc:tooltip>
+                  <doc:description>When the numeric filter tool is increased or
+                    decreased by one unit, increase or decrease the filter value by this number.
+                    For example, if the numeric filter is increased by one unit by
+                    clicking an up arrow or sliding a range, the numeric filter will be
+                    increased by this number. This is particularly helpful when
+                    the filter should be restricted to whole numbers or allow decimals.
+                  </doc:description>
+                  <doc:example>1</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
           </xs:sequence>
         </xs:extension>
       </xs:complexContent>

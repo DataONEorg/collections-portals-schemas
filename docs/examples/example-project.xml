@@ -658,6 +658,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
           <min>1.03</min>
           <max>141.78</max>
+          <step>.01</step>
         </numericFilter>
 
         <numericFilter>
@@ -670,6 +671,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
           <min>0</min>
           <max>100</max>
+          <step>5</step>
         </numericFilter>
 
     </filterGroup>
