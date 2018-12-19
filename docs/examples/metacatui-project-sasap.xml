@@ -616,7 +616,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <toggleFilter>
             <field>keywords</field>
-            <value>featured</value>
             <!-- <operator>AND</operator> -->
             <!-- <exclude>false</exclude> -->
             <label>Featured</label>
