@@ -59,6 +59,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     <!-- === associatedParty === -->
     <associatedParty>
         <individualName>
+            <salutation>Dr.</salutation>
             <givenName>Courtney</givenName>
             <surName>Carothers</surName>
         </individualName>
@@ -75,6 +76,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(Alaska Marine Conservation Council)</organizationName>
         <positionName>Lead, Well-Being and Alaska Salmon Systems</positionName>
         <electronicMailAddress>rachel@akmarine.org</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-1825-1234</userId>
         <role>primary project member</role>
         <role>project member</role>
     </associatedParty>
@@ -86,6 +88,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(Michigan State University)</organizationName>
         <positionName>Lead, Using participatory modeling to empower community engagement in salmon science</positionName>
         <electronicMailAddress>jonesm30@anr.msu.edu</electronicMailAddress>
+        <phone phonetype="facsimile">(805)893-1234</phone>
         <role>primary project member</role>
         <role>project member</role>
     </associatedParty>
@@ -121,6 +124,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <positionName>Lead Principal Investigator</positionName>
         <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
         <phone>(805)893-2500</phone>
+        <phone phonetype="facsimile">(805)893-1234</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
@@ -132,6 +136,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(NII)</organizationName>
         <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
         <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
+        <onlineUrl>www.mywebsite.com</onlineUrl>
         <phone>(907)280-8923</phone>
         <role>project member</role>
     </associatedParty>
@@ -143,6 +148,15 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(University of Alaska)</organizationName>
         <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
         <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-1825-0097</userId>
+        <address>
+          <deliveryPoint>123 Main St.</deliveryPoint>
+          <deliveryPoint>Suite 200</deliveryPoint>
+          <city>Santa Barbara</city>
+          <administrativeArea>CA</administrativeArea>
+          <postalCode>93030</postalCode>
+          <country>USA</country>
+        </address>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
@@ -182,6 +196,12 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(Prince William Sound Science Center)</organizationName>
         <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
         <electronicMailAddress>kgorman@pwscc.org</electronicMailAddress>
+        <address>
+          <deliveryPoint>Goethestr. 13</deliveryPoint>
+          <city>Hamburg</city>
+          <postalCode>22767</postalCode>
+          <country>Germany</country>
+        </address>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
