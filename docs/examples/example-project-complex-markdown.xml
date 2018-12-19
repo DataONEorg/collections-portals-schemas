@@ -21,7 +21,7 @@ another:
 
 # Citations
 
-This is an example of some inline citations [@jones_2001]. The citation information should be extracted from the literature cited section [brinckman_2018, @collins_2018].
+This is an example of some inline citations [@jones_2001]. The citation information should be extracted from the literature cited section [@brinckman_2018, @collins_2018].
 
 
 The purpose of this example is to test the features of *[showdownjs](https://github.com/showdownjs).*
