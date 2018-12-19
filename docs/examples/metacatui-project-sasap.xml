@@ -906,7 +906,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <field>id</field>
             <field>documents</field>
             <field>resourceMap</field>
-            <value></value> <!-- to be entered by user -->
             <operator>OR</operator>
             <exclude>false</exclude>
 
