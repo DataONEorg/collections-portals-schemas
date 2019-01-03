@@ -512,7 +512,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <label>Fish Productivity</label>
             <!-- <placeholder></placeholder> -->
             <!--<icon>fish</icon>-->
-            <description><!-- TODO: describe --></description>
+            <description>Data related to measuring salmon productivity and abundance</description>
         	<choice>
                 <label>Escapement</label>
                 <value>escapement</value>
@@ -524,6 +524,10 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         	<choice>
                 <label>Brood table</label>
                 <value>Brood table</value>
+            </choice>
+          <choice>
+                <label>Ocean distribution</label>
+                <value>Ocean distribution</value>
             </choice>
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
@@ -537,7 +541,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <label>Habitat</label>
             <!-- <placeholder></placeholder> -->
             <!--<icon>water</icon>-->
-            <description><!-- TODO: describe --></description>
+            <description>Data related to salmon habitat</description>
         	<choice>
                 <label>Land use</label>
                 <value>land use</value>
@@ -550,6 +554,14 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
                 <label>Precipitation</label>
                 <value>precipitation</value>
             </choice>
+          <choice>
+                <label>Watershed characteristics</label>
+                <value>watershed characteristics</value>
+            </choice>
+          <choice>
+                <label>Stream characteristics</label>
+                <value>stream characteristics</value>
+            </choice>
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
 
@@ -559,10 +571,10 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <exclude>false</exclude>
-            <label>Management</label>
+            <label>Harvest and Management</label>
             <!-- <placeholder></placeholder> -->
             <icon>file</icon>
-            <description>Data about harvest, governance, hatcheries and commercial fishing</description>
+            <description>Data about salmon harvest, governance, and hatcheries</description>
         	<choice>
                 <label>Harvest</label>
                 <value>harvest</value>
@@ -576,8 +588,16 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
                 <value>hatcheries</value>
             </choice>
         	<choice>
-                <label>Commercial</label>
-                <value>commercial</value>
+                <label>Commercial fishing</label>
+                <value>commercial fishing</value>
+            </choice>
+          <choice>
+                <label>Subsistence and personal use fishing</label>
+                <value>subsistence and personal use fishing</value>
+            </choice>
+          <choice>
+                <label>Sport fishing</label>
+                <value>sport fishing</value>
             </choice>
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
@@ -603,6 +623,10 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         	<choice>
                 <label>Economic</label>
                 <value>economic</value>
+            </choice>
+          <choice>
+                <label>Places</label>
+                <value>places</value>
             </choice>
         </choiceFilter>
     </filterGroup>
@@ -846,8 +870,40 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <icon>group</icon>
             <description>The working group who created, compiled, or used the data</description>
         	<choice>
-                <label></label>
-                <value></value>
+                <label>Biophysical</label>
+                <value>biophysical</value>
+            </choice>
+        	<choice>
+                <label>Sociocultural</label>
+                <value>sociocultural</value>
+            </choice>
+        	<choice>
+                <label>Economic</label>
+                <value>economic</value>
+            </choice>
+        	<choice>
+                <label>Governance</label>
+                <value>governance</value>
+            </choice>
+        	<choice>
+                <label>Salmon size</label>
+                <value>salmon size</value>
+            </choice>
+        	<choice>
+                <label>Ocean climate</label>
+                <value>ocean climate</value>
+            </choice>
+        	<choice>
+                <label>Community monitoring</label>
+                <value>community monitoring</value>
+            </choice>
+        	<choice>
+                <label>Kenai lowlands</label>
+                <value>kenai lowlands</value>
+            </choice>
+        	<choice>
+                <label>Well being</label>
+                <value>well being</value>
             </choice>
             <!-- TODO: fill in working groups -->
             <chooseMultiple>false</chooseMultiple>
