@@ -669,7 +669,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <numericFilter>
           <field>southBoundCoord</field>
-          <label>Numeric filter test</label>
+          <label>Numeric with range</label>
           <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -678,11 +678,12 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
           <min>1.03</min>
           <max>141.78</max>
           <step>.01</step>
+          <range>true</range>
         </numericFilter>
 
         <numericFilter>
           <field>southBoundCoord</field>
-          <label>Another numeric filter</label>
+          <label>Numeric without range</label>
           <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -691,6 +692,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
           <min>0</min>
           <max>100</max>
           <step>5</step>
+          <range>false</range>
         </numericFilter>
 
     </filterGroup>
@@ -993,6 +995,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+            <range>false</range>
         </numericFilter>
 
     </filterGroup>

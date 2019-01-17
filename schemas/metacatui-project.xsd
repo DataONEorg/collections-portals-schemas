@@ -305,6 +305,15 @@
                   <doc:example>1.5</doc:example>
                 </xs:appinfo>
               </xs:annotation>
+            </xs:element>s
+            <xs:element name="range" type="xs:boolean" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Range</doc:tooltip>
+                  <doc:description>If true, the filter value can be set as a
+                    range between the given minimum and maximum values, rather than just a single number.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
             </xs:element>
             <xs:element name="step" type="xs:float" minOccurs="0" maxOccurs="1">
               <xs:annotation>
