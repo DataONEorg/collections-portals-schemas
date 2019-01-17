@@ -19,6 +19,11 @@ another:
  - of values
 ---
 
+# Citations
+
+This is an example of some inline citations [@jones_2001]. The citation information should be extracted from the literature cited section [@brinckman_2018, @collins_2018].
+
+
 The purpose of this example is to test the features of *[showdownjs](https://github.com/showdownjs).*
 
 # Features tested: {toc}
@@ -562,12 +567,6 @@ extension to also allow font awesome icons [here](https://github.com/dbtek/showd
 
 *back to [table of contents](#toc)*
 
-# Citations
-
-^[Q21972834]
-^[10.5281/zenodo.1005176]
-^[doi:10.5063/F1R78CF3]
-
 # Math
 
 ### block
@@ -590,5 +589,58 @@ Here is some $E=mc^2$ math $R^2=x(2*4)$ that is inline
 
       </markdown>
     </overview>
+    <literatureCited>
+        <bibtex><![CDATA[
+            @article{hampton_2017,
+                title = {Skills and {Knowledge} for {Data}-{Intensive} {Environmental} {Research}},
+                volume = {67},
+                copyright = {All rights reserved},
+                issn = {0006-3568, 1525-3244},
+                url = {https://academic.oup.com/bioscience/article-lookup/doi/10.1093/biosci/bix025},
+                doi = {10.1093/biosci/bix025},
+                language = {en},
+                number = {6},
+                urldate = {2018-02-15},
+                journal = {BioScience},
+                author = {Hampton, Stephanie E. and Jones, Matthew B. and Wasser, Leah A. and Schildhauer, Mark P. and Supp, Sarah R. and Brun, Julien and Hernandez, Rebecca R. and Boettiger, Carl and Collins, Scott L. and Gross, Louis J. and Fernández, Denny S. and Budden, Amber and White, Ethan P. and Teal, Tracy K. and Labou, Stephanie G. and Aukema, Juliann E.},
+                month = jun,
+                year = {2017},
+                pages = {546--557}
+            }
+
+            @article{brinckman_2018,
+                title = {Computing environments for reproducibility: {Capturing} the “{Whole} {Tale}”},
+                copyright = {All rights reserved},
+                issn = {0167739X},
+                shorttitle = {Computing environments for reproducibility},
+                url = {http://linkinghub.elsevier.com/retrieve/pii/S0167739X17310695},
+                doi = {10.1016/j.future.2017.12.029},
+                language = {en},
+                urldate = {2018-04-16},
+                journal = {Future Generation Computer Systems},
+                author = {Brinckman, Adam and Chard, Kyle and Gaffney, Niall and Hategan, Mihael and Jones, Matthew B. and Kowalik, Kacper and Kulasekaran, Sivakumar and Ludäscher, Bertram and Mecum, Bryce D. and Nabrzyski, Jarek and Stodden, Victoria and Taylor, Ian J. and Turk, Matthew J. and Turner, Kandace},
+                month = feb,
+                year = {2018}
+            }
+
+            @article{collins_2018,
+                title = {Temporal heterogeneity increases with spatial heterogeneity in ecological communities},
+                volume = {99},
+                copyright = {All rights reserved},
+                issn = {00129658},
+                url = {http://doi.wiley.com/10.1002/ecy.2154},
+                doi = {10.1002/ecy.2154},
+                language = {en},
+                number = {4},
+                urldate = {2018-04-16},
+                journal = {Ecology},
+                author = {Collins, Scott L. and Avolio, Meghan L. and Gries, Corinna and Hallett, Lauren M. and Koerner, Sally E. and La Pierre, Kimberly J. and Rypel, Andrew L. and Sokol, Eric R. and Fey, Samuel B. and Flynn, Dan F. B. and Jones, Sydney K. and Ladwig, Laura M. and Ripplinger, Julie and Jones, Matt B.},
+                month = apr,
+                year = {2018},
+                pages = {858--865}
+            }
+        ]]></bibtex>
+    </literatureCited>
+
 
 </proj:project>

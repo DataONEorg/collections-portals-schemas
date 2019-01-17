@@ -7,6 +7,7 @@
     xmlns:txt="eml://ecoinformatics.org/text-2.2.0"
     xmlns:par="eml://ecoinformatics.org/party-2.2.0"
     xmlns:proj="eml://ecoinformatics.org/project-2.2.0"
+    xmlns:cit="eml://ecoinformatics.org/literature-2.2.0"
     xmlns:col="http://ecoinformatics.org/datasetcollection-beta1">
     <xs:import namespace="eml://ecoinformatics.org/documentation-2.2.0" schemaLocation="eml-documentation.xsd"/>
     <xs:import namespace="eml://ecoinformatics.org/text-2.2.0" schemaLocation="eml-text.xsd"/>
@@ -89,6 +90,14 @@
                   <xs:appinfo>
                     <doc:tooltip>Award</doc:tooltip>
                     <doc:description>Specific information about the funding awards received by the project</doc:description>
+                  </xs:appinfo>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="literatureCited" type="cit:CitationListType" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <doc:tooltip>Literature Cited</doc:tooltip>
+                    <doc:description>Literature cited in any of the markdown sections</doc:description>
                   </xs:appinfo>
                 </xs:annotation>
             </xs:element>
