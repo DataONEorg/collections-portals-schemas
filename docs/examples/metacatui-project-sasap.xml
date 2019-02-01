@@ -14,7 +14,7 @@
     </definition>
 
     <logo>
-        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+      urn:uuid:7c3ab2ad-9762-4cbf-a00b-a56584c2f3d4
     </logo>
 
     <overview>
@@ -270,7 +270,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     </acknowledgments>
 
     <acknowledgmentsLogo>
-        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+        urn:uuid:7c3ab2ad-9762-4cbf-a00b-a56584c2f3d4
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
         urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
@@ -978,20 +978,20 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     <!-- TODO: choose branding colours -->
     <option>
         <optionName>primaryColor</optionName>
-        <optionValue>#02A5AB</optionValue>
+        <optionValue>#404B67</optionValue>
     </option>
     <option>
         <optionName>secondaryColor</optionName>
-        <optionValue>#D0CA4E</optionValue>
+        <optionValue>#79A3C3</optionValue>
     </option>
     <option>
         <optionName>accentColor</optionName>
-        <optionValue>#D74F33</optionValue>
+        <optionValue>#EB5638</optionValue>
     </option>
 
     <option>
       <optionName>mapZoomLevel</optionName>
-      <optionValue>9</optionValue>
+      <optionValue>3</optionValue>
     </option>
     <option>
       <optionName>mapCenterLatitude</optionName>
@@ -1003,7 +1003,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     </option>
     <option>
         <optionName>mapShapeHue</optionName>
-        <optionValue>344</optionValue>
+        <optionValue>10</optionValue>
     </option>
 
     <option>
