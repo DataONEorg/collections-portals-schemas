@@ -123,7 +123,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(NCEAS/UCSB)</organizationName>
         <positionName>Lead Principal Investigator</positionName>
         <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
-        <phone>(805)893-2500</phone>
+        <phone phonetype="voice">(805)893-2500</phone>
         <phone phonetype="facsimile">(805)893-1234</phone>
         <role>project member</role>
     </associatedParty>
@@ -137,7 +137,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
         <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
         <onlineUrl>www.mywebsite.com</onlineUrl>
-        <phone>(907)280-8923</phone>
+        <phone phonetype="voice">(907)280-8923</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
