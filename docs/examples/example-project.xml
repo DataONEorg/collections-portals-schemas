@@ -149,6 +149,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
         <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-1825-0097</userId>
+        <onlineUrl>www.mywebsite.com</onlineUrl>
+        <onlineUrl>www.myotherwebsite.com</onlineUrl>
         <address>
           <deliveryPoint>123 Main St.</deliveryPoint>
           <deliveryPoint>Suite 200</deliveryPoint>
