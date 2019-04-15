@@ -166,7 +166,7 @@
         <organizationName>(NCEAS/UCSB)</organizationName>
         <positionName>Lead Principal Investigator</positionName>
         <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
-        <phone>(805)893-2500</phone>
+        <phone phonetype="voice">(805)893-2500</phone>
         <phone phonetype="facsimile">(805)893-1234</phone>
         <role>project member</role>
     </associatedParty>
@@ -180,7 +180,7 @@
         <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
         <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
         <onlineUrl>www.mywebsite.com</onlineUrl>
-        <phone>(907)280-8923</phone>
+        <phone phonetype="voice">(907)280-8923</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
@@ -192,6 +192,8 @@
         <positionName>Co-Lead, Socio-Eco &amp; Well-Being and Alaska Salmon Systems</positionName>
         <electronicMailAddress>jcblack@alaska.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-1825-0097</userId>
+        <onlineUrl>www.mywebsite.com</onlineUrl>
+        <onlineUrl>www.myotherwebsite.com</onlineUrl>
         <address>
           <deliveryPoint>123 Main St.</deliveryPoint>
           <deliveryPoint>Suite 200</deliveryPoint>
@@ -218,7 +220,7 @@
         </individualName>
         <organizationName>(Prince William Sound Science Center)</organizationName>
         <positionName>Co-Lead, Ocean Climate Interactions with At-Sea Salmon Competition</positionName>
-        <electronicMailAddress/>
+        <phone phonetype="voice">(805)555-1234</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>

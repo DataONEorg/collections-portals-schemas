@@ -9,7 +9,7 @@
     <definition>
         <filter>
             <field>project</field>
-            <value>State of Alaska’s Salmon and People</value>
+            <value>State of Alaska's Salmon and People</value>
         </filter>
     </definition>
 
@@ -20,21 +20,58 @@
     <overview>
       <markdown>
         <![CDATA[
+        
+![Sockeye](urn:uuid:bf914c0d-d9ce-41f9-81cb-1dafc87a8d93)
+
 Problem Statement
 ---
-Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management questions that have not been addressed. A synthesis approach allows these fragmented collections of data to be combined, offering a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to gain new understandings of salmon social-ecological systems and to inform systematic salmon management into the future. However, these data are dispersed across a variety of sources and formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data enabling interdisciplinary analysis. ![Commercial fishing boats](knb.109201.1)
+Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is
+difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or
+integrated information. Existing information is often fragmented and/or ignores a significant body 
+of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process 
+available data, there are still salmon science and management questions that have not been 
+addressed. A synthesis approach allows these fragmented collections of data to be combined, offering
+a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary
+synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to
+gain new understandings of salmon social-ecological systems and to inform systematic salmon 
+management into the future. However, these data are dispersed across a variety of sources and 
+formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a
+team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data 
+enabling interdisciplinary analysis.
 
 Goals
 ---
-The SASAP project specifically seeks to access and integrate data from a wide variety of sources, including data that have previously been inaccessible. Data Task Force members compile these disparate datasets into larger datasets in a standardized format, allowing for more powerful analyses. We then provide access to SASAP data collections for use by wild salmon researchers, analysts, and advocates to answer scientific, economic, social, and cultural questions around salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska's salmon system health and drive sustainable management of the system. ![Sockeye](knb.109200.1)
+The SASAP project specifically seeks to access and integrate data from a wide variety of sources, 
+including data that have previously been inaccessible. Data Task Force members compile these 
+disparate datasets into larger datasets in a standardized format, allowing for more powerful 
+analyses. We then provide access to SASAP data collections for use by wild salmon researchers, 
+analysts, and advocates to answer scientific, economic, social, and cultural questions around 
+salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures
+and users, and across regions. This synthesis will help gain a broad view of this complex and 
+dynamic system in order to set shared research priorities, develop and monitor indicators of 
+Alaska's salmon system health and drive sustainable management of the system. 
 
 Our Data
 ---
-Our data collections include both original and compiled (derived) datasets, covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories. Data collections can be searched through using filters by thematic categories, and can be further explored with subsetting and visualization tools before downloading. ![Map of size declines](knb.109199.1)
+Our data collections include both original and compiled (derived) datasets, covering information on
+salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, 
+and economic categories. Data collections can be searched by filtering for specific geographic
+areas, species, thematic categories, or data providers. The diversity of data reflects the diversity
+of research questions being asked - with data ranging from native language use in Alaskan households
+to salmon age and length samples. 
 
 Who We Are
 ---
-SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists across resource sectors. Our approach is to build collaborations (working groups) of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap. The Data Task Force consists of a projects data coordinator, a scientific programmer, and several student interns and postgraduate fellows at NCEAS. The task force facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life cycle. ![Team](knb.109198.1)
+SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University 
+of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading 
+experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists 
+across resource sectors. Our approach is to build collaborations (working groups) of experts from 
+diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes 
+collaboration between indigenous knowledge and western science perspectives to bridge the 
+information gap. The Data Task Force consists of a projects data coordinator, a scientific 
+programmer, and several student interns and postgraduate fellows at NCEAS. The task force 
+facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life 
+cycle.
 ]]>
       </markdown>
     </overview>
@@ -43,15 +80,32 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
         <![CDATA[
 Escapement
 ---
-The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration. ![Escapement](knb.109196.1)
+The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs 
+which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several 
+years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal 
+streams to spawn. The number of mature salmon migrating from the marine environment to freshwater 
+streams is defined as escapement. Escapement data are the enumeration of these migrating fish as 
+they pass upstream, and are a widely used index of spawning salmon abundance. These data are 
+important for fisheries management since most salmon harvest occurs in freshwater rivers during this
+migration. ![Escapement](knb.109196.1)
 
 Age, sex, and length
 ---
-Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
+Age, sex, and length data provide population dynamics information that can indicate how population 
+trends occur and may be changing. These data can help researchers estimate population growth rates, 
+age-class distribution, and population demographics. Knowing population demographics, growth rates,
+and trends is particularly valuable to fisheries managers who must perform population assessments to
+inform management decisions. These data are therefore particularly important in valuable fisheries 
+like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
 
 Maps and regional data
 ---
-This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
+This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were 
+calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990
+and post 2000) time period. Years were considered valid if they had more than 100 ASL data points 
+(i.e., 100 or more fish were measured). Note that the color scales are different for each plot due 
+to different ranges of change for each species. You can see the yearly means that contributed to 
+each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
 ]]>
       </markdown>
     </results>
@@ -120,7 +174,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(NCEAS/UCSB)</organizationName>
         <positionName>Lead Principal Investigator</positionName>
         <electronicMailAddress>frank.davis@nceas.ucsb.edu</electronicMailAddress>
-        <phone>(805)893-2500</phone>
+        <phone phonetype="voice">(805)893-2500</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
@@ -132,7 +186,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <organizationName>(NII)</organizationName>
         <positionName>Co-Principal Investigator/Alaska Coordinator</positionName>
         <electronicMailAddress>ian@nautilusii.com</electronicMailAddress>
-        <phone>(907)280-8923</phone>
+        <phone phonetype="voice">(907)280-8923</phone>
         <role>project member</role>
     </associatedParty>
     <associatedParty>
@@ -266,24 +320,28 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
     </associatedParty>
 
     <acknowledgments>
-        Richard Brenner and Jennifer Shriver, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
+        Richard Brenner and Jennifer Womack, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
     </acknowledgments>
 
+    
     <acknowledgmentsLogo>
-        urn:uuid:7c3ab2ad-9762-4cbf-a00b-a56584c2f3d4
+        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d <!-- Nautilus -->
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
+        urn%3Auuid%3Acd625b80-4b2c-4320-a27a-8556aa47f1c7 <!--  NCEAS square -->
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
+        urn%3Auuid%3A35e2506c-8b41-4c74-85f9-64ac9d41faac <!-- Moore -->
     </acknowledgmentsLogo>
-    <acknowledgmentsLogo>
-        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
-    </acknowledgmentsLogo>
-    <acknowledgmentsLogo>
-        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
-    </acknowledgmentsLogo>
+    <!-- <acknowledgmentsLogo>
+        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2 NCEAS long 
+    </acknowledgmentsLogo> -->
+    <!-- <acknowledgmentsLogo>
+        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f   UAF 
+    </acknowledgmentsLogo>  -->
+    <!-- <acknowledgmentsLogo>
+        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b  Center for salmon and society 
+    </acknowledgmentsLogo> -->
 
     <award>
         <funderName>Gordon and Betty Moore Foundation</funderName>
@@ -309,149 +367,107 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
         <icon>globe</icon>
 
         <!-- === waterbody sub-filter === -->
-        <choiceFilter>
-            <field>site</field>
+        <textFilter>
+            <field>siteText</field>
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <!-- <exclude>false</exclude> -->
             <label>Waterbody</label>
-            <!-- <placeholder></placeholder> -->
-            <!-- <icon></icon> -->
+            <placeholder>Kenai River</placeholder>
+            <icon>anchor</icon>
             <description>Rivers, river systems, or other waterbodies</description>
-
-          	<choice>
-                <label>Copper River</label>
-                <value>copper river</value>
-            </choice>
-          	<choice>
-                <label>Tanana River</label>
-                <value>tanana river</value>
-            </choice>
-          	<choice>
-                <label>Porcupine River</label>
-                <value>porcupine river</value>
-            </choice>
-          	<choice>
-                <label>Koyukuk River</label>
-                <value>koyukuk river</value>
-            </choice>
-          	<choice>
-                <label>Colville River</label>
-                <value>colville river</value>
-            </choice>
-            <!-- .... TODO: once SASAP metadata is updated with locations, add all waterbody options here ... -->
-
             <chooseMultiple>true</chooseMultiple>
 
-        </choiceFilter>
-
-        <!-- === SASAP Region subfilter === -->
-        <choiceFilter>
-            <field>keywords</field>
+        </textFilter>
+        <!-- === community sub-filter === -->
+        <textFilter>
+            <field>siteText</field>
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <!-- <exclude>false</exclude> -->
-            <matchSubstring>true</matchSubstring>
+            <label>Community</label>
+            <placeholder>Bethel</placeholder>
+            <icon>home</icon>
+            <description>Community or city</description>
+            <chooseMultiple>true</chooseMultiple>
+
+        </textFilter>
+        <!-- === SASAP Region subfilter === -->
+        <choiceFilter>
+            <field>siteText</field>
+            <value></value> <!-- ??? -->
+            <operator>OR</operator>
+            <!-- <exclude>false</exclude> -->
             <label>SASAP Region</label>
             <!-- <placeholder></placeholder> -->
-            <!-- <icon></icon> -->
+            <icon>map-marker</icon>
             <description>State of Alaska's Salmon and People region</description>
 
         	<choice>
     	        <label>Alaska Peninsula and Aleutian Islands</label>
-    	        <value>alaska peninsula and aleutian islands</value>
+    	        <value>Alaska Peninsula and Aleutian Islands</value>
             </choice>
 
           	<choice>
             	<label>Arctic</label>
-            	<value>arctic</value>
+            	<value>Arctic</value>
             </choice>
 
         	<choice>
             	<label>Bristol Bay</label>
-            	<value>bristol bay</value>
+            	<value>Bristol Bay</value>
             </choice>
 
         	<choice>
             	<label>Chignik</label>
-            	<value>chignik</value>
+            	<value>Chignik</value>
             </choice>
 
         	<choice>
             	<label>Cook Inlet</label>
-            	<value>cook inlet</value>
+            	<value>Cook Inlet</value>
             </choice>
 
         	<choice>
             	<label>Copper River</label>
-            	<value>copper river</value>
+            	<value>Copper River</value>
             </choice>
 
         	<choice>
             	<label>Kodiak</label>
-            	<value>kodiak</value>
+            	<value>Kodiak</value>
             </choice>
 
         	<choice>
             	<label>Kotzebue</label>
-            	<value>kotzebue</value>
+            	<value>Kotzebue</value>
             </choice>
 
         	<choice>
             	<label>Kuskokwim</label>
-            	<value>kuskokwim</value>
+            	<value>Kuskokwim</value>
             </choice>
 
         	<choice>
             	<label>Prince William Sound</label>
-            	<value>prince william sound</value>
+            	<value>Prince William Sound</value>
             </choice>
 
         	<choice>
             	<label>Norton Sound</label>
-            	<value>norton sound</value>
+            	<value>Norton Sound</value>
             </choice>
 
         	<choice>
             	<label>Southeast</label>
-            	<value>southeast</value>
+            	<value>Southeast</value>
             </choice>
 
         	<choice>
             	<label>Yukon</label>
-            	<value>yukon</value>
+            	<value>Yukon</value>
             </choice>
 
-            <chooseMultiple>true</chooseMultiple>
-        </choiceFilter>
-
-        <!-- === ADFG area subfilter === -->
-        <choiceFilter>
-            <field>keywords</field>
-            <value></value> <!-- ??? -->
-            <operator>OR</operator>
-            <!-- <exclude>false</exclude> -->
-            <label>ADFG management area</label>
-            <!-- <placeholder></placeholder> -->
-            <!-- <icon></icon> -->
-            <description>Alaska Department of Fish and Game management area</description>
-        	<choice>
-                <label>Arctic-Yukon-Kuskokwim</label>
-                <value>arctic-yukon-kuskokwim</value>
-            </choice>
-        	<choice>
-                <label>Central Region</label>
-                <value>central region</value>
-            </choice>
-        	<choice>
-                <label>Southeast Region</label>
-                <value>southeast region</value>
-            </choice>
-        	<choice>
-                <label>Westward Region</label>
-                <value>westward region</value>
-            </choice>
-            <!-- .... and many, many, many more ... -->
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
 
@@ -471,7 +487,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <!-- <exclude>false</exclude>  -->
             <label>Species</label>
             <!-- <placeholder></placeholder> -->
-            <!-- <icon></icon> -->
+            <icon></icon>
             <description>Salmon species, by common name</description>
         	<choice>
                 <label>Sockeye</label>
@@ -509,9 +525,9 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <exclude>false</exclude>
-            <label>Fish Productivity</label>
-            <!-- <placeholder></placeholder> -->
-            <!--<icon>fish</icon>-->
+            <label>Fish productivity</label>
+            <placeholder>Choose a topic</placeholder>
+            <icon>sitemap</icon>
             <description>Data related to measuring salmon productivity and abundance</description>
         	<choice>
                 <label>Escapement</label>
@@ -519,15 +535,15 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             </choice>
         	<choice>
                 <label>Age, sex, length</label>
-                <value>Age, sex, length</value>
+                <value>age, sex, length</value>
             </choice>
         	<choice>
                 <label>Brood table</label>
-                <value>Brood table</value>
+                <value>brood table</value>
             </choice>
           <choice>
                 <label>Ocean distribution</label>
-                <value>Ocean distribution</value>
+                <value>ocean distribution</value>
             </choice>
             <chooseMultiple>true</chooseMultiple>
         </choiceFilter>
@@ -539,8 +555,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <operator>OR</operator>
             <exclude>false</exclude>
             <label>Habitat</label>
-            <!-- <placeholder></placeholder> -->
-            <!--<icon>water</icon>-->
+            <placeholder>Choose a topic</placeholder>
+            <icon>leaf</icon>
             <description>Data related to salmon habitat</description>
         	<choice>
                 <label>Land use</label>
@@ -571,8 +587,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <exclude>false</exclude>
-            <label>Harvest and Management</label>
-            <!-- <placeholder></placeholder> -->
+            <label>Harvest and management</label>
+            <placeholder>Choose a topic</placeholder>
             <icon>file</icon>
             <description>Data about salmon harvest, governance, and hatcheries</description>
         	<choice>
@@ -608,8 +624,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <exclude>false</exclude>
-            <label>Human Dimensions</label>
-            <!-- <placeholder></placeholder> -->
+            <label>Human dimensions</label>
+            <placeholder>Choose a topic</placeholder>
             <icon>group</icon>
             <description>Data that incorporate surveys, census, demographic, or economic data</description>
         	<choice>
@@ -660,7 +676,7 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <!-- Organization sub-fitler -->
         <choiceFilter>
-            <field>contactOrganization</field>
+            <field>origin</field>
             <value></value> <!-- ??? -->
             <operator>OR</operator>
             <exclude>false</exclude>
@@ -669,12 +685,8 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             <icon>building</icon>
             <description>Organization that provided the data</description>
           	<choice>
-            	<label>Alaska Department of Commerce, Community, and Economic Development (all divisions)</label>
+            	<label>Alaska Department of Commerce, Community, and Economic Development</label>
             	<value>Alaska Department of Commerce, Community, and Economic Development</value>
-            </choice>
-          	<choice>
-            	<label>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</label>
-            	<value>Alaska Department of Commerce, Community, and Economic Development; Division of Economic Development</value>
             </choice>
           	<choice>
             	<label>Alaska Department of Fish and Game (all departments)</label>
@@ -691,10 +703,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
           	<choice>
             	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</label>
             	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Arctic-Yukon-Kuskokwim Region</value>
-            </choice>
-          	<choice>
-            	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</label>
-            	<value>Alaska Department of Fish and Game, Division of Commercial Fisheries, Artic-Yukon-Kuskokwim Region</value>
             </choice>
           	<choice>
             	<label>Alaska Department of Fish and Game, Division of Commercial Fisheries, Central Region</label>
@@ -725,10 +733,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             	<value>Alaska Department of Labor and Workforce Development</value>
             </choice>
           	<choice>
-            	<label>Alaska Department of Labor and Workforce Development, Research and Analysis Section</label>
-            	<value>Alaska Department of Labor and Workforce Development, Research and Analysis Section</value>
-            </choice>
-          	<choice>
             	<label>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</label>
             	<value>Alaska Department of Natural Resources, Support Services Division, Information Resource Management</value>
             </choice>
@@ -741,48 +745,16 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             	<value>Alaska Division of Legislative Finance</value>
             </choice>
           	<choice>
-            	<label>Auburn University</label>
-            	<value>Auburn University</value>
-            </choice>
-          	<choice>
-            	<label>Cook Inlet Keeper</label>
-            	<value>Cook Inlet Keeper</value>
-            </choice>
-          	<choice>
-            	<label>Fisheries and Oceans Canada</label>
-            	<value>Fisheries and Oceans Canada</value>
-            </choice>
-          	<choice>
-            	<label>LGL Limited</label>
-            	<value>LGL Limited</value>
-            </choice>
-          	<choice>
-            	<label>National Center for Ecological Analysis and Synthesis</label>
-            	<value>National Center for Ecological Analysis and Synthesis</value>
+            	<label>Cook Inletkeeper</label>
+            	<value>Cook Inletkeeper</value>
             </choice>
           	<choice>
             	<label>National Historic Geographic Information System</label>
             	<value>National Historic Geographic Information System</value>
             </choice>
           	<choice>
-            	<label>National Park Service (all divisions)</label>
+            	<label>National Park Service</label>
             	<value>National Park Service</value>
-            </choice>
-          	<choice>
-            	<label>National Park Service, Inventory and Monitoring Division, Central Alaska Network</label>
-            	<value>National Park Service, Inventory and Monitoring Division, Central Alaska Network</value>
-            </choice>
-          	<choice>
-            	<label>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</label>
-            	<value>National Park Service, Inventory and Monitoring Division, Southeast Alaska Network</value>
-            </choice>
-          	<choice>
-            	<label>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</label>
-            	<value>National Park Service, Inventory and Monitoring Division, Southwest Alaska Network</value>
-            </choice>
-          	<choice>
-            	<label>Natural Resources Consultants, Inc.</label>
-            	<value>Natural Resources Consultants, Inc.</value>
             </choice>
           	<choice>
             	<label>North Pacific Anadromous Fish Commission</label>
@@ -791,14 +763,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
           	<choice>
             	<label>Orutsararmiut Traditional Native Council</label>
             	<value>Orutsararmiut Traditional Native Council</value>
-            </choice>
-          	<choice>
-            	<label>Pacific Salmon Commission</label>
-            	<value>Pacific Salmon Commission</value>
-            </choice>
-          	<choice>
-            	<label>Pacific Seafood Processors Association</label>
-            	<value>Pacific Seafood Processors Association</value>
             </choice>
           	<choice>
             	<label>Southeast Alaska Long-term Monitoring Network</label>
@@ -817,30 +781,6 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
             	<value>United States Geological Survey</value>
             </choice>
           	<choice>
-                <label>University of Alaska (all)</label>
-                <value>University of Alaska</value>
-            </choice>
-          	<choice>
-            	<label>University of Alaska Anchorage</label>
-            	<value>University of Alaska Anchorage</value>
-            </choice>
-          	<choice>
-            	<label>University of Alaska Anchorage, Alaska Center for Conservation Science</label>
-            	<value>University of Alaska Anchorage, Alaska Center for Conservation Science</value>
-            </choice>
-          	<choice>
-            	<label>University of Alaska Anchorage, Institute of Social and Economic Research</label>
-            	<value>University of Alaska Anchorage, Institute of Social and Economic Research</value>
-            </choice>
-          	<choice>
-            	<label>University of Alaska Fairbanks</label>
-            	<value>University of Alaska Fairbanks</value>
-            </choice>
-          	<choice>
-            	<label>University of Alaska Fairbanks, Alaska Native Language Center</label>
-            	<value>University of Alaska Fairbanks, Alaska Native Language Center</value>
-            </choice>
-          	<choice>
             	<label>Washington Department of Fish and Wildlife</label>
             	<value>Washington Department of Fish and Wildlife</value>
             </choice>
@@ -849,9 +789,9 @@ This map shows the difference in size for pre-1990 fish and post-2000 fish. Diff
 
         <!-- Investigator / Person sub-filter -->
         <textFilter>
-            <field>origin</field> <!-- todo: investigate why this field contains both organization and people, look into other solr fields -->
+            <field>origin</field>
             <value></value> <!-- ?? -->
-            <operator>AND</operator>
+            <operator>OR</operator>
             <exclude>false</exclude>
             <label>Person</label>
             <!-- <placeholder></placeholder> -->
