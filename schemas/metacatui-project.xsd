@@ -34,26 +34,13 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="overview" type="txt:TextType" minOccurs="0" maxOccurs="1">
+            <xs:element name="section" type="ContentSection" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
-                  <doc:tooltip>Project overview</doc:tooltip>
-                  <doc:summary>Project overview and description with information about the purpose of the project</doc:summary>
-                  <doc:description>This field is used to describe a project and will be presented
-                      on the project landing page. Content can either be a markdown document to include images
-                      and basic formatting, or plain text. This should include information on the purpose of the project
-                      and any other useful information for visitors to the landing page.</doc:description>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
-            <xs:element name="results" type="txt:TextType" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Project results or analyses</doc:tooltip>
-                  <doc:summary>Project results can include tables, figures, maps, and other summary information.</doc:summary>
-                  <doc:description>This section can contain project results or any preliminary analyses and figures.
-                      This can be a markdown document which includes figures and formatted text from analyses conducted
-                      with the project data holdings, or can be plain text.</doc:description>
+                  <doc:tooltip>Content section</doc:tooltip>
+                  <doc:summary>A section of multimedia content for display.</doc:summary>
+                  <doc:description>These content sections can be used for any informational content about this project, such
+                  as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
@@ -140,6 +127,66 @@
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ContentSection">
+      <xs:complexContent>
+        <xs:sequence>
+          <xs:element name="label" minOccurs="1" maxOccurs="1">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="60"/>
+              </xs:restriction>
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Section label</doc:tooltip>
+                  <doc:summary>A short label for this content section.</doc:summary>
+                  <doc:description>A short label to describe the content in
+                    this section. It may be used in interfaces in navigation menus or a table of contents.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="image" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Display image</doc:tooltip>
+                <doc:summary>A high quality image for this content section.</doc:summary>
+                <doc:description>An identifier or URL for a high-quality display image for this section.
+                This image should be visually appealing and eye-catching. Maps, charts, and other informational
+                graphics should be used in the text content.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="title" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Title</doc:tooltip>
+                <doc:description>A brief title to describe this section.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="introduction" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Introduction</doc:tooltip>
+                <doc:description>A paragraph of text to use as an overview, introduction, or teaser for this section.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="content" type="txt:TextType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Content</doc:tooltip>
+                <doc:description>The multimedia content to display in this section.
+                These content sections can be used for any informational content about this project, such
+              as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexContent>
     </xs:complexType>
 
     <xs:complexType name="FilterGroupType">
@@ -229,7 +276,7 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Label</doc:tooltip>
-                  <doc:summary>A short 1-2 work label to display for this filter.</doc:summary>
+                  <doc:summary>A short 1-2 word label to display for this filter.</doc:summary>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
