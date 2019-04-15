@@ -34,7 +34,7 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="section" type="ContentSection" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="section" type="ContentSectionType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Content section</doc:tooltip>
@@ -129,7 +129,7 @@
         </xs:complexContent>
     </xs:complexType>
 
-    <xs:complexType name="ContentSection">
+    <xs:complexType name="ContentSectionType">
       <xs:complexContent>
         <xs:sequence>
           <xs:element name="label" minOccurs="1" maxOccurs="1">
