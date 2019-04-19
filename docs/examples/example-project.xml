@@ -19,7 +19,7 @@
 
     <section>
       <label>About</label>
-      <image>urn:uuid:b0cd4302-0fd7-40eb-a4a2-78f0ed04c10a</image>
+      <image>urn:uuid:32da72ff-07cb-4688-9988-df3841701cc9</image>
       <title>Salmon and people in Alaska are profoundly connected</title>
       <introduction>
         Hendrerit gravida rutrum quisque non tellus orci. Posuere lorem ipsum dolor sit amet. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Volutpat lacus laoreet non curabitur gravida arcu. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Eget aliquet nibh praesent tristique magna sit amet purus gravida. In egestas erat imperdiet sed euismod nisi porta. Habitant morbi tristique senectus et netus et malesuada. Placerat orci nulla pellentesque dignissim enim sit. Libero nunc consequat interdum varius. Sed risus ultricies tristique nulla aliquet enim tortor at. Ac felis donec et odio pellentesque diam. Quam viverra orci sagittis eu volutpat odio. Ut consequat semper viverra nam libero justo laoreet.
@@ -27,35 +27,33 @@
       <content>
         <markdown>
           <![CDATA[
-  Problem Statement
-  ---
-  Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management questions that have not been addressed. A synthesis approach allows these fragmented collections of data to be combined, offering a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to gain new understandings of salmon social-ecological systems and to inform systematic salmon management into the future. However, these data are dispersed across a variety of sources and formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data enabling interdisciplinary analysis. ![Commercial fishing boats](knb.109201.1)
+Problem Statement
+===
+Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or integrated information. Existing information is often fragmented and/or ignores a significant body of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process available data, there are still salmon science and management questions that have not been addressed. A synthesis approach allows these fragmented collections of data to be combined, offering a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to gain new understandings of salmon social-ecological systems and to inform systematic salmon management into the future. However, these data are dispersed across a variety of sources and formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data enabling interdisciplinary analysis. ![Commercial fishing boats](knb.109201.1)
 
-  Goals
-  ---
-  The SASAP project specifically seeks to access and integrate data from a wide variety of sources, including data that have previously been inaccessible. Data Task Force members compile these disparate datasets into larger datasets in a standardized format, allowing for more powerful analyses. We then provide access to SASAP data collections for use by wild salmon researchers, analysts, and advocates to answer scientific, economic, social, and cultural questions around salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska's salmon system health and drive sustainable management of the system. ![Sockeye](knb.109200.1)
+Goals
+===
+The SASAP project specifically seeks to access and integrate data from a wide variety of sources, including data that have previously been inaccessible. Data Task Force members compile these disparate datasets into larger datasets in a standardized format, allowing for more powerful analyses. We then provide access to SASAP data collections for use by wild salmon researchers, analysts, and advocates to answer scientific, economic, social, and cultural questions around salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures and users, and across regions. This synthesis will help gain a broad view of this complex and dynamic system in order to set shared research priorities, develop and monitor indicators of Alaska's salmon system health and drive sustainable management of the system. ![Sockeye](knb.109200.1)
 
-  Our Data
-  ---
-  Our data collections include both original and compiled (derived) datasets, covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories. Data collections can be searched through using filters by thematic categories, and can be further explored with subsetting and visualization tools before downloading. ![Map of size declines](knb.109199.1)
+Goal #1
+----
+Here is info about goal 1
 
-  Who We Are
-  ---
-  SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists across resource sectors. Our approach is to build collaborations (working groups) of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap. The Data Task Force consists of a projects data coordinator, a scientific programmer, and several student interns and postgraduate fellows at NCEAS. The task force facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life cycle. ![Team](knb.109198.1)
+Goal #2
+---
+Here is info about goal 2
 
-  ![Map](https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/knb.109198.1)
+### Subgoal 2
+This is a third level header under goal 2
 
+Our Data
+===
+Our data collections include both original and compiled (derived) datasets, covering information on salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, and economic categories. Data collections can be searched through using filters by thematic categories, and can be further explored with subsetting and visualization tools before downloading. ![Map of size declines](knb.109199.1)
 
+Who We Are
+===
+SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists across resource sectors. Our approach is to build collaborations (working groups) of experts from diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes collaboration between indigenous knowledge and western science perspectives to bridge the information gap. The Data Task Force consists of a projects data coordinator, a scientific programmer, and several student interns and postgraduate fellows at NCEAS. The task force facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life cycle. ![Team](knb.109198.1)
 
-  ## header 2
-
-  ### header 3
-
-  #### header 4
-
-  ##### header 5
-
-  ###### header 6
 
   ]]>
         </markdown>
@@ -63,7 +61,7 @@
     </section>
     <section>
       <label>Results</label>
-      <image>urn:uuid:f4b5b2a2-ca80-4f64-93d3-320e80e86276</image>
+      <image>urn:uuid:35122b0f-3c7c-443b-9408-2dfebefaf1dc</image>
       <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</title>
       <introduction>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -71,29 +69,18 @@
       <content>
         <markdown>
           <![CDATA[
-  Escapement
-  ---
-  The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration. ![Escapement](knb.109196.1)
+## Escapement
 
-  Age, sex, and length
-  ---
-  Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
+The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal streams to spawn. The number of mature salmon migrating from the marine environment to freshwater streams is defined as escapement. Escapement data are the enumeration of these migrating fish as they pass upstream, and are a widely used index of spawning salmon abundance. These data are important for fisheries management since most salmon harvest occurs in freshwater rivers during this migration. ![Escapement](knb.109196.1)
 
-  Maps and regional data
-  ---
-  This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed. ![Map](https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/knb.109198.1)
+## Age, sex, and length
+Age, sex, and length data provide population dynamics information that can indicate how population trends occur and may be changing. These data can help researchers estimate population growth rates, age-class distribution, and population demographics. Knowing population demographics, growth rates, and trends is particularly valuable to fisheries managers who must perform population assessments to inform management decisions. These data are therefore particularly important in valuable fisheries like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
 
-  # header 1
+## Maps and regional data
+This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990 and post 2000) time period. Years were considered valid if they had more than 100 ASL data points (i.e., 100 or more fish were measured). Note that the color scales are different for each plot due to different ranges of change for each species. You can see the yearly means that contributed to each calculation by holding the cursor over each watershed. ![Map](https://dev.nceas.ucsb.edu/knb/d1/mn/v2/object/knb.109198.1)
 
-  ## header 2
-
-  ### header 3
-
-  #### header 4
-
-  ##### header 5
-
-  ###### header 6
+### Map subheader
+Map subcontent
   ]]>
         </markdown>
       </content>
@@ -1049,15 +1036,15 @@
     <!-- TODO: choose branding colours -->
     <option>
         <optionName>primaryColor</optionName>
-        <optionValue>#ff38b3</optionValue>
+        <optionValue>#282182</optionValue>
     </option>
     <option>
         <optionName>secondaryColor</optionName>
-        <optionValue>#5638ff</optionValue>
+        <optionValue>#465cd0</optionValue>
     </option>
     <option>
         <optionName>accentColor</optionName>
-        <optionValue>#38ff7e</optionValue>
+        <optionValue>#e88024</optionValue>
     </option>
 
     <option>
@@ -1074,7 +1061,7 @@
     </option>
     <option>
         <optionName>mapShapeHue</optionName>
-        <optionValue>60</optionValue>
+        <optionValue>28</optionValue>
     </option>
 
     <option>
