@@ -63,12 +63,11 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="acknowledgmentsLogo" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="acknowledgmentsLogo" type="ImageType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
-                  <doc:tooltip>Logo image identifier</doc:tooltip>
+                  <doc:tooltip>Acknowledgements Logo</doc:tooltip>
                   <doc:summary>A logo image for an acknowledged group.</doc:summary>
-                  <doc:description>The identifier of the logo image for this project. May be restrictied to certain proportions or size.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
@@ -531,5 +530,38 @@
       </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="ImageType">
+      <xs:sequence>
+        <xs:element name="identifier" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Image identifier</doc:tooltip>
+              <doc:summary>An identifier or URL for the image.</doc:summary>
+              <doc:example>https://knb.ecoinformatics.org/knb/d1/mn/v2/object/image.1.1</doc:example>
+              <doc:example>urn:uuid:4c06a320-3087-4828-926b-123f06c51cf3</doc:example>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="label" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Image label</doc:tooltip>
+              <doc:description>A short image label to use in displays. This label may be used
+              in the UI in areas such as in a tooltip when the image is hovered over.</doc:description>
+              <doc:example>National Center for Ecological Analysis and Synthesis</doc:example>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="associatedURL" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Image URL</doc:tooltip>
+              <doc:description>When the image is clicked on in a UI, this is the target URL the user will be directed to.</doc:description>
+              <doc:example>https://www.nceas.ucsb.edu</doc:example>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
 
 </xs:schema>
