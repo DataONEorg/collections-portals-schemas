@@ -14,101 +14,359 @@
     </definition>
 
     <logo>
-      urn:uuid:7c3ab2ad-9762-4cbf-a00b-a56584c2f3d4
+    <!-- ====== urn:uuid:7c959e15-d309-4850-91e8-399c0e862882 (prod) ====== -->
+      urn:uuid:4bb02544-d2d5-436a-9d37-8b77c3c31981
     </logo>
 
-    <overview>
-      <markdown>
+    <section>
+      <label>About</label>
+      <image>urn:uuid:a7833e2d-bf52-47c4-bd3d-839e1a6feaf8</image>
+      <title>Discover challenges to Alaska's salmon and people</title>
+      <introduction>
+        The State of Alaska's Salmon and People (SASAP) project is a
+        collaboration of researchers, cultural leaders, and others working to
+        bring together important, accurate, and up-to-date information that
+        will help to support better salmon decision-making.
+     </introduction>
+      <content>
+        <markdown>
         <![CDATA[
-        
-![Sockeye](urn:uuid:bf914c0d-d9ce-41f9-81cb-1dafc87a8d93)
 
-Problem Statement
----
-Due largely to a strong science-based management approach, salmon in Alaska persist. However, it is
-difficult for many stakeholders of Alaska's salmon system to readily access up-to-date, accurate or
-integrated information. Existing information is often fragmented and/or ignores a significant body 
-of indigenous knowledge. In addition, due to insufficient interdisciplinary methods to process 
-available data, there are still salmon science and management questions that have not been 
-addressed. A synthesis approach allows these fragmented collections of data to be combined, offering
-a powerful new tool for approaching many of these unanswered questions. As a large interdisciplinary
-synthesis project, SASAP seeks to integrate and use the vast body of data on Alaska's wild salmon to
-gain new understandings of salmon social-ecological systems and to inform systematic salmon 
-management into the future. However, these data are dispersed across a variety of sources and 
-formats which vary in accessibility, making synthesis of the data difficult. SASAP has dedicated a
-team of data scientists (the Data Task Force) to gather, homogenize, and synthesize these data 
-enabling interdisciplinary analysis.
+**Salmon connect Alaska’s ecosystems, cultures and economies**
 
-Goals
----
-The SASAP project specifically seeks to access and integrate data from a wide variety of sources, 
-including data that have previously been inaccessible. Data Task Force members compile these 
-disparate datasets into larger datasets in a standardized format, allowing for more powerful 
-analyses. We then provide access to SASAP data collections for use by wild salmon researchers, 
-analysts, and advocates to answer scientific, economic, social, and cultural questions around 
-salmon. SASAP also strives to connect knowledge across disciplines and agencies, between cultures
-and users, and across regions. This synthesis will help gain a broad view of this complex and 
-dynamic system in order to set shared research priorities, develop and monitor indicators of 
-Alaska's salmon system health and drive sustainable management of the system. 
+Salmon and people have thrived in Alaska for millennia and today are increasingly under pressure from both local and global factors. To help inform looming future decisions, the State of Alaska’s Salmon and People (SASAP) project brought together Indigenous and non-Indigenous salmon experts from academia, management agencies, and non-governmental organizations. Together, they provide a holistic assessment of the current state of the complex and dynamic salmon-and-people system in Alaska.
 
-Our Data
 ---
-Our data collections include both original and compiled (derived) datasets, covering information on
-salmon habitat, productivity, harvests, permits, and a variety of other biophysical, sociological, 
-and economic categories. Data collections can be searched by filtering for specific geographic
-areas, species, thematic categories, or data providers. The diversity of data reflects the diversity
-of research questions being asked - with data ranging from native language use in Alaskan households
-to salmon age and length samples. 
 
-Who We Are
+# Our Process
+
+Central to the SASAP process is a deliberate emphasis on collaboration between
+Indigenous knowledge and Western science perspectives to gather and synthesize
+information that tells the true story of Alaska’s salmon and people.
+
+To foster the multidisciplinary, cross-cultural dialogue necessary to sustain
+salmon populations, the SASAP project incorporated the ‘Working Group’ model
+developed by lead partner [NCEAS](http://www.nceas.ucsb.edu).
+
+Each of eight SASAP working groups came together for short periods of time over
+two years, in Alaska and at the NCEAS headquarters in Alaska, to collaborate
+on specific issues related to salmon and people in Alaska. Each group was
+composed of between 12 and 24 knowledge experts from a range of disciplines,
+backgrounds, and regions. Participants brought his or her data and experiences
+for synthesis and analysis, while NCEAS offered logistical and technical support
+to facilitate their innovation.
+
+![Research roadmap](urn:uuid:5d46326c-0ca1-4ce8-a580-b0e598f76a00)
+
+By tapping into broad perspectives, and with thorough analyses across multiple
+data sources, SASAP working groups were able to: 1) identify and describe the
+current state of knowledge of salmon in Alaska, 2) discover key gaps in
+knowledge, and 3) reveal untapped opportunities in the evidence.
+
+The diverse, collaborative, and supported working groups are an especially
+effective way to catalyze collaboration between Indigenous knowledge, Western
+science perspectives, and the many types of Alaskan, national, and global
+organizations with relevant salmon expertise.
+
 ---
-SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS) at the University 
-of California, Santa Barbara and Nautilus Impact Investing (NII), in partnership with leading 
-experts at the University of Alaska in Fairbanks and Anchorage, indigenous leaders, and specialists 
-across resource sectors. Our approach is to build collaborations (working groups) of experts from 
-diverse backgrounds and institutions. The working group synthesis process deliberately emphasizes 
-collaboration between indigenous knowledge and western science perspectives to bridge the 
-information gap. The Data Task Force consists of a projects data coordinator, a scientific 
-programmer, and several student interns and postgraduate fellows at NCEAS. The task force 
-facilitates data acquisition, processes and compiles datasets, and manages the SASAP data life 
-cycle.
+
+# Making it happen
+
+## Statewide Knowledge Synthesis Groups
+
+At the onset of the SASAP project, several Working Groups were tasked with
+documenting the state of knowledge in three fundamental areas of Alaska’s salmon
+systems: salmon distribution and habitat, sociocultural and socio-economic
+dimensions of salmon systems, and governance decisions leading to current
+management programs. The work of these groups are synthesized into 13 Regional
+Chapters sections.
+
+![Working group](urn:uuid:97be2462-43af-4f4e-9eba-74c6e01a555e)
+
+## Special Topics Groups
+
+An additional five Special Topics Working Groups were selected to focus on
+specific research questions that provide insight into the pressures on salmon
+and salmon communities as well as options for response to those pressures. Each
+of the Special Topic’s group findings are presented separately in the Special
+Topics section.
+
+Together, SASAP’s eight Working Groups engaged a wide range of experts and
+stakeholders to improve the ecological understanding, management, and social
+sustainability of Alaskan salmon systems.
+
+## Disentangling Data: The Data Task Force
+
+An essential component of the SASAP working group process was the support
+each group received from a team of geospatial analysis experts from NCEAS.
+The Data Task Force team coordinated data requests from Alaska Department of
+Fish and Game and other agencies and organizations, then worked to reformat,
+integrate, and run quality control on those datasets.  Importantly, the
+interactive graphs, figures, and infograms generated by the Task Force greatly
+enhanced the ability of users to visualize the often complex information about
+Alaska salmon.
+
+---
+
+# Looking Ahead
+
+## A Roadmap for the Future of Salmon
+
+**Over one hundred salmon experts spent more than two years on intensive multidisciplinary, cross-cultural research and analysis of Alaskan salmon — and the people and natural systems that depend upon them.**
+
+In November 2018, leaders from the eight SASAP Working Groups, along with
+external funders and scientists, gathered at the NCEAS headquarters in Santa
+Barbara to reflect on the knowledge gained from this unique collaborative effort
+ to identify and prioritize future research directions for Alaska salmon.
+
+The group applied three different lenses to considering what we know (and what
+ we don’t!) about the Alaska salmon ecosystem: 1) a topical or disciplinary
+ approach; 2) a place-based approach, and 3) a futures-thinking approach.
+
+The intended audiences for the emerging research agenda include not only the
+research community but also private and public funders, state and federal
+policymakers (especially those who set funding policy), Alaska communities and
+the broader public, conservation practitioners, and industry.
+
+]]>
+        </markdown>
+      </content>
+    </section>
+    <section>
+      <label>Regions</label>
+      <image>urn:uuid:59a91aae-3fa4-47ef-84ec-1fa1e13d1ebf</image>
+      <title>Alaska is a salmon state</title>
+      <introduction>
+        But the many regions cohabitating in the salmon state are diverse.
+        Explore the varying biophysical, sociocultural, economic and governance
+         factors that differ among regions ranging in size from as small as
+         Connecticut (Chignik region) to larger than the state of Texas
+         (Yukon region).
+     </introduction>
+      <content>
+        <markdown>
+        <![CDATA[
+
+# Regions Overview
+
+The story of Alaska’s salmon and people is rooted in place. It is only by
+understanding the differences among regions that one can see the connections
+that unite all Alaskans to salmon.
+
+The thirteen SASAP regions were determined based on their geography, and in
+many cases, represent large watersheds where all falling water flows into the
+same ocean location. Moreover, regions tend to be grouped by Indigenous
+cultures and languages, evidence of the deep-time ties between Alaska’s salmon
+and people. Some regions align with current ADF&G statistical areas; some do not.
+
+![Regions](urn:uuid:70577331-0df5-4c01-9985-6698fb2c1901)
+
+---
+
+# Arctic
+
+### Statement:
+
+The Arctic is warming at the fastest rate of any region of Alaska, yet is still
+the coldest area [@temperature]. A lack of consistent monitoring and an unfamiliarity of local
+people with many of the species of salmon make it difficult to know whether salmon
+numbers are increasing.
+
+![Temperature](https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A2ec06dd4-227d-46b3-87aa-a25af0140eaf)
+
+### Summary:
+
+We do not know whether the abundance of salmon is increasing in the Arctic,
+despite increasing use of salmon by local people. The consistent subsistence
+harvests of chum salmon (primarily) followed by pink salmon support the evidence that these species are established in the region, but this too is unknown. As the climate warms, it is likely that more rivers will become suitable to spawning salmon, however, the current temperatures during the summer growing months for are not yet favorable for rapid growth. In addition to freshwater conditions, populations of salmon can only become self-sustaining and rooted in place if they are able to successfully migrate back and forth to the ocean. Currently it is unknown whether the Chukchi Sea region of the Arctic Ocean is conducive to juvenile salmon survival.
+
+---
+
+
+# Kotzebue
+
+### Statement:
+
+Although a significant component of local subsistence harvests, there is no annual harvest monitoring program for salmon in the Kotzebue District.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Aeb030374-901d-4be4-a1be-4c655609b83b" width="800" />
+
+### Summary:
+
+Based upon comprehensive household harvest surveys, salmon make up about 13% of subsistence harvests by residents of the communities of the Kotzebue District; land mammals (36%), fish other than salmon (35%), and marine mammals (12%) make up the bulk of the subsistence harvests in this area [@subsistence_csis]. From 1994 through 2016, the subsistence harvest of salmon in the Kotzebue District averaged 69,188 fish. Chum salmon comprised 93% of this harvest, followed by coho (3%), pink (2%), sockeye (1%), and Chinook (<1%).
+
+---
+
+
+# Norton Sound
+
+### Statement
+
+Increases in chum salmon and pink salmon abundance in recent years may in part offset the loss of Chinook salmon for salmon-dependent people [@total_abundance].
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ac47a367b-4731-4a39-958f-7cd1b225992a" width="800" />
+
+### Summary
+
+Although among the smaller regions, nearly 5,000 km of Norton Sound streams and rivers are known to contain at least one species of salmon. However, only a few locations are known to produce sockeye salmon, given the lack of large lakes this species needs for rearing juveniles. Conditions favoring increases in chum salmon have been observed in recent years. The region has a long western history of mining (70 mines are still apparent on the landscape) which contributes to the third highest human footprint across the state. Habitat connectivity is potentially a problem with 90% of the known 104 culverts potentially impacting fish passage.
+
+---
+
+
+# Yukon
+
+### Statement
+
+Historically the largest subsistence salmon fishery in Alaska, Chinook runs are declining and have created management challenges and lower harvests [@subsistence_salmon].
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A02efb76f-ee89-4fd7-aff3-9253a2aba19d" width="800" />
+
+### Summary
+
+Yukon River drainage subsistence salmon harvests have been historically the largest in Alaska. Since the mid-1990s, the abundance of Yukon River salmon stocks has fluctuated and subsistence harvests have declined. Consequences of reduced subsistence harvests linked to weak salmon runs and restricted fisheries include increased fishing costs, decreased earnings from commercial salmon fisheries, fewer fish wheels, increased drifting, decreased fish camp use, increased difficulties obtaining subsistence foods, maintaining dog teams without salmon as a food source which results in decreased use of sled dogs, and increased constraints on subsistence fishing from the need to engage in wage employment.
+
+---
+
+
+# Kuskokwim
+
+### Statement
+Combined efforts to reduce harvest of depressed returns of Chinook salmon came at a great societal cost in the region, yet the efforts are apparently working as the abundance of salmon is rebuilding [@total_abundance].
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A0fe271c0-042b-4c7f-93ee-b6fdb0c99ff2" width="800" />
+
+### Summary
+The decline of total abundance of Chinook salmon – the most culturally important species of the region – was the catalyst that accelerated the rise of new management frameworks and partnerships. Through reduced harvest by local users, the Chinook salmon resource has begun to rebuild. Greatly reduced harvest has helped increase the number of potential spawning individuals (i.e., escapement). The rapid rise of other species such as sockeye salmon have, at least in part, mitigated the loss of Chinook salmon but is not a perfect replacement. The salmon-producing habitat of the Kuskokwim is diverse and productive. Compared to the neighboring Bristol Bay region, the Kuskokwim is drier and is categorized by more burned area by forest fires than other regions (the Yukon excepted).
+
+
+---
+
+
+# Alaska Peninsula and Aleutian Islands
+
+### Statement
+
+Integration of commercial and subsistence fishing is notable in these management areas, and reflected in how subsistence allocations have been defined by the BOF.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ad252f0c0-8fa2-4dad-b190-7ab8c07759e2" width="800" />
+
+
+### Summary
+
+The most recent comprehensive household surveys show that salmon provide 58% of the total wild resource harvests for home use in the Alaska Peninsula – Aleutian Islands Management Area. Integration of commercial and subsistence fishing is quite pronounced in communities of the Alaska Peninsula. Commercial gear is regularly used in support of subsistence fishing and hunting. In recognition that a substantial portion of the salmon for home use for communities in these management areas comes from sources other than the subsistence fishery, the BOFs’ ANS findings are based upon subsistence permit returns and estimated harvests from commercial removal and with rod and reel recorded on comprehensive household surveys. [@subsistence_salmon]
+
+---
+
+
+# Chignik
+
+### Statement
+
+The Chignik region has experienced multiple changes in recent years including population decline [@census] and commercial fleet restructuring.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A41c3682b-066b-4954-8696-608da56afd59" width="800" />
+
+
+### Summary
+
+The population of the region has seen a 31% decline from 518 in 1990 to 362 in 2010. The Chignik commercial salmon fishery underwent a fundamental fleet restructuring with a cooperative system in place from 2002-2005. Subsistence harvests of salmon in the Chignik area are affected by multidimensional factors, including stock abundance and run timing, weather cycles, fuel and gear costs, employment opportunities, commercial salmon prices, and access to traditional knowledge. Fishing experiences at lodges in the region for visiting tourists are also popular.
+
+---
+
+
+# Kodiak
+
+### Statement
+
+Though relatively small as a region, Kodiak is the 4th largest salmon producing area of Alaska [@total_abundance].
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:054342bf-6322-4551-be3c-3a57c169273d" width="800" />
+
+### Summary
+
+Kodiak is the 4th largest salmon producing region of Alaska with habitat most well suited to pink salmon (short coastal streams) and sockeye salmon (suitable rearing lakes). The region has a temperate, and some may say temperamental, climate characterized by wet, cool, and windy summers and winters. High human density on the east side of the island near the hub of Kodiak results in the 4th highest index of human footprints among regions. Approximately half of the known culverts on the island are known to or have the potential to negatively affect fish passage. Though among the smaller regions of Alaska, Kodiak has approximately 2700 km (1677 miles) of streams and rivers known to contain at least one species of Pacific salmon. The region has a long history of lake fertilization and hatchery enhancement aimed to bolster adult salmon returns.
+
+---
+
+
+# Bristol Bay
+
+### Statement
+
+Even though Bristol Bay harvest is second in volume to Southeast, its historical revenue is twice the size of revenue generated by Southeast salmon fisheries [@earnings].
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ace35602e-bb37-4aa2-ab26-028fa30513b0" width="800" />
+
+
+### Summary
+
+About one third of Bristol Bay fishermen and two-thirds of Bristol Bay processing workers live in Washington, Oregon, and California. In order to illustrate the ripple effect of the Bristol Bay sockeye salmon fishery, in 2010, the harvest value associated with 29 million sockeye salmon being caught was $165 million. Salmon processing added another $225 million to this value for a total wholesale value of $390 million. The total value of Bristol Bay seafood exports in that year was $250 million, which amounted to about 6% of the total U.S. seafood export.
+
+---
+
+
+# Copper River
+
+### Statement
+
+Connected by road to Alaska’s population centers, subsistence and personal use salmon fisheries have grown rapidly [@subsistence_salmon], raising concerns among local residents.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A7421e9b9-7c0d-4feb-80cc-ec4c43d4fac2" width="800" />
+
+### Summary
+
+In 2018, multiple sets of regulations governed subsistence and personal use fishing in the Copper River. A personal use dip net fishery occurred at Chitina, while subsistence fisheries took place in the Glennallen Subdistrict and near Cordova. In all Copper River fisheries combined from 1989 to 2016, 96% of the harvest was sockeye salmon. Since the 1970s, steady growth occurred in the upper Copper River fisheries (Figure). The growth of nonlocal participation in the Glennallen Subdistrict subsistence fishery and the Chitina personal use fishery has raised concerns among local residents, including Indigenous Ahtna Athabascan communities, regarding competition for fish and fishing sites.
+
+---
+
+
+# Cook Inlet
+
+### Statement
+
+Cook Inlet’s commercial salmon fisheries are the state’s third largest in value and extensive participation in personal use and sport fisheries underscore the political complexity of the region.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3A13c6bd56-297c-4a55-8d28-d722fb99ba4d" width="800" />
+
+### Summary
+
+The potential for large revenue comes at a cost, because fishing revenue variability in this region has been greater than anywhere else in the Gulf of Alaska. Cook Inlet has the most diverse set of salmon users in the state, including commercial, sport, subsistence, and personal use fishers. Historically, the largest catch volume has gone to the commercial salmon fleet, followed by sportfish, subsistence, and personal use [@harvest_all_sectors]. Since 1995, the total volume of fish allocated to personal use, subsistence, and sport fishing has been relatively stable, ranging between 5 and 15 million lbs/year.
+
+---
+
+
+# Prince William Sound
+
+### Statement
+
+No other region of state is as tied to hatchery enhancement as Prince William Sound.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn%3Auuid%3Ad5ded097-e0cd-4db5-a300-6f9a334105dd" width="800" />
+
+### Summary
+
+Nearly ¾ of a billion salmon are released in this region with the majority being pink salmon, followed by chum salmon and sockeye salmon [@hatchery_returns]. Returning adults are integral components of the fishery, where in some years the entire catch of some species can be the result of hatchery production. Concerns of negative legacy effects of the Exxon Valdez oil spill remain, though recent evidence points to a stronger role of large scale changes in the ocean. For some species, potential competitive interactions with large numbers of wild and hatchery individuals are a primary determinant of salmon productivity, rather than the oil spill.
+
+---
+
+
+# Southeast
+
+### Statement
+
+Maintaining connections of rivers to their floodplains will provide options for spawning and rearing salmon and is a tangible way to respond to changing climates.
+
+<img src="https://knb.ecoinformatics.org/knb/d1/mn/v2/object/urn:uuid:cd1d5c2d-e1e4-4942-8341-71c35d004243" width="800" />
+
+### Summary
+
+Southeast Alaska is a veritable wild fish factory and is by far the most rich in terms of total salmon abundance [@total_abundance]. An average of over 75 million total salmon return and are caught here each year. The vast majority of the fish caught are wild pink salmon. Adult chum salmon abundance is bolstered by the release of hundreds of millions of juvenile salmon from hatcheries. The landscape is dominated by coastal rainforests kept moist by seemingly constant rainfall. Although future changes in precipitation are unclear, maintaining connections of rivers to their floodplains will provide options for spawning and rearing salmon and helps salmon respond to a rapidly changing climate.
+
+
 ]]>
       </markdown>
-    </overview>
-    <results>
-      <markdown>
-        <![CDATA[
-Escapement
----
-The salmon life cycle begins in freshwater streams when adult salmon spawn, leaving fertilized eggs 
-which hatch in the stream. Juvenile salmon migrate downstream to the ocean, where they spend several 
-years until they reach reproductive age. Upon reaching sexual maturity, they return to their natal 
-streams to spawn. The number of mature salmon migrating from the marine environment to freshwater 
-streams is defined as escapement. Escapement data are the enumeration of these migrating fish as 
-they pass upstream, and are a widely used index of spawning salmon abundance. These data are 
-important for fisheries management since most salmon harvest occurs in freshwater rivers during this
-migration. ![Escapement](knb.109196.1)
-
-Age, sex, and length
----
-Age, sex, and length data provide population dynamics information that can indicate how population 
-trends occur and may be changing. These data can help researchers estimate population growth rates, 
-age-class distribution, and population demographics. Knowing population demographics, growth rates,
-and trends is particularly valuable to fisheries managers who must perform population assessments to
-inform management decisions. These data are therefore particularly important in valuable fisheries 
-like the salmon fisheries of Alaska. ![ASL](knb.109197.1)
-
-Maps and regional data
----
-This map shows the difference in size for pre-1990 fish and post-2000 fish. Differences were 
-calculated only for those watersheds that had 4 or more valid years’ worth of data in each (pre 1990
-and post 2000) time period. Years were considered valid if they had more than 100 ASL data points 
-(i.e., 100 or more fish were measured). Note that the color scales are different for each plot due 
-to different ranges of change for each species. You can see the yearly means that contributed to 
-each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
-]]>
-      </markdown>
-    </results>
+    </content>
+  </section>
 
     <!-- === associatedParty === -->
     <associatedParty>
@@ -120,6 +378,7 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
         <positionName>Lead, Socio-Eco</positionName>
         <electronicMailAddress>clcarothers@alaska.edu</electronicMailAddress>
         <role>primary project member</role>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-1513-9078</userId>
     </associatedParty>
     <associatedParty>
         <individualName>
@@ -323,24 +582,30 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
         Richard Brenner and Jennifer Womack, Alaska Department of Fish and Game, have been vital for facilitating data requests; Matt Jones, Jeanette Clark, Jorge Cornejo-Donoso, Jesse Goldstein, and Jared Kibele, National Center for Ecological Analysis and Synthesis have led data organization and QA/QC; Sarah Warnock, Nautilus Impact Investing has coordinated outreach and communication. This work was funded by generous support of the Gordon and Betty Moore Foundation.
     </acknowledgments>
 
-    
+
     <acknowledgmentsLogo>
-        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d <!-- Nautilus -->
+        <identifier>urn:uuid:349aa330-4645-4dab-a02d-3bf950cf708d</identifier> <!-- Nautilus -->
+        <label>Nautilus Impact Investing</label>
+        <associatedURL>https://nautilusii.com/</associatedURL>
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3Acd625b80-4b2c-4320-a27a-8556aa47f1c7 <!--  NCEAS square -->
+        <identifier>urn:uuid:cd625b80-4b2c-4320-a27a-8556aa47f1c7</identifier> <!--  NCEAS square -->
+        <label>NCEAS</label>
+        <associatedURL>https://www.nceas.ucsb.edu</associatedURL>
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3A35e2506c-8b41-4c74-85f9-64ac9d41faac <!-- Moore -->
+        <identifier>urn:uuid:35e2506c-8b41-4c74-85f9-64ac9d41faac</identifier> <!-- Moore -->
+        <label>Gordon and Betty Moore Foundation</label>
+        <associatedURL>https://www.moore.org/</associatedURL>
     </acknowledgmentsLogo>
     <!-- <acknowledgmentsLogo>
-        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2 NCEAS long 
+        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2 NCEAS long
     </acknowledgmentsLogo> -->
     <!-- <acknowledgmentsLogo>
-        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f   UAF 
+        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f   UAF
     </acknowledgmentsLogo>  -->
     <!-- <acknowledgmentsLogo>
-        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b  Center for salmon and society 
+        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b  Center for salmon and society
     </acknowledgmentsLogo> -->
 
     <award>
@@ -845,7 +1110,6 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
                 <label>Well being</label>
                 <value>well being</value>
             </choice>
-            <!-- TODO: fill in working groups -->
             <chooseMultiple>false</chooseMultiple>
         </choiceFilter>
 
@@ -870,7 +1134,6 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
             <description></description>
             <min>2015-01-01</min>
             <max>2018-01-01</max>
-            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
         </dateFilter>
 
         <!-- date coverage -->
@@ -886,7 +1149,6 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
             <description></description>
             <min>1882-01-01</min>
             <max>2018-01-01</max>
-            <!-- TODO: does date filter need a format option? here we want dates displayed as YYYY only -->
         </dateFilter>
 
     </filterGroup>
@@ -950,5 +1212,29 @@ each calculation by holding the cursor over each watershed. ![Map](knb.109199.1)
       <optionName>hideMetrics</optionName>
       <optionValue>false</optionValue>
     </option>
+
+    <literatureCited>
+        <bibtex><![CDATA[
+          @misc{total_abundance,
+          title={Estimate of total Alaskan salmon abundance by region, 2000-2015},
+          url={https://knb.ecoinformatics.org/view/doi:10.5063/F1S46Q72},
+          DOI={10.5063/f1s46q72}, publisher={KNB Data Repository}, author={Clark, S. Jeanette and Thiessen-Bock, Robyn}, year={2019} }
+
+          @misc{hatchery_returns, title={Annual salmon hatchery releases from the Hatchery Release Report Form, Alaska, 1952-2017}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F12N50JP}, DOI={10.5063/f12n50jp}, publisher={KNB Data Repository}, author={{Alaska Department of Fish and Game Mark Tag And Age Laboratory} and Jovanovich, Madeline and O’Dean, Emily}, year={2019} }
+
+          @misc{harvest_all_sectors,title={Harvest of Salmon across Commercial, Subsistence, Personal Use, and Sport Fish sectors, Alaska, 1995-2016}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1HM56Q3}, DOI={10.5063/f1hm56q3}, publisher={KNB Data Repository}, author={Clark, S. Jeanette and {Alaska Department of Fish And Game Division Of Commercial Fisheries}}, year={2019} }
+
+          @misc{subsistence_salmon, title={Subsistence and personal use harvest of salmon in Alaska, 1960-2012}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1X065BN}, DOI={10.5063/f1x065bn}, publisher={KNB Data Repository}, author={{Alaska Department of Fish and Game Subsistence Division}}, year={2019} }
+
+          @misc{earnings, title={Regional commercial salmon permit earnings by residency status, Alaska, 1975-2016}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1WW7FZ2}, DOI={10.5063/f1ww7fz2}, publisher={KNB Data Repository}, author={Schwoerer, Tobias}, year={2019} }
+
+          @misc{census, title={Alaskan Population Demographic Information from Decennial and American Community Survey Census Data, 1940-2016}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1XW4H3V}, DOI={10.5063/f1xw4h3v}, publisher={KNB Data Repository}, author={United States Census Bureau and Bachtel, Juliet and Randazzo, John and Gavenus, Erika}, year={2019} }
+
+          @misc{temperature, title={Historic air temperatures in Alaska for 1901-2015, with spatial subsetting by region}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1MK6B60}, DOI={10.5063/f1mk6b60}, publisher={KNB Data Repository}, author={Kibele, Jared and Jones, Leslie}, year={2019} }
+
+          @misc{subsistence_csis, title={Subsistence harvest information by region, community, resource, and year, 1964-2015}, url={https://knb.ecoinformatics.org/view/doi:10.5063/F1S75DNC}, DOI={10.5063/f1s75dnc}, publisher={KNB Data Repository}, author={{Alaska Department of Fish and Game Subsistence Division}}, year={2019} }
+
+        ]]></bibtex>
+    </literatureCited>
 
 </proj:project>

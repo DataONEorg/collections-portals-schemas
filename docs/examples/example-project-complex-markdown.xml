@@ -7,7 +7,10 @@
     <label>An XML project doc containing complex markdown</label>
     <description>A fake project to test the limits of showdown's markdown to HTML converter</description>
 
-    <overview>
+    <section>
+      <title>Markdown Tests</title>
+      <label>Markdown</label>
+      <content>
       <markdown>
         <![CDATA[
 ---
@@ -588,7 +591,8 @@ Here is some $E=mc^2$ math $R^2=x(2*4)$ that is inline
 
 
       </markdown>
-    </overview>
+    </content>
+  </section>
     <literatureCited>
         <bibtex><![CDATA[
             @article{hampton_2017,
