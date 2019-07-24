@@ -25,7 +25,7 @@
       <xs:complexContent>
         <xs:extension base="col:CollectionType">
           <xs:sequence>
-            <xs:element name="logo" type="xs:string" minOccurs="0" maxOccurs="1">
+            <xs:element name="logo" type="ImageType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Logo image identifier</doc:tooltip>
@@ -114,7 +114,7 @@
         <xs:complexContent>
             <xs:extension base="proj:AwardType">
                 <xs:sequence>
-                    <xs:element name="funderLogo" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="funderLogo" type="ImageType" minOccurs="0" maxOccurs="unbounded">
                         <xs:annotation>
                             <xs:appinfo>
                               <doc:tooltip>Logo image identifier</doc:tooltip>
