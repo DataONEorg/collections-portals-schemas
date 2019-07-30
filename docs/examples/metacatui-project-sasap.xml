@@ -14,8 +14,13 @@
     </definition>
 
     <logo>
-    <!-- ====== urn:uuid:7c959e15-d309-4850-91e8-399c0e862882 (prod) ====== -->
-      urn:uuid:7c959e15-d309-4850-91e8-399c0e862882
+      <identifier>
+        urn:uuid:7c959e15-d309-4850-91e8-399c0e862882
+        <!-- ====== urn:uuid:7c959e15-d309-4850-91e8-399c0e862882 (prod) ====== -->
+      </identifier>
+      <label>
+        State of Alaska's Salmon and People
+      </label>
     </logo>
 
     <section>
