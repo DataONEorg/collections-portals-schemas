@@ -11,6 +11,10 @@ hideMetrics
 Boolean
 If set to true, metrics about this project will be hidden from the profile pages
 
+hideData
+Boolean
+If set to true, the dataset listing for this project will be hidden from the profile pages
+
 mapZoomLevel
 Integer
 A zoom level to use for a map

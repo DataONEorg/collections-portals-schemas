@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
 
-    <name>SASAP</name>
-    <label>State of Alaska's Salmon and People</label>
+    <label>SASAP</label>
+    <name>State of Alaska's Salmon and People</name>
     <description>The State of Alaska's Salmon and People (SASAP) project is a collaboration of researchers, cultural leaders, and others working to bring together integrated, accurate, and up-to-date information that will help to support better salmon decision-making.</description>
     <definition>
         <filter>

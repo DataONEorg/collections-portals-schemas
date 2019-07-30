@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://ecoinformatics.org/datasetproject-beta1">
 
-    <name>DBO</name>
-    <label>Distributed Biological Observatory</label>
+    <label>DBO</label>
+    <name>Distributed Biological Observatory</name>
     <description>The Distributed Biological Observatory (DBO) is a multi-agency, ship-based research program studying biological responses to rapid physical changes in the Arctic marine ecosystem</description>
     <definition>
         <filter>
