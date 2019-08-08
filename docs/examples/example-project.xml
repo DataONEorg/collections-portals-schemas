@@ -14,7 +14,7 @@
     </definition>
 
     <logo>
-        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+        <identifier>urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981</identifier>
     </logo>
 
     <section>
@@ -322,19 +322,19 @@ Map subcontent
     </acknowledgments>
 
     <acknowledgmentsLogo>
-        urn%3Auuid%3A4bb02544-d2d5-436a-9d37-8b77c3c31981
+        <identifier>urn:uuid:349aa330-4645-4dab-a02d-3bf950cf708d</identifier> <!-- Nautilus -->
+        <label>Nautilus Impact Investing</label>
+        <associatedURL>https://nautilusii.com/</associatedURL>
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3A1ec8d96c-d36b-455b-9a45-4b752f5ce49b
+        <identifier>urn:uuid:cd625b80-4b2c-4320-a27a-8556aa47f1c7</identifier> <!--  NCEAS square -->
+        <label>NCEAS</label>
+        <associatedURL>https://www.nceas.ucsb.edu</associatedURL>
     </acknowledgmentsLogo>
     <acknowledgmentsLogo>
-        urn%3Auuid%3A349aa330-4645-4dab-a02d-3bf950cf708d
-    </acknowledgmentsLogo>
-    <acknowledgmentsLogo>
-        urn%3Auuid%3A40a35ab7-d468-467d-b420-8191763e25c2
-    </acknowledgmentsLogo>
-    <acknowledgmentsLogo>
-        urn%3Auuid%3A2276eea8-28d8-4ae1-a406-5acf66c0689f
+        <identifier>urn:uuid:35e2506c-8b41-4c74-85f9-64ac9d41faac</identifier> <!-- Moore -->
+        <label>Gordon and Betty Moore Foundation</label>
+        <associatedURL>https://www.moore.org/</associatedURL>
     </acknowledgmentsLogo>
 
     <award>
