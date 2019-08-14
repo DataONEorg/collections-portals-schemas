@@ -137,6 +137,23 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
+        <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Description</doc:tooltip>
+              <doc:summary>A brief description of this filter.</doc:summary>
+              <doc:description>A brief description of this filter that will be displayed in the user interface as help text.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="label" type="xs:string" minOccurs="1" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Label</doc:tooltip>
+              <doc:summary>A short 1-2 word label to display for this filter.</doc:summary>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
 
