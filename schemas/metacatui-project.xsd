@@ -290,6 +290,15 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
+            <xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Description</doc:tooltip>
+                  <doc:summary>A brief description of this filter.</doc:summary>
+                  <doc:description>A brief description of this filter that will be displayed in the user interface as help text.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
           </xs:sequence>
         </xs:extension>
       </xs:complexContent>
