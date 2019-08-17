@@ -47,13 +47,50 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="associatedParty" type="par:ResponsibleParty" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="associatedParty" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Associated party</doc:tooltip>
                   <doc:description>Contact and role information for people involved with this dataset collection.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
+              <xs:complexType>
+                <xs:complexContent>
+                  <xs:extension base="par:ResponsibleParty">
+                    <xs:sequence maxOccurs="unbounded">
+                      <xs:element name="role" type="par:RoleType">
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <doc:tooltip>Role</doc:tooltip>
+                            <doc:summary>Role information for people involved in
+                            this portal.</doc:summary>
+                            <doc:description>The role field contains information
+                            about role a person plays in a dataset portal. There
+                            are a number of suggested roles, however, it is
+                            possible to add a role if the suggested roles are not
+                            adequate.</doc:description>
+                            <doc:example>author</doc:example>
+                            <doc:example>contentProvider</doc:example>
+                            <doc:example>custodianSteward</doc:example>
+                            <doc:example>distributor</doc:example>
+                            <doc:example>editor</doc:example>
+                            <doc:example>metadataProvider</doc:example>
+                            <doc:example>originator</doc:example>
+                            <doc:example>owner</doc:example>
+                            <doc:example>pointOfContact</doc:example>
+                            <doc:example>principalInvestigator</doc:example>
+                            <doc:example>processor</doc:example>
+                            <doc:example>publisher</doc:example>
+                            <doc:example>user</doc:example>
+                            <doc:example>fieldStationManager</doc:example>
+                            <doc:example>informationManager</doc:example>
+                          </xs:appinfo>
+                        </xs:annotation>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:extension>
+                </xs:complexContent>
+              </xs:complexType>
             </xs:element>
             <xs:element name="acknowledgments" type="txt:TextType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
@@ -132,34 +169,22 @@
     </xs:complexType>
 
     <xs:complexType name="ContentSectionType">
-      <xs:complexContent>
         <xs:sequence>
           <xs:element name="label" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Section label</doc:tooltip>
+                <doc:summary>A short label for this content section.</doc:summary>
+                <doc:description>A short label to describe the content in
+                  this section. It may be used in interfaces in navigation menus or a table of contents.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
             <xs:simpleType>
               <xs:restriction base="col:NonEmptyStringType">
                 <xs:minLength value="1"/>
                 <xs:maxLength value="60"/>
               </xs:restriction>
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Section label</doc:tooltip>
-                  <doc:summary>A short label for this content section.</doc:summary>
-                  <doc:description>A short label to describe the content in
-                    this section. It may be used in interfaces in navigation menus or a table of contents.</doc:description>
-                </xs:appinfo>
-              </xs:annotation>
             </xs:simpleType>
-          </xs:element>
-          <xs:element name="image" type="ImageType" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:appinfo>
-                <doc:tooltip>Display image</doc:tooltip>
-                <doc:summary>A high quality image for this content section.</doc:summary>
-                <doc:description>An identifier or URL for a high-quality display image for this section.
-                This image should be visually appealing and eye-catching. Maps, charts, and other informational
-                graphics should be used in the text content.</doc:description>
-              </xs:appinfo>
-            </xs:annotation>
           </xs:element>
           <xs:element name="title" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
@@ -177,6 +202,17 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="image" type="ImageType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Display image</doc:tooltip>
+                <doc:summary>A high quality image for this content section.</doc:summary>
+                <doc:description>An identifier or URL for a high-quality display image for this section.
+                This image should be visually appealing and eye-catching. Maps, charts, and other informational
+                graphics should be used in the text content.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="content" type="txt:TextType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
@@ -188,7 +224,6 @@
             </xs:annotation>
           </xs:element>
         </xs:sequence>
-      </xs:complexContent>
     </xs:complexType>
 
     <xs:complexType name="FilterGroupType">
@@ -272,8 +307,52 @@
 
     <xs:complexType name="UIFilterType">
       <xs:complexContent>
-        <xs:extension base="col:TextFilterType">
+        <xs:extension base="col:FilterType">
           <xs:sequence>
+            <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1" default="true">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Value</doc:tooltip>
+                  <doc:description>Specify a value that should automatically be set on the filter.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Filter UI options</doc:tooltip>
+                  <doc:summary>Options for displaying this filter in a UI</doc:summary>
+                  <doc:description>These options provide further customization of this filter tool in the UI.</doc:description>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="UIDateFilterType">
+      <xs:complexContent>
+        <xs:extension base="col:DateFilterType">
+          <xs:sequence>
+            <xs:element name="rangeMin" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Minimum range limit</doc:tooltip>
+                  <doc:description>The minimum limit to display in the user interface date range tool.</doc:description>
+                  <doc:example>1.5</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="rangeMax" type="xs:dateTime" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Maximum range limit</doc:tooltip>
+                  <doc:description>The maximum number to display in the user interface date range tool.</doc:description>
+                  <doc:example>100</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
@@ -290,14 +369,23 @@
 
     <xs:complexType name="UINumericFilterType">
       <xs:complexContent>
-        <xs:extension base="NumericFilterType">
+        <xs:extension base="col:NumericFilterType">
           <xs:sequence>
-            <xs:element name="range" type="xs:boolean" minOccurs="0" maxOccurs="1">
+            <xs:element name="rangeMin" type="xs:float" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
-                  <doc:tooltip>Range</doc:tooltip>
-                  <doc:description>If true, the filter value can be set as a
-                    range between the given minimum and maximum values, rather than just a single number.</doc:description>
+                  <doc:tooltip>Minimum range limit</doc:tooltip>
+                  <doc:description>The minimum limit to display in the user interface number range tool.</doc:description>
+                  <doc:example>1.5</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="rangeMax" type="xs:float" minOccurs="0" maxOccurs="1">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Maximum range limit</doc:tooltip>
+                  <doc:description>The maximum number to display in the user interface number range tool.</doc:description>
+                  <doc:example>100</doc:example>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
@@ -332,7 +420,7 @@
 
     <xs:complexType name="UIBooleanFilterType">
       <xs:complexContent>
-        <xs:extension base="BooleanFilterType">
+        <xs:extension base="col:BooleanFilterType">
           <xs:sequence>
             <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
@@ -350,7 +438,7 @@
 
     <xs:complexType name="UIToggleFilterType">
       <xs:complexContent>
-        <xs:extension base="FilterType">
+        <xs:extension base="UIFilterType">
           <xs:sequence>
             <xs:element name="trueValue" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
               <xs:annotation>
@@ -389,12 +477,13 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+            <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
-                  <doc:tooltip>Filter UI options</doc:tooltip>
-                  <doc:summary>Options for displaying this filter in a UI</doc:summary>
-                  <doc:description>These options provide further customization of this filter tool in the UI.</doc:description>
+                  <doc:tooltip>Value</doc:tooltip>
+                  <doc:description>The value that will be set on the toggle filter when it first appears in the portal.
+                  The value should match either the trueValue or falseValue above.</doc:description>
+                  <doc:example>Male</doc:example>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
@@ -405,7 +494,7 @@
 
     <xs:complexType name="UIChoiceFilterType">
       <xs:complexContent>
-        <xs:extension base="FilterType">
+        <xs:extension base="UIFilterType">
           <xs:sequence>
             <xs:element name="choice" type="ChoiceType" minOccurs="1" maxOccurs="unbounded">
               <xs:annotation>
@@ -421,15 +510,6 @@
                   <doc:tooltip>Choose multiple options</doc:tooltip>
                   <doc:description>If set to true, the user is able to select multiple filter choices at once.</doc:description>
                   <doc:example>true</doc:example>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
-            <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Filter UI options</doc:tooltip>
-                  <doc:summary>Options for displaying this filter in a UI</doc:summary>
-                  <doc:description>These options provide further customization of this filter tool in the UI.</doc:description>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
