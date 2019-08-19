@@ -170,7 +170,7 @@
 
     <xs:complexType name="ContentSectionType">
         <xs:sequence>
-          <xs:element name="label" minOccurs="1" maxOccurs="1">
+          <xs:element name="label" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Section label</doc:tooltip>
@@ -179,12 +179,6 @@
                   this section. It may be used in interfaces in navigation menus or a table of contents.</doc:description>
               </xs:appinfo>
             </xs:annotation>
-            <xs:simpleType>
-              <xs:restriction base="col:NonEmptyStringType">
-                <xs:minLength value="1"/>
-                <xs:maxLength value="60"/>
-              </xs:restriction>
-            </xs:simpleType>
           </xs:element>
           <xs:element name="title" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
@@ -220,6 +214,17 @@
                 <doc:description>The multimedia content to display in this section.
                 These content sections can be used for any informational content about this portal, such
               as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>Additional option</doc:tooltip>
+                <doc:summary>Any additional custom options for this content section. These options can
+                  further instruct a UI how to display this section in the portal. E.g. the order in which to
+                  display this section, further color or branding options, etc.
+                 </doc:summary>
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
