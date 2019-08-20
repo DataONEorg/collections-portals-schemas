@@ -14,7 +14,7 @@
     <value>soil</value>
   </filter>
   <filter>
-    <field>keyword</field>
+    <field>keywords</field>
     <field>attribute</field>
     <value>soil layer</value>
   </filter>
@@ -80,6 +80,10 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
   ]]>
         </markdown>
       </content>
+      <option>
+        <optionName>order</optionName>
+        <optionValue>1</optionValue>
+      </option>
     </section>
   <associatedParty>
         <individualName>
