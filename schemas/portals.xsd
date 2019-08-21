@@ -482,16 +482,6 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
-              <xs:annotation>
-                <xs:appinfo>
-                  <doc:tooltip>Value</doc:tooltip>
-                  <doc:description>The value that will be set on the toggle filter when it first appears in the portal.
-                  The value should match either the trueValue or falseValue above.</doc:description>
-                  <doc:example>Male</doc:example>
-                </xs:appinfo>
-              </xs:annotation>
-            </xs:element>
           </xs:sequence>
         </xs:extension>
       </xs:complexContent>
