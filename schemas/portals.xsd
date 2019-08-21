@@ -314,6 +314,16 @@
       <xs:complexContent>
         <xs:extension base="col:FilterType">
           <xs:sequence>
+            <xs:element name="matchSubstring" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+              <xs:annotation>
+                <xs:appinfo>
+                  <doc:tooltip>Match substring</doc:tooltip>
+                  <doc:description>If true, this filter's value will be wrapped in wildcard
+                    characters so that substrings are matched.</doc:description>
+                  <doc:example>true</doc:example>
+                </xs:appinfo>
+              </xs:annotation>
+            </xs:element>
             <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1" default="true">
               <xs:annotation>
                 <xs:appinfo>
