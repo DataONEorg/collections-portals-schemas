@@ -2,7 +2,7 @@
 
 
 <por:portal xmlns:por="https://purl.dataone.org/portals-1.0.0">
-<label>my-portal</label>
+<label>laurentest7</label>
 <name>My Portal</name>
 <description>This is a collection of datasets related to soil</description>
 <definition>
@@ -148,6 +148,52 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
         <awardNumber>5451</awardNumber>
         <title>Data Task Forces for Better Synthesis Studies</title>
     </award>
+    <literatureCited>
+      <citation>
+   <bibtex>
+      @article{fegraus_2005,
+         title = {Maximizing the {Value} of {Ecological} {Data} with {Structured} {Metadata}: {An} {Introduction} to {Ecological} {Metadata} {Language} ({EML}) and {Principles} for {Metadata} {Creation}},
+         journal = {Bulletin of the Ecological Society of America},
+         author = {Fegraus, Eric H. and Andelman, Sandy and Jones, Matthew B. and Schildhauer, Mark},
+         year = {2005},
+         pages = {158--168}
+      }
+   </bibtex>
+</citation>
+<citation>
+
+      <title>Title of a paper that this dataset, or its metadata, references.</title>
+      <creator>
+         <individualName>
+            <givenName>Mark</givenName>
+            <surName>Jarkady</surName>
+         </individualName>
+      </creator>
+      <pubDate>2017</pubDate>
+      <article>
+         <journal>EcoSphere</journal>
+         <publicationPlace>https://doi.org/10.1002/ecs2.2166</publicationPlace>
+      </article>
+   </citation>
+   <bibtex>
+     @article{hampton_2017,
+      title = {Skills and {Knowledge} for {Data}-{Intensive} {Environmental} {Research}},
+      volume = {67},
+      copyright = {All rights reserved},
+      issn = {0006-3568, 1525-3244},
+      url = {https://academic.oup.com/bioscience/article-lookup/doi/10.1093/biosci/bix025},
+      doi = {10.1093/biosci/bix025},
+      language = {en},
+      number = {6},
+      urldate = {2018-02-15},
+      journal = {BioScience},
+      author = {Hampton, Stephanie E. and Jones, Matthew B. and Wasser, Leah A. and Schildhauer, Mark P. and Supp, Sarah R. and Brun, Julien and Hernandez, Rebecca R. and Boettiger, Carl and Collins, Scott L. and Gross, Louis J. and Fernández, Denny S. and Budden, Amber and White, Ethan P. and Teal, Tracy K. and Labou, Stephanie G. and Aukema, Juliann E.},
+      month = jun,
+      year = {2017},
+      pages = {546--557}
+   }
+ </bibtex>
+    </literatureCited>
   <!-- ====== Geography Filter Group ====== -->
     <filterGroup>
 
