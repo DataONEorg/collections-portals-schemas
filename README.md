@@ -5,6 +5,8 @@ Enabling portal and data paper views via MetacatUI, Metacat, and EML
 - **License**: [Apache 2](http://opensource.org/licenses/Apache-2.0)
 - **Contact**: Contact the developers of this repository by creating a [Github issue](https://github.com/NCEAS/project-papers/issues)
 
+------
+
 - This repository contains the schemas for DataONE Collections and DataONE Portals
   - [Collections XML schema](schemas/collections.xsd)
   - [Portals XML schema](schemas/portals.xsd)
