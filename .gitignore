@@ -32,4 +32,9 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+# Python artifacts
+/tools/py-randomize-portal/__pycache__
+/tools/py-randomize-portal/upload-portal.sh
+/tools/py-randomize-portal/portal.xml
+
 .DS_store
