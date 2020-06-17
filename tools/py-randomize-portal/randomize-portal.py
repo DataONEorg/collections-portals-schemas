@@ -275,8 +275,7 @@ def makeUIBooleanFilter():
     xml += makeFilterLabel()
 
     #The list of date fields in the search index
-    fields = ["updateDate", "beginDate", "dateModified", "datePublished",
-              "dateUploaded", "endDate", "pubDate", "replicaVerifiedDate"]
+    fields = ["isPublic", "isService", "isSpatial"]
 
     #Randomly select a field
     for n in range(random.randint(1,3)):
@@ -426,7 +425,7 @@ def makeFilterGroup():
     xml += "\t<description>" + makeRandomWords(random.randint(3,20))  + "</description>\n"
     xml += "\t<icon>" + makeRandomIcon()  + "</icon>\n"
 
-    filterTypes = ["filter", "dateFilter", "booleanFilter", "toggleFilter"]
+    filterTypes = ["filter", "dateFilter", "booleanFilter", "toggleFilter", "choiceFilter"]
 
     for n in range(random.randint(1,9)):
         chosenType = random.choice(filterTypes)
@@ -439,6 +438,8 @@ def makeFilterGroup():
             xml += makeUIBooleanFilter()
         elif chosenType == "toggleFilter":
             xml += makeUIToggleFilter()
+        elif chosenType == "choiceFilter":
+            xml += makeUIChoiceFilter()
 
     xml += "</filterGroup>\n"
 
