@@ -519,6 +519,15 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
+      <xs:element name="image" type="ImageType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Image</doc:tooltip>
+            <doc:summary>An image that represents the value</doc:summary>
+            <doc:description>An optional image to display in the user interface to represent this filter value.</doc:description>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 
