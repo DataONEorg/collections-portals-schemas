@@ -161,6 +161,15 @@
 
   <xs:complexType name="ContentSectionType">
     <xs:sequence>
+      <xs:element name="sectionType" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1" default="markdown">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Section type</doc:tooltip>
+            <doc:summary>An indication of the kind of content included in this section</doc:summary>
+            <doc:description>The section type may be used by interfaces to determine how the section's content should be rendered</doc:description>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
       <xs:element name="label" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
@@ -195,14 +204,24 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="content" type="txt:TextType" minOccurs="1" maxOccurs="1">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Content</doc:tooltip>
-            <doc:description>The multimedia content to display in this section. These content sections can be used for any informational content about this portal, such as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="content" type="txt:TextType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Content</doc:tooltip>
+              <doc:description>The multimedia content to display in this section. These content sections can be used for any informational content about this portal, such as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>  
+        </xs:element>
+        <xs:element name="contentSource" type="col:NoWhitespaceStringType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Content source</doc:tooltip>
+              <doc:description>An identifier or URL for the object that contains the content for the section</doc:description>
+            </xs:appinfo>
+          </xs:annotation>  
+        </xs:element>
+      </xs:choice>
       <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:appinfo>

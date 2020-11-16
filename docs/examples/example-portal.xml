@@ -37,6 +37,50 @@
     <label>Project logo</label>
   </logo>
   <section>
+    <sectionType>feverVisualization</sectionType>
+    <label>Earth View</label>
+    <title>Fluid Earth Viewer</title>
+    <introduction>This is an example of one type of visualization section</introduction>
+    <contentSource>https://arcticdata.io/fever</contentSource>
+  </section>
+  <section>
+    <sectionType>metrics</sectionType>
+    <label>Numbers</label>
+    <title>Statistics and Figures</title>
+    <introduction>A summary of all datasets from SASAP</introduction>
+    <option>
+      <optionName>hideCitations</optionName>
+      <optionValue>true</optionValue>
+    </option>
+    <option>
+      <optionName>hideFileFormats</optionName>
+      <optionValue>true</optionValue>
+    </option>
+  </section>
+  <section>
+    <sectionType>dataCatalog</sectionType>
+    <label>Our Data</label>
+    <title>Browse SASAP Data</title>
+    <introduction>Search for or browse all datasets collected or synthesized by the SASAP working group</introduction>
+    <option>
+      <optionName>mapZoomLevel</optionName>
+      <optionValue>7</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLatitude</optionName>
+      <optionValue>100</optionValue>
+    </option>
+    <option>
+      <optionName>mapCenterLongitude</optionName>
+      <optionValue>-100</optionValue>
+    </option>
+    <option>
+      <optionName>mapShapeHue</optionName>
+      <optionValue>28</optionValue>
+    </option>
+  </section>
+  <section>
+    <sectionType>markdown</sectionType>
     <label>About</label>
     <title>About this portal</title>
     <introduction>
@@ -80,10 +124,6 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
   ]]>
       </markdown>
     </content>
-    <option>
-      <optionName>order</optionName>
-      <optionValue>1</optionValue>
-    </option>
   </section>
   <associatedParty>
     <individualName>
@@ -353,27 +393,5 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
   <option>
     <optionName>accentColor</optionName>
     <optionValue>#e88024</optionValue>
-  </option>
-
-  <option>
-    <optionName>mapZoomLevel</optionName>
-    <optionValue>7</optionValue>
-  </option>
-  <option>
-    <optionName>mapCenterLatitude</optionName>
-    <optionValue>100</optionValue>
-  </option>
-  <option>
-    <optionName>mapCenterLongitude</optionName>
-    <optionValue>-100</optionValue>
-  </option>
-  <option>
-    <optionName>mapShapeHue</optionName>
-    <optionValue>28</optionValue>
-  </option>
-
-  <option>
-    <optionName>hideMetrics</optionName>
-    <optionValue>false</optionValue>
   </option>
 </por:portal>
