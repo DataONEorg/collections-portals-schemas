@@ -8,6 +8,8 @@
     <filter>
       <label>Datasets about soil</label>
       <field>text</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <exclude>false</exclude>
       <matchSubstring>true</matchSubstring>
       <value>soil</value>
@@ -15,20 +17,28 @@
     <filter>
       <field>keywords</field>
       <field>attribute</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>OR</fieldsOperator>
       <value>soil layer</value>
     </filter>
     <dateFilter>
       <field>dateUploaded</field>
       <field>beginDate</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <min>1800-01-01T00:00:00Z</min>
       <max>2009-01-01T00:00:00Z</max>
     </dateFilter>
     <booleanFilter>
       <field>isPublic</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <value>true</value>
     </booleanFilter>
     <numericFilter>
       <field>numberReplicas</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <min>1</min>
     </numericFilter>
   </definition>
@@ -231,7 +241,8 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <choiceFilter>
       <label>Salmon species</label>
       <field>species</field>
-      <operator>OR</operator>
+      <valuesOperator>OR</valuesOperator>
+      <fieldsOperator>OR</fieldsOperator>
       <exclude>false</exclude>
       <filterOptions>
         <description>Salmon species, by common name</description>
@@ -286,7 +297,8 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <choiceFilter>
       <label>Waterbody</label>
       <field>site</field>
-      <operator>OR</operator>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <exclude>false</exclude>
       <filterOptions>
         <placeholder>Choose a waterbody</placeholder>
@@ -321,6 +333,8 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <numericFilter>
       <label>Numeric with range</label>
       <field>southBoundCoord</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <min>1.03</min>
       <max>141.78</max>
       <rangeMin>0</rangeMin>
@@ -339,6 +353,8 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <numericFilter>
       <label>Numeric with range</label>
       <field>northBoundCoord</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <value>5</value>
       <rangeMin>0</rangeMin>
       <rangeMax>150</rangeMax>
@@ -361,6 +377,8 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <toggleFilter>
       <label>Male or female</label>
       <field>text</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <filterOptions>
         <description>Limit to datasets that mention male or female</description>
       </filterOptions>
@@ -374,10 +392,14 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
     <label>Other</label>
     <filter>
       <field>origin</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
     </filter>
     <dateFilter>
       <label>Year of publication</label>
       <field>datePublished</field>
+      <valuesOperator>AND</valuesOperator>
+      <fieldsOperator>AND</fieldsOperator>
       <rangeMin>2015-01-01T00:00:00</rangeMin>
       <rangeMax>2018-01-01T00:00:00</rangeMax>
     </dateFilter>
