@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema
-  xmlns="https://purl.dataone.org/portals-1.0.0"
-  targetNamespace="https://purl.dataone.org/portals-1.0.0"
+<xs:schema xmlns="https://purl.dataone.org/portals-1.0.0" targetNamespace="https://purl.dataone.org/portals-1.0.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:doc="https://eml.ecoinformatics.org/documentation-2.2.0"
   xmlns:txt="https://eml.ecoinformatics.org/text-2.2.0"
@@ -119,7 +117,7 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="filterGroup" type="FilterGroupType" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="filterGroup" type="UIFilterGroupType" minOccurs="0" maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Filter group</doc:tooltip>
@@ -211,7 +209,7 @@
               <doc:tooltip>Content</doc:tooltip>
               <doc:description>The multimedia content to display in this section. These content sections can be used for any informational content about this portal, such as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
             </xs:appinfo>
-          </xs:annotation>  
+          </xs:annotation>
         </xs:element>
         <xs:element name="contentSource" type="col:NoWhitespaceStringType" minOccurs="0" maxOccurs="1">
           <xs:annotation>
@@ -219,7 +217,7 @@
               <doc:tooltip>Content source</doc:tooltip>
               <doc:description>An identifier or URL for the object that contains the content for the section</doc:description>
             </xs:appinfo>
-          </xs:annotation>  
+          </xs:annotation>
         </xs:element>
       </xs:choice>
       <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
@@ -234,7 +232,7 @@
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="FilterGroupType">
+  <xs:complexType name="UIFilterGroupType">
     <xs:sequence>
       <xs:element name="label" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
         <xs:annotation>

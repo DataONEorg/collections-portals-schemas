@@ -44,7 +44,7 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="definition" type="DefinitionType" minOccurs="1" maxOccurs="1">
+      <xs:element name="definition" type="FilterGroupType" minOccurs="1" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Definition</doc:tooltip>
@@ -56,49 +56,84 @@
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="DefinitionType">
+  <xs:complexType name="FilterGroupType">
     <xs:annotation>
       <xs:appinfo>
-        <doc:tooltip>Definition</doc:tooltip>
-        <doc:description>Defines which datasets are a part of this collection.</doc:description>
+        <doc:tooltip>Filter Group</doc:tooltip>
+        <doc:description>A filter group comprises filters that specify a query to perform that will result in a defined collection of data</doc:description>
         <doc:example>See the individual sub-elements for specific examples.</doc:example>
       </xs:appinfo>
     </xs:annotation>
-    <xs:choice minOccurs="1" maxOccurs="unbounded">
-      <xs:element name="filter" type="TextFilterType" minOccurs="1" maxOccurs="unbounded">
+    <xs:sequence>
+      <xs:element name="operator" type="operatorType" minOccurs="1" maxOccurs="1" default="AND">
         <xs:annotation>
           <xs:appinfo>
-            <doc:tooltip>Filter</doc:tooltip>
-            <doc:description>Defines a basic text search filter to apply to the query used to get the datasets in this collection.</doc:description>
+            <doc:tooltip>Operator</doc:tooltip>
+            <doc:description>A required operator that specifies whether filters within this filter group are AND'ed or OR'ed together</doc:description>
+            <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="dateFilter" type="DateFilterType" minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="exclude" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
         <xs:annotation>
           <xs:appinfo>
-            <doc:tooltip>Date filter</doc:tooltip>
-            <doc:description>Defines a date range to apply to the query used to get the datasets in this collection.</doc:description>
+            <doc:tooltip>Exclude</doc:tooltip>
+            <doc:description>If set to true, this filter group will be used to exclude (rather than include) datasets from the query results. In other words, the query that results from this group of filters will be negated.</doc:description>
+            <doc:example>true</doc:example>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="numericFilter" type="NumericFilterType" minOccurs="1" maxOccurs="unbounded">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Numeric filter</doc:tooltip>
-            <doc:description>Defines a numeric range to apply to the query used to get the datasets in this collection.</doc:description>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="booleanFilter" type="BooleanFilterType" minOccurs="1" maxOccurs="unbounded">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Boolean filter</doc:tooltip>
-            <doc:summary>A simple boolean filter to apply to the query used to get the datasets in this collection.</doc:summary>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-    </xs:choice>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="filterGroup" type="FilterGroupType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Nested Filter Group</doc:tooltip>
+              <doc:description>A filter group within a filter group is used to set an operator and exclude option within the group that may differ from those set outside of the group</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="filter" type="TextFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Filter</doc:tooltip>
+              <doc:description>Defines a basic text search filter to apply to the query used to get the datasets in this collection.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="dateFilter" type="DateFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Date filter</doc:tooltip>
+              <doc:description>Defines a date range to apply to the query used to get the datasets in this collection.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="numericFilter" type="NumericFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Numeric filter</doc:tooltip>
+              <doc:description>Defines a numeric range to apply to the query used to get the datasets in this collection.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="booleanFilter" type="BooleanFilterType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Boolean filter</doc:tooltip>
+              <doc:summary>A simple boolean filter to apply to the query used to get the datasets in this collection.</doc:summary>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+    </xs:sequence>
   </xs:complexType>
+
+  <xs:simpleType name="operatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AND"/>
+      <xs:enumeration value="OR"/>
+    </xs:restriction>
+  </xs:simpleType>
 
   <xs:complexType name="FilterType">
     <xs:annotation>
@@ -125,7 +160,7 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="operator" minOccurs="0" maxOccurs="1" default="AND">
+      <xs:element name="operator" type="operatorType" minOccurs="0" maxOccurs="1" default="AND">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Operator</doc:tooltip>
@@ -133,12 +168,6 @@
             <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="AND"/>
-            <xs:enumeration value="OR"/>
-          </xs:restriction>
-        </xs:simpleType>
       </xs:element>
       <xs:element name="exclude" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
         <xs:annotation>
