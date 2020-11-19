@@ -46,15 +46,16 @@
     <identifier>urn:uuid:349aa330-4645-4dab-a02d-3bf950cf708d</identifier>
     <label>Project logo</label>
   </logo>
-  <section>
-    <sectionType>feverVisualization</sectionType>
+  <section type="feverVisualization" order="1">
     <label>Earth View</label>
     <title>Fluid Earth Viewer</title>
     <introduction>This is an example of one type of visualization section</introduction>
-    <contentSource>https://arcticdata.io/fever</contentSource>
+    <content version="1.0">
+      <layer>precipitation</layer>
+      <layer>currents</layer>
+    </content>
   </section>
-  <section>
-    <sectionType>metrics</sectionType>
+  <section type="metrics" order="3">
     <label>Numbers</label>
     <title>Statistics and Figures</title>
     <introduction>A summary of all datasets from SASAP</introduction>
@@ -67,8 +68,7 @@
       <optionValue>true</optionValue>
     </option>
   </section>
-  <section>
-    <sectionType>dataCatalog</sectionType>
+  <section type="dataCatalog" order="4">
     <label>Our Data</label>
     <title>Browse SASAP Data</title>
     <introduction>Search for or browse all datasets collected or synthesized by the SASAP working group</introduction>
@@ -89,8 +89,7 @@
       <optionValue>28</optionValue>
     </option>
   </section>
-  <section>
-    <sectionType>markdown</sectionType>
+  <section type="freeform" order="5">
     <label>About</label>
     <title>About this portal</title>
     <introduction>
@@ -132,6 +131,78 @@ SASAP is led by the National Center for Ecological Analysis and Synthesis (NCEAS
 
 
   ]]>
+      </markdown>
+    </content>
+  </section>
+  <!-- The following two sections are examples of how the portal XML could be extended to support different types of sections. These types are not currently supported by MetacatUI. -->
+  <section type="shinyApp" order="2">
+    <label>Data Explorer</label>
+    <title>Explor Salmon Data</title>
+    <introduction>Explore our data in this interactive shiny app</introduction>
+    <content language="R" RVersion="4.0.3" shinyVersion="1.5.0">
+      <code>
+        <![CDATA[
+
+library(shiny)
+
+# Define UI for application that plots random distributions 
+shinyUI(fluidPage(
+  
+  # Application title
+  titlePanel("Hello Shiny!"),
+  
+  # Sidebar with a slider input for number of observations
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs", 
+                  "Number of observations:", 
+                  min = 1, 
+                  max = 1000, 
+                  value = 500)
+    ),
+    
+    # Show a plot of the generated distribution
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+))
+]]>
+      </code>
+    </content>
+  </section>
+  <section type="featuredData" order="6">
+    <label>Popular Datasets</label>
+    <title>Popular SASAP Datasets</title>
+    <introduction>Browse some of our most impactful datasets</introduction>
+    <content type="dataList">
+      <filter>
+        <field>identifier</field>
+        <operator>OR</operator>
+        <value>doi:10.5063/F1891459</value>
+        <value>doi:10.5063/F1W957H4</value>
+        <value>doi:10.5063/F1125QZK</value>
+      </filter>
+    </content>
+    <content type="dataSummary" about="doi:10.5063/F1891459">
+      <markdown>
+        <![CDATA[
+This dataset is important because... xyz.
+        ]]>
+      </markdown>
+    </content>
+    <content type="dataSummary" about="doi:10.5063/F1W957H4">
+      <markdown>
+        <![CDATA[
+This dataset was featured in the journal...
+        ]]>
+      </markdown>
+    </content>
+    <content type="dataSummary" about="doi:10.5063/F1125QZK">
+      <markdown>
+        <![CDATA[
+This dataset comprises...
+        ]]>
       </markdown>
     </content>
   </section>
