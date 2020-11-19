@@ -7,8 +7,6 @@
     <filter>
       <label>Datasets about soil</label>
       <field>text</field>
-      <valuesOperator>AND</valuesOperator>
-      <fieldsOperator>AND</fieldsOperator>
       <exclude>false</exclude>
       <matchSubstring>true</matchSubstring>
       <value>soil</value>
@@ -16,22 +14,18 @@
     <filter>
       <field>keyword</field>
       <field>attribute</field>
-      <valuesOperator>AND</valuesOperator>
-      <fieldsOperator>AND</fieldsOperator>
       <value>soil layer</value>
+      <fieldsOperator>AND</fieldsOperator>
     </filter>
     <dateFilter>
       <field>dateUploaded</field>
       <field>beginDate</field>
-      <valuesOperator>AND</valuesOperator>
-      <fieldsOperator>OR</fieldsOperator>
       <min>1800-01-01T00:00:00Z</min>
       <max>2009-01-01T00:00:00Z</max>
+      <fieldsOperator>AND</fieldsOperator>
     </dateFilter>
     <booleanFilter>
       <field>isPublic</field>
-      <valuesOperator>AND</valuesOperator>
-      <fieldsOperator>AND</fieldsOperator>
       <value>true</value>
     </booleanFilter>
     <numericFilter>
@@ -41,21 +35,15 @@
     <filterGroup>
       <filter>
         <field>datasource</field>
-        <valuesOperator>AND</valuesOperator>
-        <fieldsOperator>AND</fieldsOperator>
         <value>urn:node:KNB</value>
       </filter>
       <filterGroup>
         <filter>
           <field>authorLastName</field>
-          <valuesOperator>AND</valuesOperator>
-          <fieldsOperator>AND</fieldsOperator>
           <value>Smith</value>
         </filter>
         <filter>
           <field>authorGivenNameSort</field>
-          <valuesOperator>AND</valuesOperator>
-          <fieldsOperator>AND</fieldsOperator>
           <value>Bob</value>
         </filter>
         <operator>AND</operator>

@@ -160,20 +160,11 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="valuesOperator" type="operatorType" minOccurs="1" maxOccurs="1" default="AND">
+      <xs:element name="operator" type="operatorType" minOccurs="0" maxOccurs="1" default="AND">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Operator</doc:tooltip>
             <doc:description>If more than one value in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
-            <doc:example>AND</doc:example>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="fieldsOperator" type="operatorType" minOccurs="1" maxOccurs="1" default="AND">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Operator</doc:tooltip>
-            <doc:description>If more than one field in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
             <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -184,6 +175,15 @@
             <doc:tooltip>Exclude</doc:tooltip>
             <doc:description>If set to true, this filter will be used to exclude (rather than include) datasets from the query results.</doc:description>
             <doc:example>true</doc:example>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="fieldsOperator" type="operatorType" minOccurs="0" maxOccurs="1" default="AND">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Operator</doc:tooltip>
+            <doc:description>If more than one field in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
+            <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
