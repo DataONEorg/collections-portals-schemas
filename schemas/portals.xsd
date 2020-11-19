@@ -366,7 +366,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:element name="filterOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Filter UI options</doc:tooltip>
@@ -402,7 +402,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:element name="filterOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Filter UI options</doc:tooltip>
@@ -449,7 +449,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:element name="filterOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Filter UI options</doc:tooltip>
@@ -467,7 +467,7 @@
     <xs:complexContent>
       <xs:extension base="col:BooleanFilterType">
         <xs:sequence>
-          <xs:element name="filterOptions" type="UIFilterOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:element name="filterOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Filter UI options</doc:tooltip>
@@ -522,6 +522,24 @@
             </xs:annotation>
           </xs:element>
         </xs:sequence>
+        <xs:element name="trueOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>True UI options</doc:tooltip>
+              <doc:summary>Options for displaying along with the true choice in a UI</doc:summary>
+              <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="falseOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>False UI options</doc:tooltip>
+              <doc:summary>Options for displaying along with the false choice in a UI</doc:summary>
+              <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -570,19 +588,19 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="image" type="ImageType" minOccurs="0" maxOccurs="1">
+      <xs:element name="choiceOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
-            <doc:tooltip>Image</doc:tooltip>
-            <doc:summary>An image that represents the value</doc:summary>
-            <doc:description>An optional image to display in the user interface to represent this filter value.</doc:description>
+            <doc:tooltip>Choice UI options</doc:tooltip>
+            <doc:summary>Options for displaying this choice in a UI</doc:summary>
+            <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
     </xs:sequence>
   </xs:complexType>
 
-  <xs:complexType name="UIFilterOptionsType">
+  <xs:complexType name="UIOptionsType">
     <xs:annotation>
       <xs:appinfo>
         <doc:tooltip>UI Filter Options</doc:tooltip>
@@ -622,6 +640,15 @@
           <xs:appinfo>
             <doc:tooltip>Additional option</doc:tooltip>
             <doc:summary>Any additional option to instruct user interfaces how to display this filter in the portal.</doc:summary>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="image" type="ImageType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Image</doc:tooltip>
+            <doc:summary>An image that represents the value</doc:summary>
+            <doc:description>An optional image to display in the user interface to represent this filter or choice.</doc:description>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
