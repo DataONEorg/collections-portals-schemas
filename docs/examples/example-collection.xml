@@ -4,7 +4,6 @@
   <name>My saved search</name>
   <description>This is a collection of datasets related to soil</description>
   <definition>
-    <operator>AND</operator>
     <filter>
       <label>Datasets about soil</label>
       <field>text</field>
@@ -40,8 +39,6 @@
       <min>1</min>
     </numericFilter>
     <filterGroup>
-      <operator>OR</operator>
-      <exclude>true</exclude>
       <filter>
         <field>datasource</field>
         <valuesOperator>AND</valuesOperator>
@@ -49,7 +46,6 @@
         <value>urn:node:KNB</value>
       </filter>
       <filterGroup>
-        <operator>AND</operator>
         <filter>
           <field>authorLastName</field>
           <valuesOperator>AND</valuesOperator>
@@ -62,7 +58,11 @@
           <fieldsOperator>AND</fieldsOperator>
           <value>Bob</value>
         </filter>
+        <operator>AND</operator>
       </filterGroup>
+      <operator>OR</operator>
+      <exclude>true</exclude>
     </filterGroup>
+    <operator>AND</operator>
   </definition>
 </col:collection>

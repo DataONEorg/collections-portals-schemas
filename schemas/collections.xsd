@@ -65,33 +65,7 @@
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
-      <xs:element name="operator" type="operatorType" minOccurs="1" maxOccurs="1" default="AND">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Operator</doc:tooltip>
-            <doc:description>A required operator that specifies whether filters within this filter group are AND'ed or OR'ed together</doc:description>
-            <doc:example>AND</doc:example>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="exclude" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
-        <xs:annotation>
-          <xs:appinfo>
-            <doc:tooltip>Exclude</doc:tooltip>
-            <doc:description>If set to true, this filter group will be used to exclude (rather than include) datasets from the query results. In other words, the query that results from this group of filters will be negated.</doc:description>
-            <doc:example>true</doc:example>
-          </xs:appinfo>
-        </xs:annotation>
-      </xs:element>
       <xs:choice minOccurs="1" maxOccurs="unbounded">
-        <xs:element name="filterGroup" type="FilterGroupType" minOccurs="1" maxOccurs="unbounded">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>Nested Filter Group</doc:tooltip>
-              <doc:description>A filter group within a filter group is used to set an operator and exclude option within the group that may differ from those set outside of the group</doc:description>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
         <xs:element name="filter" type="TextFilterType" minOccurs="1" maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
@@ -124,7 +98,33 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
+        <xs:element name="filterGroup" type="FilterGroupType" minOccurs="1" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:appinfo>
+              <doc:tooltip>Nested Filter Group</doc:tooltip>
+              <doc:description>A filter group within a filter group is used to set an operator and exclude option within the group that may differ from those set outside of the group</doc:description>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
       </xs:choice>
+      <xs:element name="operator" type="operatorType" minOccurs="0" maxOccurs="1" default="AND">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Operator</doc:tooltip>
+            <doc:description>An operator that specifies whether filters within this filter group are AND'ed or OR'ed together</doc:description>
+            <doc:example>AND</doc:example>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="exclude" type="xs:boolean" minOccurs="0" maxOccurs="1" default="false">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Exclude</doc:tooltip>
+            <doc:description>If set to true, this filter group will be used to exclude (rather than include) datasets from the query results. In other words, the query that results from this group of filters will be negated.</doc:description>
+            <doc:example>true</doc:example>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 
