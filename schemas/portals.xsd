@@ -89,6 +89,14 @@
                           </xs:appinfo>
                         </xs:annotation>
                       </xs:element>
+                      <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                          <xs:appinfo>
+                            <doc:tooltip>Additional party option</doc:tooltip>
+                            <doc:summary>The OptionType allows specification of any custom, unstructured configuration, setting, or information. Use these to include any information or display options related to the associated party and not available in the EML ResponsibleParty type element.</doc:summary>
+                          </xs:appinfo>
+                        </xs:annotation>
+                      </xs:element>
                     </xs:sequence>
                   </xs:extension>
                 </xs:complexContent>
