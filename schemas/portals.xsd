@@ -211,40 +211,14 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="content" minOccurs="0" maxOccurs="unbounded">
+      <xs:any name="content" minOccurs="0" maxOccurs="1" processContents="lax">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Content</doc:tooltip>
             <doc:description>The multimedia content to display in this section. These content sections can be used for any informational content about this portal, such as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
           </xs:appinfo>
         </xs:annotation>
-        <xs:complexType>
-          <xs:complexContent>
-            <xs:extension base="txt:TextType">
-              <xs:sequence>
-                <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax">
-                  <xs:annotation>
-                    <xs:appinfo>
-                      <doc:tooltip>Other content elements</doc:tooltip>
-                      <doc:summary>Any content element that is not markdown, paragraph, or section text.</doc:summary>
-                      <doc:description>The content element can be extended to add content that is not markdown, and not paragraph or section text. Any type of element that contains content for the section can be added, for example, code or information for an application. Generally, this is content that user interfaces will use to render a section.</doc:description>
-                    </xs:appinfo>
-                  </xs:annotation>
-                </xs:any>
-              </xs:sequence>
-              <xs:anyAttribute processContents="lax">
-                <xs:annotation>
-                  <xs:appinfo>
-                    <doc:tooltip>Other content attributes</doc:tooltip>
-                    <doc:summary>Any optional attributes to add to the content element</doc:summary>
-                    <doc:description>Content attributes can be used specify information about the content that may be relevant to the content type and section type. For example, attributes could be used to indicate a content identifier or order when there are multiple content elements. If the content comprises code, identifier could be used to indicate the coding language or version.</doc:description>
-                  </xs:appinfo>
-                </xs:annotation>
-              </xs:anyAttribute>
-            </xs:extension>
-          </xs:complexContent>
-        </xs:complexType>
-      </xs:element>
+      </xs:any>
       <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:appinfo>
@@ -254,24 +228,6 @@
         </xs:annotation>
       </xs:element>
     </xs:sequence>
-    <xsd:attribute name="type" type="col:NonEmptyStringType" default="freeform">
-      <xs:annotation>
-        <xs:appinfo>
-          <doc:tooltip>Section type</doc:tooltip>
-          <doc:summary>An indication of the kind of content included in this section</doc:summary>
-          <doc:description>The section type may be used by interfaces to determine how the section's content should be rendered</doc:description>
-        </xs:appinfo>
-      </xs:annotation>
-    </xsd:attribute>
-    <xs:anyAttribute processContents="lax">
-      <xs:annotation>
-        <xs:appinfo>
-          <doc:tooltip>Other section attributes</doc:tooltip>
-          <doc:summary>Any optional attributes to add to the section element</doc:summary>
-          <doc:description>Section attributes can be used specify information about the section, other than section type. For example, an attribute could be used to specify the section's order or position in a user interface.</doc:description>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:anyAttribute>
   </xs:complexType>
 
   <xs:complexType name="UIFilterGroupType">
