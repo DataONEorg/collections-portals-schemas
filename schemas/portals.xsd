@@ -9,12 +9,17 @@
   xmlns:cit="https://eml.ecoinformatics.org/literature-2.2.0"
   xmlns:col="https://purl.dataone.org/collections-1.0.0">
 
-  <xs:import namespace="https://eml.ecoinformatics.org/documentation-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-documentation.xsd"/>
-  <xs:import namespace="https://eml.ecoinformatics.org/text-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-text.xsd"/>
-  <xs:import namespace="https://eml.ecoinformatics.org/party-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-party.xsd"/>
-  <xs:import namespace="https://eml.ecoinformatics.org/project-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-project.xsd"/>
-  <xs:import namespace="https://eml.ecoinformatics.org/literature-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-literature.xsd"/>
-  <xs:import namespace="https://purl.dataone.org/collections-1.0.0" schemaLocation="https://purl.dataone.org/collections-1.0.0"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/documentation-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-documentation.xsd"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/text-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-text.xsd"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/party-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-party.xsd"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/project-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-project.xsd"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/literature-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-literature.xsd"/>
+  <xs:import namespace="https://purl.dataone.org/collections-1.0.0" schemaLocation="collections.xsd"/>
 
   <xs:element name="portal">
     <xs:annotation>
@@ -56,7 +61,8 @@
                 <xs:complexContent>
                   <xs:extension base="par:ResponsibleParty">
                     <xs:sequence minOccurs="0" maxOccurs="unbounded">
-                      <xs:element name="role" type="par:RoleType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:element name="role" type="par:RoleType" minOccurs="0"
+                        maxOccurs="unbounded">
                         <xs:annotation>
                           <xs:appinfo>
                             <doc:tooltip>Role</doc:tooltip>
@@ -89,7 +95,8 @@
                           </xs:appinfo>
                         </xs:annotation>
                       </xs:element>
-                      <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
+                      <xs:element name="option" type="OptionType" minOccurs="0"
+                        maxOccurs="unbounded">
                         <xs:annotation>
                           <xs:appinfo>
                             <doc:tooltip>Additional party option</doc:tooltip>
@@ -111,7 +118,8 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="acknowledgmentsLogo" type="ImageType" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="acknowledgmentsLogo" type="ImageType" minOccurs="0"
+              maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Acknowledgements Logo</doc:tooltip>
@@ -127,7 +135,8 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="literatureCited" type="cit:CitationListType" minOccurs="0" maxOccurs="1">
+            <xs:element name="literatureCited" type="cit:CitationListType" minOccurs="0"
+              maxOccurs="1">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Literature Cited</doc:tooltip>
@@ -135,7 +144,8 @@
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
-            <xs:element name="filterGroup" type="UIFilterGroupType" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="filterGroup" type="UIFilterGroupType" minOccurs="0"
+              maxOccurs="unbounded">
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Filter group</doc:tooltip>
@@ -211,14 +221,19 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:any name="content" minOccurs="0" maxOccurs="1" processContents="lax">
+      <xs:element name="content" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Content</doc:tooltip>
             <doc:description>The multimedia content to display in this section. These content sections can be used for any informational content about this portal, such as an overview or abstract, a description of the results with links to images and datasets, etc.</doc:description>
           </xs:appinfo>
         </xs:annotation>
-      </xs:any>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
       <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
         <xs:annotation>
           <xs:appinfo>
@@ -273,7 +288,8 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="numericFilter" type="UINumericFilterType" minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="numericFilter" type="UINumericFilterType" minOccurs="0"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Numeric filter</doc:tooltip>
@@ -281,7 +297,8 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="booleanFilter" type="UIBooleanFilterType" minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="booleanFilter" type="UIBooleanFilterType" minOccurs="0"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Boolean filter</doc:tooltip>
@@ -289,7 +306,8 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="toggleFilter" type="UIToggleFilterType" minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="toggleFilter" type="UIToggleFilterType" minOccurs="0"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Toggle filter</doc:tooltip>
@@ -297,7 +315,8 @@
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="choiceFilter" type="UIChoiceFilterType" minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="choiceFilter" type="UIChoiceFilterType" minOccurs="0"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Choice filter</doc:tooltip>
@@ -313,7 +332,8 @@
     <xs:complexContent>
       <xs:extension base="col:FilterType">
         <xs:sequence>
-          <xs:element name="matchSubstring" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+          <xs:element name="matchSubstring" type="xs:boolean" minOccurs="0" maxOccurs="1"
+            default="true">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Match substring</doc:tooltip>
@@ -322,7 +342,8 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1" default="true">
+          <xs:element name="value" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1"
+            default="true">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Value</doc:tooltip>
@@ -485,25 +506,25 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
+          <xs:element name="trueOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>True UI options</doc:tooltip>
+                <doc:summary>Options for displaying along with the true choice in a UI</doc:summary>
+                <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="falseOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:appinfo>
+                <doc:tooltip>False UI options</doc:tooltip>
+                <doc:summary>Options for displaying along with the false choice in a UI</doc:summary>
+                <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
         </xs:sequence>
-        <xs:element name="trueOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>True UI options</doc:tooltip>
-              <doc:summary>Options for displaying along with the true choice in a UI</doc:summary>
-              <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="falseOptions" type="UIOptionsType" minOccurs="0" maxOccurs="1">
-          <xs:annotation>
-            <xs:appinfo>
-              <doc:tooltip>False UI options</doc:tooltip>
-              <doc:summary>Options for displaying along with the false choice in a UI</doc:summary>
-              <doc:description>These options provide further customization of this choice element in the UI, such as adding an image, icon, or description to the choice.</doc:description>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:element>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -520,7 +541,8 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="chooseMultiple" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+          <xs:element name="chooseMultiple" type="xs:boolean" minOccurs="0" maxOccurs="1"
+            default="true">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Choose multiple options</doc:tooltip>
@@ -636,7 +658,8 @@
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="optionValue" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="unbounded">
+      <xs:element name="optionValue" type="col:NonEmptyStringType" minOccurs="1"
+        maxOccurs="unbounded">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Option value</doc:tooltip>
