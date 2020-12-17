@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema
-  xmlns="https://purl.dataone.org/collections-1.0.0"
+<xs:schema xmlns="https://purl.dataone.org/collections-1.0.0"
   targetNamespace="https://purl.dataone.org/collections-1.0.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:doc="https://eml.ecoinformatics.org/documentation-2.2.0">
 
-  <xs:import namespace="https://eml.ecoinformatics.org/documentation-2.2.0" schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-documentation.xsd"/>
+  <xs:import namespace="https://eml.ecoinformatics.org/documentation-2.2.0"
+    schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-documentation.xsd"/>
 
-  <xs:element name="collection" type="CollectionType"></xs:element>
+  <xs:element name="collection" type="CollectionType"/>
 
   <xs:complexType name="CollectionType">
     <xs:annotation>
@@ -21,7 +21,8 @@
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Label</doc:tooltip>
-            <doc:description>A short name that uniquely identifies this data set collection.</doc:description>
+            <doc:description>A short name that uniquely identifies this data set
+              collection.</doc:description>
             <doc:example>NCEAS-datasets</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -40,7 +41,8 @@
           <xs:appinfo>
             <doc:tooltip>Description</doc:tooltip>
             <doc:description>Brief description of the purpose of the collection</doc:description>
-            <doc:example>All datasets from the KNB repository that were produced by or are related to an NCEAS working group.</doc:example>
+            <doc:example>All datasets from the KNB repository that were produced by or are related
+              to an NCEAS working group.</doc:example>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
@@ -60,7 +62,8 @@
     <xs:annotation>
       <xs:appinfo>
         <doc:tooltip>Filter Group</doc:tooltip>
-        <doc:description>A filter group comprises filters that specify a query to perform that will result in a defined collection of data</doc:description>
+        <doc:description>A filter group comprises filters that specify a query to perform that will
+          result in a defined collection of data</doc:description>
         <doc:example>See the individual sub-elements for specific examples.</doc:example>
       </xs:appinfo>
     </xs:annotation>
@@ -70,7 +73,8 @@
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Filter</doc:tooltip>
-              <doc:description>Defines a basic text search filter to apply to the query used to get the datasets in this collection.</doc:description>
+              <doc:description>Defines a basic text search filter to apply to the query used to get
+                the datasets in this collection.</doc:description>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
@@ -78,23 +82,28 @@
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Date filter</doc:tooltip>
-              <doc:description>Defines a date range to apply to the query used to get the datasets in this collection.</doc:description>
+              <doc:description>Defines a date range to apply to the query used to get the datasets
+                in this collection.</doc:description>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="numericFilter" type="NumericFilterType" minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="numericFilter" type="NumericFilterType" minOccurs="1"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Numeric filter</doc:tooltip>
-              <doc:description>Defines a numeric range to apply to the query used to get the datasets in this collection.</doc:description>
+              <doc:description>Defines a numeric range to apply to the query used to get the
+                datasets in this collection.</doc:description>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
-        <xs:element name="booleanFilter" type="BooleanFilterType" minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="booleanFilter" type="BooleanFilterType" minOccurs="1"
+          maxOccurs="unbounded">
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Boolean filter</doc:tooltip>
-              <doc:summary>A simple boolean filter to apply to the query used to get the datasets in this collection.</doc:summary>
+              <doc:summary>A simple boolean filter to apply to the query used to get the datasets in
+                this collection.</doc:summary>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
@@ -102,7 +111,9 @@
           <xs:annotation>
             <xs:appinfo>
               <doc:tooltip>Nested Filter Group</doc:tooltip>
-              <doc:description>A filter group within a filter group is used to set an operator and exclude option within the group that may differ from those set outside of the group</doc:description>
+              <doc:description>A filter group within a filter group is used to set an operator and
+                exclude option within the group that may differ from those set outside of the
+                group</doc:description>
             </xs:appinfo>
           </xs:annotation>
         </xs:element>
@@ -111,7 +122,8 @@
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Operator</doc:tooltip>
-            <doc:description>An operator that specifies whether filters within this filter group are AND'ed or OR'ed together</doc:description>
+            <doc:description>An operator that specifies whether filters within this filter group are
+              AND'ed or OR'ed together</doc:description>
             <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -120,7 +132,9 @@
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Exclude</doc:tooltip>
-            <doc:description>If set to true, this filter group will be used to exclude (rather than include) datasets from the query results. In other words, the query that results from this group of filters will be negated.</doc:description>
+            <doc:description>If set to true, this filter group will be used to exclude (rather than
+              include) datasets from the query results. In other words, the query that results from
+              this group of filters will be negated.</doc:description>
             <doc:example>true</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -139,7 +153,8 @@
     <xs:annotation>
       <xs:appinfo>
         <doc:tooltip>Filter</doc:tooltip>
-        <doc:description>Defines a search filter to apply to the query used to get the datasets in this collection.</doc:description>
+        <doc:description>Defines a search filter to apply to the query used to get the datasets in
+          this collection.</doc:description>
       </xs:appinfo>
     </xs:annotation>
     <xs:sequence>
@@ -164,7 +179,8 @@
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Operator</doc:tooltip>
-            <doc:description>If more than one value in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
+            <doc:description>If more than one value in set on this FilterType, operator specifies if
+              they are AND'ed or OR'ed together</doc:description>
             <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -173,16 +189,19 @@
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Exclude</doc:tooltip>
-            <doc:description>If set to true, this filter will be used to exclude (rather than include) datasets from the query results.</doc:description>
+            <doc:description>If set to true, this filter will be used to exclude (rather than
+              include) datasets from the query results.</doc:description>
             <doc:example>true</doc:example>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="fieldsOperator" type="operatorType" minOccurs="0" maxOccurs="1" default="AND">
+      <xs:element name="fieldsOperator" type="operatorType" minOccurs="0" maxOccurs="1"
+        default="AND">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Operator</doc:tooltip>
-            <doc:description>If more than one field in set on this FilterType, operator specifies if they are AND'ed or OR'ed together</doc:description>
+            <doc:description>If more than one field in set on this FilterType, operator specifies if
+              they are AND'ed or OR'ed together</doc:description>
             <doc:example>AND</doc:example>
           </xs:appinfo>
         </xs:annotation>
@@ -194,17 +213,20 @@
     <xs:annotation>
       <xs:appinfo>
         <doc:tooltip>Text Filter</doc:tooltip>
-        <doc:description>Defines a basic text filter to apply to the query used to get the datasets in this collection.</doc:description>
+        <doc:description>Defines a basic text filter to apply to the query used to get the datasets
+          in this collection.</doc:description>
       </xs:appinfo>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="FilterType">
         <xs:sequence>
-          <xs:element name="matchSubstring" type="xs:boolean" minOccurs="0" maxOccurs="1" default="true">
+          <xs:element name="matchSubstring" type="xs:boolean" minOccurs="0" maxOccurs="1"
+            default="true">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Match substring</doc:tooltip>
-                <doc:description>If true, this filter's value will be wrapped in wildcard characters so that substrings are matched.</doc:description>
+                <doc:description>If true, this filter's value will be wrapped in wildcard characters
+                  so that substrings are matched.</doc:description>
                 <doc:example>true</doc:example>
               </xs:appinfo>
             </xs:annotation>
@@ -232,7 +254,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Minimum date</doc:tooltip>
-                  <doc:description>The minimum date to display in a date picker user interface tool.</doc:description>
+                  <doc:description>The minimum date to display in a date picker user interface
+                    tool.</doc:description>
                   <doc:example>1980-03-23T10:20:15</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -241,7 +264,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Maximum date</doc:tooltip>
-                  <doc:description>The maximum date to display in a date picker user interface tool.</doc:description>
+                  <doc:description>The maximum date to display in a date picker user interface
+                    tool.</doc:description>
                   <doc:example>1980-03-23T10:20:15</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -252,7 +276,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Exact date</doc:tooltip>
-                  <doc:description>If a value is set on a DateFilter, the query will filter by datasets whose given field(s) match this specific date-time.</doc:description>
+                  <doc:description>If a value is set on a DateFilter, the query will filter by
+                    datasets whose given field(s) match this specific date-time.</doc:description>
                   <doc:example>1980-03-23T10:20:15</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -272,7 +297,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Minimum number</doc:tooltip>
-                  <doc:description>The minimum number to display in a number input user interface tool.</doc:description>
+                  <doc:description>The minimum number to display in a number input user interface
+                    tool.</doc:description>
                   <doc:example>1.5</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -281,7 +307,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Maximum number</doc:tooltip>
-                  <doc:description>The maximum number to display in a number input user interface tool.</doc:description>
+                  <doc:description>The maximum number to display in a number input user interface
+                    tool.</doc:description>
                   <doc:example>1.5</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -292,7 +319,8 @@
               <xs:annotation>
                 <xs:appinfo>
                   <doc:tooltip>Exact date</doc:tooltip>
-                  <doc:description>If a value is set on a NumericFilter, the query will filter by datasets whose given field(s) match this specific number.</doc:description>
+                  <doc:description>If a value is set on a NumericFilter, the query will filter by
+                    datasets whose given field(s) match this specific number.</doc:description>
                   <doc:example>1980-03-23T10:20:15</doc:example>
                 </xs:appinfo>
               </xs:annotation>
@@ -311,7 +339,8 @@
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>Boolean Value</doc:tooltip>
-                <doc:description>The boolean value to include in the search query - can only be either true or false.</doc:description>
+                <doc:description>The boolean value to include in the search query - can only be
+                  either true or false.</doc:description>
                 <doc:example>true</doc:example>
               </xs:appinfo>
             </xs:annotation>
@@ -326,8 +355,12 @@
       <xs:appinfo>
         <doc:tooltip>Non Empty String Type</doc:tooltip>
         <doc:summary>Non Empty String Type</doc:summary>
-        <doc:description>This type specifies a content pattern for all elements that are required by this schema to ensure that there is actual content (i.e., not just whitespace). The pattern described can be interpreted as "at least one non-whitespace
-          character, followed by any number of whitespace plus not-whitespace characters. " Leading and/or trailing whitespace is allowed, and whitespace may include carriage returns and newlines.</doc:description>
+        <doc:description>This type specifies a content pattern for all elements that are required by
+          this schema to ensure that there is actual content (i.e., not just whitespace). The
+          pattern described can be interpreted as "at least one non-whitespace character, followed
+          by any number of whitespace plus not-whitespace characters. " Leading and/or trailing
+          whitespace is allowed, and whitespace may include carriage returns and
+          newlines.</doc:description>
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:string">
@@ -341,8 +374,10 @@
       <xs:appinfo>
         <doc:tooltip>No Whitespace String Type</doc:tooltip>
         <doc:summary>No Whitespace String Type</doc:summary>
-        <doc:description>This type specifies a content pattern for elements whose string value should not contain any whitespace characters. The pattern described can be interpreted as "at least one non-whitespace character, followed by any number of
-          non-whitespace characters." Whitespace may include carriage returns and newlines.</doc:description>
+        <doc:description>This type specifies a content pattern for elements whose string value
+          should not contain any whitespace characters. The pattern described can be interpreted as
+          "at least one non-whitespace character, followed by any number of non-whitespace
+          characters." Whitespace may include carriage returns and newlines.</doc:description>
       </xs:appinfo>
     </xs:annotation>
     <xs:restriction base="xs:string">
