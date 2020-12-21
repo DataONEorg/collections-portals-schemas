@@ -7,7 +7,7 @@ The following document describes options that affect the display of portals in [
 - `<portal>` (root)
 - `<section>`
 - `<associatedParty>`
-- any of the `UIOptionsType` type elements that are (included in `UIFilterType` elements): 
+- any of the `UIOptionsType` type elements that are included in `UIFilterType` elements: 
     - `<filterOptions>` (within types `UIFilterType`, `UIDateFilterType`, and `UIBooleanFilterType`)
     - `<trueOptions>` and `<falseOptions>` (within type `UIToggleFilterType`)
     - `<choiceOptions>` (within type `ChoiceType`, used as a `<choice>` element within `UIChoiceFilterType`)
@@ -27,7 +27,7 @@ Currently, MetacatUI makes use of options set in the `<portal>` and `<section>` 
 
 ### Color
 
-The following display options can be included within the `<portal>` (root) element as `<option>` elements. These options are parsed by MetacatUI to determine the color to use in displaying the portal and the portal builder.
+The following display options can be set within the `<portal>` (root) element. These options are parsed by MetacatUI to determine the color to use in displaying the portal and the portal builder.
 
 | optionName | optionValue | Description |
 |------------|-------------|-------------|
@@ -37,7 +37,7 @@ The following display options can be included within the `<portal>` (root) eleme
 
 ## Section options
 
-The options below are used by MetacatUI to determine how to render the content within each `<section>` element. These are including within the `<section>` element as `<option>` elements.
+The options below are used by MetacatUI to determine how to render the content within each `<section>` element. These options should be set in `<section>` elements.
 
 ### Section type
 
