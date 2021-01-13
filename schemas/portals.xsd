@@ -365,6 +365,15 @@
           </xs:annotation>
         </xs:element>
       </xs:choice>
+      <xs:element name="option" type="OptionType" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:appinfo>
+            <doc:tooltip>Additional option</doc:tooltip>
+            <doc:summary>Any additional option to instruct user interfaces how to display this
+              filter group in the portal.</doc:summary>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
     </xs:sequence>
   </xs:complexType>
 

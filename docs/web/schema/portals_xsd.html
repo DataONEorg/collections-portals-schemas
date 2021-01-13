@@ -66,6 +66,7 @@
 				'properties_ChoiceType_value', 
 				'properties_ChoiceType_choiceOptions', 
 				'properties_UIChoiceFilterType_chooseMultiple', 
+				'properties_UIFilterGroupType_option', 
 				'properties_portal_option');
 var facetsBoxes= new Array('facets_ImageType_identifier', 
 				'facets_ImageType_label', 
@@ -118,6 +119,7 @@ var instanceBoxes= new Array('instance_portal',
 				'instance_UIFilterGroupType_choiceFilter', 
 				'instance_UIChoiceFilterType_choice', 
 				'instance_ChoiceType_choiceOptions', 
+				'instance_UIFilterGroupType_option', 
 				'instance_portal_option');
 var diagramBoxes= new Array('diagram_portal', 
 				'diagram_portal_logo', 
@@ -179,6 +181,7 @@ var diagramBoxes= new Array('diagram_portal',
 				'diagram_ChoiceType_value', 
 				'diagram_ChoiceType_choiceOptions', 
 				'diagram_UIChoiceFilterType_chooseMultiple', 
+				'diagram_UIFilterGroupType_option', 
 				'diagram_portal_option', 
 				'diagram_ImageType', 
 				'diagram_ContentSectionType', 
@@ -253,6 +256,7 @@ var annotationBoxes= new Array('annotations_portal',
 				'annotations_ChoiceType_value', 
 				'annotations_ChoiceType_choiceOptions', 
 				'annotations_UIChoiceFilterType_chooseMultiple', 
+				'annotations_UIFilterGroupType_option', 
 				'annotations_portal_option', 
 				'annotations_OptionType', 
 				'annotations_UIOptionsType');
@@ -289,6 +293,7 @@ var modelBoxes= new Array('model_portal',
 				'model_UIFilterGroupType_choiceFilter', 
 				'model_UIChoiceFilterType_choice', 
 				'model_ChoiceType_choiceOptions', 
+				'model_UIFilterGroupType_option', 
 				'model_portal_option', 
 				'model_ImageType', 
 				'model_ContentSectionType', 
@@ -3438,7 +3443,7 @@ var modelBoxes= new Array('model_portal',
                            <div class="floatRight"><input id="button_diagram_portal_filterGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_portal_filterGroup');" class="control" /></div>
                         </td>
                         <td class="diagram">
-                           <div id="diagram_portal_filterGroup" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Element_filterGroup.png" usemap="#portals_xsd_Element_filterGroup" /><map name="portals_xsd_Element_filterGroup" id="portals_xsd_Element_filterGroup"><area alt="portals_xsd.tmp#UIFilterGroupType_label" href="portals_xsd.html#UIFilterGroupType_label" coords="317,40,514,82" /><area alt="portals_xsd.tmp#UIFilterGroupType_description" href="portals_xsd.html#UIFilterGroupType_description" coords="317,135,514,177" /><area alt="portals_xsd.tmp#UIFilterGroupType_icon" href="portals_xsd.html#UIFilterGroupType_icon" coords="317,230,514,272" /><area alt="portals_xsd.tmp#UIFilterGroupType_filter" href="portals_xsd.html#UIFilterGroupType_filter" coords="409,325,538,367" /><area alt="portals_xsd.tmp#UIFilterGroupType_dateFilter" href="portals_xsd.html#UIFilterGroupType_dateFilter" coords="409,420,562,462" /><area alt="portals_xsd.tmp#UIFilterGroupType_numericFilter" href="portals_xsd.html#UIFilterGroupType_numericFilter" coords="409,515,583,557" /><area alt="portals_xsd.tmp#UIFilterGroupType_booleanFilter" href="portals_xsd.html#UIFilterGroupType_booleanFilter" coords="409,610,580,652" /><area alt="portals_xsd.tmp#UIFilterGroupType_toggleFilter" href="portals_xsd.html#UIFilterGroupType_toggleFilter" coords="409,705,575,747" /><area alt="portals_xsd.tmp#UIFilterGroupType_choiceFilter" href="portals_xsd.html#UIFilterGroupType_choiceFilter" coords="409,800,575,842" /><area alt="portals_xsd.tmp#UIFilterGroupType" href="portals_xsd.html#UIFilterGroupType" coords="214,3,363,25" /></map></div>
+                           <div id="diagram_portal_filterGroup" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Element_filterGroup.png" usemap="#portals_xsd_Element_filterGroup" /><map name="portals_xsd_Element_filterGroup" id="portals_xsd_Element_filterGroup"><area alt="portals_xsd.tmp#UIFilterGroupType_label" href="portals_xsd.html#UIFilterGroupType_label" coords="317,40,514,82" /><area alt="portals_xsd.tmp#UIFilterGroupType_description" href="portals_xsd.html#UIFilterGroupType_description" coords="317,135,514,177" /><area alt="portals_xsd.tmp#UIFilterGroupType_icon" href="portals_xsd.html#UIFilterGroupType_icon" coords="317,230,514,272" /><area alt="portals_xsd.tmp#UIFilterGroupType_filter" href="portals_xsd.html#UIFilterGroupType_filter" coords="409,325,538,367" /><area alt="portals_xsd.tmp#UIFilterGroupType_dateFilter" href="portals_xsd.html#UIFilterGroupType_dateFilter" coords="409,420,562,462" /><area alt="portals_xsd.tmp#UIFilterGroupType_numericFilter" href="portals_xsd.html#UIFilterGroupType_numericFilter" coords="409,515,583,557" /><area alt="portals_xsd.tmp#UIFilterGroupType_booleanFilter" href="portals_xsd.html#UIFilterGroupType_booleanFilter" coords="409,610,580,652" /><area alt="portals_xsd.tmp#UIFilterGroupType_toggleFilter" href="portals_xsd.html#UIFilterGroupType_toggleFilter" coords="409,705,575,747" /><area alt="portals_xsd.tmp#UIFilterGroupType_choiceFilter" href="portals_xsd.html#UIFilterGroupType_choiceFilter" coords="409,800,575,842" /><area alt="portals_xsd.tmp#UIFilterGroupType_option" href="portals_xsd.html#UIFilterGroupType_option" coords="317,895,445,937" /><area alt="portals_xsd.tmp#UIFilterGroupType" href="portals_xsd.html#UIFilterGroupType" coords="214,3,363,25" /></map></div>
                         </td>
                      </tr>
                      <tr>
@@ -3473,12 +3478,12 @@ var modelBoxes= new Array('model_portal',
                         <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_portal_filterGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('model_portal_filterGroup');" class="control" /></div>
                         </td>
                         <td>
-                           <div id="model_portal_filterGroup" style="display:block"><b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description{0,1}</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon{0,1}</a></b> , (<b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter*</a></b>)</div>
+                           <div id="model_portal_filterGroup" style="display:block"><b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description{0,1}</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon{0,1}</a></b> , (<b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter*</a></b>) , <b><a href="portals_xsd.html#UIFilterGroupType_option" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">option*</a></b></div>
                         </td>
                      </tr>
                      <tr>
                         <td class="firstColumn"><b>Children</b></td>
-                        <td><b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter</a></b></td>
+                        <td><b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_option" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">option</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter</a></b></td>
                      </tr>
                      <tr>
                         <td class="firstColumn">
@@ -3500,6 +3505,7 @@ var modelBoxes= new Array('model_portal',
   </span><span class="tEl">&lt;booleanFilter</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/booleanFilter&gt;</span><span class="tI">
   </span><span class="tEl">&lt;toggleFilter</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/toggleFilter&gt;</span><span class="tI">
   </span><span class="tEl">&lt;choiceFilter</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/choiceFilter&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;option</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{0,unbounded}</span><span class="tEl">&lt;/option&gt;</span><span class="tI">
 </span><span class="tEl">&lt;/filterGroup&gt;</span></pre>
                                     </td>
                                  </tr>
@@ -7628,6 +7634,122 @@ var modelBoxes= new Array('model_portal',
             <td class="rt_lineBottom"></td>
             <td class="rt_cornerBottomRight"></td>
          </tr>
+      </table><a id="UIFilterGroupType_option"></a><div class="componentTitle">Element <span class="qname"><b><a href="portals_xsd.html#UIFilterGroupType" target="mainFrame" title="https://purl.dataone.org/portals-1.0.0" onclick="updatePageTitle('Schema documentation for portals.xsd')">UIFilterGroupType</a></b> / option</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>No namespace</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_UIFilterGroupType_option" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_UIFilterGroupType_option');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_UIFilterGroupType_option" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%">
+                                          <pre><span class="tT">tooltip: Additional option</span><span class="tI">
+</span><span class="tT"></span><span class="tI">
+</span><span class="tT">summary: Any additional option to instruct user interfaces how to display this</span><span class="tI">
+</span><span class="tT">              filter group in the portal.</span></pre>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_UIFilterGroupType_option" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_UIFilterGroupType_option');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_UIFilterGroupType_option" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Element_option_3.png" usemap="#portals_xsd_Element_option_3" /><map name="portals_xsd_Element_option_3" id="portals_xsd_Element_option_3"><area alt="portals_xsd.tmp#OptionType_optionName" href="portals_xsd.html#OptionType_optionName" coords="282,40,479,82" /><area alt="portals_xsd.tmp#OptionType_optionValue" href="portals_xsd.html#OptionType_optionValue" coords="282,135,479,177" /><area alt="portals_xsd.tmp#OptionType" href="portals_xsd.html#OptionType" coords="179,3,293,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="portals_xsd.html#OptionType" target="mainFrame" title="https://purl.dataone.org/portals-1.0.0" onclick="updatePageTitle('Schema documentation for portals.xsd')">OptionType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_UIFilterGroupType_option" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_UIFilterGroupType_option');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_UIFilterGroupType_option" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_UIFilterGroupType_option" type="image" src="img/btM.gif" value="-" onclick="switchState('model_UIFilterGroupType_option');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="model_UIFilterGroupType_option" style="display:block"><b><a href="portals_xsd.html#OptionType_optionName" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">optionName</a></b> , <b><a href="portals_xsd.html#OptionType_optionValue" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">optionValue+</a></b></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Children</b></td>
+                        <td><b><a href="portals_xsd.html#OptionType_optionName" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">optionName</a></b>, <b><a href="portals_xsd.html#OptionType_optionValue" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">optionValue</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Instance</b></div>
+                           <div class="floatRight"><input id="button_instance_UIFilterGroupType_option" type="image" src="img/btM.gif" value="-" onclick="switchState('instance_UIFilterGroupType_option');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="instance_UIFilterGroupType_option" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%">
+                                       <pre><span class="tEl">&lt;option</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;optionName</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,1}</span><span class="tEl">&lt;/optionName&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;optionValue</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">{1,unbounded}</span><span class="tEl">&lt;/optionValue&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/option&gt;</span></pre>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
       </table><a id="portal_option"></a><div class="componentTitle">Element <span class="qname"><b><a href="portals_xsd.html#portal" target="mainFrame" title="https://purl.dataone.org/portals-1.0.0" onclick="updatePageTitle('Schema documentation for portals.xsd')">portal</a></b> / option</span></div>
       <table class="rt">
          <tr>
@@ -7673,7 +7795,7 @@ var modelBoxes= new Array('model_portal',
                            <div class="floatRight"><input id="button_diagram_portal_option" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_portal_option');" class="control" /></div>
                         </td>
                         <td class="diagram">
-                           <div id="diagram_portal_option" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Element_option_3.png" usemap="#portals_xsd_Element_option_3" /><map name="portals_xsd_Element_option_3" id="portals_xsd_Element_option_3"><area alt="portals_xsd.tmp#OptionType_optionName" href="portals_xsd.html#OptionType_optionName" coords="282,40,479,82" /><area alt="portals_xsd.tmp#OptionType_optionValue" href="portals_xsd.html#OptionType_optionValue" coords="282,135,479,177" /><area alt="portals_xsd.tmp#OptionType" href="portals_xsd.html#OptionType" coords="179,3,293,25" /></map></div>
+                           <div id="diagram_portal_option" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Element_option_4.png" usemap="#portals_xsd_Element_option_4" /><map name="portals_xsd_Element_option_4" id="portals_xsd_Element_option_4"><area alt="portals_xsd.tmp#OptionType_optionName" href="portals_xsd.html#OptionType_optionName" coords="282,40,479,82" /><area alt="portals_xsd.tmp#OptionType_optionValue" href="portals_xsd.html#OptionType_optionValue" coords="282,135,479,177" /><area alt="portals_xsd.tmp#OptionType" href="portals_xsd.html#OptionType" coords="179,3,293,25" /></map></div>
                         </td>
                      </tr>
                      <tr>
@@ -7989,19 +8111,19 @@ var modelBoxes= new Array('model_portal',
                            <div class="floatRight"><input id="button_diagram_UIFilterGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_UIFilterGroupType');" class="control" /></div>
                         </td>
                         <td class="diagram">
-                           <div id="diagram_UIFilterGroupType" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Complex_Type_UIFilterGroupType.png" usemap="#portals_xsd_Complex_Type_UIFilterGroupType" /><map name="portals_xsd_Complex_Type_UIFilterGroupType" id="portals_xsd_Complex_Type_UIFilterGroupType"><area alt="portals_xsd.tmp#UIFilterGroupType_label" href="portals_xsd.html#UIFilterGroupType_label" coords="273,0,470,42" /><area alt="portals_xsd.tmp#UIFilterGroupType_description" href="portals_xsd.html#UIFilterGroupType_description" coords="273,95,470,137" /><area alt="portals_xsd.tmp#UIFilterGroupType_icon" href="portals_xsd.html#UIFilterGroupType_icon" coords="273,190,470,232" /><area alt="portals_xsd.tmp#UIFilterGroupType_filter" href="portals_xsd.html#UIFilterGroupType_filter" coords="365,285,494,327" /><area alt="portals_xsd.tmp#UIFilterGroupType_dateFilter" href="portals_xsd.html#UIFilterGroupType_dateFilter" coords="365,380,518,422" /><area alt="portals_xsd.tmp#UIFilterGroupType_numericFilter" href="portals_xsd.html#UIFilterGroupType_numericFilter" coords="365,475,539,517" /><area alt="portals_xsd.tmp#UIFilterGroupType_booleanFilter" href="portals_xsd.html#UIFilterGroupType_booleanFilter" coords="365,570,536,612" /><area alt="portals_xsd.tmp#UIFilterGroupType_toggleFilter" href="portals_xsd.html#UIFilterGroupType_toggleFilter" coords="365,665,531,707" /><area alt="portals_xsd.tmp#UIFilterGroupType_choiceFilter" href="portals_xsd.html#UIFilterGroupType_choiceFilter" coords="365,760,531,802" /></map></div>
+                           <div id="diagram_UIFilterGroupType" style="display:block"><img alt="Diagram" border="0" src="img/portals_xsd_Complex_Type_UIFilterGroupType.png" usemap="#portals_xsd_Complex_Type_UIFilterGroupType" /><map name="portals_xsd_Complex_Type_UIFilterGroupType" id="portals_xsd_Complex_Type_UIFilterGroupType"><area alt="portals_xsd.tmp#UIFilterGroupType_label" href="portals_xsd.html#UIFilterGroupType_label" coords="273,0,470,42" /><area alt="portals_xsd.tmp#UIFilterGroupType_description" href="portals_xsd.html#UIFilterGroupType_description" coords="273,95,470,137" /><area alt="portals_xsd.tmp#UIFilterGroupType_icon" href="portals_xsd.html#UIFilterGroupType_icon" coords="273,190,470,232" /><area alt="portals_xsd.tmp#UIFilterGroupType_filter" href="portals_xsd.html#UIFilterGroupType_filter" coords="365,285,494,327" /><area alt="portals_xsd.tmp#UIFilterGroupType_dateFilter" href="portals_xsd.html#UIFilterGroupType_dateFilter" coords="365,380,518,422" /><area alt="portals_xsd.tmp#UIFilterGroupType_numericFilter" href="portals_xsd.html#UIFilterGroupType_numericFilter" coords="365,475,539,517" /><area alt="portals_xsd.tmp#UIFilterGroupType_booleanFilter" href="portals_xsd.html#UIFilterGroupType_booleanFilter" coords="365,570,536,612" /><area alt="portals_xsd.tmp#UIFilterGroupType_toggleFilter" href="portals_xsd.html#UIFilterGroupType_toggleFilter" coords="365,665,531,707" /><area alt="portals_xsd.tmp#UIFilterGroupType_choiceFilter" href="portals_xsd.html#UIFilterGroupType_choiceFilter" coords="365,760,531,802" /><area alt="portals_xsd.tmp#UIFilterGroupType_option" href="portals_xsd.html#UIFilterGroupType_option" coords="273,855,401,897" /></map></div>
                         </td>
                      </tr>
                      <tr>
                         <td class="firstColumn"><b>Model</b><div class="floatRight"><input id="button_model_UIFilterGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('model_UIFilterGroupType');" class="control" /></div>
                         </td>
                         <td>
-                           <div id="model_UIFilterGroupType" style="display:block"><b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description{0,1}</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon{0,1}</a></b> , (<b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter*</a></b>)</div>
+                           <div id="model_UIFilterGroupType" style="display:block"><b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description{0,1}</a></b> , <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon{0,1}</a></b> , (<b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter*</a></b> | <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter*</a></b>) , <b><a href="portals_xsd.html#UIFilterGroupType_option" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">option*</a></b></div>
                         </td>
                      </tr>
                      <tr>
                         <td class="firstColumn"><b>Children</b></td>
-                        <td><b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter</a></b></td>
+                        <td><b><a href="portals_xsd.html#UIFilterGroupType_booleanFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">booleanFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_choiceFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">choiceFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_dateFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">dateFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_description" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">description</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_filter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">filter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_icon" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">icon</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_label" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">label</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_numericFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">numericFilter</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_option" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">option</a></b>, <b><a href="portals_xsd.html#UIFilterGroupType_toggleFilter" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for portals.xsd')">toggleFilter</a></b></td>
                      </tr>
                   </tbody>
                </table>

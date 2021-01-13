@@ -11,6 +11,7 @@ The following document describes options that affect the display of portals in [
     - `<filterOptions>` (within types `UIFilterType`, `UIDateFilterType`, and `UIBooleanFilterType`)
     - `<trueOptions>` and `<falseOptions>` (within type `UIToggleFilterType`)
     - `<choiceOptions>` (within type `ChoiceType`, used as a `<choice>` element within `UIChoiceFilterType`)
+- `<filterGroup>` of type `<UIFilterGroupType>`
 
 `<option>` elements are of type `OptionType`, and follow the structure
 
