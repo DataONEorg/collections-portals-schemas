@@ -7,6 +7,7 @@ import random
 import string
 import re
 import datetime
+import xml.dom.minidom as minidom
 
 global ID_POOL
 global IMAGE_POOL
@@ -39,9 +40,11 @@ def createRandomPools():
     ICON_POOL = iconFile.readlines()
     iconFile.close()
 
+    #Get the list of query field names that use strings as values
+    strFieldFile = open("str_fields.txt", "r")
     global STR_FIELD_POOL
-    STR_FIELD_POOL = ["abstract", "attribute", "attributeDescription", "attributeLabel", "attributeName",
-              "awardTitle", "fundingText", "gcmdKeyword", "keyConcept", "keywordsText", "projectText", "text", "title", "topicText"]
+    STR_FIELD_POOL = strFieldFile.read().splitlines()
+    strFieldFile.close()
 
 #Makes a single random word
 def makeRandomWord():
@@ -64,10 +67,10 @@ def makeRandomWords(numberWords=20):
     return re.sub("[^a-zA-Z0-9 ]", "", words)
 
 #Makes 1-10 random collection definition filters XML
-def makeRandomFilters():
+def makeRandomFilters(maxFilters=10):
     filtersXML = ""
 
-    for n in range(random.randint(1,10)):
+    for n in range(random.randint(1,maxFilters)):
         filtersXML += makeRandomFilter()
 
     return filtersXML
@@ -87,53 +90,63 @@ def makeRandomFilter():
 
 def makeFilterLabel():
     #Generate a random label or skip one altogether
-    return "\t\t<label>" + makeRandomWords(random.randint(1,3)) + "</label>\n"
+    return "<label>" + makeRandomWords(random.randint(1,3)) + "</label>"
 
-def makeFilterOperator():
+def makeOperator():
     #Choose a random operator or skip one altogether
-    operators = ["\t\t<operator>AND</operator>\n", "\t\t<operator>OR</operator>\n", ""]
+    operators = ["<operator>AND</operator>", "<operator>OR</operator>", ""]
+
+    return random.choice(operators)
+
+def makeFieldsOperator():
+    #Choose a random operator or skip one altogether
+    operators = ["<fieldsOperator>AND</fieldsOperator>", "<fieldsOperator>OR</fieldsOperator>", ""]
 
     return random.choice(operators)
 
 def makeFilterExclude():
     #Add an exclude element
-    exclude = ["\t\t<exclude>true</exclude>\n", "\t\t<exclude>false</exclude>\n", ""]
+    exclude = ["<exclude>true</exclude>", "<exclude>false</exclude>", ""]
     return random.choice(exclude)
 
 #Makes a text filter with random values
 def makeTextFilter():
 
-    xml = "\t<filter>\n"
+    xml = "<filter>"
 
     xml += makeFilterLabel()
 
     #randomly create fields
     for n in range(random.randint(1,3)):
-        xml += "\t\t<field>" + random.choice(STR_FIELD_POOL) + "</field>\n"
+        xml += "<field>" + random.choice(STR_FIELD_POOL) + "</field>"
 
-    xml += makeFilterOperator()
+    #create filter operator for the values
+    xml += makeOperator()
 
     xml += makeFilterExclude()
 
     #Add an matchSubstring element
-    matchSubstring = ["\t\t<matchSubstring>true</matchSubstring>\n", "\t\t<matchSubstring>false</matchSubstring>\n", ""]
+    matchSubstring = ["<matchSubstring>true</matchSubstring>", "<matchSubstring>false</matchSubstring>", ""]
     xml += random.choice(matchSubstring)
 
     #randomly create values
     for n in range(random.randint(1,5)):
-        xml += "\t\t<value>" + makeRandomWords(random.randint(1,3)) + "</value>\n"
+        xml += "<value>" + makeRandomWords(random.randint(1,3)) + "</value>"
 
-    xml += "\t</filter>\n"
+    #create filter operator for the fields
+    xml += makeFieldsOperator()
+
+    xml += "</filter>"
 
     return xml
 
 #Generates an id filter
 def makeIdFilter():
-    xml = "\t<filter>\n"
+    xml = "<filter>"
 
     xml += makeFilterLabel()
 
-    xml += "\t\t<field>id</field>\n"
+    xml += "<field>id</field>"
 
     xml += makeFilterExclude()
 
@@ -143,15 +156,15 @@ def makeIdFilter():
     idFile.close()
 
     for n in range(random.randint(1,20)):
-        xml += "\t\t<value>" + ids[random.randint(0, len(ids) - 1)].rstrip() + "</value>\n"
+        xml += "<value>" + ids[random.randint(0, len(ids) - 1)].rstrip() + "</value>"
 
-    xml += "\t</filter>\n"
+    xml += "</filter>"
 
     return xml
 
 #Generates an date filter
 def makeDateFilter():
-    xml = "\t<dateFilter>\n"
+    xml = "<dateFilter>"
 
     #Make a filter label
     xml += makeFilterLabel()
@@ -161,7 +174,7 @@ def makeDateFilter():
               "dateUploaded", "endDate", "pubDate", "replicaVerifiedDate"]
 
     #Randomly select a field
-    xml += "\t\t<field>" + random.choice(fields) + "</field>\n"
+    xml += "<field>" + random.choice(fields) + "</field>"
 
     #Randomly generate an exlcude element
     xml += makeFilterExclude()
@@ -175,18 +188,18 @@ def makeDateFilter():
     if( isRange ):
         minDate = date
         maxDate = datetime.datetime(date.year+1, random.randint(1,12), random.randint(1,28))
-        xml += "\t\t<min>" + minDate.strftime("%Y-%m-%d") + "T" + minDate.strftime("%H:%M:%S") + "Z</min>\n"
-        xml += "\t\t<max>" + maxDate.strftime("%Y-%m-%d") + "T" + maxDate.strftime("%H:%M:%S") + "Z</max>\n"
+        xml += "<min>" + minDate.strftime("%Y-%m-%d") + "T" + minDate.strftime("%H:%M:%S") + "Z</min>"
+        xml += "<max>" + maxDate.strftime("%Y-%m-%d") + "T" + maxDate.strftime("%H:%M:%S") + "Z</max>"
     else:
-        xml += "\t\t<value>" + date.strftime("%Y-%m-%d") + "T" + date.strftime("%H:%M:%S")  + "Z</value>\n"
+        xml += "<value>" + date.strftime("%Y-%m-%d") + "T" + date.strftime("%H:%M:%S")  + "Z</value>"
 
-    xml += "\t</dateFilter>\n"
+    xml += "</dateFilter>"
 
     return xml
 
 #Generates a boolean filter
 def makeBooleanFilter():
-    xml = "\t<booleanFilter>\n"
+    xml = "<booleanFilter>"
 
     #Make a filter label
     xml += makeFilterLabel()
@@ -196,53 +209,53 @@ def makeBooleanFilter():
 
     #Randomly select and create fields
     for n in range(random.randint(1,2)):
-        xml += "\t\t<field>" + random.choice(fields) + "</field>\n"
+        xml += "<field>" + random.choice(fields) + "</field>"
 
     #Randomly generate an operator element
-    xml += makeFilterOperator()
+    xml += makeOperator()
 
     #Randomly generate an exlcude element
     xml += makeFilterExclude()
 
-    xml += "\t\t<value>" + random.choice(["true", "false"]) + "</value>\n"
+    xml += "<value>" + random.choice(["true", "false"]) + "</value>"
 
-    xml += "\t</booleanFilter>\n"
+    xml += "</booleanFilter>"
 
     return xml
 
 def makeUIFilterOptions():
-    xml = "\t\t<filterOptions>\n"
+    xml = "<filterOptions>"
 
-    xml += "\t\t\t<placeholder>" + makeRandomWords(random.randint(2,10)) + "</placeholder>\n"
-    xml += "\t\t\t<icon>" + makeRandomIcon()  + "</icon>\n"
-    xml += "\t\t\t<description>" + makeRandomWords(random.randint(10,30)) + "</description>\n"
+    xml += "<placeholder>" + makeRandomWords(random.randint(2,10)) + "</placeholder>"
+    xml += "<icon>" + makeRandomIcon()  + "</icon>"
+    xml += "<description>" + makeRandomWords(random.randint(10,30)) + "</description>"
 
-    xml += "\t\t</filterOptions>\n"
+    xml += "</filterOptions>"
     return xml
 
 def makeUIFilter():
-    xml = "\t<filter>\n"
+    xml = "<filter>"
 
     xml += makeFilterLabel()
 
     #randomly create fields
     for n in range(random.randint(1,2)):
-        xml += "\t\t<field>" + random.choice(STR_FIELD_POOL) + "</field>\n"
+        xml += "<field>" + random.choice(STR_FIELD_POOL) + "</field>"
 
-    xml += makeFilterOperator()
+    xml += makeOperator()
 
     #Add an matchSubstring element
-    #matchSubstring = ["\t\t<matchSubstring>true</matchSubstring>\n", "\t\t<matchSubstring>false</matchSubstring>\n", ""]
+    #matchSubstring = ["<matchSubstring>true</matchSubstring>", "<matchSubstring>false</matchSubstring>", ""]
     #xml += random.choice(matchSubstring)
 
     xml += makeUIFilterOptions()
 
-    xml += "\t</filter>\n"
+    xml += "</filter>"
 
     return xml
 
 def makeUIDateFilter():
-    xml = "\t<dateFilter>\n"
+    xml = "<dateFilter>"
 
     xml += makeFilterLabel()
 
@@ -251,26 +264,26 @@ def makeUIDateFilter():
               "dateUploaded", "endDate", "pubDate", "replicaVerifiedDate"]
 
     #Randomly select a field
-    xml += "\t\t<field>" + random.choice(fields) + "</field>\n"
+    xml += "<field>" + random.choice(fields) + "</field>"
 
     thisYear = datetime.datetime.now().year
     rangeMin = datetime.datetime(random.randint(1980,thisYear), random.randint(1,12), random.randint(1,28))
     rangeMax = datetime.datetime(rangeMin.year + random.randint(1,30), random.randint(1,12), random.randint(1,28))
 
     if random.choice([True,False]):
-        xml += "\t\t<rangeMin>" + rangeMin.strftime("%Y-%m-%d") + "T" + rangeMin.strftime("%H:%M:%S") + "Z</rangeMin>\n"
+        xml += "<rangeMin>" + rangeMin.strftime("%Y-%m-%d") + "T" + rangeMin.strftime("%H:%M:%S") + "Z</rangeMin>"
 
     if random.choice([True,False]):
-        xml += "\t\t<rangeMax>" + rangeMax.strftime("%Y-%m-%d") + "T" + rangeMax.strftime("%H:%M:%S") + "Z</rangeMax>\n"
+        xml += "<rangeMax>" + rangeMax.strftime("%Y-%m-%d") + "T" + rangeMax.strftime("%H:%M:%S") + "Z</rangeMax>"
 
     xml += makeUIFilterOptions()
 
-    xml += "\t</dateFilter>\n"
+    xml += "</dateFilter>"
 
     return xml
 
 def makeUIBooleanFilter():
-    xml = "\t<booleanFilter>\n"
+    xml = "<booleanFilter>"
 
     xml += makeFilterLabel()
 
@@ -279,61 +292,80 @@ def makeUIBooleanFilter():
 
     #Randomly select a field
     for n in range(random.randint(1,3)):
-        xml += "\t\t<field>" + random.choice(fields) + "</field>\n"
+        xml += "<field>" + random.choice(fields) + "</field>"
 
     xml += makeUIFilterOptions()
 
-    xml += "\t</booleanFilter>\n"
+    xml += "</booleanFilter>"
 
     return xml
 
 def makeUIToggleFilter():
-    xml = "\t<toggleFilter>\n"
+    xml = "<toggleFilter>"
 
     xml += makeFilterLabel()
 
     #randomly create fields
     for n in range(random.randint(1,2)):
-        xml += "\t\t<field>" + random.choice(STR_FIELD_POOL) + "</field>\n"
+        xml += "<field>" + random.choice(STR_FIELD_POOL) + "</field>"
 
     xml += makeUIFilterOptions()
 
-    xml += "\t\t<trueValue>" + makeRandomWord() + "</trueValue>\n"
+    xml += "<trueValue>" + makeRandomWord() + "</trueValue>"
 
     if random.choice([True,False]):
-        xml += "\t\t<trueLabel>" + makeRandomWords(random.randint(1,5)) + "</trueLabel>\n"
+        xml += "<trueLabel>" + makeRandomWords(random.randint(1,5)) + "</trueLabel>"
 
     if random.choice([True,False]):
-        xml += "\t\t<falseValue>" + makeRandomWord() + "</falseValue>\n"
+        xml += "<falseValue>" + makeRandomWord() + "</falseValue>"
 
     if random.choice([True,False]):
-        xml += "\t\t<falseLabel>" + makeRandomWords(random.randint(1,5)) + "</falseLabel>\n"
+        xml += "<falseLabel>" + makeRandomWords(random.randint(1,5)) + "</falseLabel>"
 
-    xml += "\t</toggleFilter>\n"
+    xml += "</toggleFilter>"
 
     return xml
 
 def makeUIChoiceFilter():
-    xml = "\t<choiceFilter>\n"
+    xml = "<choiceFilter>"
 
     xml += makeFilterLabel()
 
     #randomly create fields
     for n in range(random.randint(1,2)):
-        xml += "\t\t<field>" + random.choice(STR_FIELD_POOL) + "</field>\n"
+        xml += "<field>" + random.choice(STR_FIELD_POOL) + "</field>"
 
     xml += makeUIFilterOptions()
 
     for n in range(random.randint(2,50)):
-        xml += "\t\t<choice>\n"
-        xml += "\t\t\t<label>" + makeRandomWords(random.randint(1,8)) + "</label>\n"
-        xml += "\t\t\t<value>" + makeRandomWords(random.randint(1,8)) + "</value>\n"
-        xml += "\t\t</choice>\n"
+        xml += "<choice>"
+        xml += "<label>" + makeRandomWords(random.randint(1,8)) + "</label>"
+        xml += "<value>" + makeRandomWords(random.randint(1,8)) + "</value>"
+        xml += "</choice>"
 
     #Add a chooseMultiple element, or skip it
-    xml += random.choice(["\t\t<chooseMultiple>true</chooseMultiple>\n", "\t\t<chooseMultiple>false</chooseMultiple>\n", ""])
+    xml += random.choice(["<chooseMultiple>true</chooseMultiple>", "<chooseMultiple>false</chooseMultiple>", ""])
 
-    xml += "\t</choiceFilter>\n"
+    xml += "</choiceFilter>"
+
+    return xml
+
+def makeFilterGroupType(maxLevels = 6, maxFilters = 6, maxFilterGroups = 4):
+
+    xml = ""
+    xml += makeRandomFilters(maxFilters = maxFilters)
+
+    levels = random.randint(1,maxLevels)
+
+    levels -= 1
+
+    for n in range(random.randint(0,maxFilterGroups)):
+        if levels > 0:
+            xml += "<filterGroup>"
+            xml += makeFilterGroupType(maxLevels=levels, maxFilters=4, maxFilterGroups=4)
+            xml += "</filterGroup>"
+    xml += makeOperator()
+    xml += makeFilterExclude()
 
     return xml
 
@@ -347,83 +379,83 @@ def getRandomImage():
     return ids[random.randint(0, len(ids) - 1)].rstrip()
 
 def makeRandomImageType():
-    return "\t<identifier>" + getRandomImage() + "</identifier>\n\t<label>" + makeRandomWords(random.randint(1,10)) + "</label>\n"
+    return "<identifier>" + getRandomImage() + "</identifier><label>" + makeRandomWords(random.randint(1,10)) + "</label>"
 
 def makeSection():
-    xml = "<section>\n"
+    xml = "<section>"
 
-    xml += "\t<label>" + makeRandomWords(random.randint(1,5)) + "</label>\n"
+    xml += "<label>" + makeRandomWords(random.randint(1,5)) + "</label>"
 
     booleanChoices = [True, False]
 
     #Make a title
     if random.choice(booleanChoices):
-        xml += "\t<title>" + makeRandomWords(random.randint(1,10)) + "</title>\n"
+        xml += "<title>" + makeRandomWords(random.randint(1,10)) + "</title>"
 
     #Make an intro
     if random.choice(booleanChoices):
-        xml += "\t<introduction>" + makeRandomWords(random.randint(10,100)) + "</introduction>\n"
+        xml += "<introduction>" + makeRandomWords(random.randint(10,100)) + "</introduction>"
 
     #Make an image
     if random.choice(booleanChoices):
-        xml += "\t<image>" + makeRandomImageType() + "</image>\n"
+        xml += "<image>" + makeRandomImageType() + "</image>"
 
     #Make some content
-    xml += "\t<content><markdown>" + makeRandomWords(random.randint(100,600)) + "\n</markdown></content>\n"
+    xml += "<content><markdown>" + makeRandomWords(random.randint(100,600)) + "</markdown></content>"
 
-    xml += "</section>\n"
+    xml += "</section>"
     return xml
 
 def makeEMLParty():
-    xml = "<associatedParty>\n"
+    xml = "<associatedParty>"
 
-    xml += "\t<individualName>\n"
+    xml += "<individualName>"
 
     if random.choice([True,False]):
-        xml += "\t\t<salutation>" + random.choice(["Dr.", "Mr.", "Ms."]) + "</salutation>\n"
+        xml += "<salutation>" + random.choice(["Dr.", "Mr.", "Ms."]) + "</salutation>"
 
     for n in range(random.randint(0,2)):
-        xml += "\t\t<givenName>" + makeRandomWord() + "</givenName>\n"
+        xml += "<givenName>" + makeRandomWord() + "</givenName>"
 
-    xml += "\t\t<surName>" + makeRandomWord() + "</surName>\n"
-    xml += "\t</individualName>\n"
-
-    if random.choice([True,False]):
-        xml += "\t<organizationName>" + makeRandomWords(random.randint(1,6)) + "</organizationName>\n"
+    xml += "<surName>" + makeRandomWord() + "</surName>"
+    xml += "</individualName>"
 
     if random.choice([True,False]):
-        xml += "\t<positionName>" + makeRandomWords(random.randint(1,4)) + "</positionName>\n"
+        xml += "<organizationName>" + makeRandomWords(random.randint(1,6)) + "</organizationName>"
 
     if random.choice([True,False]):
-        xml += "\t<address>\n"
-        xml += "\t\t<deliveryPoint>" + makeRandomWords(random.randint(1,3)) + "</deliveryPoint>\n"
-        xml += "\t\t<city>" + makeRandomWord() + "</city>\n"
-        xml += "\t\t<administrativeArea>" + makeRandomWord() + "</administrativeArea>\n"
-        xml += "\t\t<postalCode>" + str(random.randint(10000, 99999)) + "</postalCode>\n"
-        xml += "\t\t<country>" + makeRandomWord() + "</country>\n"
-        xml += "\t</address>\n"
+        xml += "<positionName>" + makeRandomWords(random.randint(1,4)) + "</positionName>"
 
     if random.choice([True,False]):
-        xml += "\t<phone>" + str(random.randint(100,999)) + "-" + str(random.randint(100,999)) + "-" + str(random.randint(1000,9999)) + "</phone>\n"
+        xml += "<address>"
+        xml += "<deliveryPoint>" + makeRandomWords(random.randint(1,3)) + "</deliveryPoint>"
+        xml += "<city>" + makeRandomWord() + "</city>"
+        xml += "<administrativeArea>" + makeRandomWord() + "</administrativeArea>"
+        xml += "<postalCode>" + str(random.randint(10000, 99999)) + "</postalCode>"
+        xml += "<country>" + makeRandomWord() + "</country>"
+        xml += "</address>"
 
     if random.choice([True,False]):
-        xml += "\t<electronicMailAddress>" + makeRandomWord() + "@fakeemail.fake</electronicMailAddress>\n"
+        xml += "<phone>" + str(random.randint(100,999)) + "-" + str(random.randint(100,999)) + "-" + str(random.randint(1000,9999)) + "</phone>"
 
     if random.choice([True,False]):
-        xml += "\t<onlineUrl>https://" + makeRandomWord() + ".fake</onlineUrl>\n"
+        xml += "<electronicMailAddress>" + makeRandomWord() + "@fakeemail.fake</electronicMailAddress>"
 
-    xml += "\t<role>" + makeRandomWords(random.randint(1,4)) + "</role>\n"
+    if random.choice([True,False]):
+        xml += "<onlineUrl>https://" + makeRandomWord() + ".fake</onlineUrl>"
 
-    xml += "</associatedParty>\n"
+    xml += "<role>" + makeRandomWords(random.randint(1,4)) + "</role>"
+
+    xml += "</associatedParty>"
 
     return xml
 
-def makeFilterGroup():
-    xml = "<filterGroup>\n"
+def makeUIFilterGroup():
+    xml = "<filterGroup>"
 
-    xml += "\t<label>" + makeRandomWords(random.randint(1,3)) + "</label>\n"
-    xml += "\t<description>" + makeRandomWords(random.randint(3,20))  + "</description>\n"
-    xml += "\t<icon>" + makeRandomIcon()  + "</icon>\n"
+    xml += "<label>" + makeRandomWords(random.randint(1,3)) + "</label>"
+    xml += "<description>" + makeRandomWords(random.randint(3,20))  + "</description>"
+    xml += "<icon>" + makeRandomIcon()  + "</icon>"
 
     filterTypes = ["filter", "dateFilter", "booleanFilter", "toggleFilter", "choiceFilter"]
 
@@ -441,7 +473,7 @@ def makeFilterGroup():
         elif chosenType == "choiceFilter":
             xml += makeUIChoiceFilter()
 
-    xml += "</filterGroup>\n"
+    xml += "</filterGroup>"
 
     return xml
 
@@ -449,7 +481,7 @@ def makePortalDocument():
     createRandomPools()
 
     #Start the portal node
-    xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<por:portal xmlns:por=\"https://purl.dataone.org/portals-1.0.0\">\n"
+    xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><por:portal xmlns:por=\"https://purl.dataone.org/portals-1.1.0\">"
 
     label = makeRandomWord() + str(random.randint(10, 99))
     name = makeRandomWords(random.randint(5, 10))
@@ -457,23 +489,23 @@ def makePortalDocument():
     print("Title: " + name)
 
     #Randomize the label
-    xml += "<label>" + label + "</label>\n"
+    xml += "<label>" + label + "</label>"
 
     #Randomize the name
-    xml += "<name>" + name + "</name>\n"
+    xml += "<name>" + name + "</name>"
 
     #Randomize the description
-    xml += "<description>" + makeRandomWords(random.randint(50, 120)) + "</description>\n"
+    xml += "<description>" + makeRandomWords(random.randint(50, 120)) + "</description>"
 
     #Randomize the definition
-    xml += "<definition>\n"
-    xml += makeRandomFilters()
-    xml += "</definition>\n"
+    xml += "<definition>"
+    xml += makeFilterGroupType()
+    xml += "</definition>"
 
     #Randomize a logo
-    xml += "<logo>\n"
+    xml += "<logo>"
     xml += makeRandomImageType()
-    xml += "</logo>\n"
+    xml += "</logo>"
 
     #Randomly create sections
     for n in range(random.randint(0,10)):
@@ -485,17 +517,17 @@ def makePortalDocument():
 
     #Randomize the acknowledgments
     if random.choice([True,False]):
-        xml += "<acknowledgments><markdown>" + makeRandomWords(random.randint(50, 400)) + "\n</markdown></acknowledgments>\n"
+        xml += "<acknowledgments><markdown>" + makeRandomWords(random.randint(50, 400)) + "</markdown></acknowledgments>"
 
     #Randomize a logo
     for n in range(random.randint(0,15)):
-        xml += "<acknowledgmentsLogo>\n"
+        xml += "<acknowledgmentsLogo>"
         xml += makeRandomImageType()
-        xml += "</acknowledgmentsLogo>\n"
+        xml += "</acknowledgmentsLogo>"
 
     #Randomize filterGroups
     for n in range(random.randint(0,10)):
-        xml += makeFilterGroup()
+        xml += makeUIFilterGroup()
 
     #TODO: Make awards
     #TODO: Make datasource filter
@@ -506,9 +538,11 @@ def makePortalDocument():
 
     #Close the portal node
     xml += "</por:portal>"
+    dom = minidom.parseString(xml)
+    prettyXML = dom.toprettyxml()
 
     f = open("portal.xml", "w")
-    f.write(xml)
+    f.write(prettyXML)
     f.close()
 
 makePortalDocument()
