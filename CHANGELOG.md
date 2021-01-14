@@ -39,4 +39,5 @@
 
 - Allow an image, icon, and description for each `<choice>` element within `ChoiceType`, as well as for both the true (`<trueOptions>`) and the false (`<falseOptions>`) options in `UIToggleFilterType` elements. - [#78](https://github.com/DataONEorg/collections-portals-schemas/issues/78)
 - Allow `<image>` and `<option>` elements within `<associatedParty>` - [#86](https://github.com/DataONEorg/collections-portals-schemas/issues/86)
-- Made indentation and white space consistent
+- Allow `<option>` elements in UIFilterGroupsType (i.e. the custom search filter `<filterGroups>`)
+- Make indentation and white space consistent
