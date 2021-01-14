@@ -9,10 +9,10 @@
       <label>Datasets about soil</label>
       <field>text</field>
       <operator>AND</operator>
-      <fieldsOperator>AND</fieldsOperator>
       <exclude>false</exclude>
       <matchSubstring>true</matchSubstring>
       <value>soil</value>
+      <fieldsOperator>AND</fieldsOperator>
     </filter>
     <filter>
       <field>keywords</field>
@@ -25,21 +25,21 @@
       <field>dateUploaded</field>
       <field>beginDate</field>
       <operator>AND</operator>
-      <fieldsOperator>AND</fieldsOperator>
       <min>1800-01-01T00:00:00Z</min>
       <max>2009-01-01T00:00:00Z</max>
+      <fieldsOperator>AND</fieldsOperator>
     </dateFilter>
     <booleanFilter>
       <field>isPublic</field>
       <operator>AND</operator>
-      <fieldsOperator>AND</fieldsOperator>
       <value>true</value>
+      <fieldsOperator>AND</fieldsOperator>
     </booleanFilter>
     <numericFilter>
       <field>numberReplicas</field>
       <operator>AND</operator>
-      <fieldsOperator>AND</fieldsOperator>
       <min>1</min>
+      <fieldsOperator>AND</fieldsOperator>
     </numericFilter>
   </definition>
   <logo>
