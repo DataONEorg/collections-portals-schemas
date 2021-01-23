@@ -531,7 +531,7 @@
     <xs:complexContent>
       <xs:extension base="UIFilterType">
         <xs:sequence>
-          <xs:element name="trueValue" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
+          <xs:element name="trueValue" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>True value</doc:tooltip>
@@ -551,7 +551,7 @@
               </xs:appinfo>
             </xs:annotation>
           </xs:element>
-          <xs:element name="falseValue" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
+          <xs:element name="falseValue" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:appinfo>
                 <doc:tooltip>False value</doc:tooltip>
@@ -631,16 +631,16 @@
 
   <xs:complexType name="ChoiceType">
     <xs:sequence>
-      <xs:element name="label" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
+      <xs:element name="label" type="col:NonEmptyStringType" minOccurs="0" maxOccurs="1">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Label</doc:tooltip>
             <doc:description>A short label to display in the user interface for this filter
-              value.</doc:description>
+              value. If not provided, the value or list of values will be used instead.</doc:description>
           </xs:appinfo>
         </xs:annotation>
       </xs:element>
-      <xs:element name="value" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="1">
+      <xs:element name="value" type="col:NonEmptyStringType" minOccurs="1" maxOccurs="unbounded">
         <xs:annotation>
           <xs:appinfo>
             <doc:tooltip>Value</doc:tooltip>

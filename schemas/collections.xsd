@@ -320,8 +320,8 @@
                 <xs:appinfo>
                   <doc:tooltip>Exact date</doc:tooltip>
                   <doc:description>If a value is set on a NumericFilter, the query will filter by
-                    datasets whose given field(s) match this specific number.</doc:description>
-                  <doc:example>1980-03-23T10:20:15</doc:example>
+                    datasets whose given field(s) match this specific number or numbers.</doc:description>
+                  <doc:example>123.456</doc:example>
                 </xs:appinfo>
               </xs:annotation>
             </xs:element>
