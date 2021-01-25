@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="https://purl.dataone.org/collections-1.0.0"
-  targetNamespace="https://purl.dataone.org/collections-1.0.0"
+<xs:schema xmlns="https://purl.dataone.org/collections-1.1.0"
+  targetNamespace="https://purl.dataone.org/collections-1.1.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:doc="https://eml.ecoinformatics.org/documentation-2.2.0">
 

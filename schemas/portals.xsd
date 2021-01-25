@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="https://purl.dataone.org/portals-1.0.0"
-  targetNamespace="https://purl.dataone.org/portals-1.0.0"
+<xs:schema xmlns="https://purl.dataone.org/portals-1.1.0"
+  targetNamespace="https://purl.dataone.org/portals-1.1.0"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:doc="https://eml.ecoinformatics.org/documentation-2.2.0"
   xmlns:txt="https://eml.ecoinformatics.org/text-2.2.0"
   xmlns:par="https://eml.ecoinformatics.org/party-2.2.0"
   xmlns:proj="https://eml.ecoinformatics.org/project-2.2.0"
   xmlns:cit="https://eml.ecoinformatics.org/literature-2.2.0"
-  xmlns:col="https://purl.dataone.org/collections-1.0.0">
+  xmlns:col="https://purl.dataone.org/collections-1.1.0">
 
   <xs:import namespace="https://eml.ecoinformatics.org/documentation-2.2.0"
     schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-documentation.xsd"/>
@@ -19,7 +19,7 @@
     schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-project.xsd"/>
   <xs:import namespace="https://eml.ecoinformatics.org/literature-2.2.0"
     schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml-literature.xsd"/>
-  <xs:import namespace="https://purl.dataone.org/collections-1.0.0" schemaLocation="collections.xsd"/>
+  <xs:import namespace="https://purl.dataone.org/collections-1.1.0" schemaLocation="collections.xsd"/>
 
   <xs:element name="portal">
     <xs:annotation>
