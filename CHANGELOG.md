@@ -1,13 +1,13 @@
-# Version 1.1.0 - Unreleased
+# Version 1.1.0 - 2021-01-25
 
 **Related Pull Request**: [#87](https://github.com/DataONEorg/collections-portals-schemas/pull/87)
 
 **Related Milestone**: [1.1.0](https://github.com/DataONEorg/collections-portals-schemas/milestone/4)
 
 **More Info:**
-- For examples that make use of the new filter and definition capabilities, see `docs/examples/example-definitions-to-solr.md`.
-- To see a visualization of the current schema, open `docs/web/index.html` in a browser.
-- To see the options MetacatUI uses under the current version of the schema, see `docs/options-for-MetacatUI.md`
+- For examples that make use of the new filter and definition capabilities, see [`docs/examples/example-definitions-to-solr.md`](https://github.com/DataONEorg/collections-portals-schemas/tree/99947b87a2b99c0aa07be1df45e7f224dde807d6/docs/examples/example-definitions-to-solr.md).
+- To see a visualization of the current schema, clone this repository and open [`docs/web/index.html`](https://github.com/DataONEorg/collections-portals-schemas/blob/99947b87a2b99c0aa07be1df45e7f224dde807d6/docs/web/schema/index.html) in a browser.
+- To see the options that MetacatUI uses or plans to use under the current version of the schema, see [`docs/options-for-MetacatUI.md`](https://github.com/DataONEorg/collections-portals-schemas/tree/99947b87a2b99c0aa07be1df45e7f224dde807d6/docs/options-for-MetacatUI.md)
 
 ## 📖 Support for more complex definitions ([#70](https://github.com/DataONEorg/collections-portals-schemas/issues/70))
 
