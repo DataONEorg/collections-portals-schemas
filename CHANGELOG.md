@@ -37,7 +37,9 @@
 
 ## ⭐️ Minor enhancements:
 
-- Allow an image, icon, and description for each `<choice>` element within `ChoiceType`, as well as for both the true (`<trueOptions>`) and the false (`<falseOptions>`) options in `UIToggleFilterType` elements. - [#78](https://github.com/DataONEorg/collections-portals-schemas/issues/78)
-- Allow `<image>` and `<option>` elements within `<associatedParty>` - [#86](https://github.com/DataONEorg/collections-portals-schemas/issues/86)
+- Allow an image, icon, and description for each `<choice>` element within `ChoiceType`, as well as for both the true (`<trueOptions>`) and the false (`<falseOptions>`) options in `UIToggleFilterType` elements. ([#78](https://github.com/DataONEorg/collections-portals-schemas/issues/78))
+- Make `<label>` optional in `ChoiceType` (`<choice>`) elements, but allow more than one `<value>` ([#94](https://github.com/DataONEorg/collections-portals-schemas/issues/94))
+- Allow multiple `<trueValue>` and `<falseValue>` elements in a `UIToggleFilterType` ([#94](https://github.com/DataONEorg/collections-portals-schemas/issues/94))
+- Allow `<image>` and `<option>` elements within `<associatedParty>` ([#86](https://github.com/DataONEorg/collections-portals-schemas/issues/86))
 - Allow `<option>` elements in UIFilterGroupsType (i.e. the custom search filter `<filterGroups>`)
 - Make indentation and white space consistent
