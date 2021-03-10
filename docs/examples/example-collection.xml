@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<col:collection xmlns:col="https://purl.dataone.org/collections-1.0.0">
+<col:collection xmlns:col="https://purl.dataone.org/collections-1.1.0">
   <label>saved-search</label>
   <name>My saved search</name>
   <description>This is a collection of datasets related to soil</description>
@@ -14,15 +14,15 @@
     <filter>
       <field>keyword</field>
       <field>attribute</field>
-      <value>soil layer</value>
       <fieldsOperator>AND</fieldsOperator>
+      <value>soil layer</value>
     </filter>
     <dateFilter>
       <field>dateUploaded</field>
       <field>beginDate</field>
+      <fieldsOperator>AND</fieldsOperator>
       <min>1800-01-01T00:00:00Z</min>
       <max>2009-01-01T00:00:00Z</max>
-      <fieldsOperator>AND</fieldsOperator>
     </dateFilter>
     <booleanFilter>
       <field>isPublic</field>
